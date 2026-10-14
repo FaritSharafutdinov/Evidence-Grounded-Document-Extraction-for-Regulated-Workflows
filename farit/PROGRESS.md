@@ -1,6 +1,6 @@
 # Research Progress — Complete-Evidence Retrieval under Reading Budgets
 
-**Farit Sharafutdinov · status report · October 9, 2026** (updated October 14 — LLM-judge baseline added, sections 5–7 revised)
+**Farit Sharafutdinov · status report · October 9, 2026** (updated October 14 — LLM-judge baseline added, sections 5–7 revised; Oct 14b — meeting figure pack + case studies)
 
 Scope: first phase of topic scoping — verify that the problem (a) exists in our data, (b) is not solved by standard retrieval, (c) is not covered by recent literature. All results below are independently re-verified; all code and numbers are reproducible from this repo (see Reproducibility).
 
@@ -56,7 +56,9 @@ Verification notes: an initial piece-recall bug (pages counted against a fragmen
 
 - **As a ranker, the judge is strong**: per-instance AUROC mean = 0.87, median = 1.0; 68% of instances are ranked perfectly, only 7/125 rank worse than chance. The headline completeness numbers are not luck.
 - **As a calibrated classifier, it is not**: 51% of *true* gold pages receive score < 0.5, and ~9% of non-gold pages score ≥ 0.5. Raw scores are not comparable across fields/documents — a fixed global threshold would discard half of the real evidence. Any abstention rule must be calibrated (e.g. via Learn then Test), not thresholded raw.
-- **The split by field type is the sharpest result.** Median judge score on gold pages: **0.9998 for EXPLICIT fields vs 0.0000 for derived fields** (91% of derived gold pages score < 0.5). The judge confidently recognizes explicit evidence but does not *understand* that a page helps derive a field — its derived-field completeness (0.75@3) rests on ranking by tiny score margins between near-zero scores. Recognizing derivation-relevant evidence is a concrete, measurable gap, not a solved problem.
+- **The split by field type is the sharpest result.** Median judge score on gold pages (median of per-instance medians): **0.9998 for EXPLICIT fields vs 0.0000 for derived fields** (91% of derived gold pages score < 0.5). The judge confidently recognizes explicit evidence but does not *understand* that a page helps derive a field — its derived-field completeness (0.75@3) rests on ranking by tiny score margins between near-zero scores. Recognizing derivation-relevant evidence is a concrete, measurable gap, not a solved problem.
+
+**Meeting figure pack (Oct 14b).** Completeness-vs-budget curves for all four methods (both layers, all numbers read from the frozen JSONs): `farit/results/budget_curves.md` + `farit/results/figures/completeness_vs_budget_{native,ocr}.png`. Illustrative failure cases behind the derived-field result — selected by a deterministic stratified rule, not hand-picked — plus the score picture in one figure: `farit/results/derived_case_studies.md`. Headline: **32 of 36 derived instances have every gold page below the judge's own 0.5 boundary**, and in 14 of them the whole document scores exactly 0.0 — there the judge's "ranking" degenerates to document order, so its apparent completeness on those instances is the naive prior, not the model. (The `⚠️ Scores outside (0,1)` line in the reranker report was a too-strict sanity check: 740/1303 scores sit at exactly 0.0 and 13 at 1.0 — float underflow of P(Yes)/(P(Yes)+P(No)) for extreme logprob gaps; none are strictly outside [0,1]. The check in `llm_reranker.py` now reports saturation counts instead.)
 
 ## 6. Findings
 
@@ -69,7 +71,7 @@ Verification notes: an initial piece-recall bug (pages counted against a fragmen
 
 ## 7. Open questions for the topic decision
 
-- **Does the budget constraint actually bite?** Partly answered: all methods saturate by page 5–10, so the interesting regime is the *tight* band (≤3 pages / ≤1000 tokens) — exactly where the LLM judge keeps a large lead (complete@1000tok 0.88 vs 0.58–0.73 for the rest) and where cheap methods fail. Next step: plot completeness-vs-budget curves for all four methods to locate the hard regime precisely.
+- **Does the budget constraint actually bite?** Partly answered: all methods saturate by page 5–10, so the interesting regime is the *tight* band (≤3 pages / ≤1000 tokens) — exactly where the LLM judge keeps a large lead (complete@1000tok 0.88 vs 0.58–0.73 for the rest) and where cheap methods fail. Now done: completeness-vs-budget curves for all four methods in `farit/results/budget_curves.md` (PNG/PDF under `farit/results/figures/`) confirm the hard regime is k≤3 pages / ≤1000 tokens.
 - **Is 29 annotated sheets enough?** Sufficient for this pilot; whether to extend annotation is an open decision — it depends on which method direction we choose, so it should follow the topic decision, not precede it.
 - **What is the contribution's shape?** The LLM-judge result rules out "better retrieval" as the core contribution. Remaining options: (i) measurement framework alone (corpus + completeness/budget metrics + failure analysis); (ii) a method for **cheap** budget-aware evidence gathering that approaches LLM-judge completeness at a fraction of its cost and **abstains** — declines a field and routes it to human review — when the evidence set is predicted incomplete (threshold calibrated via Learn then Test); (iii) both as one story. Option (ii)/(iii) look strongest given the data.
 
@@ -78,4 +80,5 @@ Verification notes: an initial piece-recall bug (pages counted against a fragmen
 - Corpus: `python farit/src/retrieval/build_corpus.py` (writes `farit/data/corpus/`, validates offsets/counts)
 - Baselines: `python farit/src/retrieval/bm25_baseline.py`, `python farit/src/retrieval/dense_baseline.py`, `python farit/src/retrieval/llm_reranker.py --model mlx-community/Qwen2.5-7B-Instruct-4bit --out-tag qwen7b` (~4.5 h on M2 16 GB; resumable score cache)
 - Results: `farit/results/bm25_baseline.{md,json}`, `farit/results/dense_baseline.{md,json}`, `farit/results/llm_reranker_qwen7b.{md,json}`
+- Meeting figure pack (reads frozen JSONs only, no recompute): `~/ds_env/bin/python farit/src/analysis/budget_curves.py` → `farit/results/budget_curves.md` + `farit/results/figures/completeness_vs_budget_{native,ocr}.{png,pdf}`; `~/ds_env/bin/python farit/src/analysis/derived_case_studies.py` → `farit/results/derived_case_studies.{md,json}` + `farit/results/figures/judge_scores_gold_pages.{png,pdf}`
 - Python env: `~/ds_env` (3.11); pinned `pymupdf==1.28.2` preserved (gold boxes depend on its segmentation)

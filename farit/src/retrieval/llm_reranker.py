@@ -642,9 +642,13 @@ def main() -> int:
             min_s = min(all_scores)
             max_s = max(all_scores)
             mean_s = sum(all_scores) / len(all_scores)
+            n_sat = sum(1 for s in all_scores if s == 0.0 or s == 1.0)
             md_lines.append(f"- **{layer_name}**: n={len(all_scores)}, min={min_s:.4f}, max={max_s:.4f}, mean={mean_s:.4f}")
-            if min_s <= 0 or max_s >= 1:
-                md_lines.append(f"  ⚠️  Scores outside (0,1) detected!")
+            if min_s < 0 or max_s > 1:
+                md_lines.append(f"  ⚠️  Scores strictly outside [0,1] — extraction bug, investigate!")
+            elif n_sat:
+                md_lines.append(f"  ✓ Scores in [0,1]; {n_sat} exactly at 0.0/1.0 — float underflow of "
+                                f"P(Yes)/(P(Yes)+P(No)) for extreme logprob gaps (expected saturation).")
             if max_s - min_s < 1e-6:
                 md_lines.append(f"  ⚠️  All scores are identical — logprobs may not be extracted correctly!")
             else:

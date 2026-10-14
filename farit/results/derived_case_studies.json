@@ -1,0 +1,144 @@
+{
+  "selection_rule": "per-stratum worst by (max gold-page score, document, field) among derived instances whose every gold page scores < 0.5; contrast = best EXPLICIT",
+  "layer": "native",
+  "stats": {
+    "layer": "native",
+    "low_threshold": 0.5,
+    "gold_pages_explicit": {
+      "n": 100,
+      "share_below_0.5": 0.34,
+      "median": 0.9997079402631325
+    },
+    "gold_pages_derived": {
+      "n": 44,
+      "share_below_0.5": 0.9090909090909091,
+      "median": 0.0
+    },
+    "endpoint_scores": {
+      "n_pages_scored": 1303,
+      "strictly_below_0": 0,
+      "strictly_above_1": 0,
+      "exactly_0.0": 740,
+      "exactly_1.0": 13
+    },
+    "n_derived_instances_degenerate_all_zero": 14,
+    "degenerate_instances": [
+      [
+        "sds_01.pdf",
+        "chemical_formula"
+      ],
+      [
+        "sds_03.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_05.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_07.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_08.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_09.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_12.pdf",
+        "chemical_formula"
+      ],
+      [
+        "sds_12.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_14.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_15.pdf",
+        "chemical_formula"
+      ],
+      [
+        "sds_15.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_17.pdf",
+        "chemical_formula"
+      ],
+      [
+        "sds_18.pdf",
+        "molecular_weight"
+      ],
+      [
+        "sds_20.pdf",
+        "molecular_weight"
+      ]
+    ]
+  },
+  "stratum_sizes": {
+    "composition_implied": 3,
+    "ontology_cross_page": 5,
+    "ontology_same_page": 24
+  },
+  "n_derived": 36,
+  "n_fails": 32,
+  "cases": {
+    "composition_implied": {
+      "document": "sds_20.pdf",
+      "field": "substance_or_mixture",
+      "derivation": "COMPOSITION_IMPLIED",
+      "state": "PRESENT",
+      "value": "MIXTURE",
+      "cross_page": false,
+      "gold_pages": [
+        3
+      ],
+      "gold_page_scores": {
+        "3": 0.2393493412494418
+      }
+    },
+    "ontology_cross_page": {
+      "document": "sds_03.pdf",
+      "field": "molecular_weight",
+      "derivation": "ONTOLOGY",
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "cross_page": true,
+      "gold_pages": [
+        1,
+        2
+      ],
+      "gold_page_scores": {
+        "2": 0.0,
+        "1": 0.0
+      }
+    },
+    "ontology_same_page": {
+      "document": "sds_01.pdf",
+      "field": "chemical_formula",
+      "derivation": "ONTOLOGY",
+      "state": "NOT_APPLICABLE",
+      "value": null,
+      "cross_page": false,
+      "gold_pages": [
+        1
+      ],
+      "gold_page_scores": {
+        "1": 0.0
+      }
+    }
+  },
+  "contrast": {
+    "document": "sds_19.pdf",
+    "field": "product_name",
+    "gold_page_scores": {
+      "1": 1.0
+    }
+  }
+}

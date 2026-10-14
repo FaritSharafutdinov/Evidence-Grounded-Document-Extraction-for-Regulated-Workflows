@@ -103,14 +103,15 @@ def plot_panel(ax, series: dict[str, dict], key: str, xs: list[int], x_label: st
 
 
 def make_figure(series: dict[str, dict], layer: str) -> Path:
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.4, 4.6))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.4, 4.8))
     plot_panel(ax1, series, "complete", KS, "reading budget k (pages)", shade_upto=3)
     plot_panel(ax2, series, "token_complete", BUDGETS, "reading budget (tokens)", shade_upto=1000)
     handles, labels = ax1.get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=4, frameon=False, fontsize=10)
+    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.5, 0.905),
+               ncol=4, frameon=False, fontsize=10)
     fig.suptitle(f"Complete-evidence retrieval vs reading budget — {layer} layer (dev split, n=125)",
-                 y=0.995, fontsize=12)
-    fig.tight_layout(rect=(0, 0, 1, 0.93))
+                 y=0.985, fontsize=12)
+    fig.tight_layout(rect=(0, 0, 1, 0.855))
     out_png = FIG_DIR / f"completeness_vs_budget_{layer}.png"
     fig.savefig(out_png, dpi=200)
     fig.savefig(out_png.with_suffix(".pdf"))

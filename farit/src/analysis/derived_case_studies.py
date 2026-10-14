@@ -157,9 +157,11 @@ def make_figure(insts: list[dict]) -> Path:
                    label=f"{label} gold pages (n={len(ys)})", zorder=3)
         med = statistics.median(raw)
         ax.hlines(max(med, FLOOR), pos - 0.42, pos + 0.42, color=color, lw=2.5, zorder=4)
-        ax.text(pos + 0.46, max(med, FLOOR), f"median {med:.4f}", va="center", fontsize=9, color=color)
+        ax.text(pos + 0.46, max(med, FLOOR), f"median {med:.4f}", va="center", fontsize=9, color=color,
+                zorder=5, bbox=dict(boxstyle="round,pad=0.15", fc="white", ec="none", alpha=0.75))
     ax.axhline(0.5, color="black", ls="--", lw=1, zorder=2)
-    ax.text(0.5, 0.30, "judge decision boundary (0.5)", fontsize=9, ha="center")
+    ax.text(0.5, 0.29, "judge decision boundary (0.5)", fontsize=9, ha="center", zorder=5,
+            bbox=dict(boxstyle="round,pad=0.2", fc="white", ec="none", alpha=0.8))
     ax.set_xticks([0, 1])
     ax.set_xticklabels(["EXPLICIT", "DERIVED\n(ontology / composition)"], fontsize=10)
     ax.set_xlim(-0.62, 1.62)

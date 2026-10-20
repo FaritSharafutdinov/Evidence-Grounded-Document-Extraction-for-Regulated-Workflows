@@ -1,0 +1,37 @@
+======================================================================
+EXPERIMENT 1: mx.softmax collapse on synthetic vectors (synthetic, no model)
+======================================================================
+bf16 gap-23  dtype=mlx.core.bfloat16      softmax=['1.0000e+00', '8.0036e-11']
+             log(mx.softmax)=['0.000000', '-23.250000']
+f32  gap-23  dtype=mlx.core.float32       softmax=['1.0000e+00', '8.5074e-11']
+             log(mx.softmax)=['0.000000', '-23.187500']
+bf16 gap-18  dtype=mlx.core.bfloat16      softmax=['1.0000e+00', '1.1874e-08']
+             log(mx.softmax)=['0.000000', '-18.250000']
+bf16 gap-9   dtype=mlx.core.bfloat16      softmax=['1.0000e+00', '8.4877e-05']
+             log(mx.softmax)=['0.000000', '-9.375000']
+f32  gap-9   dtype=mlx.core.float32       softmax=['9.9991e-01', '8.6958e-05']
+             log(mx.softmax)=['-0.000087', '-9.350087']
+-> no collapse in the small-tensor path: the collapse must live in the
+   full-vocab device softmax on the model's native fp16 logits (EXP 2).
+
+======================================================================
+EXPERIMENT 2: device softmax determinism on REAL 7B logits (saved npy)
+    ntl_sds03_p1_native.npy = lm_head logits, sds_03.pdf:molecular_weight p1 native
+======================================================================
+argmax id=2753; best Yes id=9454 ('Yes'); gap(Yes vs argmax) fp64 = -23.187500
+true P(Yes) fp64-from-fp16-logits = 8.507397e-11   (NO float32 exp underflow at play: 8.5e-11 >> 1.18e-38)
+device softmax run0: P(Yes)=np.float32(0.0) P(No)=np.float32(1.0) n_zero=152057/152064; log_softmax: yes=np.float32(-inf)
+device softmax run1: P(Yes)=np.float32(0.0) P(No)=np.float32(1.0) n_zero=152057/152064; log_softmax: yes=np.float32(-inf)
+-> device fp16 softmax: deterministic per array, but EXP IS fp16:
+   any non-argmax token with true prob < ~2.98e-8..5.96e-8 (fp16 subnormal shoulder) -> 0.0 -> logprob = -inf
+   frozen code: mx.exp(-inf) = 0.0 -> score = 0.0/(0.0+1) = 0.0 EXACTLY
+   NOTE: spec hypothesis P(Yes)<1e-38 float32-exp underflow is NOT the mechanism;
+   the collapse happens EARLIER, inside fp16 device exp of the softmax.
+
+======================================================================
+EXPERIMENT 3: the cache's small-score ladder = fp16 quantization
+======================================================================
+fp16 min subnormal 2^-24 = 5.9604644775390625e-08
+ladder k=1: fp16 log -> fp32 exp -> score = 5.9301866297670765e-08
+cached smallest positive score          = 5.9301864788117154e-08  (matches to fp32 rounding, ~1 ulp)
+   bit-exact equality is established separately by the Q4 replay (see q4_cache_replay_stdout.log)

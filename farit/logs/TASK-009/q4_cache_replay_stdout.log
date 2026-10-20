@@ -1,0 +1,22 @@
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 1925.07it/s]
+Q4 selected (zero (degenerate case)): {'document': 'sds_03.pdf', 'field': 'molecular_weight', 'page': 1, 'layer': 'native', 'prompt_sha256': '34ac969b7e6fe2f0dfc8a5593e4cb2437ff384a9fc68614d900564742e25932b', 'score': 0.0}
+Q4 selected (one (control gold page)): {'document': 'sds_19.pdf', 'field': 'product_name', 'page': 1, 'layer': 'native', 'prompt_sha256': 'da4e6a7cff015697e5699e5a7f375dbc8a63668ae005ac0ec3bdc699a44d3653', 'score': 1.0}
+Q4 selected (mid (control non-extreme)): {'document': 'sds_19.pdf', 'field': 'product_name', 'page': 4, 'layer': 'native', 'prompt_sha256': 'c8f6dbb881490a4d5adca2dae8fe6c95c178b754f8a86654d10852c5e7a1c29b', 'score': 5.9301864788117154e-08}
+
+Q4 replay zero: sds_03.pdf:molecular_weight p1 (native)
+    prompt_sha256 rebuild == cached sha: True
+    cached score = 0.000000000000
+    recomputed   = 0.000000000000
+    EXACTLY EQUAL: True
+
+Q4 replay one: sds_19.pdf:product_name p1 (native)
+    prompt_sha256 rebuild == cached sha: True
+    cached score = 1.000000000000
+    recomputed   = 1.000000000000
+    EXACTLY EQUAL: True
+
+Q4 replay mid: sds_19.pdf:product_name p4 (native)
+    prompt_sha256 rebuild == cached sha: True
+    cached score = 0.000000059302
+    recomputed   = 0.000000059302
+    EXACTLY EQUAL: True

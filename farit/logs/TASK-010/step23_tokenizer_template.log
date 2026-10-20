@@ -1,0 +1,136 @@
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1849.50it/s]
+======================================================================
+STEP 2: Yes/No candidate strings -> token ids (single-token audit)
+======================================================================
+ variant |          ids | single | pieces
+--------------------------------------------------
+   'Yes' |       [9175] |   True | ['Yes']
+  ' Yes' |       [7179] |   True | ['ĠYes']
+   'yes' |       [9405] |   True | ['yes']
+  ' yes' |       [9542] |   True | ['Ġyes']
+    'No' |       [2665] |   True | ['No']
+   ' No' |       [2233] |   True | ['ĠNo']
+    'no' |       [2083] |   True | ['no']
+   ' no' |        [874] |   True | ['Ġno']
+     'Y' |         [56] |   True | ['Y']  (fallback char)
+     'N' |         [45] |   True | ['N']  (fallback char)
+
+======================================================================
+STEP 3: chat template audit (sds_01.pdf product_name page 1, native)
+======================================================================
+prompt_sha256=d5d3c0c4f3c4d13c57a43f15f4c13da0d68677f69fa2362c73f088dc279007a6
+prompt_chars=2458
+
+--- build_prompt output (raw, first 500 chars) ---
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 1 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+REDUR AD 04
+Other means of identification:
+UFI:
+MY90-10UT-4008-K1J7
+1.2
+Relevant ident
+...
+
+--- FULL apply_chat_template output (add_generation_prompt=True) ---
+'<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 1 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING\n1.1\nProduct identifier:\nREDUR AD 04\nOther means of identification:\nUFI:\nMY90-10UT-4008-K1J7\n1.2\nRelevant identified uses of the substance or mixture and uses advised against:\nRelevant uses: Paint\nUses advised against: All uses not specified in this section or in section 7.3\n1.3\nDetails of the supplier of the safety data sheet:\nSECILTEK SA\nApartado 2\n2406-909 Maceira LRA Leiria - Portugal\nPhone: +351244770220 - Fax: +351244777997\ncomercial.seciltek@secil.pt\nhttps://www.secil.pt\n1.4\nEmergency telephone number:\nSECTION 2: HAZARDS IDENTIFICATION\n2.1\nClassification of the substance or mixture:\nCLP Regulation (EC) No 1272/2008:\nThe product is not classified as hazardous according to CLP Regulation (EC) No 1272/2008.\n2.2\nLabel elements:\nCLP Regulation (EC) No 1272/2008:\nNone\nUFI:\nMY90-10UT-4008-K1J7\n2.3\nOther hazards:\nProduct does not meet PBT/vPvB criteria\nEndocrine-disrupting properties: The product does not meet the criteria.\nSECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS\n3.1\nSubstance:\nNon-applicable\n3.2\nMixture:\nChemical description: Mixture of substances\nComponents:\nNone of the substances contained in the mixture are above the limits specified in Annex II of Regulation (EC) No 1907/2006\nSECTION 4: FIRST AID MEASURES\n4.1\nDescription of first aid measures:\nConsult a doctor in case of discomfort showing the SDS for the product.\nBy inhalation:\nIn case of symptoms, move the person affected into fresh air.\nBy skin contact:\nIn case of contact it is recommended to clean the affected area thoroughly with water and neutral soap. In case of changes to\nthe skin (stinging, redness, rashes, blisters,…), seek medical advice with this Safety Data Sheet\nBy eye contact:\nRinse with water until the product has been eliminated. In case of problems, consult a doctor showing the SDS for the product.\nBy ingestion/aspiration:\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 1/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n'
+
+--- same, rendered for eyes ---
+<|im_start|>user
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 1 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+REDUR AD 04
+Other means of identification:
+UFI:
+MY90-10UT-4008-K1J7
+1.2
+Relevant identified uses of the substance or mixture and uses advised against:
+Relevant uses: Paint
+Uses advised against: All uses not specified in this section or in section 7.3
+1.3
+Details of the supplier of the safety data sheet:
+SECILTEK SA
+Apartado 2
+2406-909 Maceira LRA Leiria - Portugal
+Phone: +351244770220 - Fax: +351244777997
+comercial.seciltek@secil.pt
+https://www.secil.pt
+1.4
+Emergency telephone number:
+SECTION 2: HAZARDS IDENTIFICATION
+2.1
+Classification of the substance or mixture:
+CLP Regulation (EC) No 1272/2008:
+The product is not classified as hazardous according to CLP Regulation (EC) No 1272/2008.
+2.2
+Label elements:
+CLP Regulation (EC) No 1272/2008:
+None
+UFI:
+MY90-10UT-4008-K1J7
+2.3
+Other hazards:
+Product does not meet PBT/vPvB criteria
+Endocrine-disrupting properties: The product does not meet the criteria.
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1
+Substance:
+Non-applicable
+3.2
+Mixture:
+Chemical description: Mixture of substances
+Components:
+None of the substances contained in the mixture are above the limits specified in Annex II of Regulation (EC) No 1907/2006
+SECTION 4: FIRST AID MEASURES
+4.1
+Description of first aid measures:
+Consult a doctor in case of discomfort showing the SDS for the product.
+By inhalation:
+In case of symptoms, move the person affected into fresh air.
+By skin contact:
+In case of contact it is recommended to clean the affected area thoroughly with water and neutral soap. In case of changes to
+the skin (stinging, redness, rashes, blisters,…), seek medical advice with this Safety Data Sheet
+By eye contact:
+Rinse with water until the product has been eliminated. In case of problems, consult a doctor showing the SDS for the product.
+By ingestion/aspiration:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 1/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.<|im_end|>
+<|im_start|>assistant
+<think>
+
+
+--- template checks ---
+contains_im_start=True
+contains_im_end=True
+contains_think_open=True
+contains_think_close=False
+contains_thinking_word=False
+chat_template: single string, has_think=True, has_enable_thinking=True
+
+--- tail of chat_prompt (last 300 chars, what the model sees before answering) ---
+'\nBy ingestion/aspiration:\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 1/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n'

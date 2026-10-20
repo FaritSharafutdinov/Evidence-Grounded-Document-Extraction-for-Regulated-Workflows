@@ -1,0 +1,355 @@
+# TASK-011 worksheet — group E — sds_19.pdf / supplier_name
+state=PRESENT  derivation=EXPLICIT  gold_value='Buddy Rhodes Concrete Products'
+
+## gold evidence_set
+- page 1: 'Company:\nBuddy Rhodes Concrete Products'
+
+===== PAGE 1 (native) =====
+SAFETY DATA SHEET
+SDS No. 1224
+Revision Date: December 5, 2023 Version 3.0
+GHS Compliant
+Page 1 of 7
+Section 1 - Identification of the substance/mixture and of the company
+1.1
+Product Identifier
+Trade Name:
+Water Reducer 310
+1.2
+Relevant identified uses of the substance or mixture and uses advised against
+General Use:
+Concrete Admixture
+Restrictions on Use:
+None known
+1.3
+Details of the supplier of the safety data sheet:
+Company:
+Buddy Rhodes Concrete Products
+5600 Lower Macungie Rd., Macungie, PA 18062
+Telephone:
+Domestic: 1 (877) 706-5303
+International: (610) 252-5800 (collect calls accepted)
+E-mail address:
+Visit our website at www.buddyrhodes.com
+1.4
+Emergency Contact:
+Chem-Tel
+Domestic: 800-255-3924 International: 813-248-0585
+Section 2 – Hazard(s) Identification
+2.1
+Classification of the substance or mixture
+Not a hazardous substance or mixture according to United States Occupational Safety and Health
+Administration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian
+Workplace Hazardous Materials Information System (WHMIS) and Regulation (EC) No 1272/2008
+and subsequent amendments.
+2.2
+GHS Label elements, including precautionary statements
+Pictogram(s): none
+Signal word: none
+General Precautions:
+P101: If medical advice is needed, have product container or label at hand.
+P102: Keep out of reach of children.
+P103: Read label before use.
+2.3
+Hazards not otherwise classified (HNOC) or not covered by GHS – none
+Section 3 - Composition / Information on Ingredients
+3.1 Substances
+No ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication
+Standard 29 CFR 1910.1200 criteria.
+Section 4 - First Aid Measures
+4.1
+Description of first aid measures
+Inhalation
+Remove source(s) of contamination and move victim to fresh air. If breathing has stopped, give
+
+===== PAGE 2 (native) =====
+SDS No. 1224
+Page 2 of 7
+artificial respiration, then oxygen if needed. Contact physician immediately.
+Eye Contact
+Flush eyes with plenty of water. If irritation persists, seek medical attention.
+Skin Contact
+In case of skin contact, wash thoroughly with soap and water.
+Ingestion
+Do not induce vomiting unless instructed by a physician. Never give anything by mouth to an
+unconscious person.
+4.2
+Most important symptoms and effects, both acute and delayed.
+None known.
+4.3
+Indication of any immediate medical attention and specific treatment needed.
+None known.
+Section 5 - Fire-Fighting Measures
+5.1
+Extinguishing Media
+Water Fog, Dry Chemical, and Carbon Dioxide Foam
+5.2
+Special hazards arising from the substance or mixture
+None known.
+5.3
+Advice for firefighters
+Use water spray to cool fire-exposed surfaces and to protect personnel. Shut off “fuel” to fire. If a
+leak or spill has not ignited, use water spray to disperse the vapors. Either allow fire to burn under
+controlled conditions or extinguish with foam or dry chemical. Try to cover liquid spills with foam.
+Because fire may produce toxic thermal decomposition products, wear a self-contained breathing
+apparatus (SCBA) with a full-face piece operated in pressure demand or positive-pressure mode.
+Section 6 - Accidental Release Measures
+6.1
+Personal precautions, protective equipment and emergency procedures
+Only properly protected personnel should remain in the spill area; dike and contain spill. Stop or
+reduce discharge if it can be done safely.
+6.2
+Environmental precautions
+Stop spill/release if it can be done safely. Prevent spilled material from entering sewers, storm
+drains or unauthorized drainage systems and natural waterways by using sand, earth, or other
+appropriate barriers. No special environmental precautions required.
+6.3
+Methods and material for containment and cleaning up
+Put on appropriate protective gear including NIOSH/MSHA approved self-contained breathing
+apparatus, rubber boots and heavy rubber gloves. Dike and contain spill; absorb or scrape up
+excess into suitable container for disposal; wash area with dilute ammonia solution. Stop or
+reduce discharge if it can be done safely. Follow applicable OSHA regulations (29 CFR 1910.120)
+for disposal.
+6.4
+Reference to other sections
+See Section 3 for list of Hazardous Ingredients; Sections 8 for Exposure Controls; and Section 13
+for Disposal.
+
+===== PAGE 3 (native) =====
+SDS No. 1224
+Page 3 of 7
+Section 7 - Handling and Storage
+7.1
+Precautions for safe handling
+Use good general housekeeping procedures. Wash hands after use. Do not get in eyes, on skin or
+on clothing. Do not breathe vapors or mists. Use good personal hygiene practices.
+7.2
+Conditions for safe storage, including any incompatibilities
+Keep container(s) tightly closed and properly labeled. Store in cool, dry, well ventilated place away
+from heat, direct sunlight, strong oxidizers and any incompatibles. Store in approved containers
+and protect against physical damage. Keep containers securely sealed when not in use. Indoor
+storage should meet local standards and appropriate fire codes. Containers that have been
+opened must be carefully resealed to prevent leakage. Empty containers retain residue and may
+be dangerous. Avoid water contamination.
+7.3
+Specific end use(s)
+These precautions are for room temperature handling. Other uses including elevated temperatures
+or aerosol/spray applications may require added precautions.
+Section 8 - Exposure Controls / Personal Protection
+8.1
+Control parameters
+None defined
+8.2
+Exposure controls
+Respiratory Protection
+Respiratory protection is not normally required when using this product with adequate local
+exhaust ventilation. Where risk assessment shows air-purifying respirators are appropriate, follow
+OSHA respirator regulations 29 CFR 1910.134 and European Standards EN 141, 143 and 371;
+wear an MSHA/NIOSH or European Standards EN 141, 143 and 371 approved respirators
+equipped with appropriate filter cartridges as a backup to engineering controls.
+Hand Protection
+Wear any liquid-tight gloves such as butyl rubber, neoprene or PVC.
+Eye Protection
+Safety glasses with side shields per OSHA eye- and face-protection regulations 29 CFR 1910.133
+and European Standard EN166. Contact lenses are not eye protective devices. Appropriate eye
+protection must be worn instead of, or in conjunction with contact lenses.
+Other Protective Clothing/Equipment
+Additional protective clothing or equipment is not normally required. Provide eye bath and safety
+shower.
+Comments
+Never eat, drink, or smoke in work areas. Practice good personal hygiene after using
+this material, especially before eating, drinking, smoking, using the toilet, or applying cosmetics.
+Wash thoroughly after handling.
+Section 9 - Physical and Chemical Properties
+9.1 Information on basic physical and chemical properties
+Appearance:
+Fine powder
+Vapor pressure:
+No data
+
+===== PAGE 4 (native) =====
+SDS No. 1224
+Page 4 of 7
+Odor:
+Slight
+Vapor density (Air=1):
+450-650 kg/m3
+pH:
+6.5 – 8.5
+Evaporation rate:
+No data
+Flash Point:
+No data
+Solubility in water:
+Soluble
+Melting / freezing point:
+>800°C
+Specific Gravity
+(H2O=1, at 4 °C):
+No data
+Low / high boiling point:
+No data
+Relative density:
+No data
+Upper flammability limits:
+No data
+Auto-ignition temperature:
+400°C
+Lower flammability limits:
+No data
+Viscosity:
+50% dispersion
+Section 10 - Stability and Reactivity
+10.1 Reactivity
+No hazardous reactions if stored and handled as prescribed/indicated., No corrosive effect on
+metal. Not fire propagating.
+10.2 Chemical stability
+These products are stable at room temperature in closed containers under normal storage and
+handling conditions.
+10.3 Possibility of hazardous reactions
+Hazardous polymerization cannot occur
+10.4 Conditions to avoid
+None known
+10.5 Incompatible materials
+Strong bases and acids
+10.6 Hazardous decomposition products
+Thermal oxidative decomposition can produce carbon oxides, gasses/vapors, and traces of
+incompletely burned carbon compounds.
+Section 11- Toxicological Information
+11.1 Information on toxicological effects
+Acute Toxicity
+No data available
+Skin Corrosion/Irritation
+No data available
+Serious Eye Damage/Irritation
+No data available
+Respiratory/Skin Sensitization
+No data available
+Germ Cell Mutagenicity
+No data available
+Carcinogenicity
+No component of these products present at levels greater than or equal to 0.1% is identified as a
+carcinogen or potential carcinogen by IARC, ACGIH or NTP.
+
+===== PAGE 5 (native) =====
+SDS No. 1224
+Page 5 of 7
+Reproductive Toxicity
+No data available
+Specific Target Organ Toxicity – Single Exposure
+No data available
+Specific Target Organ Toxicity – Repeated Exposure
+No data available
+Aspiration Hazard
+No data available
+Potential Health Effects – Miscellaneous
+No data available
+Section 12 - Ecological Information
+12.1 Toxicity
+No data available
+12.2 Persistence and Degradability
+No data available
+12.3 Bioaccumulative Potential
+No data available
+12.4 Mobility in Soil
+No data available
+12.5 Results of PBT and vPvB assessment
+No data available
+12.6 Other Adverse Effects
+No data available
+Section 13 - Disposal Considerations
+13.1 Waste treatment methods
+Under RCRA it is the responsibility of the user of the product to determine at the time of disposal
+whether the product meets RCRA criteria for hazardous waste. Waste management should be in
+full compliance with federal, state and local laws.
+Empty containers retain product residue which may exhibit hazards of material, therefore to not
+pressurize, cut, glaze, weld or use for any other purposes. Return drums to reclamation centers for
+proper cleaning and reuse.
+Section 14 - Transport Information
+Not regulated by DOT, IATA or IMDG
+Section 15 - Regulatory Information
+15.1 Safety health and environmental regulations/legislation specific for the
+substance or mixture:
+
+===== PAGE 6 (native) =====
+SDS No. 1224
+Page 6 of 7
+REACH: Regulation (EC) No 1907/2006 of The European Parliament and of The Council of
+December 2006 (including amendments and corrigenda as of June 2020)
+This product complies with REACH or is not subject to regulation under REACH. The product does
+not contain an ingredient listed on either the Candidate List or Authorization List for Substances of
+Very High Concern (SVHC).
+In the United States (EPA Regulations)
+TSCA Inventory Status (40 CFR710)
+All components of this formulation are listed in the TSCA Inventory. No component of this
+formulation has been determined to be subject to manufacturing or use restrictions under the
+Significant New Use Rules (SNURs).
+CERCLA Hazardous Substance List (40 CFR 302.4)
+None known.
+SARA 302 Components
+No chemicals in this material are subject to the reporting requirements of SARA Title III, Section
+302.
+Superfund Amendments and Reauthorization Act of 1986 Title lll (Emergency Planning and
+community Right-to-Know Act of 1986) Sections 311 and 312
+None
+Superfund Amendments and Reauthorization Act of 1986 Title lll (Emergency Planning and
+Community Right-to-Know Act of 1986) Section 313
+This material does not contain any chemical components with known CAS numbers that exceed
+the threshold (De Minimis) reporting levels established by SARA Title III, Section 313.
+California Proposition 65
+This product does not intentionally contain any chemicals known to the state of California to cause
+cancer, birth defects or other reproductive harm.
+15.2 Chemical safety assessment
+No chemical safety assessment has been carried out for this substance/mixture by the supplier.
+16 - Other Information
+Revision Date: December 5, 2023 Version 3.0
+NFPA
+Abbreviations and acronyms
+ACGIH-American Conference of Governmental Industrial Hygienists; ANSI-American National
+Standards Institute; Canadian TDG-Canadian Transportation of Dangerous Goods; CAS-Chemical
+Abstract Service; Chemtrec-Chemical Transportation Emergency Center (US); CHIP-Chemical Hazard
+Information and Packaging; DSL-Domestic Substances List; EC-Equivalent Concentration; EH40 (UK)-
+HSE Guidance Note EH40 Occupational Exposure Limits; EPCRA-Emergency Planning and
+HMIS
+H
+1
+F
+0
+R
+0
+0
+0
+1
+0
+
+===== PAGE 7 (native) =====
+SDS No. 1224
+Page 7 of 7
+Community Right-To-Know Act; ESL-Effects screening levels; GHS-Globally Harmonized System of
+Classification and Labelling of Chemicals; HMIS-Hazardous Material Information Service; IATA-
+International Air Transport Association; IMDG-International Maritime Dangerous Goods Code; LC-Lethal
+Concentration; LD-Lethal Dose; LEL-Lower Explosion Level; NFPA-National Fire Protection Association;
+OEL-Occupational Exposure Limit; OSHA-Occupational Safety and Health Administration, US Dept. of
+Labor; PEL-Permissible Exposure Limit; SARA (Title III)-Superfund Amendments and Reauthorization
+Act; SARA 313-Superfund Amendments and Reauthorization Act, Section 313; SCBA-Self-Contained
+Breathing Apparatus; STEL-Short Term Exposure Limit; TCEQ-Texas Commission on Environmental
+Quality; TLV-Threshold Limit Value; TSCA-Toxic Substances Control Act Public Law 94-469; TWA-Time
+Weighted Value; UEL-Upper Explosion Level; US DOT-US Department of Transportation; WHMIS-
+Workplace Hazardous Materials Information System.
+Disclaimer
+The information contained in this Safety Data Sheet (SDS) is considered accurate as of the version
+date. However, no warranty is expressed or implied regarding the accuracy of the data. Since the use
+of this product is not within the control of Buddy Rhodes Concrete Products, it is the user's obligation to
+determine the suitability of the product for its intended application and assumes all risk and liability for its
+safe use.
+This SDS is prepared to comply with the Globally Harmonized System of Classification and Labelling of
+Chemicals (GHS) as prescribed by the United States (US) Occupational Safety and Health
+Administration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian Workplace
+Hazardous Materials Information System (WHMIS), and European Union Regulation (EC) No
+1907/2006 of the European Parliament and of the Council of 18 December 2006 (REACH).
+Classifications of the chemical in accordance with 29 CFR 1910.1200, signal word, hazard and
+precautionary statement(s), symbol(s) and other information are based on listed concentration of each
+hazardous ingredient. Unlisted ingredients are not "hazardous" per the OSHA Hazard Communication
+Standard (29 CFR 1910.1200), WHMIS and EC No 1907/2006 and are considered trade secrets under
+US Federal Law (29 CFR and 40 CFR), Canadian Law (Health Canada Legislation), and European
+Union Directives.

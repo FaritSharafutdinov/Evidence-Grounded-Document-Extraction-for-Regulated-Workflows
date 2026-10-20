@@ -1,0 +1,692 @@
+# TASK-011 worksheet — group E — sds_05.pdf / flash_point
+state=PRESENT  derivation=EXPLICIT  gold_value='>225°C (437°F) [ASTM D-92]'
+
+## gold evidence_set
+- page 7: 'Flash Point [Method]:\n>225°C (437°F) [ASTM D-92]'
+- page 3: 'Flash Point [Method]: >225°C (437°F) [ASTM D-92]'
+
+===== PAGE 1 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 1 of 13
+_____________________________________________________________________________________________________________________
+SAFETY DATA SHEET
+SECTION 1
+IDENTIFICATION OF THE SUBSTANCE / MIXTURE AND OF THE
+COMPANY / UNDERTAKING
+As of the revision date above, this SDS meets the regulations in the United Kingdom excluding Northern Ireland.
+1.1. PRODUCT IDENTIFIER
+Product Name: MOBIL SHC PM 220
+Product Description:
+Synthetic Base Stocks and Additives
+Product Code:
+201560501020, 603530-60
+1.2. RELEVANT IDENTIFIED USES OF THE SUBSTANCE OR MIXTURE AND USES ADVISED AGAINST
+Intended Use:
+Lubricant
+Uses advised against: None unless specified elsewhere in this SDS.
+1.3. DETAILS OF THE SUPPLIER OF THE SAFETY DATA SHEET
+Supplier:
+ExxonMobil Petroleum & Chemical BV
+POLDERDIJKWEG
+B-2030 Antwerpen
+Belgium
+Product Technical Information:
+(UK) 0800 028 2851
+Supplier General Contact:
+(UK) 0800 028 2851
+SDS Internet Address:
+www.msds.exxonmobil.com
+E-Mail:
+sds.uk@exxonmobil.com
+Supplier / Registrant:
+(BE) +32 3 790 3111
+1.4. EMERGENCY TELEPHONE NUMBER
+24 Hour Emergency Telephone:
+(UK) (+44) 870 8200418
+National Poison Control Centre:
+(UK) 111
+SECTION 2
+HAZARDS IDENTIFICATION
+2.1. CLASSIFICATION OF SUBSTANCE OR MIXTURE
+Classification according to CLP
+Not Classified
+2.2. LABEL ELEMENTS
+Label elements according to CLP
+
+===== PAGE 2 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 2 of 13
+_____________________________________________________________________________________________________________________
+Hazard Statements:
+Supplemental:
+EUH210: Safety data sheet available on request.
+EUH208: Contains: CALCIUM SULPHONATE May produce an allergic reaction.
+2.3. OTHER HAZARDS
+Physical / Chemical Hazards:
+No significant hazards.
+Health Hazards:
+High-pressure injection under skin may cause serious damage. Excessive exposure may result in eye, skin, or
+respiratory irritation.
+Environmental Hazards:
+No significant hazards.Material does not meet the criteria for PBT or vPvB in accordance with REACH Annex
+XIII.
+SECTION 3
+COMPOSITION / INFORMATION ON INGREDIENTS
+3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.
+3.2. MIXTURES
+This material is defined as a mixture.
+Reportable hazardous substance(s) complying with the classification criteria and/or with an exposure limit
+(OEL)
+Name
+CAS#
+EC#
+Registration#
+Concentration
+*
+GHS/CLP
+classification
+CALCIUM BIS(DI C8-C10, BRANCHED, C9
+RICH, ALKYLNAPTHALENESULPHONATE)
+-
+939-717-7
+01-2119980985-16
+0.1 - < 1%
+Skin Irrit. 2 H315,
+Eye Irrit. 2 H319,
+Skin Sens. 1B H317
+Distillates (petroleum), hydrotreated heavy
+paraffinic
+64742-54-7
+265-157-1
+01-2119484627-25
+1 - < 5%
+Asp. Tox. 1 H304
+TRIS (METHYLPHENYL) PHOSPHATE
+1330-78-5
+215-548-8
+01-2119531335-46
+0.1 - < 1%
+Aquatic Acute 1 H400 (M
+factor 1),
+Aquatic Chronic 1 H410
+(M factor 1),
+Repr. 2 H361f
+Note - any classification in brackets is a GHS building block that was not adopted in CLP and therefore is not applicable in the
+countries which have implemented CLP and is shown for informational purposes only.
+Note: See SDS Section 16 for full text of hazard statements.
+SECTION 4
+FIRST AID MEASURES
+
+===== PAGE 3 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 3 of 13
+_____________________________________________________________________________________________________________________
+4.1. DESCRIPTION OF FIRST AID MEASURES
+INHALATION
+Immediately remove from further exposure. Get immediate medical assistance. For those providing
+assistance, avoid exposure to yourself or others. Use adequate respiratory protection. Give supplemental
+oxygen, if available. If breathing has stopped, assist ventilation with a mechanical device.
+SKIN CONTACT
+Wash contact areas with soap and water. Remove contaminated clothing. Launder contaminated clothing
+before reuse. If product is injected into or under the skin, or into any part of the body, regardless of the
+appearance of the wound or its size, the individual should be evaluated immediately by a physician as a
+surgical emergency. Even though initial symptoms from high pressure injection may be minimal or absent, early
+surgical treatment within the first few hours may significantly reduce the ultimate extent of injury.
+EYE CONTACT
+Flush thoroughly with water. If irritation occurs, get medical assistance.
+INGESTION
+Seek immediate medical attention.
+4.2. MOST IMPORTANT SYMPTOMS AND EFFECTS, BOTH ACUTE AND DELAYED
+Local necrosis as evidenced by delayed onset of pain and tissue damage a few hours after injection.
+4.3. INDICATION OF ANY IMMEDIATE MEDICAL ATTENTION AND SPECIAL TREATMENT NEEDED
+The need to have special means for providing specific and immediate medical treatment available in the
+workplace is not expected.
+SECTION 5
+FIRE FIGHTING MEASURES
+5.1. EXTINGUISHING MEDIA
+Suitable Extinguishing Media: Use water fog, foam, dry chemical or carbon dioxide (CO2) to extinguish
+flames.
+Unsuitable Extinguishing Media: Straight streams of water
+5.2. SPECIAL HAZARDS ARISING FROM THE SUBSTANCE OR MIXTURE
+Hazardous Combustion Products: Aldehydes, Incomplete combustion products, Oxides of carbon, Smoke,
+Fume, Sulphur oxides
+5.3. ADVICE FOR FIRE FIGHTERS
+Fire Fighting Instructions: Evacuate area. Prevent run-off from fire control or dilution from entering
+streams, sewers or drinking water supply. Fire-fighters should use standard protective equipment and in
+enclosed spaces, self-contained breathing apparatus (SCBA). Use water spray to cool fire exposed surfaces
+and to protect personnel.
+FLAMMABILITY PROPERTIES
+Flash Point [Method]: >225°C (437°F) [ASTM D-92]
+Upper/Lower Flammable Limits (Approximate volume % in air): UEL: 7.0
+LEL: 0.9 [Estimated]
+Autoignition Temperature: No data available
+
+===== PAGE 4 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 4 of 13
+_____________________________________________________________________________________________________________________
+SECTION 6
+ACCIDENTAL RELEASE MEASURES
+6.1. PERSONAL PRECAUTIONS, PROTECTIVE EQUIPMENT AND EMERGENCY PROCEDURES
+NOTIFICATION PROCEDURES
+In the event of a spill or accidental release, notify relevant authorities in accordance with all applicable
+regulations.
+PROTECTIVE MEASURES
+Avoid contact with spilled material. See Section 5 for fire fighting information. See the Hazard
+Identification Section for Significant Hazards. See Section 4 for First Aid Advice. See Section 8 for
+advice on the minimum requirements for personal protective equipment. Additional protective measures
+may be necessary, depending on the specific circumstances and/or the expert judgment of the emergency
+responders.
+6.2. ENVIRONMENTAL PRECAUTIONS
+Large Spills: Dyke far ahead of liquid spill for later recovery and disposal. Prevent entry into waterways,
+sewers, basements or confined areas.
+6.3. METHODS AND MATERIAL FOR CONTAINMENT AND CLEANING UP
+Land Spill: Stop leak if you can do so without risk. Recover by pumping or with suitable absorbent.
+Water Spill: Stop leak if you can do so without risk. Confine the spill immediately with booms. Warn other
+shipping. Remove from the surface by skimming or with suitable absorbents. Seek the advice of a specialist
+before using dispersants.
+Water spill and land spill recommendations are based on the most likely spill scenario for this material;
+however, geographic conditions, wind, temperature, (and in the case of a water spill) wave and current direction
+and speed may greatly influence the appropriate action to be taken. For this reason, local experts should be
+consulted. Note: Local regulations may prescribe or limit action to be taken.
+6.4. REFERENCES TO OTHER SECTIONS
+See Sections 8 and 13.
+SECTION 7
+HANDLING AND STORAGE
+7.1. PRECAUTIONS FOR SAFE HANDLING
+Avoid all personal contact. Prevent small spills and leakage to avoid slip hazard. Material can accumulate static
+charges which may cause an electrical spark (ignition source). When the material is handled in bulk, an
+electrical spark could ignite any flammable vapors from liquids or residues that may be present (e.g., during
+switch-loading operations). Use proper bonding and/or earthing procedures. However, bonding and earthing
+may not eliminate the hazard from static accumulation. Consult local applicable standards for guidance.
+Additional references include American Petroleum Institute 2003 (Protection Against Ignitions Arising out of
+Static, Lightning and Stray Currents) or National Fire Protection Agency 77 (Recommended Practice on Static
+Electricity) or CENELEC CLC/TR 50404 (Electrostatics - Code of practice for the avoidance of hazards due to
+static electricity).
+Static Accumulator: This material is a static accumulator.
+
+===== PAGE 5 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 5 of 13
+_____________________________________________________________________________________________________________________
+7.2. CONDITIONS FOR SAFE STORAGE, INCLUDING ANY INCOMPATIBILITIES
+The type of container used to store the material may affect static accumulation and dissipation. Do not store
+in open or unlabelled containers.
+7.3. SPECIFIC END USES
+Section 1 informs about identified end-uses. No industrial or sector specific guidance available.
+SECTION 8
+EXPOSURE CONTROLS / PERSONAL PROTECTION
+8.1. CONTROL PARAMETERS
+EXPOSURE LIMIT VALUES
+Exposure limits/standards (Note: Exposure limits are not additive)
+Substance Name
+Form
+Limit/Standard
+Note
+Source
+Distillates (petroleum), hydrotreated
+heavy paraffinic
+Inhalable
+fraction.
+TWA
+5 mg/m3
+ACGIH
+Exposure limits/standards for materials that can be formed when handling this product: When mists/aerosols
+can occur the following is recommended: 5 mg/m³ - ACGIH TLV (inhalable fraction).
+Note: Information about recommended monitoring procedures can be obtained from the relevant
+agency(ies)/institute(s):
+UK
+Health and Safety Executive (HSE)
+DERIVED NO EFFECT LEVEL (DNEL)/DERIVED MINIMAL EFFECT LEVEL (DMEL)
+Worker
+Substance Name
+Dermal
+Inhalation
+Distillates (petroleum), hydrotreated
+heavy paraffinic
+NA
+5.4 mg/m3 DNEL, Chronic
+Exposure, Local Effects
+Consumer
+Substance Name
+Dermal
+Inhalation
+Oral
+Distillates (petroleum), hydrotreated
+heavy paraffinic
+NA
+1.2 mg/m3 DNEL, Chronic
+Exposure, Local Effects
+NA
+Note: The Derived No Effect Level (DNEL) is an estimated safe level of exposure that is derived from toxicity data in
+accord with specific guidance within the REACH regulation. The DNEL may differ from an Occupational Exposure Limit
+(OEL) for the same chemical. OELs may be recommended by an individual company, a governmental regulatory body
+or an expert organization, such as the Scientific Committee for Occupational Exposure Limits (SCOEL) or the American
+Conference of Governmental Industrial Hygienists (ACGIH). OELs are considered to be safe exposure levels for a
+typical worker in an occupational setting for an 8-hour work shift, 40 hour work week, as a time weighted average (TWA)
+or a 15 minute short-term exposure limit (STEL). While also considered to be protective of health, OELs are derived by
+a process different from that of REACH.
+
+===== PAGE 6 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 6 of 13
+_____________________________________________________________________________________________________________________
+PREDICTED NO EFFECT CONCENTRATION (PNEC)
+Substance Name
+Aqua
+(fresh
+water)
+Aqua
+(marine
+water)
+Aqua
+(intermittent
+release)
+Sewage
+treatment
+plant
+Sediment
+Soil
+Oral
+(secondary
+poisoning)
+Distillates
+(petroleum),
+hydrotreated heavy
+paraffinic
+NA
+NA
+NA
+NA
+NA
+NA
+9.33 mg / kg
+(food)
+8.2. EXPOSURE CONTROLS
+ENGINEERING CONTROLS
+The level of protection and types of controls necessary will vary depending upon potential exposure conditions.
+Control measures to consider:
+No special requirements under ordinary conditions of use and with adequate ventilation.
+PERSONAL PROTECTION
+Personal protective equipment selections vary based on potential exposure conditions such as applications,
+handling practices, concentration and ventilation. Information on the selection of protective equipment for use
+with this material, as provided below, is based upon intended, normal usage.
+Respiratory Protection: If engineering controls do not maintain airborne contaminant concentrations at a
+level which is adequate to protect worker health, an approved respirator may be appropriate. Respirator
+selection, use, and maintenance must be in accordance with regulatory requirements, if applicable. Types of
+respirators to be considered for this material include:
+No special requirements under ordinary conditions of use and with adequate ventilation.
+For high airborne concentrations, use an approved supplied-air respirator, operated in positive pressure mode.
+Supplied air respirators with an escape bottle may be appropriate when oxygen levels are inadequate,
+gas/vapour warning properties are poor, or if air purifying filter capacity/rating may be exceeded.
+Hand Protection: Any specific glove information provided is based on published literature and glove
+manufacturer data. Glove suitability and breakthrough time will differ depending on the specific use conditions.
+Contact the glove manufacturer for specific advice on glove selection and breakthrough times for your use
+conditions. Inspect and replace worn or damaged gloves. The types of gloves to be considered for this material
+include:
+Chemical resistant gloves are recommended. Nitrile, minimum 0.38 mm thickness or comparable
+protective barrier material with a high performance level for continuous contact use conditions,
+permeation breakthrough minimum 480 minutes in accordance with CEN standards EN 420 and EN
+374.
+Eye Protection: If contact is likely, safety glasses with side shields are recommended.
+Skin and Body Protection: Any specific clothing information provided is based on published literature or
+manufacturer data. The types of clothing to be considered for this material include:
+Chemical/oil resistant clothing is recommended.
+
+===== PAGE 7 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 7 of 13
+_____________________________________________________________________________________________________________________
+Specific Hygiene Measures: Always observe good personal hygiene measures, such as washing after
+handling the material and before eating, drinking, and/or smoking. Routinely wash work clothing and
+protective equipment to remove contaminants. Discard contaminated clothing and footwear that cannot be
+cleaned. Practice good housekeeping.
+ENVIRONMENTAL CONTROLS
+Comply with applicable environmental regulations limiting discharge to air, water and
+soil. Protect the environment by applying appropriate control measures to prevent or limit
+emissions.
+SECTION 9
+PHYSICAL AND CHEMICAL PROPERTIES
+Note: Physical and chemical properties are provided for safety, health and environmental considerations only
+and may not fully represent product specifications. Contact the Supplier for additional information.
+9.1. INFORMATION ON BASIC PHYSICAL AND CHEMICAL PROPERTIES
+Physical State: Liquid
+Colour: Amber
+Odour: Characteristic
+Odour Threshold: No data available
+pH: Not technically feasible
+Melting Point: Not technically feasible
+Freezing Point: No data available
+Initial Boiling Point / and Boiling Range: > 200°C (392°F) [Estimated]
+Flash Point [Method]:
+>225°C (437°F) [ASTM D-92]
+Evaporation Rate (n-butyl acetate = 1): No data available
+Flammability (Solid, Gas): Not technically feasible
+Upper/Lower Flammable Limits (Approximate volume % in air): UEL: 7.0
+LEL: 0.9 [Estimated]
+Vapour Pressure: < 0.013 kPa (0.1 mm Hg) at 20 °C [Estimated]
+Vapour Density (Air = 1): > 2 at 101 kPa [Estimated]
+Relative Density (at 15.6 °C): 0.865 [ASTM D1298]
+Solubility(ies): water Negligible
+Partition coefficient (n-Octanol/Water Partition Coefficient): > 3.5 [Estimated]
+Autoignition Temperature: No data available
+Decomposition Temperature: No data available
+Viscosity: 220 cSt (220 mm2/sec) at 40ºC | 26.2 cSt (26.2 mm2/sec) at 100°C [ASTM D 445]
+Explosive Properties: None
+Oxidizing Properties: None
+9.2. OTHER INFORMATION
+Pour Point: -36°C (-33°F) [ASTM D97]
+SECTION 10
+STABILITY AND REACTIVITY
+10.1. REACTIVITY: See sub-sections below.
+
+===== PAGE 8 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 8 of 13
+_____________________________________________________________________________________________________________________
+10.2. CHEMICAL STABILITY: Material is stable under normal conditions.
+10.3. POSSIBILITY OF HAZARDOUS REACTIONS: Hazardous polymerization will not occur.
+10.4. CONDITIONS TO AVOID: Excessive heat. High energy sources of ignition.
+10.5. INCOMPATIBLE MATERIALS: Strong oxidisers
+10.6. HAZARDOUS DECOMPOSITION PRODUCTS: Material does not decompose at ambient temperatures.
+SECTION 11
+TOXICOLOGICAL INFORMATION
+11.1. INFORMATION ON TOXICOLOGICAL EFFECTS
+Hazard Class
+Conclusion / Remarks
+Inhalation
+Acute Toxicity: No end point data for
+material.
+Minimally Toxic. Based on assessment of the components.
+Irritation: No end point data for material.
+Negligible hazard at ambient/normal handling temperatures.
+Ingestion
+Acute Toxicity: No end point data for
+material.
+Minimally Toxic. Based on assessment of the components.
+Skin
+Acute Toxicity: No end point data for
+material.
+Minimally Toxic. Based on assessment of the components.
+Skin Corrosion/Irritation: No end point data
+for material.
+Negligible irritation to skin at ambient temperatures. Based on
+assessment of the components.
+Eye
+Serious Eye Damage/Irritation: No end point
+data for material.
+May cause mild, short-lasting discomfort to eyes. Based on
+assessment of the components.
+Sensitisation
+Respiratory Sensitization: No end point data
+for material.
+Not expected to be a respiratory sensitizer.
+Skin Sensitization: No end point data for
+material.
+Not expected to be a skin sensitizer. Based on assessment of the
+components.
+Aspiration: Data available.
+Not expected to be an aspiration hazard. Based on physico-
+chemical properties of the material.
+Germ Cell Mutagenicity: No end point data
+for material.
+Not expected to be a germ cell mutagen. Based on assessment of
+the components.
+Carcinogenicity: No end point data for
+material.
+Not expected to cause cancer. Based on assessment of the
+components.
+Reproductive Toxicity: No end point data
+for material.
+Contains a substance that may be a reproductive toxicant. Based
+on assessment of the components.
+Lactation: No end point data for material.
+Not expected to cause harm to breast-fed children.
+Specific Target Organ Toxicity (STOT)
+Single Exposure: No end point data for
+material.
+Not expected to cause organ damage from a single exposure.
+Repeated Exposure: No end point data for
+material.
+Not expected to cause organ damage from prolonged or repeated
+exposure. Based on assessment of the components.
+
+===== PAGE 9 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 9 of 13
+_____________________________________________________________________________________________________________________
+OTHER INFORMATION
+For the product itself:
+Component concentrations in this formulation would not be expected to cause skin sensitization, based on tests of the
+components, this formulation, or similar formulations.
+Contains:
+Synthetic base oils: Not expected to cause significant health effects under conditions of normal use, based on
+laboratory studies with the same or similar materials. Not mutagenic or genotoxic. Not sensitising in test animals and
+humans. Tricresyl phosphate (TCP): TCP (<9% ortho isomer) administered to rats by oral gavage in a one-
+generation reproduction/developmental toxicology study adversely affected both males and females. TCP-treated male
+rats had decreased sperm concentration and motility, abnormal sperm morphology and adverse histologic changes in
+the testes and epididymides. Adverse histologic changes were also observed in the ovaries of TCP-treated female rats.
+The percent of sperm-positive females littering was significantly reduced in the TCP-treatment groups with only one of
+twenty females in the high dose group delivering young . Developmental parameters were unaffected by TCP exposure.
+Impaired fertility and decreased sperm motility following TCP treatment have also been reported in a reproduction
+toxicity study in mice.
+SECTION 12
+ECOLOGICAL INFORMATION
+The information given is based on data for the material, components of the material, or for similar materials, through the
+application of bridging principals.
+12.1. TOXICITY
+Material -- Not expected to be harmful to aquatic organisms.
+12.2. PERSISTENCE AND DEGRADABILITY
+Biodegradation:
+A component -- Expected to be inherently biodegradable
+Base oil component -- Expected to be persistent.
+12.3. BIOACCUMULATIVE POTENTIAL Not determined.
+12.4. MOBILITY IN SOIL
+Majority of components -- Low solubility and floats and is expected to migrate from water to the land.
+Expected to partition to sediment and wastewater solids.
+12.5. PERSISTENCE, BIOACCUMULATION AND TOXICITY FOR SUBSTANCE(S)
+Material does not meet the Reach Annex XIII criteria for PBT or vPvB.
+12.6. OTHER ADVERSE EFFECTS
+No adverse effects are expected.
+SECTION 13
+DISPOSAL CONSIDERATIONS
+Disposal recommendations based on material as supplied. Disposal must be in accordance with current applicable
+laws and regulations, and material characteristics at time of disposal.
+13.1. WASTE TREATMENT METHODS
+Product is suitable for burning in an enclosed controlled burner for fuel value or disposal by supervised
+
+===== PAGE 10 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 10 of 13
+_____________________________________________________________________________________________________________________
+incineration at very high temperatures to prevent formation of undesirable combustion products.
+European Waste Code: 13 02 06*
+NOTE: These codes are assigned based upon the most common uses for this material and may not reflect
+contaminants resulting from actual use. Waste producers need to assess the actual process used when
+generating the waste and its contaminants in order to assign the proper waste disposal code(s).
+This material is considered as hazardous waste pursuant to The Hazardous Waste Regulations (HWR), and
+subject to the provisions of those Regulations.
+Empty Container Warning Empty Container Warning (where applicable): Empty containers may contain residue
+and can be dangerous. Do not attempt to refill or clean containers without proper instructions. Empty drums should
+be completely drained and safely stored until appropriately reconditioned or disposed. Empty containers should be
+taken for recycling, recovery, or disposal through suitably qualified or licensed contractor and in accordance with
+governmental regulations. DO NOT PRESSURISE, CUT, WELD, BRAZE, SOLDER, DRILL, GRIND, OR EXPOSE
+SUCH CONTAINERS TO HEAT, FLAME, SPARKS, STATIC ELECTRICITY, OR OTHER SOURCES OF IGNITION.
+THEY MAY EXPLODE AND CAUSE INJURY OR DEATH.
+SECTION 14
+TRANSPORT INFORMATION
+LAND (ADR/RID): 14.1-14.6 Not Regulated for Land Transport
+INLAND WATERWAYS (ADN): 14.1-14.6 Not Regulated for Inland Waterways Transport
+SEA (IMDG): 14.1-14.6 Not Regulated for Sea Transport according to IMDG-Code
+SEA (MARPOL 73/78 Convention - Annex II):
+14.7. Transport in bulk according to Annex II of MARPOL 73/78 and the IBC Code
+Not classified according to Annex II
+AIR (IATA): 14.1-14.6 Not Regulated for Air Transport
+SECTION 15
+REGULATORY INFORMATION
+REGULATORY STATUS AND APPLICABLE LAWS AND REGULATIONS
+Listed or exempt from listing/notification on the following chemical inventories (May contain
+substance(s) subject to notification to the EPA Active TSCA inventory prior to import to USA): AIIC,
+DSL, ENCS, IECSC, ISHL, KECI, TCSI, TSCA
+Special Cases:
+Inventory
+Status
+PICCS
+Restrictions Apply
+
+===== PAGE 11 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 11 of 13
+_____________________________________________________________________________________________________________________
+15.1. SAFETY, HEALTH AND ENVIRONMENTAL REGULATIONS/LEGISLATION SPECIFIC FOR THE
+SUBSTANCE OR MIXTURE
+Applicable UK legislation:
+REACH [... Registration, Evaluation, Authorisation and Restriction of Chemicals ... and
+amendments thereto]
+CLP [Classification, labelling and packaging of substances and mixtures.. and amendments
+thereto]
+REACH Restrictions on the manufacturing, placing on the market and use of certain dangerous
+substances, mixtures and articles (Annex XVII):
+The following entries of Annex XVII may be considered for this product: None
+15.2. CHEMICAL SAFETY ASSESSMENT
+REACH Information: A Chemical Safety Assessment has been carried out for one or more substances present in the
+material.
+SECTION 16
+OTHER INFORMATION
+REFERENCES: Sources of information used in preparing this SDS included one or more of the following: results
+from in house or supplier toxicology studies, CONCAWE Product Dossiers, publications from other trade associations,
+such as the EU Hydrocarbon Solvents REACH Consortium, U.S. HPV Program Robust Summaries, the EU IUCLID
+Data Base, U.S. NTP publications, and other sources, as appropriate.
+List of abbreviations and acronyms that could be (but not necessarily are) used in this safety data sheet:
+Acronym
+Full text
+N/A
+Not applicable
+N/D
+Not determined
+NE
+Not established
+VOC
+Volatile Organic Compound
+AIIC
+Australian Inventory of Industrial Chemicals
+AIHA WEEL
+American Industrial Hygiene Association Workplace Environmental Exposure Limits
+ASTM
+ASTM International, originally known as the American Society for Testing and Materials (ASTM)
+DSL
+Domestic Substance List (Canada)
+EINECS
+European Inventory of Existing Commercial Substances
+ELINCS
+European List of Notified Chemical Substances
+ENCS
+Existing and new Chemical Substances (Japanese inventory)
+IECSC
+Inventory of Existing Chemical Substances in China
+KECI
+Korean Existing Chemicals Inventory
+NDSL
+Non-Domestic Substances List (Canada)
+NZIoC
+New Zealand Inventory of Chemicals
+PICCS
+Philippine Inventory of Chemicals and Chemical Substances
+TLV
+Threshold Limit Value (American Conference of Governmental Industrial Hygienists)
+TSCA
+Toxic Substances Control Act (U.S. inventory)
+UVCB
+Substances of Unknown or Variable composition, Complex reaction products or Biological materials
+
+===== PAGE 12 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 12 of 13
+_____________________________________________________________________________________________________________________
+LC
+Lethal Concentration
+LD
+Lethal Dose
+LL
+Lethal Loading
+EC
+Effective Concentration
+EL
+Effective Loading
+NOEC
+No Observable Effect Concentration
+NOELR
+No Observable Effect Loading Rate
+KEY TO THE H-CODES CONTAINED IN SECTION 3 OF THIS DOCUMENT (for information only):
+Asp. Tox. 1 H304: May be fatal if swallowed and enters airways; Aspiration, Cat 1
+Skin Irrit. 2 H315: Causes skin irritation; Skin Corr/Irritation, Cat 2
+Skin Sens. 1 H317: May cause allergic skin reaction; Skin Sensitization, Cat 1
+Eye Irrit. 2 H319: Causes serious eye irritation; Serious Eye Damage/Irr, Cat 2
+Repr. 2 H361f: Suspected of damaging fertility; Repro Tox, Cat 2 (Fertility)
+Aquatic Acute 1 H400: Very toxic to aquatic life; Acute Env Tox, Cat 1
+Aquatic Chronic 1 H410: Very toxic to aquatic life with long lasting effects; Chronic Env Tox, Cat 1
+THIS SAFETY DATA SHEET CONTAINS THE FOLLOWING REVISIONS:
+Composition: Component Table for REACH information was modified.
+dnel table notes information was modified.
+GHS CLP Supplemental Statements information was added.
+GHS Target Organ Phrase information was deleted.
+Hazard Identification: Section 3 Footnotes for CLP tables information was modified.
+Section 01: Company Contact Methods information was modified.
+Section 01: Company Emergency Contact information was modified.
+Section 02: GHS Sensitizer Statement information was added.
+Section 02: GHS Sensitizer Statement information was deleted.
+Section 13: European Waste Code Hazardous Note information was modified.
+Section 15: EU Directives and Regulations information was modified.
+Section 15: REACH Annex XVII data information was added.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+The information and recommendations contained herein are, to the best of ExxonMobil's knowledge and belief, accurate
+and reliable as of the date issued. You can contact ExxonMobil to insure that this document is the most current
+available from ExxonMobil. The information and recommendations are offered for the user's consideration and
+examination. It is the user's responsibility to satisfy itself that the product is suitable for the intended use. If buyer
+repackages this product, it is the user's responsibility to insure proper health, safety and other necessary information is
+included with and/or on the container. Appropriate warnings and safe-handling procedures should be provided to
+handlers and users. Alteration of this document is strictly prohibited. Except to the extent required by law, re-
+publication or retransmission of this document, in whole or in part, is not permitted. The term, "ExxonMobil" is used for
+convenience, and may include any one or more of ExxonMobil Chemical Company, Exxon Mobil Corporation, or any
+affiliates in which they directly or indirectly hold any interest.
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+Internal Use Only
+MHC: 0, 0, 0, 0, 0, 0
+PPEC: A
+DGN: 2008118XGB (546845)
+
+===== PAGE 13 (native) =====
+Product Name: MOBIL SHC PM 220
+Revision Date: 24 Feb 2021
+Revision Number: 1.11
+Page 13 of 13
+_____________________________________________________________________________________________________________________
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+This product is not classified for human health and environmental hazards, and an exposure scenario is not required.
+This SDS conveys the appropriate risk management measures.
+ANNEX
+Annex not required for this material.

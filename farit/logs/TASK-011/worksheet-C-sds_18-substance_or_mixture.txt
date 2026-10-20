@@ -1,0 +1,72 @@
+# TASK-011 worksheet — group C — sds_18.pdf / substance_or_mixture
+state=PRESENT  derivation=COMPOSITION_IMPLIED  gold_value='MIXTURE'
+
+## gold evidence_set
+- page 5: 'Ingredient\nC.A.S. No.\n% by Wt'
+- page 5: '35% of the mixture consists of ingredients of unknown acute oral toxicity.'
+
+===== PAGE 5 (native) =====
+3M™ Plastic Repair, Semi-Rigid PNs 04240 (Part A)
+07/15/20
+__________________________________________________________________________________________
+Page 3 of
+12
+Supplemental Information:
+Persons previously sensitized to isocyanates may develop a cross-sensitization reaction to other isocyanates.
+35% of the mixture consists of ingredients of unknown acute oral toxicity.
+SECTION 3: Composition/information on ingredients
+Ingredient
+C.A.S. No.
+% by Wt
+Castor Oil, Polymer With 1,1'-Methylenebis[4-
+Isocyanatobenzene]
+68424-09-9
+30 - 60 Trade Secret *
+P,P'-Methylenebis(phenyl isocyanate)
+101-68-8
+30 - 60 Trade Secret *
+4,4'-Diisocyanatodiphenylmethane polymer
+25686-28-6
+< 20 Trade Secret *
+Oxirane, Methyl-, Polymer With Oxirane, Ether With
+1,2,3-Propanetriol (3:1), Polymer With 1,1'-
+Methylenebis[4-Isocyantobenzene]
+59675-67-1
+1 - 5 Trade Secret *
+Carbon Black
+1333-86-4
+0.1 - 1 Trade Secret *
+Chromium Compound 1
+71701-12-7
+0.01 - 0.3 Trade Secret
+*
+Chromium Compound 2
+74421-71-9
+0.01 - 0.1 Trade Secret
+*
+Chromium Compound 3
+71839-90-2
+0.01 - 0.1 Trade Secret
+*
+Chromium
+7440-47-3
+< 0.02 Trade Secret *
+*The specific chemical identity and/or exact percentage (concentration) of this composition has been withheld as a trade
+secret.
+SECTION 4: First aid measures
+4.1. Description of first aid measures
+Inhalation:
+Remove person to fresh air. If you feel unwell, get medical attention.
+Skin Contact:
+Immediately wash with soap and water. Remove contaminated clothing and wash before reuse. If signs/symptoms
+develop, get medical attention.
+Eye Contact:
+Immediately flush with large amounts of water. Remove contact lenses if easy to do. Continue rinsing. Get medical
+attention.
+If Swallowed:
+Rinse mouth. If you feel unwell, get medical attention.
+4.2. Most important symptoms and effects, both acute and delayed
+See Section 11.1. Information on toxicological effects.
+4.3. Indication of any immediate medical attention and special treatment required
+Not applicable
+SECTION 5: Fire-fighting measures

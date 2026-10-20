@@ -1,0 +1,84 @@
+# TASK-011 worksheet — group B — sds_02.pdf / chemical_formula
+state=NOT_APPLICABLE  derivation=ONTOLOGY  gold_value=None
+
+## gold evidence_set
+- page 4: 'Substance or preparation: Preparation'
+
+===== PAGE 4 (native) =====
+Reference number: SDS-IAT-00005
+Establishment / Revision: Jan. 1, 2026
+2/5
+3. COMPOSITION / INFORMATION ON INGREDIENTS
+ Substance or preparation: Preparation
+ Information about the chemical nature of product: a
+Portion
+Material name
+CAS No.
+Concentration
+range (wt %)
+Positive electrode
+Lithium transition metal oxidate
+(Li[M]m[O]n b)
+12190-79-3
+12031-65-1
+12057-17-9
+182442-95-1
+207803-51-8
+20~60
+Positive electrode’s base
+Aluminum
+7429-90-5
+1~10
+Negative electrode
+Carbon
+7782-42-5
+7440-44-0
+10~30
+Negative electrode’s base
+Copper
+7440-50-8
+1~15
+Electrolyte
+Ethyl methyl carbonate
+Diethyl carbonate
+Ethylene carbonate
+Lithium hexafluorophosphate
+623-53-0
+105-58-8
+96-49-1
+21324-40-3
+5~25
+Outer case
+Aluminum, iron, aluminum laminated
+plastic
+7429-90-5
+7439-89-6
+1~30
+a Not every product includes all of these materials.
+b The letter M means transition metal and candidates of M are Co, Mn, Ni and Al. One compound
+includes one or more of these metals and one product includes one or more of the compounds.
+The letter m and n means the number of atoms.
+4. FIRST-AID MEASURES
+Spilled internal cell materials
+ Inhalation:
+Make the victim blow his/her nose, gargle. Seek medical attention if necessary.
+ Skin contact:
+Remove contaminated clothes and shoes immediately. Wash extraneous matter or contact region with
+soap and plenty of water immediately.
+ Eye contact:
+Do not rub one’s eyes. Immediately flush eyes with water continuously for at least 15 minutes. Seek
+medical attention immediately.
+A battery cell and spilled internal cell materials
+ Ingestion:
+Wash out mouth thoroughly. Do not make the victim vomit, unless instructed by medical personnel. Seek
+medical attention immediately.
+5. FIRE-FIGHTING MEASURES
+ Suitable extinguishing media
+Initial fire: Chemical powder fire extinguishing medium, carbon dioxide gas, fire foam and plenty of water.
+Large-scale fire: (Large amounts of) water spray, water mist and fire foam
+ Specific hazards: Corrosive gas may be emitted during fire.
+ Specific methods of fire-fighting: When the battery burns with other combustibles simultaneously, take fire-
+extinguishing method which correspond to the combustibles. Extinguish a fire from the windward as much
+as possible.
+ Special protective equipment for firefighters: Refer to Section 8-EXPOSURE CONTROLS / PERSONAL
+PROTECTION (WHEN THE ELECTROLYTE LEAKS)

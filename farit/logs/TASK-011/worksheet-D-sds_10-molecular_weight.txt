@@ -1,0 +1,43 @@
+# TASK-011 worksheet — group D — sds_10.pdf / molecular_weight
+state=NOT_STATED  derivation=ABSENT  gold_value=None
+
+## gold evidence_set
+
+===== PAGE 1 (native) =====
+44002 Rev. 00 Page 1 of 4 Issue date: 10/28/2016
+Alternative Documentation to a Safety Data Sheet (SDS)
+Designation of ‘ARTICLES’
+The U.S Occupational Safety & Health Administration’s (OSHA) Hazard Communications
+Standard (HCS) 29 CFR 1910.1200(g) requires that chemical manufacturers, distributors or
+importers provide a Safety Data Sheet (SDS) for each hazardous chemical they produce or
+import. The SDS must communicate information on these hazards to all users who have contact
+with the chemical.
+As defined in 29 CFR 1910.1200(c), an “Article” is a manufactured item other than a fluid or
+particle:
+i. which is formed to a specific shape or design during manufacture
+ii. which has end use function(s) dependent in whole or in part upon its shape or
+design during end use; and
+iii. which under normal conditions of use does not release more than very small
+quantities, e.g., minute or trace amounts of a hazardous chemical (as
+determined under paragraph (d) of CFR 1910.1200), and does not pose a
+physical hazard or health risk to employees.
+In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,
+and therefore, do not require an SDS be created or provided to end users.
+The following information is being provided in SDS format as a customer courtesy.
+1. PRODUCT AND COMPANY IDENTIFICATION
+Product Name:
+CIP Composites
+Company:
+Columbia Industrial Products
+29538 Airport Rd., Unit A
+Eugene, OR 97402
+Product Use:
+Bearing and wear material
+Emergency phone number:
+541-607-3655
+2. HAZARDS IDENTIFICATION
+CIP Composites are non-toxic in solid form. These products should not present a health
+or safety hazard under normal use.
+3. COMPOSITION/INFORMATION ON INGREDIENTS
+The product contains no substances which, at their given concentration, are considered
+to be hazardous to health.

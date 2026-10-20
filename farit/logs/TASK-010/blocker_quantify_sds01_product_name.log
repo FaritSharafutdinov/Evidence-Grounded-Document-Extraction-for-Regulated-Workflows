@@ -1,0 +1,19 @@
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2246.07it/s]
+MODEL=mlx-community/Qwen3.5-2B-MLX-4bit
+instance=sds_01.pdf:product_name (native), gold page = 1, n_pages=9
+
+page |    score | gold
+------------------------------
+   1 |   0.9831 | GOLD
+   2 |   0.9724 | 
+   3 |   0.9770 | 
+   4 |   0.9756 | 
+   5 |   0.9756 | 
+   6 |   0.9724 | 
+   7 |   0.9669 | 
+   8 |   0.9689 | 
+   9 |   0.9724 | 
+
+ranking (desc): [1, 3, 5, 4, 9, 6, 2, 8, 7]
+gold page 1 rank: 1 of 9
+min=0.9669 max=0.9831 mean=0.9738 n_saturated=0

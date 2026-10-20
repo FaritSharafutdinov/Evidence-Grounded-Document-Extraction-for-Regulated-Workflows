@@ -1,0 +1,118 @@
+# TASK-011 worksheet — group A — sds_11.pdf / product_name
+state=PRESENT  derivation=EXPLICIT  gold_value='LD COVID-19 IgG Rapid Test'
+
+## gold evidence_set
+- page 1: 'Product identifier:\nLD COVID-19 IgG Rapid Test (Art.-No. COV19_G_10_EN)'
+
+===== PAGE 1 (native) =====
+MSDS (Material Safety Data Sheet /
+Sicherheitsdatenblatt)
+DO 619
+DO 619
+Revision /Fassung Nr.:
+2.0
+Gültig ab:
+03.07.2017
+QMH – Abschnitt:
+5.5
+Seiten:
+1 von 10
+Ausgefülltes Dokument:
+Revision /Fassung Nr.:
+1.0
+Gültig ab:
+28.05.2020
+Produktname:
+LD COVID-19 IgG Rapid Test
+Katolog –Nr.:
+COV19_G_10_EN
+EG Material Safety Data Sheet according to
+Safety Data Sheet according to Regulation (EG) 2015/830 Regulation, (EU) No. 1272/2008 (+ Subsequent ATPs) and
+REACH Regulation 1907/2006 EC (+ Subsequent Regulations)
+Date: 28.05.2020
+Rev. 1.0
+SECTION 1. Identification of the substance/mixture and of the company/undertaking
+1.1. 1.1. Product identifier:
+LD COVID-19 IgG Rapid Test (Art.-No. COV19_G_10_EN)
+1.2. Relevant identified uses of the substance or mixture and uses advised against
+The LD COVID-19 IgG Rapid Test is a visual test for the qualitative detection of IgG antibodies to SARS-CoV-2 in human
+serum, plasma, or whole blood within 15 min (latest 20 min). The test is for professional in vitro diagnostic use only
+and intended to aid in the diagnosis of SARS-CoV-2 infection and to complement direct pathogen detection. Serology
+can also be used to collect epidemiological data. The product is intended for use as an IVD but can also be used for
+research purposes. Contains 2 components (test cassette and diluent buffer) as liquids or solid phase.
+1.3. Details of the supplier of the safety data sheet
+Lionex GmbH
+Salzdahlumer Str. 196, Geb. 1A
+D-38126 Braunschweig
+www.lionex.de
+Tel. +49(0)531 / 2601266
+FAX +49(0)531 / 6180654
+e-mail: info@lionex.de
+Contact person: Prof. Dr. Singh:
+Tel. +49(0)175 / 594 2291
+1.4. Emergency telephone number
+Germany:
+Giftinformationszentrum-Nord der Länder Bremen,
+Hamburg, Niedersachsen und Schleswig-Holstein
+Robert-Koch-Straße 40
+37075 Göttingen
+Tel.: .+49(0)0551 / 19240
+International:
+Belgien / Belgium:
++32(70) 245 245
+Polen / Poland:
++48 (42) 657 99 00
+Bulgarien / Bulgaria:
++359 (2) 515 32 34
+Portugal / Portogal:
++351 (1) 795 01 43
+Dänemark / Denmark:
++45 (35) 316 060
+Russische – Föderation / Russia
++7 (95) 928 16 47
+Finnland / Finland:
++358 (9) 471 977
+Schweden / Sweden:
++46 (8) 736 03 84
+Frankreich / France:
++33 (3) 883 737 37
+Schweiz / Switzerland:
++41 (1) 251 51 51
+Griechenland / Greece:
++30 (1) 799 37 77
+Slowakei / Slovakia:
++00421 (17) 547 741 66
+Großbritannien / GB:
++44 (171) 635 91 91
+Slowenien / Slovenia:
++386 (61) 302 457
+Holland / Dutch:
++31 (30) 274 88 88
+Spanien / Spain:
++34 (91) 562 84 69
+Israel / Israel:
++972 (4) 852 92 05
+Tschechien / Czech Republik:
++42 (02) 249 192 93
+Italien / Italia:
++39 (6) 490 663
+Türkei / Turkey:
++90 (312) 433 70 01
+Kroatien / Croatia:
++385 (1) 222 302
+Ungarn / Hungary:
++36 (1) 215 215
+Litauen / Lithuania:
++370 (2) 269 583
+Österreich / Austria:
++43 (1) 406 43 43
+Norwegen / Norway:
++47 (22) 591 300
+SECTION 2. Hazards identification
+2.1. Classification of the substance or mixture
+Classification of components of the whole preparation according to Regulation (EG) No. 1272/2008:
+Not hazardous for human health or the environment in any way.
+2.2. Label elements
+Labelling and hazard notes according to Regulation (EG) No. 1272/2008:
+Not hazardous. Labelling not required.
+Signal word: none

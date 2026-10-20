@@ -1,0 +1,674 @@
+# TASK-011 worksheet — group E — sds_12.pdf / product_name
+state=PRESENT  derivation=EXPLICIT  gold_value='Bone Meal'
+
+## gold evidence_set
+- page 1: '1.1 Product identifier\nBone Meal'
+
+===== PAGE 1 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 1 of 10
+1. IDENTIFICATION OF THE SUBSTANCE/PREPARATION AND OF THE COMPANY
+1.1 Product identifier
+Bone Meal
+1.2 Relevant identified use Garden Fertiliser
+1.3 Details of the supplier of the data sheet
+Westland Horticulture Ltd
+14 Granville Industrial Estate
+Granville Road
+Dungannon
+County Tyrone
+BT70 1NJ
+Email
+customerservice@Westland.com
+1.4 Emergency telephone number
+01480 443789 (UK) 24hrs
+2.1 Classification of the Substance or Mixture According to Regulation (EC) No 1272/2008:
+Not classified
+2.2 Label Elements According to Regulation (EC) No 1272/2008:
+Not applicable
+3. COMPOSITION/INFORMATION ON INGREDIENTS
+3.1 N/A
+3.2 Description
+Garden fertiliser NPK 3 – 9 - 0
+Hazardous Ingredients
+Ingredient
+Identifiers
+Concentration
+%W/W
+Warning
+Symbols
+Regulation (EC) No
+1272/2008 (CLP)
+Silicone dioxide
+CAS 7631-89-9
+EC: 231-545-4
+45 – 55 %
+Substance with Workplace
+Exposure Limit
+2. HAZARDS IDENTIFICATION
+
+===== PAGE 2 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 2 of 10
+See Section 16 for the full text of the H statements declared above
+4. FIRST AID MEASURES
+4.1 General information:
+Have the product container, label or Material Safety Data Sheet with you when
+calling a poison control center or physician, or going for treatment.
+Inhalation:
+Move person to fresh air.
+Keep patient warm and at rest.
+Get medical advice if symptoms persist or develop
+Skin Contact:
+Wash off with soap and plenty of water.
+Get medical advice if irritation persists or develop
+Eye Contact: Rinse with plenty of water, also under the eyelids, for at least 15 minutes.
+Remove contact lenses and continue flushing.
+Get medical attention if symptoms persist or develop
+Ingestion:
+Do not induce vomiting unless directed to do so by medical personnel
+Rinse out mouth and then drink water
+Get medical attention if symptoms persist or develop
+4.2
+Most important symptoms and effects, both acute and delayed
+N/A
+4.3
+Indication of any immediate medical attention and special treatment needed
+Information not available
+5. FIRE FIGHTING MEASURES
+5.1 Extinguishing Media:
+Use foam, carbon dioxide, dry powder or sand
+The mixture is not classified as flammable; as such extinguishing media should be chosen as
+appropriate for surrounding materials.
+5.2 Specific Hazards Arising From the Substance or Mixture:
+Fire will produce hazardous products of combustion
+Exposure to decomposition products may be a hazard to health.
+
+===== PAGE 3 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 3 of 10
+5.3 Advice for Fire Fighters:
+Wear full protective clothing and self-contained breathing apparatus.
+Further Information:
+Cool endangered containers with water spray
+Do not allow molten material or run-off from fire fighting to enter drains or water courses.
+If fire run-off water enters drains or water course, inform the appropriate water authorities
+immediately
+6. ACCIDENTAL RELEASE MEASURES
+6.1 Personal Precautions, Protective Equipment and Emergency Procedures:
+Avoid formation / breathing of dust
+Avoid contact with skin and eyes
+Ensure adequate ventilation
+Use Personal Protective Equipment: coveralls, gloves and eye/face protection
+6.2 Environmental Precautions:
+Avoid dispersal of spilled material and runoff and contact with soil, waterways, drains and
+sewers
+6.3 Methods and Materials for Containment and Cleaning Up:
+Vacuum or sweep up material.
+Place into suitable labelled containers for disposal according to local / national regulations
+Additional Advice: If large quantities of the product contaminates water courses or drains (including via
+contaminated soil & vegetation), inform respective authorities.
+6.4 Reference to other sections:
+See Section 8 for information on personal protection equipment
+See Section 13 for disposal information
+7. HANDLING AND STORAGE
+7.1 Precautions for safe handling:
+•
+Prevent dust formation and inhalation
+•
+Avoid contact with eyes and skin
+•
+Wear gloves when handling the product over long periods of time
+•
+Do not eat, drink or smoke when using this product
+•
+Take off contaminated clothing and wash before reuse
+•
+Avoid unnecessary exposure to atmosphere to prevent moisture pick up
+
+===== PAGE 4 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 4 of 10
+•
+Wash hands and observe good hygiene practice after handling this product
+7.2 Conditions for safe storage:
+•
+Keep containers closed tightly in a dry, cool and well-ventilated place.
+•
+Keep product in original labelled containers
+•
+Storage areas should be appropriately sited to prevent contamination of drains or watercourses
+•
+Keep out of the reach of children
+7.3 Specific End Uses:
+Use as a fertiliser according to the instruction on the label
+8. EXPOSURE CONTROLS / PERSONAL PROTECTION
+8.1 Control Parameters
+8.1.1 Occupational exposure limits:
+8.1.2 Biological limit values: N/A
+8.1.3 Exposure limits at intended use: N/A
+8.1.4 DNEL/PNEC-values: N/A
+8.1.5 Risk management measures according to used control banding approach: N/A
+8.2 Exposure Controls
+8.2.1 Appropriate engineering controls: No special ventilation requirements.
+Avoid high dust concentration and provide ventilation where necessary
+8.2.2 Personal protective equipment:
+When selecting personal protective equipment, seek appropriate professional
+advice. Personal protective equipment should be certified to appropriate
+standards
+Limit value type
+(country of origin)
+Substance
+name
+EC-
+No.
+CAS-
+No.
+Occupational
+exposure limit
+value
+Monitoring
+And
+observation
+processes
+Peak
+limitation
+Source
+Long
+term
+Short
+term
+OEL (EU)
+Silicone
+dioxide
+231-
+545-4
+7631-
+89-9
+0.1
+mg/m3
+10mg/mᶟ
+unknown
+
+===== PAGE 5 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 5 of 10
+Respiratory Protection:
+Not necessary if room is well ventilated
+Use suitable dust respirator if dust concentration is high (Filter P2)
+Hand Protection:
+Wear suitable gloves complying with EN420 if a risk assessment indicates this is
+necessary
+Eye Protection:
+Wear safety glasses complying with EN166 as a minimum if required.
+Skin and Body Protection: Protective work clothing
+8.2.3 Environmental exposure controls: N/A
+9
+PHYSICAL AND CHEMICAL PROPERTIES
+9.1
+Information on basic physical and chemical properties
+Appearance: solid brown granules
+Physical state: solid
+Colour:
+brown
+Odour: characteristic
+Odour threshold: unknown
+9.2
+Other information
+Value
+Concentration
+Method
+Temperature
+Pressure
+Remark
+pH
+6.0-7.0
+-
+-
+20°C
+-
+-
+Melting point/freezing point
+-
+-
+-
+-
+-
+-
+Initial boiling point/boiling
+range
+-
+-
+-
+-
+-
+-
+Flash point
+-
+-
+-
+-
+-
+-
+Evaporation rate
+-
+-
+-
+-
+-
+-
+Flammability (solid, gas)
+-
+-
+-
+-
+-
+-
+Upper/lower flammability or
+explosive limits
+-
+-
+-
+-
+-
+-
+Upper explosive limits
+-
+-
+-
+-
+-
+-
+Lower explosive limits
+-
+-
+-
+-
+-
+-
+Vapour pressure
+-
+-
+-
+-
+-
+-
+
+===== PAGE 6 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 6 of 10
+Physical hazards: N/A
+Flammable and spray aerosols: Testing is not required for foam or spray aerosols.
+Flammable and oxidising solids: N/A
+10
+STABILITY AND REACTIVITY
+10.1 Reactivity: Stable under normal conditions of storage, handling and use
+10.2 Chemical Stability:
+Stable under normal conditions of storage, handling and use
+10.3 Possibility of Hazardous Reactions: Hazardous reactions will not occur under normal transport or
+storage conditions.
+10.4 Conditions to avoid:
+None specified
+10.5 Incompatible Materials:
+Information not available
+10.6 Hazardous Decomposition:
+Heating or fire can release toxic or irritant vapours and fumes
+Vapour density
+-
+-
+-
+-
+-
+-
+Relative density
+1.10 kg/l
+-
+-
+-
+-
+-
+Solubility(ies)
+-
+-
+-
+-
+-
+-
+Partition coefficient:
+n-octanol/water
+-
+-
+-
+-
+-
+-
+Auto-ignition temperature
+-
+-
+-
+-
+-
+-
+Decomposition
+temperature
+-
+-
+-
+-
+-
+-
+Viscosity
+-
+-
+-
+-
+-
+-
+Viscosity, dynamic
+-
+-
+-
+-
+-
+-
+Viscosity, cinematic
+-
+-
+-
+-
+-
+-
+Explosive properties
+-
+-
+-
+-
+-
+-
+Oxidising properties
+-
+-
+-
+-
+-
+-
+
+===== PAGE 7 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 7 of 10
+11
+TOXICOLOGICAL INFORMATION
+Toxicokinetics, metabolism and distribution
+11.1
+Information on toxicological effects
+The product has not been tested. The statements on toxicology have been derived from the properties of the
+individual components.
+Acute Toxicity:
+Not expected to be toxic, however if large quantities are ingested, seek medical advice.
+Skin corrosion/Irritation:
+The mixture is not classified as skin irritant based on formulation components
+Eye damage/ Irritation: The mixture is not classified for eye damage based on formulation components
+Respiratory or Skin Sensitization: The mixture is not classified as a sensitizer based on formulation
+components
+CMR effects (carcinogenity, mutagenicity and toxicity for reproduction): The mixture is not classified as
+mutagenic, carcinogen, reproductive toxic or aspiration hazard based on formulation components
+Other information: None
+12
+ECOLOGICAL INFORMATION
+The mixture has not been tested.
+12.1Toxicity:
+The mixture is not classified as hazardous to the environment based on formulation
+components
+12.2 Persistence and Degradability:
+No information available on mixture
+12.3 Bioaccumulative Potential:
+No information available on mixture
+12.4 Mobility in Soil:
+No information available on mixture
+12.5 PBT and vPvB assessment:
+No information available on mixture
+Other adverse effects:
+Information not available
+
+===== PAGE 8 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 8 of 10
+13
+DISPOSAL CONSIDERATIONS
+13.1 Waste treatment methods
+Product:
+Do not contaminate ponds, waterways or ditches with significant quantities of
+product
+Check if agriculture use is possible. Dispose of by use on farm as a fertiliser, by
+spreading thinly on open ground
+Where possible recycling is preferred to disposal or incineration.
+If recycling is not practicable, dispose of in compliance with local regulations.
+Contaminated Packaging: Empty remaining contents.
+Completely empty containers can be put in the bin or disposed of in compliance
+with applicable local regulations
+14
+TRANSPORT INFORMATION
+Land transport
+(ADR/RID)
+Inland
+waterway
+transport
+(ADN)
+Sea
+transport
+(IMDG)
+Air transport
+(ICAO-TI /
+IATA-DGR)
+14.1 UN No.
+Not dangerous
+goods
+Not dangerous
+goods
+Not
+dangerous
+goods
+Not
+dangerous
+goods
+14.2 UN Proper shipping name
+Not dangerous
+goods
+Not dangerous
+goods
+Not
+dangerous
+goods
+Not
+dangerous
+goods
+14.3 Transport hazard class(es)
+Not dangerous
+goods
+Not dangerous
+goods
+Not
+dangerous
+goods
+Not
+dangerous
+goods
+Hazard label(s)
+Not dangerous
+goods
+Not dangerous
+goods
+Not
+dangerous
+goods
+Not
+dangerous
+goods
+14.4 Packing group
+Not dangerous
+goods
+Not dangerous
+goods
+Not
+dangerous
+goods
+Not
+dangerous
+goods
+14.5 Environmental hazards
+Not dangerous
+goods
+Not dangerous
+goods
+Not
+dangerous
+goods
+Not
+dangerous
+goods
+14.6
+Special precautions for user: None
+14.7
+Transport in bulk according to Annex II of MARPOL 73/78 and the IBC Code : N/A
+
+===== PAGE 9 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 9 of 10
+15
+REGULATORY INFORMATION
+15.1 Safety, health and environmental regulations/legislation specific for the substance of mixture:
+This mixture is classified in accordance with Regulation 1272/2008.
+15.2 Chemical Safety Assessment: A Chemical Safety Assessment has not been undertaken for this
+mixture
+16
+OTHER INFORMATION
+16.1
+Indication of changes: revised and updated
+16.2 Abbreviations and Acronyms
+ADR
+International Carriage of Dangerous Goods by Road
+CAS No
+Chemicals Abstract Service Registry Number
+Directive 67/548/EEC
+Dangerous Substances Directive (DSD)
+EC No
+European Community Number for chemicals within EU regulations
+IATA-DGR
+Dangerous Goods Regulations by the International Air Transport Association
+IMDG Code
+International Maritime Dangerous Goods Code
+PBT
+Persistent, Bioaccumulative and Toxic Properties
+Regulation (EC) No 1272/2008
+Classification, Labelling and Packaging (CLP)
+RID
+International Transport of Dangerous Goods by Rail
+vPvB
+Very Persistent and Very Bioaccumulative Properties
+16.3
+Key literature references and sources for data: Unknown
+16.4
+Full text of Classifications: Not applicable
+16.5 Full texts of abbreviated H Statements refer to under Section 3: Not applicable
+16.6 Recommended uses and restrictions:
+Follow the instructions
+16.7 Further information
+Before using this product, ensure that you read and understand its label
+
+===== PAGE 10 (native) =====
+Safety Data Sheet
+According to Regulation (EC) No 1907/2006 (REACH)
+Trade name:
+Westland Bone Meal
+Version:2.0
+Revision date: 07.01.2021
+Print date: 07.01.2021
+7 January 2021
+Version 3.0
+Page 10 of 10
+MSDS information:
+This Safety Data Sheet is prepared in compliance with Regulation 1272/2008 and Annex I of the REACH regulation
+453/2010.
+This safety data sheet provides health and safety information. This product is to be used in applications with best use
+practice. Individuals handling this product should be informed under COSHH of the recommended safety precautions and
+should have access to this information. The product information in this data sheet is to the best of our knowledge correct
+as at the date of publication.Westland Horticulture Limited does not accept responsibility for damage caused by incorrect
+use of this information.
+Training and related advice:
+This document contains important information to ensure the safe storage, handling and use of this product. It is the
+responsibility of your organisation to ensure that the information contained in this document is communicated to the end
+user and that all necessary training to enable the product to be used correctly has been given.
+For further information please contact Westland Horticulture Ltd, 14 Granville Industrial Estate, Granville Road,
+Dungannon, County Tyrone, BT70 1NJ.

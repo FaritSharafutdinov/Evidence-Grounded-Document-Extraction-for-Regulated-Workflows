@@ -1,0 +1,645 @@
+# TASK-011 worksheet — group E — sds_16.pdf / molecular_weight
+state=PRESENT  derivation=EXPLICIT  gold_value='60.08'
+
+## gold evidence_set
+- page 5: 'Molecular Weight\n60.08'
+
+===== PAGE 1 (native) =====
+SAFETY DATA SHEET
+according to Regulation UK SI 2019/758 and UK SI 2020/1577 as amended
+Creation Date 30-Aug-2010
+Revision Date 20-Oct-2023
+Revision Number 5
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE
+COMPANY/UNDERTAKING
+1.1. Product identifier
+Product Description:
+Sand, Ottawa
+Cat No. :
+S/0365/63, S/0365/60
+Synonyms
+Quartz; Silicon dioxide
+CAS No
+14808-60-7
+EC No
+238-878-4
+Molecular Formula
+O2 Si
+1.2. Relevant identified uses of the substance or mixture and uses advised against
+Recommended Use
+Laboratory chemicals.
+Uses advised against
+No Information available
+1.3. Details of the supplier of the safety data sheet
+E-mail address
+begel.sdsdesk@thermofisher.com
+1.4. Emergency telephone number
+Chemtrec US: (800) 424-9300
+Chemtrec EU: 001-703-527-3887
+Tel: 01509 231166
+SECTION 2: HAZARDS IDENTIFICATION
+2.1. Classification of the substance or mixture
+Company
+UK entity/business name
+Fisher Scientific UK
+Bishop Meadow Road, Loughborough,
+Leicestershire LE11 5RG, United Kingdom
+EU entity/business name
+Thermo Fisher Scientific
+Janssen Pharmaceuticalaan 3a
+2440 Geel, Belgium
+.
+CLP Classification - According to GB-CLP Regulations UK SI 2019/720 and UK SI 2020/1567
+Health hazards
+Physical hazards
+Based on available data, the classification criteria are not met
+______________________________________________________________________________________________
+FSUS0365
+Page 1 / 10
+
+===== PAGE 2 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+Full text of Hazard Statements: see section 16
+2.2. Label elements
+None required
+2.3. Other hazards
+This product does not contain any known or suspected endocrine disruptors
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1. Substances
+Component
+CAS No
+EC No
+Weight %
+CLP Classification - According to
+GB-CLP Regulations UK SI 2019/720 and
+UK SI 2020/1567
+Sand
+14808-60-7
+EEC No. 238-878-4
+>95
+-
+Full text of Hazard Statements: see section 16
+SECTION 4: FIRST AID MEASURES
+4.1. Description of first aid measures
+Eye Contact
+Rinse immediately with plenty of water, also under the eyelids, for at least 15 minutes. Get
+medical attention.
+Skin Contact
+Wash off immediately with plenty of water for at least 15 minutes. Get medical attention
+immediately if symptoms occur.
+Ingestion
+Clean mouth with water and drink afterwards plenty of water. Get medical attention if
+symptoms occur.
+Inhalation
+Remove to fresh air. Get medical attention immediately if symptoms occur.
+Self-Protection of the First Aider
+No special precautions required.
+4.2. Most important symptoms and effects, both acute and delayed
+None reasonably foreseeable.
+Based on available data, the classification criteria are not met
+Environmental hazards
+Based on available data, the classification criteria are not met
+______________________________________________________________________________________________
+FSUS0365
+Page 2 / 10
+
+===== PAGE 3 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+4.3. Indication of any immediate medical attention and special treatment needed
+Notes to Physician
+Treat symptomatically.
+SECTION 5: FIREFIGHTING MEASURES
+5.1. Extinguishing media
+Suitable Extinguishing Media
+Substance is nonflammable; use agent most appropriate to extinguish surrounding fire.
+Extinguishing media which must not be used for safety reasons
+No information available.
+5.2. Special hazards arising from the substance or mixture
+Non-combustible. None known.
+Hazardous Combustion Products
+None known.
+5.3. Advice for firefighters
+As in any fire, wear self-contained breathing apparatus pressure-demand, MSHA/NIOSH (approved or equivalent) and full
+protective gear.
+SECTION 6: ACCIDENTAL RELEASE MEASURES
+6.1. Personal precautions, protective equipment and emergency procedures
+Ensure adequate ventilation. Use personal protective equipment as required. Avoid dust formation.
+6.2. Environmental precautions
+See Section 12 for additional Ecological Information. Should not be released into the environment.
+6.3. Methods and material for containment and cleaning up
+Sweep up and shovel into suitable containers for disposal. Avoid dust formation.
+6.4. Reference to other sections
+Refer to protective measures listed in Sections 8 and 13.
+SECTION 7: HANDLING AND STORAGE
+7.1. Precautions for safe handling
+Wear personal protective equipment/face protection. Ensure adequate ventilation. Avoid contact with skin, eyes or clothing. Avoid
+ingestion and inhalation. Avoid dust formation.
+Hygiene Measures
+Handle in accordance with good industrial hygiene and safety practice. Keep away from food, drink and animal feeding stuffs. Do
+not eat, drink or smoke when using this product. Remove and wash contaminated clothing and gloves, including the inside, before
+re-use. Wash hands before breaks and after work.
+______________________________________________________________________________________________
+FSUS0365
+Page 3 / 10
+
+===== PAGE 4 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+7.2. Conditions for safe storage, including any incompatibilities
+Keep containers tightly closed in a dry, cool and well-ventilated place.
+Technical Rules for Hazardous Substances (TRGS) 510
+Storage Class (LGK) (Germany)
+Class 13
+7.3. Specific end use(s)
+Use in laboratories
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION
+8.1. Control parameters
+Exposure limits
+List source(s): UK - EH40/2005 Work Exposure Limits, Fourth edition. Published 2020. IRE - 2021 Code of Practice for the
+Chemical Agents Regulations, Schedule 1. Published by the Health and Safety Authority
+Component
+The United Kingdom
+European Union
+Ireland
+Sand
+STEL: 0.3 mg/m3 15 min
+TWA: 0.1 mg/m3 8 hr
+Carc. respirable fraction
+TWA: 0.1 mg/m3 8 hr.
+respirable dust
+STEL: 0.3 mg/m3 15 min
+Biological limit values
+This product, as supplied, does not contain any hazardous materials with biological limits established by the region specific
+regulatory bodies
+Derived No Effect Level (DNEL) / Derived Minimum Effect Level (DMEL)
+No information available
+Predicted No Effect Concentration (PNEC)
+No information available.
+8.2. Exposure controls
+Engineering Measures
+None under normal use conditions.
+Personal protective equipment
+Eye Protection
+Wear safety glasses with side shields (or goggles) (European standard - EN 166)
+Hand Protection
+Protective gloves
+Glove material
+Breakthrough time
+Glove thickness
+EU standard
+Glove comments
+Natural rubber
+Nitrile rubber
+Neoprene
+PVC
+See manufacturers
+recommendations
+-
+EN 374
+(minimum requirement)
+______________________________________________________________________________________________
+FSUS0365
+Page 4 / 10
+
+===== PAGE 5 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+Skin and body protection
+Wear appropriate protective gloves and clothing to prevent skin exposure.
+Inspect gloves before use.
+Please observe the instructions regarding permeability and breakthrough time which are provided by the supplier of the gloves.
+(Refer to manufacturer/supplier for information)
+Ensure gloves are suitable for the task: Chemical compatability, Dexterity, Operational conditions, User susceptibility, e.g.
+sensitisation effects, also take into consideration the specific local conditions under which the product is used, such as the danger
+of cuts, abrasion.
+Remove gloves with care avoiding skin contamination.
+Respiratory Protection
+No protective equipment is needed under normal use conditions.
+Large scale/emergency use
+Use a NIOSH/MSHA or European Standard EN 136 approved respirator if exposure limits
+are exceeded or if irritation or other symptoms are experienced
+Recommended Filter type: Particle filter
+Small scale/Laboratory use
+Maintain adequate ventilation
+Environmental exposure controls
+No information available.
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES
+9.1. Information on basic physical and chemical properties
+Particle characteristics
+No data available
+9.2. Other information
+Molecular Formula
+O2 Si
+Molecular Weight
+60.08
+Evaporation Rate
+Not applicable - Solid
+Physical State
+Solid: Crystalline, Granules.
+Appearance
+Beige
+Odor
+No information available
+Odor Threshold
+No data available
+Melting Point/Range
+1610 °C / 2930 °F
+Softening Point
+No data available
+Boiling Point/Range
+2230 °C / 4046 °F
+Flammability (liquid)
+Not applicable
+Solid
+Flammability (solid,gas)
+No information available
+Explosion Limits
+No data available
+Flash Point
+No information available
+Method - No information available
+Autoignition Temperature
+No data available
+Decomposition Temperature
+No data available
+pH
+No information available
+Viscosity
+Not applicable
+Solid
+Water Solubility
+Insoluble
+Solubility in other solvents
+No information available
+Partition Coefficient (n-octanol/water)
+Vapor Pressure
+No data available
+Density / Specific Gravity
+No data available
+Bulk Density
+No data available
+Vapor Density
+Not applicable
+______________________________________________________________________________________________
+FSUS0365
+Page 5 / 10
+Solid
+
+===== PAGE 6 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+SECTION 10: STABILITY AND REACTIVITY
+10.1. Reactivity
+None known, based on information available
+10.2. Chemical stability
+Stable under normal conditions.
+10.3. Possibility of hazardous reactions
+Hazardous Polymerization
+Hazardous polymerization does not occur.
+Hazardous Reactions
+None under normal processing.
+10.4. Conditions to avoid
+Avoid dust formation. Incompatible products.
+10.5. Incompatible materials
+Strong oxidizing agents.
+10.6. Hazardous decomposition products
+None known.
+SECTION 11: TOXICOLOGICAL INFORMATION
+11.1. Information on hazard classes as defined in Regulation (EC) No 1272/2008
+Product Information
+(a) acute toxicity;
+Oral
+No data available
+Dermal
+No data available
+Inhalation
+No data available
+(b) skin corrosion/irritation;
+No data available
+(c) serious eye damage/irritation;
+No data available
+(d) respiratory or skin sensitization;
+Respiratory
+No data available
+Skin
+No data available
+(e) germ cell mutagenicity;
+No data available
+(f) carcinogenicity;
+No data available
+The table below indicates whether each agency has listed any ingredient as a carcinogen
+Component
+EU
+UK
+Germany
+IARC
+Sand
+Cat. 1 (Respirable fraction)
+Group 1
+(g) reproductive toxicity;
+No data available
+(h) STOT-single exposure;
+No data available
+______________________________________________________________________________________________
+FSUS0365
+Page 6 / 10
+
+===== PAGE 7 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+(i) STOT-repeated exposure;
+No data available
+Target Organs
+No information available.
+(j) aspiration hazard;
+Not applicable
+Solid
+Symptoms / effects,both acute and
+delayed
+No information available.
+11.2. Information on other hazards
+Endocrine Disrupting Properties
+Assess endocrine disrupting properties for human health. This product does not contain any
+known or suspected endocrine disruptors.
+SECTION 12: ECOLOGICAL INFORMATION
+12.1. Toxicity
+Ecotoxicity effects
+Contains no substances known to be hazardous to the environment or that are not
+degradable in waste water treatment plants.
+12.2. Persistence and degradability
+Persistence
+Insoluble in water.
+Degradability
+Not relevant for inorganic substances.
+12.3. Bioaccumulative potential
+May have some potential to bioaccumulate
+12.4. Mobility in soil
+Spillage unlikely to penetrate soil. Is not likely mobile in the environment due its low water
+solubility.
+12.5. Results of PBT and vPvB
+assessment
+No data available for assessment.
+12.6. Endocrine disrupting
+properties
+Endocrine Disruptor Information
+This product does not contain any known or suspected endocrine disruptors
+12.7. Other adverse effects
+Persistent Organic Pollutant
+This product does not contain any known or suspected substance
+Ozone Depletion Potential
+This product does not contain any known or suspected substance
+SECTION 13: DISPOSAL CONSIDERATIONS
+13.1. Waste treatment methods
+Waste from Residues/Unused
+Chemical waste generators must determine whether a discarded chemical is classified as a
+______________________________________________________________________________________________
+FSUS0365
+Page 7 / 10
+
+===== PAGE 8 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+Products
+hazardous waste. Consult local, regional, and national hazardous waste regulations to
+ensure complete and accurate classification.
+Contaminated Packaging
+Empty remaining contents. Dispose of in accordance with local regulations. Do not re-use
+empty containers.
+European Waste Catalogue (EWC)
+According to the European Waste Catalog, Waste Codes are not product specific, but
+application specific.
+Other Information
+Waste codes should be assigned by the user based on the application for which the product
+was used.
+SECTION 14: TRANSPORT INFORMATION
+IMDG/IMO
+Not regulated
+14.1. UN number
+14.2. UN proper shipping name
+14.3. Transport hazard class(es)
+14.4. Packing group
+ADR
+Not regulated
+14.1. UN number
+14.2. UN proper shipping name
+14.3. Transport hazard class(es)
+14.4. Packing group
+IATA
+Not regulated
+14.1. UN number
+14.2. UN proper shipping name
+14.3. Transport hazard class(es)
+14.4. Packing group
+14.5. Environmental hazards
+No hazards identified
+14.6. Special precautions for user
+No special precautions required.
+14.7. Maritime transport in bulk
+according to IMO instruments
+Not applicable, packaged goods
+SECTION 15: REGULATORY INFORMATION
+15.1. Safety, health and environmental regulations/legislation specific for the substance or mixture
+International Inventories
+Europe (EINECS/ELINCS/NLP), China (IECSC), Taiwan (TCSI), Korea (KECL), Japan (ENCS), Japan (ISHL), Canada (DSL/NDSL), Australia
+(AICS), New Zealand (NZIoC), Philippines (PICCS). US EPA (TSCA) - Toxic Substances Control Act, (40 CFR Part 710)
+Component
+CAS No
+EINECS
+ELINCS
+NLP
+IECSC
+TCSI
+KECL
+ENCS
+ISHL
+Sand
+14808-60-7
+238-878-4
+-
+-
+X
+X
+KE-29983
+X
+X
+Component
+CAS No
+TSCA
+TSCA Inventory
+DSL
+NDSL
+AICS
+NZIoC
+PICCS
+______________________________________________________________________________________________
+FSUS0365
+Page 8 / 10
+
+===== PAGE 9 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+notification -
+Active-Inactive
+Sand
+14808-60-7
+X
+ACTIVE
+X
+-
+X
+X
+X
+Legend: X - Listed '-' - Not Listed
+KECL - NIER number or KE number (http://ncis.nier.go.kr/en/main.do)
+Authorisation/Restrictions according to EU REACH
+Not applicable
+Component
+CAS No
+REACH (1907/2006) -
+Annex XIV - Substances
+Subject to Authorization
+REACH (1907/2006) -
+Annex XVII - Restrictions
+on Certain Dangerous
+Substances
+REACH Regulation (EC
+1907/2006) article 59 -
+Candidate List of
+Substances of Very High
+Concern (SVHC)
+Sand
+14808-60-7
+-
+-
+-
+Seveso III Directive (2012/18/EC)
+Component
+CAS No
+Seveso III Directive (2012/18/EC) -
+Qualifying Quantities for Major Accident
+Notification
+Seveso III Directive (2012/18/EC) -
+Qualifying Quantities for Safety Report
+Requirements
+Sand
+14808-60-7
+Not applicable
+Not applicable
+Regulation (EC) No 649/2012 of the European Parliament and of the Council of 4 July 2012 concerning the export and
+import of dangerous chemicals
+Not applicable
+Contains component(s) that meet a 'definition' of per & poly fluoroalkyl substance (PFAS)?
+Not applicable
+Take note of Directive 98/24/EC on the protection of the health and safety of workers from the risks related to chemical agents at
+work .
+National Regulations
+UK - Take note of Control of Substances Hazardous to Health Regulations (COSHH) 2002 and 2005 Amendment
+WGK Classification
+See table for values
+Component
+Germany - Water Classification (AwSV)
+Germany - TA-Luft Class
+Sand
+nwg
+Krebserzeugende Stoffe - respirable dust PM4 : 0.5 mg/m3
+(Massenkonzentration)
+Component
+France - INRS (Tables of occupational diseases)
+Sand
+Tableaux des maladies professionnelles (TMP) - RG 25
+15.2. Chemical safety assessment
+A Chemical Safety Assessment/Report (CSA/CSR) has not been conducted
+SECTION 16: OTHER INFORMATION
+______________________________________________________________________________________________
+FSUS0365
+Page 9 / 10
+
+===== PAGE 10 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+Full text of H-Statements referred to under sections 2 and 3
+Legend
+Key literature references and sources for data
+https://echa.europa.eu/information-on-chemicals
+Suppliers safety data sheet, Chemadvisor - LOLI, Merck index, RTECS
+Training Advice
+Chemical hazard awareness training, incorporating labelling, Safety Data Sheets (SDS), Personal Protective Equipment (PPE) and
+hygiene.
+Creation Date
+30-Aug-2010
+Revision Date
+20-Oct-2023
+Revision Summary
+Not applicable.
+This safety data sheet complies with Regulation UK SI 2019/758 and UK SI 2020/1577 as
+amended. .
+.
+Disclaimer
+The information provided in this Safety Data Sheet is correct to the best of our knowledge, information and belief at the
+date of its publication. The information given is designed only as a guidance for safe handling, use, processing, storage,
+transportation, disposal and release and is not to be considered a warranty or quality specification. The information
+relates only to the specific material designated and may not be valid for such material used in combination with any other
+materials or in any process, unless specified in the text
+End of Safety Data Sheet
+CAS - Chemical Abstracts Service
+TSCA - United States Toxic Substances Control Act Section 8(b)
+Inventory
+EINECS/ELINCS - European Inventory of Existing Commercial Chemical
+Substances/EU List of Notified Chemical Substances
+DSL/NDSL - Canadian Domestic Substances List/Non-Domestic
+Substances List
+PICCS - Philippines Inventory of Chemicals and Chemical Substances
+ENCS - Japanese Existing and New Chemical Substances
+IECSC - Chinese Inventory of Existing Chemical Substances
+AICS - Australian Inventory of Chemical Substances
+KECL - Korean Existing and Evaluated Chemical Substances
+NZIoC - New Zealand Inventory of Chemicals
+WEL - Workplace Exposure Limit
+TWA - Time Weighted Average
+ACGIH - American Conference of Governmental Industrial Hygienists
+IARC - International Agency for Research on Cancer
+DNEL - Derived No Effect Level
+Predicted No Effect Concentration (PNEC)
+RPE - Respiratory Protective Equipment
+LD50 - Lethal Dose 50%
+LC50 - Lethal Concentration 50%
+EC50 - Effective Concentration 50%
+NOEC - No Observed Effect Concentration
+POW - Partition coefficient Octanol:Water
+PBT - Persistent, Bioaccumulative, Toxic
+vPvB - very Persistent, very Bioaccumulative
+ADR - European Agreement Concerning the International Carriage of
+Dangerous Goods by Road
+ICAO/IATA - International Civil Aviation Organization/International Air
+Transport Association
+IMO/IMDG - International Maritime Organization/International Maritime
+Dangerous Goods Code
+MARPOL - International Convention for the Prevention of Pollution from
+Ships
+OECD - Organisation for Economic Co-operation and Development
+ATE - Acute Toxicity Estimate
+BCF - Bioconcentration factor
+______________________________________________________________________________________________
+FSUS0365
+Page 10 / 10
+VOC - (Volatile Organic Compound)

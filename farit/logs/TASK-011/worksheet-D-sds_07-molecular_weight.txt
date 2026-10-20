@@ -1,0 +1,66 @@
+# TASK-011 worksheet — group D — sds_07.pdf / molecular_weight
+state=NOT_APPLICABLE  derivation=ONTOLOGY  gold_value=None
+
+## gold evidence_set
+- page 1: 'Mixture identification:'
+- page 1: 'Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:'
+
+===== PAGE 1 (native) =====
+Safety Data Sheet
+AUS, S050193_en
+Version 8.0
+Page n. 1 of 7
+Revison 1.0
+1. IDENTIFICATION
+Product identifier
+Mixture identification:
+Trade name:
+Standard Capacity T/C (Cyan) S050193
+Recommended use of the chemical and restrictions on use
+Recommended use:
+Toner for electrophotographic printing
+Name, address, and telephone number of the chemical manufacturer, importer, or other responsible
+party
+Supplier in Astralia:
+EPSON Australia Pty Limited
+3 Talavera Road, North Ryde, NSW 2113, Australia
+(02) 8899 3666
+www.epson.com.au
+Supplier in New Zealand:
+EPSON New Zealand Pty Limited
+7-9 Fanshawe Street, Auckland 1010, New Zealand
+(09) 366 6855
+www.epson.co.nz
+Emergency phone number
+Australia
+(02) 8899 3666 (Mon-Fri, 9AM-5PM, AEST)
+New Zealand
+(09) 366 6855 (Mon-Fri, 9AM-5PM, NZST)
+2. HAZARD(S) IDENTIFICATION
+Classification of the chemical
+The product is not classified as dangerous according to GHS - Fifth revised edition.
+Label elements
+The product is not classified as dangerous according to Australia WHS 2012.
+Hazard pictograms:
+None
+Hazard statements:
+None
+Precautionary statements:
+None
+Special Provisions:
+None
+Hazards not otherwise classified identified during the classification process:
+None
+3. COMPOSITION/INFORMATION ON INGREDIENTS
+Substances
+No data available
+Mixtures
+Hazardous components within the meaning of GHS regulation and related classifications:
+60% ~ 70% Styrene / acrylate resin
+The product is not classified as dangerous according to GHS - Fifth revised edition.
+10% ~ 20% Iron oxide(Fe2O3)
+CAS: 1309-37-1, EC: 215-168-2
+The product is not classified as dangerous according to GHS - Fifth revised edition.
+1% ~ 10% Polyethylene
+The product is not classified as dangerous according to GHS - Fifth revised edition.
+1% ~ 10% Amorphous silica

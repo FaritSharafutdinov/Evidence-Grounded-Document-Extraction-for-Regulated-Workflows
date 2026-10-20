@@ -1,0 +1,6 @@
+[W4] locked documents in sample: none
+[W1] quotes: 53 checked, 0 failures
+[W2] gold evidence fragments over audited instances: 45, broken: 0
+[W3] groups: {'A': 8, 'B': 8, 'C': 4, 'D': 10, 'E': 10}
+[W3] D states: {'NOT_APPLICABLE': 5, 'NOT_STATED': 3, 'NO_DATA': 2}
+[W3] verdicts: {'correct': 34, 'incorrect': 2, 'questionable': 4}, unique instances: 37, E∩A: 2

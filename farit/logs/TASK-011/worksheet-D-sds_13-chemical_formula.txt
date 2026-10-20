@@ -1,0 +1,90 @@
+# TASK-011 worksheet — group D — sds_13.pdf / chemical_formula
+state=NOT_STATED  derivation=ABSENT  gold_value=None
+
+## gold evidence_set
+
+===== PAGE 1 (native) =====
+Argon
+ARGON, COMPRESSED
+Gas.
+SAFETY DATA SHEET
+GHS product identifier
+Other means of
+identification
+Product type
+Section 1. Identification
+:
+:
+:
+Chemical name
+: argon
+Supplier's details
+:
+Argon
+Product use
+: Synthetic/Analytical chemistry.
+Synonym
+: ARGON, COMPRESSED
+SDS #
+: 001004
+:
+24-hour telephone
+Airgas USA, LLC and its affiliates
+259 North Radnor-Chester Road
+Suite 100
+Radnor, PA 19087-5283
+1-610-687-5253
+Inside the US: 1-800-424-9300 (Chemtrec, 24 hours)
+Outside the US: 1-703-527-3887 (Chemtrec, 24 hours)
+Airgas Emergency Response Center 1-866-734-3438
+Section 2. Hazards identification
+GASES UNDER PRESSURE - Compressed gas
+SIMPLE ASPHYXIANTS
+Classification of the
+substance or mixture
+:
+Signal word
+: Warning
+Hazard statements
+: H280 - Contains gas under pressure; may explode if heated.
+May displace oxygen and cause rapid suffocation.
+Hazard pictograms
+:
+Precautionary statements
+Prevention
+: Not applicable.
+Response
+: Not applicable.
+Storage
+: P410 + P403 - Protect from sunlight. Store in a well-ventilated place.
+Disposal
+: Not applicable.
+GHS label elements
+General
+:
+Supplemental label
+elements
+: Keep container tightly closed. Use only with adequate ventilation. Do not enter storage
+areas and confined spaces unless adequately ventilated.
+Hazards not otherwise
+classified
+:
+OSHA/HCS status
+: This material is considered hazardous by the OSHA Hazard Communication Standard
+(29 CFR 1910.1200).
+May displace oxygen and cause rapid suffocation.
+Read and follow all Safety Data Sheets (SDS’S) before use. Read label before use.
+Keep out of reach of children. If medical advice is needed, have product container or
+label at hand. Close valve after each use and when empty. Use equipment rated for
+cylinder pressure. Do not open valve until connected to equipment prepared for use.
+Use a back flow preventative device in the piping. Use only equipment of compatible
+materials of construction.
+In addition to any other important health or physical hazards, this product may displace
+oxygen and cause rapid suffocation.
+Date of issue/Date of revision
+: 3/28/2025
+Date of previous issue
+: 3/13/2025
+Version
+: 7.05
+1/11

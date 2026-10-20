@@ -1,0 +1,103 @@
+# TASK-011 worksheet — group B — sds_11.pdf / molecular_weight
+state=NOT_APPLICABLE  derivation=ONTOLOGY  gold_value=None
+
+## gold evidence_set
+- page 2: '3.2. Mixtures\nComposition of the substances in the mixtures:'
+- page 2: '3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins.'
+
+===== PAGE 2 (native) =====
+MSDS (Material Safety Data Sheet /
+Sicherheitsdatenblatt)
+DO 619
+DO 619
+Revision /Fassung Nr.:
+2.0
+Gültig ab:
+03.07.2017
+QMH – Abschnitt:
+5.5
+Seiten:
+2 von 10
+Ausgefülltes Dokument:
+Revision /Fassung Nr.:
+1.0
+Gültig ab:
+28.05.2020
+Produktname:
+LD COVID-19 IgG Rapid Test
+Katolog –Nr.:
+COV19_G_10_EN
+Hazard-determining component for labelling: none
+Hazard statements: none
+Precautionary statements: none
+Additionally Statements: -
+2.3. Other hazards
+Use the product by following the standard safety precautions in a lab.
+Use appropriate protective clothing (gloves, lab coat, work shoes, safety goggles).
+Behavior in the lab: DO NOT SMOKE! DO NOT DRINK! DO NOT EAT!
+PBT: not applicable. / vPvB: not applicable.
+SECTION 3. Composition/information on ingredients
+3.1. Substances
+Not applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins.
+3.2. Mixtures
+Composition of the substances in the mixtures:
+Table of hazardous substances in the mixture:
+Kit Component
+Substance
+CAS No.
+EC No.
+Concentration in
+the mixture
+H rules
+P rules
+Test cassette
+5-Bromo-5-Nitro-1,3-Dioxane
+C4H6BrNO4
+30007-47-7
+250-001-7
+≤ 0.01 %
+H302
+H315
+P280
+Nitrozellulose
+9004-70-0
+936-908-7
+≤ 0.1 %
+H201
+P250‐372
+Boric acid
+10043-35-3
+233-139-2
+< 0.004 %
+H360
+P201
+P202
+P280
+P308+P3
+13
+P405
+P501
+Diluent Buffer
+5-Bromo-5-Nitro-1,3-Dioxane
+C4H6BrNO4
+30007-47-7
+250-001-7
+0.05 %
+H302
+H315
+P280
+Substances with prescribed EC limit values:
+Full description of H- and P-rules: refer to section 16.
+Substances, which are listed in the "Candidate List of Substances of Very High Concern (SVHC) for authorisation" of
+European Chemicals Agency (ECHA) are not intended to be part of this product. Therefore it is not expected that the
+concentration of such substances is > 0.1 % in the product.
+SECTION 4. First-aid measures
+4.1. Description of first-aid measures
+General advice: Remove contaminated clothing immediately. Consult a physician. Show this safety data
+sheet to the doctor in attendance. Move out the dangerous area. Hand out the medical doctor this MSDS.
+If inhaled: Inhaling is not possible. If there should occur any troubles (e.g. shortness of breath): land the person on
+fresh air. In case of breathing difficulties transmit oxygen. Consult a doctor. Remove person to fresh air and keep
+comfortable for breathing.
+Skin contact: Wash off with plenty of water and soap, rinse.
+Eye contact: Rinse cautiously with water for minimum 15 minutes. Remove contact lenses, if present and easy to do.
+Continue rinsing. Seek medical advice.

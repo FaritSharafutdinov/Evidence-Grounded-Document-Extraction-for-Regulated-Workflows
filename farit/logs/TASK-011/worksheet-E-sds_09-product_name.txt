@@ -1,0 +1,863 @@
+# TASK-011 worksheet — group E — sds_09.pdf / product_name
+state=PRESENT  derivation=EXPLICIT  gold_value='VISOCOLOR HE Nitrite, refill pack'
+
+## gold evidence_set
+- page 1: 'Product name\nVISOCOLOR HE Nitrite, refill pack'
+
+===== PAGE 1 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+SECTION 1: Identification of the substance/mixture and of the company
+1.1
+Product identifier
+REF
+920163
+Product name
+VISOCOLOR HE Nitrite, refill pack
+REACH Registration number(s):
+see SECTION 3.1/3.2 or
+A registration number for the substance(s) does not exist because the annual tonnage does not require registration or
+the substance or its use is excluded from registration.
+1 x 100 mL NO 2 -1
+UFI: NSUT-J3F5-720W-54SH
+1 x 23 g NO 2 -2
+1.2
+Relevant identified uses of the substance or mixture and uses advised against
+Relevant identified uses
+Product for analytical use.
+Exposure Scenario Classification according REACh, RIP 3.2 Codes: SU 0-2, PC 21, PROC 15, AC 0
+The exposure scenario is integrated into sections 1-16.
+Uses advised against
+not described
+1.3
+Details of the supplier of the safety data sheet
+Manufactured by:
+MACHEREY-NAGEL GmbH & Co. KG
+Valencienner Str. 11, 52355 Düren, Germany
+Phone: +49 2421 969 0
+E-mail: sds@mn-net.com (msds@mn-net.com)
+1.4
+Emergency telephone number
+Outside Germany (DE): Call your regional Poisons Information Service or call local Life Saving Service.
+DE: Gemeinsames Giftinformationszentrum (GGIZ)
+99089 Erfurt tel. +49 361 730 730, <https://www.ggiz-erfurt.de>
+You find our current versions of SDS in Internet:
+<https://www.mn-net.com/SDS>
+SECTION 2: Hazard identification
+2.0
+Classification of the complete product according to Regulation (EC) 1272/2008
+GHS05
+Signal word
+DANGER
+Hazard identification
+Hazard classes/categories
+H290
+Met. Corr. 1
+2.1
+Classification of the substance or mixture according to Regulation (EC) 1272/2008
+23 g NO 2 -2
+Do not need labelling as hazardous
+Signal word
+-
+No hazard class
+100 mL NO 2 -1
+Page: 1/10
+
+===== PAGE 2 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+GHS05
+Signal word
+DANGER
+Hazard identification
+Hazard classes/categories
+H290
+Met. Corr. 1
+List of H phrases: see section 16.2
+2.2
+Label elements according regulation (EC) 1272/2008
+According CLP directive inner packages must be only labelled with GHS symbol(s) and product identificator(s) (EU 1272/2008 Annex I
+- 1.5.1.2). Metal corrosive solutions do not have to be labelled with GHS symbol, signal word, H and P phrases until 125 mL (EU
+1272/2008 Annex I - 1.5.2.1.3).
+23 g NO 2 -2
+Do not need labelling as hazardous
+Signal word: -
+100 mL NO 2 -1
+GHS05
+Signal word: DANGER
+Label elements of the complete product
+GHS05
+Signal word: DANGER
+2.3
+Other hazards
+Possible hazards from physicochemical properties
+Generally in the case of pH values are less than 2 or higher than 11.5 then it is corrosive.
+Information pertaining to particular risks to human and possible symptoms
+Causes varying degrees of acid burns on the skin, to the eyes and to the mucous membranes and wounds which do not heal
+quickly depending on the concentration, temperature and the exposure time.
+Information pertaining to particular risks to the environment
+PBT:
+not applicable
+vPvB:
+not applicable
+Possible endocrine disrupting effects
+no data available
+SECTION 3: Composition / information on ingredients
+3.1
+Substances or 3.2 Mixtures
+23 g NO 2 -2
+Page: 2/10
+
+===== PAGE 3 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+Substance name:
+sodium chloride
+CAS No.:
+7647-14-5
+Substance rating:
+No criteria for classification or naming of chemical not required.
+Formula:
+NaCl
+Pseudonym (de):
+Kochsalz
+REACH Reg. No.:
+exempt, Annex V
+EC No.:
+231-598-3
+Concentration:
+80 - <100 %
+acc. CLP (GHS):
+The criteria for classification are not fulfilled.
+100 mL NO 2 -1
+Substance name:
+sulfanilamide
+CAS No.:
+63-74-1
+Substance rating:
+No criteria for classification or naming of chemical not required.
+Formula:
+C 6 H 8 N 2 O 2 S
+Pseudonym (de):
+4-Aminobenzolsulfonamid
+EC No.:
+200-563-4
+Concentration:
+1 - <10 %
+acc. CLP (GHS):
+The criteria for classification are not fulfilled.
+Substance name:
+o-phosphoric acid
+CAS No.:
+7664-38-2
+Substance rating:
+H290, Met. Corr. 1, H302, Acute Tox. 4 oral, H314, Skin Corr. 1 B
+Formula:
+H 3 PO 4 •H 2 O
+Pseudonym (de):
+Orthophosphorsäure, E338
+REACH Reg. No.:
+01-2119485924-24-xxxx
+EC No.:
+231-633-2
+Indice No.:
+015-011-00-6
+Concentration:
+1 - <10 %
+acc. CLP (GHS):
+H290, Met. Corr. 1
+3.3
+Remarks
+When not listed, mixtures are added with water [CAS No. 7732-18-5] to 100%.
+List of H and P phrases: see section 16.2.
+SECTION 4: First aid measures
+4.1
+Description of first aid measures
+Place insured person out of danger zone to fresh air immediately. Ensure quiet, warmth, and provide resuscitation if necessary. If
+necessary contact medical advice.
+4.1.1
+After SKIN Contact
+Remove contaminated clothing. Rinse the affected skin or mucous membrane thoroughly under running water. (If possible) use
+soap.
+4.1.2
+After EYE Contact
+After contact with the eyes rinse thoroughly under running water with the eyelid wide open with eye washing bottle, eye douche or
+running water (protect intact eye).
+4.1.3
+After INHALATION of vapours
+After inhalation of foam or vapour fresh air should be inhaled. Keep airways free. ---
+4.1.4
+After ORAL Intake
+After oral intake lots of water should be drunk after it has been ingested.
+4.2
+Most important symptoms and effects, both acute and delayed
+There are no known delayed symptoms or effects for this product.
+4.3
+Indication of any immediate medical attention and special treatment needed
+No additionally recommendations. ---
+Page: 3/10
+
+===== PAGE 4 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+SECTION 5: Firefighting measures
+5.1
+Extinguishing media
+5.1.1
+Suitable extinguishing media
+Fire extinguishers appropriate to the fire classification, and, if applicable, a fire blanket must be available in a prominent location in
+the work area. All extinguishers like FOAM, WATER SPRAY, DRY POWDER, CARBON DIOXIDE can be used.Fire extinguishers
+appropriate to the fire classification, and, if applicable, a fire blanket must be available in a prominent location in the work area. All
+extinguishers like FOAM, WATER SPRAY, DRY POWDER, CARBON DIOXIDE can be used.
+5.1.2
+Unsuitable extinguishing media
+no data available
+5.2
+Special hazards arising from the substance or mixture
+Formation of hazardous and caustic vapour-air mixtures possible.
+5.3
+Advice for firefighters
+Product package burns like paper or plastic.
+5.4
+Additional information
+no data available
+SECTION 6: Accidental release measures
+6.1
+Personal precautions, protective equipment and emergency procedures
+Do not breathe vapours. Regular staff training is necessary.
+6.2
+Environmental precautions
+PBT:
+not applicable
+vPvB:
+not applicable
+6.3
+Methods and material for containment and cleaning up
+Bind any escaping liquid with inert absorbent.
+Collect small amounts of leaked liquid and flush with water into drains.
+6.4
+Reference to other sections
+no data available
+SECTION 7: Handling and storage
+7.1
+Precautions for safe handling
+Handling in accordance with the test instruction, that comes with the product.
+7.2
+Conditions for safe storage, including any incompatibilities
+Safe storage is guaranteed in the original packaging from MACHEREY-NAGEL. Storage class (German chemical industry): see chapter
+12.1
+Storage class (VCI):
+8B
+Water hazard class (DE):
+1
+7.2.1
+Requirements for stock rooms and containers
+Keep original product packages tightly closed during handling and storage.
+7.3
+Specific end use(s)
+Product for analytical use.
+SECTION 8: Exposure controls /personal protection
+8.1
+Control parameters
+23 g NO 2 -2
+Chemical:
+sodium chloride
+CAS No.: 7647-14-5
+100 mL NO 2 -1
+Chemical:
+sulfanilamide
+CAS No.: 63-74-1
+Page: 4/10
+
+===== PAGE 5 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+Chemical:
+o-phosphoric acid
+CAS No.: 7664-38-2
+DNEL:
+2.92 mg/m³
+DNEL = Derived No-Effect Level (for workers)
+EU value:
+[TWA] 1 /[STEL] 2 mg/m³
+TRGS 900 (DE):
+[8h] 1 / [15min] 2 mg/m³
+E/e respirable
+Short-term exposure factor: 2 (I), Y
+skin resorptive (H), respiratory sensitizable (Sa), skin sensitizable (Sh), teratogenic (Z) not securely excluded / (Y) certainly excluded
+SUVA(CH) MAK value:
+1 mg/m³
+NIOSH:
+TWA 1 / ST 3 mg/m³
+NIOSH STEL:
+3 mg/m 3
+[TWA] Time-weighted average to a reference period of 8 hours, [STEL] Short-term exposure limit related to a 15-minute period
+OSHA:
+TWA 1 mg/m³
+8.2
+Exposure controls
+Good ventilation and extraction system in the room, floor resistant to chemicals with floor drainage and washing facilities. The highest
+level of cleanliness must be maintained at the workplace.
+8.2.1
+Respiratory protection
+No additional recommendations.
+8.2.2
+Skin protection / Hand protection
+Yes, gloves according EN 374 (permeation time >30 min - level 2), consist of PVC, natural latex, Neopren, or Nitril (f.ex. from Ansell
+or KCL). Use for short times chemical resistant latex gloves with code EN 374-3 level 1.
+8.2.3
+Eye / Face Protection
+Yes, safety glasses according EN 166 with integrated side shields or wrap-around protection.
+8.2.4
+Skin protection
+Not necessary.
+8.2.5
+Personal hygiene
+Eating, drinking, smoking, taking snuff and storage of food in work areas and at outdoor workplaces is prohibited. Avoid contact
+with the skin, eyes and clothing. Rinse any clothing on which the substance has been spilled, and soak it in water. Wash hands
+thoroughly with soap and water when stopping work and before eating, and then apply protective skin cream.
+8.2.6
+Thermal hazards
+no data available
+8.3
+Limitation and monitoring of environmental exposure
+Do not release product into environment.
+SECTION 9: Physical and chemical properties
+9.1
+Information on basic physical and chemical properties
+23 g NO 2 -2
+a) State of aggregation:
+solid
+b) Colour:
+c) Odor:
+d) Melting point:
+no data available
+e) Boiling point:
+no data available
+f) Flammability:
+no data available
+g) Explosive limits (lower / upper):
+no data available
+h) Flash point:
+no data available
+i) Flashing temperature:
+no data available
+j) Decomposition temperature:
+no data available
+k) pH value:
+no data available
+l) Kinematic viscosity:
+no data available
+m) Solubility in water:
+no data available
+n) Dispersion coefficient (K o/w ):
+no data available
+o) Vapour pressure (20°C):
+no data available
+p) Specific gravity:
+no data available
+q) Relative vapour density (air=1) :
+no data available
+r) Particle size:
+no data available
+100 mL NO 2 -1
+Page: 5/10
+
+===== PAGE 6 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+a) State of aggregation:
+liquid
+b) Colour:
+colourless
+c) Odor:
+odorless
+d) Melting point:
+no data available
+e) Boiling point:
+no data available
+f) Flammability:
+no data available
+g) Explosive limits (lower / upper):
+no data available
+h) Flash point:
+no data available
+i) Flashing temperature:
+no data available
+j) Decomposition temperature:
+no data available
+k) pH value:
+1-2
+l) Kinematic viscosity:
+no data available
+m) Solubility in water:
+0-100 %
+n) Dispersion coefficient (K o/w ):
+no data available
+o) Vapour pressure (20°C):
+no data available
+p) Specific gravity:
+1.05 g/cm³
+q) Relative vapour density (air=1) :
+no data available
+r) Particle size:
+no data available
+9.2
+Other information
+9.2.1
+Information on physical hazard classes
+no data available
+9.2.2
+Other safety-related parameters
+No data is available for the other parameters for the mixtures, since no registration and no chemical safety report is required.
+SECTION 10: Stability and reactivity
+10.1
+Reactivity
+no further data available.
+10.2
+Chemical stability
+no known instability.
+10.3
+Possibility of hazardous reactions
+No further data available.
+10.4
+Conditions to avoid
+no data available
+10.5
+Incompatible materials
+no additional data available
+10.6
+Hazardous decomposition products
+In the original package all parts/all reagents are safety and separated stored. Decompositions are not observed during the expiration
+period under recommended conditions.
+SECTION 11: Toxicological information
+11.1
+Information on the hazard classes according regulation (EC) 1272/2008
+Following information is valid for pure substances. Quantitative data on the toxicity of this product are not available.
+23 g NO 2 -2
+Chemical:
+sodium chloride
+CAS No.: 7647-14-5
+TSCA Inventory:
+listed
+Korea Exist.Chem.Inventory: KE-31387
+LD50 orl rat :
+3000 mg/kg
+Page: 6/10
+
+===== PAGE 7 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+100 mL NO 2 -1
+Chemical:
+sulfanilamide
+CAS No.: 63-74-1
+TSCA Inventory:
+listed
+Korea Exist.Chem.Inventory: KE-01188
+LD50 orl rat :
+3900 mg/kg
+Chemical:
+o-phosphoric acid
+CAS No.: 7664-38-2
+TSCA Inventory:
+listed
+California Proposition 65 List: not listed
+ACGIH:
+1 ppm
+Exposure Routes:
+inhalation, ingestion, skin and/or eye contact
+Target Organs:
+Eyes, skin, respiratory system
+Symptoms:
+irritation eyes, skin, upper respiratory system; eye, skin, burns; dermatitis
+Australia NICNAS:
+not listed
+Canada CEPA 1999: DSL Yes
+Japan CSCL/PRTR:
+not listed, Japan PDSCL: not listed
+Japan ISHL:
+listed ≥1,0%/≥1,0%, Article 57-2 (SDS required)
+South Korea TCCA:
+not listed
+Korea Exist.Chem.Inventory: KE-27427
+LD50 orl rat :
+1530 mg/kg
+LC50 ihl rbt :
+1,689 mg/L
+TRGS 905 (DE):
+R F C
+11.2
+Other hazards
+Possible endocrine disrupting effects
+no data available
+Other information
+no additional data available
+SECTION 12: Ecological information
+12.1
+Toxicity
+Following information is valid for pure substances.
+23 g NO 2 -2
+Substance name:
+sodium chloride
+CAS-Nr.: 7647-14-5
+Water hazard class (DE):
+1
+Storage class (VCI):
+12-13
+100 mL NO 2 -1
+Substance name:
+sulfanilamide
+CAS-Nr.: 63-74-1
+Water hazard class (DE):
+1
+WGK No.: n.n.
+Storage class (VCI):
+13
+Substance name:
+o-phosphoric acid
+CAS-Nr.: 7664-38-2
+LC50 fish/96h :
+3-3.5 mg/L
+Water hazard class (DE):
+1
+WGK No.: 0392
+Storage class (VCI):
+8 B
+12.2
+Persistence and degradability
+12.3
+Bioaccumulative potential
+12.4
+Mobility in soil
+12.5
+Results of PBT and vPvB assessment
+This substance/mixture contains no components considered to be either persistent, bioaccumulative and toxic (PBT) or very persistent
+and very bioaccumulative (vPvB) at levels of 0.1% or higher.
+Page: 7/10
+
+===== PAGE 8 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+12.6
+Endocrine disrupting properties
+no data available
+12.7
+Other adverse effects
+no additional data available
+SECTION 13: Disposal considerations
+Please observe local regulations for collection and disposal of hazardous waste and contact waste disposal company, where you will obtain
+information on laboratory waste disposal (waste code number 16 05 06).
+13.1
+Waste treatment methods
+Normally it is possible to empty small amounts (diluted!) into drains.
+SECTION 14: Transport information
+14.1 - 14.4 Not necessary
+14.5
+Environmental hazards
+none, contains only small quantities of hazardous substances
+14.6
+Special precautions for user
+not necessary
+14.7
+Carriage in bulk by sea in accordance with IMO instruments
+Not applicable.
+SECTION 15: Regulatory information
+15.1
+Safety, health and environmental regulations/legislation specific for the substance or mixture
+Dangerous Substances Protection Act (DE: Chemikaliengesetz - ChemG), Aug 2013, Stand: Okt 2020
+Ordinance on protection against dangerous substances (E: Gefahrstoffverordnung - GefStoffV), Nov 2010, Stand: Mrz 2017
+TRGS 201, Classification and labeling of activities involving hazardous substances, Feb 2017
+TRGS 220, National aspects when preparing safety data sheets, Jan 2017
+TRGS 400, Risk assessment for activities involving hazardous substances, Jul 2017
+BekGS 408, Application of the GefStoffV and the TRGS with the entry into force of the CLP regulation, December 2009, status: Jan
+2012
+TRGS 500, Protective measures, Mai 2008
+TRGS 510, Storage of hazardous substances in portable containers from March 2013, status: Oct 2015
+Wasserhaushaltsgesetz - WHG, Section 3 Handling substances hazardous to water, Jul 2009, status: Aug 2016
+MN leaflet/instructions for use, also at www.mn-net.com
+If necessary, observe other country-specific regulations.
+15.2
+Chemical safety assessment
+no data available
+SECTION 16: Other information
+16.1
+Changes compared to the last version
+Between versions 2.2.5.13 and 2.2.2.2 following changes were applied: - 3 composition data corrected - 11 substance data corrected
+16.2
+List of H and P phrases
+16.2.1
+List of relevant H phrases
+H
+Between versions 2.2.5.13 and 2.2.2.2 following changes were applied: - 3 composition data corrected - 11
+substance data corrected
+H290
+May be corrosive to metals.
+16.2.2
+List of relevant P phrases
+16.3
+Recommended restriction on use
+Only for professional user.
+An individual package of this product or test kit has a moderate hazardous potential.
+16.4
+Sources of key data
+KÜHN, BIRETT, Leaflets on hazardous materials, 2021
+Directive 1999/92/EG Minimum requirements to improve the safety and health protection of workers at risk from potentially explosive
+atmospheres
+SUVA .CH, limit values in the air at work 2009, revised on 01/2009
+Page: 8/10
+
+===== PAGE 9 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+Regulation 790/2009/EU, adaptation of Regulation 1272/2008/EU to technical and scientific progress (1st ATP)
+Regulation 453/2010/EU, adaptation of the REACH regulation 1907/2006/EG
+Regulation 487/2013/EU, adaptation of regulation 1272/2008/EG to technical and scientific progress (4th ATP)
+Regulation 1221/2015/EU, adaptation of regulation 1272/2008/EG to technical and scientific progress (7th ATP)
+Regulation 776/2017/EU, adaptation of regulation 1272/2008/EG to technical and scientific progress (10th ATP)
+Regulation 669/2018/EU, adaptation of Regulation 1272/2008/EC to technical and scientific progressText (11th ATP)
+Regulation 1480/2018/EU, adaptation of regulation 1272/2008/EG to technical and scientific progress (13th ATP)
+Regulation 521/2019/EU, adaptation of regulation 1272/2008/EG to technical and scientific progress (12th ATP)
+TRGS 900, German rules of technology on limit values in the air at work, as of 03/2019
+Regulation 217/2020/EU, adaptation of Annex VI, Part 3, of Regulation 1272/2008/EC to technical and scientific progress (14th ATP)
+Regulation 878/2020/EU, adaptation of Annex II of the REACH regulation 1907/2006/EG
+Regulation 1182/2020/EU, adaptation of Annex VI, Part 3, of Regulation 1272/2008/EC to technical and scientific progress (15th ATP)
+Regulation 643/2021/EU, adaptation of Annex VI, Part 1, of Regulation 1272/2008/EC to technical and scientific progress (16th ATP)
+Regulation 849/2021/EU, adaptation of Annex VI, Part 3, of Regulation 1272/2008/EC to technical and scientific progress (17th ATP)
+Regulation 692/2022/EU, adaptation of Annex VI, Part 1, of Regulation 1272/2008/EC to technical and scientific progress (18th ATP)
+revisions/updates
+Reason for revision: 2014-02 Corrected structure of the sections according to Regulation 453/2010/EU, if necessary
+2014-04 adjustment according Regulation 487/2013/EU
+2016-03 adjustment according Regulation 1221/2015/EU
+2017-11 adjustment according the ECHA registration dossier
+2022-11 adjustment according Regulation 878/2020/EU
+16.5
+Further information
+MACHEREY-NAGEL GmbH & Co. KG provides the information contained herein in good faith being up-to-date of own realizations at
+revision time. This document is intended only as a guide to the appropriate precautionary handling of the material by a properly trained
+person using this product. Individuals receiving the information must exercise their independent judgement in determining its
+appropriateness for a particular purpose.
+MACHEREY-NAGEL GmbH & Co. KG makes NO REPRESENTATIONS or WARRANTIES, either expressed or implied, including
+without limitation any warranties of merchantability, fitness for a particular purpose with respect to the information set forth herein or the
+product to which the information refers. Accordingly MACHEREY-NAGEL GmbH & Co. KG will not be responsible for damages resulting
+from use of or reliance upon this information. See terms and conditions at the end of our price lists for additional information.
+16.6
+Legend / Abbreviations
+acc:
+according
+ADR:
+Convention concerning the International Carriage of Dangerous Goods by Road
+Act:
+acute
+BAT:
+biological workplace tolerance value
+CAO:
+Cargo Aircraft Only
+Carc:
+carcinogen
+CAS:
+Chemical Abstracts Service
+CLP:
+Classification, Labelling and Packaging regulation
+CMR:
+carcinogen, mutagen, reproduction toxic
+Corr:
+corrosive
+COD:
+chemical oxigen demand
+CSCL:
+Chemical Substance Control Law (Jp)
+Dam:
+damage
+DNEL:
+Derived No-Effect Level (for workers)
+derm:
+dermal
+dog:
+dog
+EC10:
+Concentration causing a toxic effect in 10% of the test organisms
+EC:
+European Community
+EC-Nr:
+Substance number of the EC substance inventory
+EmS:
+Guide to accident management measures on ships
+EU:
+European Union
+fish:
+fish (not spezified)
+GHS:
+Global Harmonized System of Classification and Labeling of Chemicals
+gpg:
+guinea pig
+ICAO:
+International Civil Aviation Organization
+ihl:
+inhaled
+IMDG:
+International Maritime Dangerous Goods Code
+intrav:
+intravenous
+ipt:
+intraperitonaeal
+ISHL:
+Industrial Safety and Health Law (Jp)
+LC50:
+letale concentration 50%
+LD50:
+letale dosis 50%
+Page: 9/10
+
+===== PAGE 10 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+leuciscus idus:
+fisch, ide, orfe
+MAK:
+maximum workplace concentration
+Met:
+Metall
+mus:
+mouse
+Muta:
+mutagen
+NIOSH:
+National Institute for Occupational Safety and Health (US)
+NRD:
+Non-rapidly degradable
+onchorhynchus mykiss:
+fish, rainbow trout
+orl:
+oral
+OSHA:
+Occupational Safety and Health Administration
+PAX:
+transport on passenger planes allowed
+PBT:
+persistent, bioaccumulating, toxic substance
+pH:
+pH value
+pimephales promelas:
+fish, fathead minnow
+PNEC:
+Predicted No Effected Concentration
+PROC 15:
+Process category 'for laboratory use'
+PRTR:
+Law for PRTR and Promotion of Chemical Management (Jp)
+PVC:
+polyvinyl chloride
+quail:
+bird, quail
+rat:
+rat
+rbt:
+rabbit
+RD:
+rapidly degradable
+RE:
+repeated
+REACh:
+Registration, Evaluation, Authorisation and Restriction of Chemicals
+REF:
+item number, reference number
+Reg.No.:
+rRegistration number
+Repr:
+harmful to reproduction
+Resp:
+respiratory
+RIP:
+REACH Implementations Projects
+scu:
+sub cutan
+SDS:
+safety data sheet
+Sens:
+sensitisation
+STEL:
+short term exposure limit
+STOT:
+Specific Target Organ Toxicity
+SVHC:
+Substance of Very High Concern
+t/a:
+tons per year
+TCCA:
+Toxic Chemicals Control Act (S. Korea)
+Tox:
+toxic
+TSCA:
+The Toxic Substances Control Act (US)
+TWA:
+time weighted average
+TRGS:
+technical regulations (DE)
+vPvB:
+very persistent, very bioaccumulating substance
+16.7
+Training advice
+Regular safety training. Multiple safety training of staffs about danger and protection by using hazards in working area. Additionally
+training and introduction of staffs for using these products.
+Page: 10/10

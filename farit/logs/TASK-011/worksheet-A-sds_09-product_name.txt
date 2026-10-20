@@ -1,0 +1,70 @@
+# TASK-011 worksheet — group A — sds_09.pdf / product_name
+state=PRESENT  derivation=EXPLICIT  gold_value='VISOCOLOR HE Nitrite, refill pack'
+
+## gold evidence_set
+- page 1: 'Product name\nVISOCOLOR HE Nitrite, refill pack'
+
+===== PAGE 1 (native) =====
+Safety Data Sheet
+according to Regulations REACh 1907/2006/EC
+REF: 920163
+VISOCOLOR HE Nitrite, refill pack
+Printing date: 03.08.2026
+Date of issue: 27.04.2026
+Version: 2.2.5.13
+Software: M2 V 6.1.5.0
+SECTION 1: Identification of the substance/mixture and of the company
+1.1
+Product identifier
+REF
+920163
+Product name
+VISOCOLOR HE Nitrite, refill pack
+REACH Registration number(s):
+see SECTION 3.1/3.2 or
+A registration number for the substance(s) does not exist because the annual tonnage does not require registration or
+the substance or its use is excluded from registration.
+1 x 100 mL NO 2 -1
+UFI: NSUT-J3F5-720W-54SH
+1 x 23 g NO 2 -2
+1.2
+Relevant identified uses of the substance or mixture and uses advised against
+Relevant identified uses
+Product for analytical use.
+Exposure Scenario Classification according REACh, RIP 3.2 Codes: SU 0-2, PC 21, PROC 15, AC 0
+The exposure scenario is integrated into sections 1-16.
+Uses advised against
+not described
+1.3
+Details of the supplier of the safety data sheet
+Manufactured by:
+MACHEREY-NAGEL GmbH & Co. KG
+Valencienner Str. 11, 52355 Düren, Germany
+Phone: +49 2421 969 0
+E-mail: sds@mn-net.com (msds@mn-net.com)
+1.4
+Emergency telephone number
+Outside Germany (DE): Call your regional Poisons Information Service or call local Life Saving Service.
+DE: Gemeinsames Giftinformationszentrum (GGIZ)
+99089 Erfurt tel. +49 361 730 730, <https://www.ggiz-erfurt.de>
+You find our current versions of SDS in Internet:
+<https://www.mn-net.com/SDS>
+SECTION 2: Hazard identification
+2.0
+Classification of the complete product according to Regulation (EC) 1272/2008
+GHS05
+Signal word
+DANGER
+Hazard identification
+Hazard classes/categories
+H290
+Met. Corr. 1
+2.1
+Classification of the substance or mixture according to Regulation (EC) 1272/2008
+23 g NO 2 -2
+Do not need labelling as hazardous
+Signal word
+-
+No hazard class
+100 mL NO 2 -1
+Page: 1/10

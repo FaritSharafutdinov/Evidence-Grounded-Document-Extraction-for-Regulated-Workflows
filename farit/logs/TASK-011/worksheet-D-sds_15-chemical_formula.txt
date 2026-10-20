@@ -1,0 +1,50 @@
+# TASK-011 worksheet — group D — sds_15.pdf / chemical_formula
+state=NOT_APPLICABLE  derivation=ONTOLOGY  gold_value=None
+
+## gold evidence_set
+- page 1: 'Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits.'
+
+===== PAGE 1 (native) =====
+Version: 3.2
+Revision Date: 04/23/2026
+000000007582
+1/11
+SAFETY DATA SHEET
+1. Identification
+Material name: TAMMSWELD - 55 GALLON DRUM - MTO
+Material: THHWD55
+Recommended use and restriction on use
+Recommended use: Coatings
+Restrictions on use: Not known.
+Manufacturer/Importer/Supplier/Distributor Information
+EUCLID CHEMICAL COMPANY
+19218 REDWOOD ROAD
+CLEVELAND OH 44110
+US
+Contact person:
+EH&S Department
+Telephone:
+216-531-9222
+Emergency telephone number:
+1-800-424-9300 (US); 1-613-996-6666 (Canada)
+2. Hazard(s) identification
+Hazard Classification
+Not classified
+Hazard Symbol:
+No symbol
+Signal Word:
+No signal word.
+Hazard Statement:
+Not applicable.
+Precautionary
+Statements
+Not applicable.
+Hazard(s) not otherwise
+classified (HNOC):
+None.
+3. Composition/information on ingredients
+Mixtures
+Composition Comments:
+The components are not hazardous or are below required disclosure limits.
+4. First-aid measures
+Label Elements

@@ -1,0 +1,71 @@
+# TASK-011 worksheet — group B — sds_01.pdf / chemical_formula
+state=NOT_APPLICABLE  derivation=ONTOLOGY  gold_value=None
+
+## gold evidence_set
+- page 1: 'Chemical description: Mixture of substances'
+- page 1: 'Substance:\nNon-applicable'
+
+===== PAGE 1 (native) =====
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+REDUR AD 04
+Other means of identification:
+UFI:
+MY90-10UT-4008-K1J7
+1.2
+Relevant identified uses of the substance or mixture and uses advised against:
+Relevant uses: Paint
+Uses advised against: All uses not specified in this section or in section 7.3
+1.3
+Details of the supplier of the safety data sheet:
+SECILTEK SA
+Apartado 2
+2406-909 Maceira LRA Leiria - Portugal
+Phone: +351244770220 - Fax: +351244777997
+comercial.seciltek@secil.pt
+https://www.secil.pt
+1.4
+Emergency telephone number:
+SECTION 2: HAZARDS IDENTIFICATION
+2.1
+Classification of the substance or mixture:
+CLP Regulation (EC) No 1272/2008:
+The product is not classified as hazardous according to CLP Regulation (EC) No 1272/2008.
+2.2
+Label elements:
+CLP Regulation (EC) No 1272/2008:
+None
+UFI:
+MY90-10UT-4008-K1J7
+2.3
+Other hazards:
+Product does not meet PBT/vPvB criteria
+Endocrine-disrupting properties: The product does not meet the criteria.
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1
+Substance:
+Non-applicable
+3.2
+Mixture:
+Chemical description: Mixture of substances
+Components:
+None of the substances contained in the mixture are above the limits specified in Annex II of Regulation (EC) No 1907/2006
+SECTION 4: FIRST AID MEASURES
+4.1
+Description of first aid measures:
+Consult a doctor in case of discomfort showing the SDS for the product.
+By inhalation:
+In case of symptoms, move the person affected into fresh air.
+By skin contact:
+In case of contact it is recommended to clean the affected area thoroughly with water and neutral soap. In case of changes to
+the skin (stinging, redness, rashes, blisters,…), seek medical advice with this Safety Data Sheet
+By eye contact:
+Rinse with water until the product has been eliminated. In case of problems, consult a doctor showing the SDS for the product.
+By ingestion/aspiration:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 1/9

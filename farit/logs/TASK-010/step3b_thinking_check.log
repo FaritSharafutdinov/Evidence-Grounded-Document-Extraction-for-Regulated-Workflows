@@ -1,0 +1,23 @@
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1932.41it/s]
+======================================================================
+CASE A: default template (what frozen score_page_mlx uses)
+======================================================================
+TAIL OF PROMPT: "ve the field's\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n"
+GREEDY 40 TOKENS:
+'The user wants to know if the provided Safety Data Sheet (SDS) page contains text that states, implies, or helps derive the value of the field "product_name — Trade name / product identifier'
+
+======================================================================
+CASE B: enable_thinking=False (documenting the alternative, NOT used by frozen code)
+======================================================================
+TAIL OF PROMPT: "d's\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n"
+GREEDY 10 TOKENS:
+'Yes'
+
+======================================================================
+CASE C: logits at last position under default template — what does P(Yes)/(P(Yes)+P(No)) see?
+======================================================================
+logits_dtype=mlx.core.bfloat16
+yes_logprob=-12.3125 no_logprob=-16.3750
+P(Yes)=4.495e-06 P(No)=7.734e-08
+score = P(Yes)/(P(Yes)+P(No)) = 0.983085
+top-5 tokens: [('The', 24.5), ('Thinking', 24.25), ('Okay', 18.625), ('Here', 17.875), ('<think>', 16.25)]

@@ -1,0 +1,7 @@
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1965.01it/s]
+MODEL=mlx-community/Qwen3.5-2B-MLX-4bit
+LOAD_TIME_SEC=6.4
+RSS_MB=1376
+PARAMS_BILLION=0.08
+SANITY_ENCODE=[9419]
+SANITY_FORWARD_OK logits_dtype=mlx.core.bfloat16 shape=(1, 1, 248320)

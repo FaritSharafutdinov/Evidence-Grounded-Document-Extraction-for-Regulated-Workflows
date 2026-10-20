@@ -1,0 +1,99 @@
+# TASK-011 worksheet — group A — sds_17.pdf / substance_or_mixture
+state=PRESENT  derivation=EXPLICIT  gold_value='ARTICLE'
+
+## gold evidence_set
+- page 1: 'Mel-Rol is\ndefined by OSHA as an "article."'
+
+===== PAGE 1 (native) =====
+Address:
+|0|
+|1|
+|0|
+| |
+% by
+SARA
+LEL
+CAS Number
+Weight
+313
+(@24°C)
+8052-42-4
+55-60
+No
+N/A
+PEL
+PEL/CEILING
+PEL/STEL
+SKIN
+TLV
+TLV/STEL
+SKIN
+5 mg/m3*
+N/E
+N/E
+No
+0.5 mg/m3*
+N/E
+N/E
+Under the reporting requirements of Section 313 of Title III of the Superfund Amendments and Reauthorization Act of 1966
+(SARA) and 40 CFR Part 372, chemicals listed on the 313 List (40 CFR Part 373.65) are identified under the heading "SARA 313."
+1. Petroleum Asphalt
+INHALATION: Not expected to be an exposure route.
+SAFE STORAGE: Prevent job-site damage.
+Telephone:
+(847) 214-2100
+Revision Date:
+1/17/2024
+Page 1 of 2
+In case of emergency, dial (800) 424-9300 (CHEMTREC)
+SECTION 4: EMERGENCY AND FIRST AID PROCEDURES
+1. Petroleum Asphalt
+SECTION 2: HAZARDS IDENTIFICATION/EXPOSURE LIMITS
+SKIN CONTACT: Wash affected areas with soap and water if available.
+EYE CONTACT: Not expected to be an exposure route.
+HMIS
+|Health|
+|Flammability|
+|Reactivity|
+|Personal Protection|
+SECTION 3: HAZARDOUS COMPONENTS
+Chemical Name:
+Product is classified as non-hazardous per OSHA 1910.1200. Mel-Rol is
+defined by OSHA as an "article." A manufactured item that is formed to a specific
+shape or design during manufacture that does not release or result in exposure
+to a hazardous chemical under normal use conditions.
+MOST IMPORTANT SYMPTOMS/EFFECTS, ACUTE AND CHRONIC: See Section Eleven for Symptoms/Effects.
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION
+Chemical Name:
+TLV/CEILING
+OSHA
+ACGIH
+Vapor Pressure
+(mm Hg@20°C)
+N/A
+SAFETY DATA SHEET
+Part Number: 5110060
+300 Industrial Drive
+SECTION 6: ACCIDENTAL RELEASE MEASURES
+CHEMICAL/COMBUSTION HAZARDS: Oxides and compounds of nitrogen/sulfur.
+PRECAUTIONS/PERSONAL PROTECTIVE EQUIPMENT: Avoid smoke inhalation. Use appropriate respiratory protection.
+INGESTION: Not expected to be an exposure source.
+FLASHPOINT: Not applicable; product is a solid.
+EXTINGUISHING MEDIA: Water fog, foam, dry chemical.
+SECTION 5: FIRE AND EXPLOSIVES HAZARDS
+Product Use:
+Waterproofing Membrane
+SECTION 1: PRODUCT AND COMPANY IDENTIFICATION
+Product:
+Manufacturer:
+MEL-ROL®
+W. R. MEADOWS, INC.
+Hampshire, Illinois 60140
+N/A = Not Applicable
+PERSONAL PROTECTIVE EQUIPMENT: Safety glasses, chemical-resistant gloves.
+ENGINEERING CONTROLS: None required under normal use conditions.
+SPILL OR LEAK PROCEDURES: Not applicable. Product is a solid.
+SECTION 7: HANDLING AND STORAGE
+SAFE HANDLING PROCEDURES: Avoid direct contact.
+N/E
+N/E: Not Established *: Asphalt Fumes

@@ -1,0 +1,73 @@
+# TASK-011 worksheet — group D — sds_15.pdf / flash_point
+state=NO_DATA  derivation=EXPLICIT  gold_value=None
+
+## gold evidence_set
+- page 4: 'Flash Point:\nNo data available.'
+
+===== PAGE 4 (native) =====
+Version: 3.2
+Revision Date: 04/23/2026
+000000007582
+4/11
+Skin and Body Protection:
+No data available.
+Respiratory Protection:
+In case of inadequate ventilation use suitable respirator. Seek advice from
+local supervisor.
+Hygiene measures:
+Always observe good personal hygiene measures, such as washing after
+handling the material and before eating, drinking, and/or smoking. Routinely
+wash work clothing to remove contaminants. Discard contaminated
+footwear that cannot be cleaned.
+9. Physical and chemical properties
+Information on basic physical and chemical properties
+Appearance
+Physical state:
+liquid
+Form:
+liquid
+Color:
+Off-white
+Odor:
+Mild
+Odor Threshold:
+No data available.
+Freezing point:
+32 °F/ -0.00 °C
+Boiling Point:
+212 °F/ 100 °C
+Flammability:
+No
+Upper/lower limit on flammability or explosive limits
+Explosive limit - upper:
+No data available.
+Explosive limit - lower:
+No data available.
+Flash Point:
+No data available.
+Auto-ignition temperature:
+No data available.
+Decomposition Temperature:
+No data available.
+pH:
+9.5
+Viscosity
+Dynamic viscosity:
+No data available.
+Kinematic viscosity:
+No data available.
+Flow Time:
+No data available.
+Solubility(ies)
+Solubility in Water:
+Soluble
+Solubility (other):
+No data available.
+Partition coefficient (n-octanol/water):
+No data available.
+Vapor pressure:
+No data available.
+Relative density:
+1.1
+Density:
+No data available.

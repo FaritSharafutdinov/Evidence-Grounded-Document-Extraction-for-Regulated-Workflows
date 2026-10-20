@@ -1,0 +1,96 @@
+# TASK-011 worksheet — group A — sds_03.pdf / flash_point
+state=PRESENT  derivation=EXPLICIT  gold_value='Non Flammable (>60 ºC)'
+
+## gold evidence_set
+- page 6: 'Flash Point:\nNon Flammable (>60 ºC)'
+
+===== PAGE 6 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES
+9.1
+Information on basic physical and chemical properties:
+For complete information see the product datasheet.
+Appearance:
+Physical state at 20 ºC:
+Liquid
+Appearance:
+Not available
+Colour:
+White
+Odour:
+Not available
+Odour threshold:
+Not relevant *
+Volatility:
+Boiling point at atmospheric pressure:
+327 ºC
+Vapour pressure at 20 ºC:
+4.076E-2 Pa
+Vapour pressure at 50 ºC:
+0.95 Pa (0 kPa)
+Evaporation rate at 20 ºC:
+Not relevant *
+Product description:
+Density at 20 ºC:
+Not relevant *
+Relative density at 20 ºC:
+0.95 - 1.05
+Dynamic viscosity at 20 ºC:
+35000 - 45000 cP
+Kinematic viscosity at 20 ºC:
+Not relevant *
+Kinematic viscosity at 40 ºC:
+Not relevant *
+Concentration:
+Not relevant *
+pH:
+9 - 10
+Vapour density at 20 ºC:
+Not relevant *
+Partition coefficient n-octanol/water 20 ºC:
+Not relevant *
+Solubility in water at 20 ºC:
+Not relevant *
+Solubility properties:
+Not relevant *
+Decomposition temperature:
+Not relevant *
+Melting point/freezing point:
+Not relevant *
+Flammability:
+Flash Point:
+Non Flammable (>60 ºC)
+Flammability (solid, gas):
+Not relevant *
+Autoignition temperature:
+351 ºC
+Lower flammability limit:
+Not relevant *
+Upper flammability limit:
+Not relevant *
+Particle characteristics:
+Median equivalent diameter:
+Non-applicable
+9.2
+Other information:
+Information with regard to physical hazard classes:
+Explosive properties:
+Not relevant *
+Oxidising properties:
+Not relevant *
+Corrosive to metals:
+Not relevant *
+Heat of combustion:
+Not relevant *
+Aerosols-total percentage (by mass) of flammable
+components:
+Not relevant *
+Other safety characteristics:
+Surface tension at 20 ºC:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 6/11

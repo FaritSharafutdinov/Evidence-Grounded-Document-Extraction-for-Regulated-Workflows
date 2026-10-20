@@ -1,0 +1,78 @@
+# TASK-011 worksheet — group B — sds_14.pdf / product_cas_number
+state=NOT_APPLICABLE  derivation=ONTOLOGY  gold_value=None
+
+## gold evidence_set
+- page 1: 'Mixture of substances as listed below.'
+- page 1: 'Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.'
+
+===== PAGE 1 (native) =====
+Safety Data Sheet
+acc. to Work Health and Safety Regulations
+Dalgety 6 in 1 B12 Vaccine
+Version number: 1.0
+Date of compilation: 2025-07-02
+Page: 1 of 6
+SECTION 1: Identification of the substance/mixture and of the company/undertaking
+1.1
+Product identifier
+Trade name
+Dalgety 6 in 1 B12 Vaccine
+APVMA Approval
+88864/148908
+1.2
+Relevant identified uses of the substance or mixture and uses advised against
+Relevant identified uses
+Vaccine
+1.3
+Details of the supplier of the safety data sheet
+Nutrien Ag Solutions Limited
+Level 5, Building A; 26 Talavera Road
+Macquarie Park NSW 2113
+Australia
+Telephone: +61 (02) 9889 5400
+Emergency telephone number: 1800 033 111
+SECTION 2: Hazards identification
+2.1
+Classification of the substance or mixture
+Not classified as Hazardous according to the Globally Harmonised System of Classification and La-
+belling of Chemicals (GHS) and Safe Work Australia criteria.
+Not classified as Dangerous Goods according to the Australian Code for the Transport of Dangerous
+Goods by Road and Rail (7th edition), IATA and IMDG/IMSBC.
+2.2
+Label elements
+Labelling
+not required
+SECTION 3: Composition/information on ingredients
+Mixture of substances as listed below.
+Description of the mixture
+Mixture of substances listed below with ingredients not classified as hazardous.
+Name of substance
+CAS No
+Wt%
+Classification acc. to GHS
+Acetatocobalamin
+22465-48-1
+≤ 0.2
+Carc. 2 / H351
+Clostridium septicum toxoid
+≤ 0.1
+Clostridium novyl Type B toxoid
+≤ 0.1
+Clostridium tetani toxoid
+≤ 0.1
+Clostridium perfringens Type D,
+toxoid
+≤ 0.1
+Clostridium chauvoei bacterin
+≤ 0.1
+Corynebacterium Pseudotuber-
+culosis bacterin
+≤ 0.1
+Thimerosal
+54-64-8
+≤ 0.015
+Acute Tox. 2 / H300
+Acute Tox. 1 / H310
+Acute Tox. 2 / H330
+Skin Sens. 1 / H317
+STOT RE 2 / H373

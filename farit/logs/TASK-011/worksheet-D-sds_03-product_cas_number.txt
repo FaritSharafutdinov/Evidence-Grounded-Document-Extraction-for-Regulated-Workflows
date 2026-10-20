@@ -1,0 +1,71 @@
+# TASK-011 worksheet — group D — sds_03.pdf / product_cas_number
+state=NOT_APPLICABLE  derivation=EXPLICIT  gold_value=None
+
+## gold evidence_set
+- page 1: 'Substance:\nNon-applicable'
+
+===== PAGE 1 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+STYCCOBOND F49 BASE
+Other means of identification:
+Not relevant
+1.2
+Relevant identified uses of the substance or mixture and uses advised against:
+Relevant uses: Adhesive. For professional users only.
+Uses advised against: All uses not specified in this section or in section 7.3
+1.3
+Details of the supplier of the safety data sheet:
+F. Ball and Co. Ltd.
+Churnetside Business Park, Station Road
+ST13 7RS Cheddleton - Leek - England
+Phone: +44(0) 1538 361633
+msds@f-ball.co.uk
+www.f-ball.com
+1.4
+Emergency telephone number: 111
+SECTION 2: HAZARDS IDENTIFICATION
+2.1
+Classification of the substance or mixture:
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+Classification of this product has been carried out in accordance with GB CLP Regulation (UK S.I. 2019/720 and UK S.I.
+2020/1567).
+Eye Irrit. 2: Eye irritation, Category 2, H319
+Skin Irrit. 2: Skin irritation, Category 2, H315
+Skin Sens. 1: Sensitisation, skin, Category 1, H317
+2.2
+Label elements:
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+Warning
+Hazard statements:
+Eye Irrit. 2: H319 - Causes serious eye irritation.
+Skin Irrit. 2: H315 - Causes skin irritation.
+Skin Sens. 1: H317 - May cause an allergic skin reaction.
+Precautionary statements:
+P264: Wash hands thoroughly after handling.
+P280: Wear protective gloves/protective clothing/eye protection.
+P302+P352: IF ON SKIN: Wash with plenty of soap and water.
+P305+P351+P338: IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to
+do. Continue rinsing.
+P313: Get medical advice/attention.
+P501: Dispose of the contents and/or its container in line with regulations on dangerous waste or packaging and waste packaging
+respectively.
+Supplementary information:
+Contains 1,2-benzisothiazol-3(2H)-one, m-phenylenebis(methylamine), Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one
+and 2-methyl-2H-isothiazol-3-one (3:1).
+2.3
+Other hazards:
+Product does not meet PBT/vPvB criteria
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1
+Substance:
+Non-applicable
+3.2
+Mixture:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 1/11

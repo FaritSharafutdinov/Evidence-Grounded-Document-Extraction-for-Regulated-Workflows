@@ -1,0 +1,62 @@
+# TASK-011 worksheet — group C — sds_04.pdf / substance_or_mixture
+state=PRESENT  derivation=COMPOSITION_IMPLIED  gold_value='SUBSTANCE'
+
+## gold evidence_set
+- page 2: '1,1,1,2-Tetrafluoroethane\n811-97-2\n100'
+- page 2: 'There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2'
+
+===== PAGE 2 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 2 of 7
+Current Issue Date: January 04, 2021
+INGREDIENT NAME
+NTP STATUS
+IARC STATUS
+OSHA LIST
+No ingredients listed in this section
+3. COMPOSITION / INFORMATION ON INGREDIENTS
+INGREDIENT NAME
+CAS NUMBER
+WEIGHT %
+1,1,1,2-Tetrafluoroethane
+811-97-2
+100
+COMMON NAME AND SYNONYMS
+R-134a; HFC134a
+There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2
+4. FIRST AID MEASURES
+SKIN: Promptly flush skin with water until all chemical is removed. If there is evidence of frostbite, bathe (do not rub) with
+lukewarm (not hot) water. If water is not available, cover with a clean, soft cloth or similar covering. Get medical attention
+if symptoms persist.
+EYES: Immediately flush eyes with large amounts of water for at least 15 minutes (in case of frostbite, water should be lukewarm,
+not hot) lifting eyelids occasionally to facilitate irrigation. Get medical attention if symptoms persist.
+INHALATION: Immediately move to fresh air. If breathing has stopped, give artificial respiration. Use oxygen as
+required, provided a qualified operator is available. Get medical attention immediately. DO NOT give epinephrine
+(adrenaline).
+INGESTION: Ingestion is unlikely because of the physical properties and is not expected to be hazardous. DO NOT induce
+vomiting unless instructed to do so by a physician.
+ADVICE TO PHYSICIAN: Because of the possible disturbances of cardiac rhythm, catecholamine drugs, such as
+epinephrine, should be used with special caution and only in situations of emergency life support.
+Treatment of overexposure should be directed at the control of symptoms and the clinical
+conditions.
+5. FIRE FIGHTING MEASURES
+FLAMMABLE PROPERTIES
+FLASH POINT:
+Gas, not applicable per DOT regulations
+FLASH POINT METHOD:
+Not applicable
+AUTOIGNITION TEMPERATURE:
+>750C
+UPPER FLAME LIMIT (volume % in air):
+None*
+LOWER FLAME LIMIT (volume % in air):
+None*
+*Based on ASHRAE Standard 34 with match ignition
+FLAME PROPAGATION RATE (solids):
+Not applicable
+OSHA FLAMMABILITY CLASS:
+Not applicable
+EXTINGUISHING MEDIA:
+Use any standard agent – choose the one most appropriate for type of surrounding fire (material itself is not flammable)

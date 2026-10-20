@@ -1,0 +1,1087 @@
+[
+  {
+    "document": "sds_04.pdf",
+    "field": "supplier_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "DISTRIBUTOR:\nNational Refrigerants, Inc."
+      }
+    ],
+    "notes": "Цитата дословно на стр. 1. Дистрибьютор — валидный субъект для supplier_name по описанию поля.",
+    "gold": {
+      "value": "National Refrigerants, Inc.",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "DISTRIBUTOR:\nNational Refrigerants, Inc."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_15.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits."
+      }
+    ],
+    "notes": "Дословно на стр. 1: заголовок 3.2 Mixtures объявляет смесь по конвенции онтологии (_SECTION_HEADING).",
+    "gold": {
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_09.pdf",
+    "field": "product_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Product name\nVISOCOLOR HE Nitrite, refill pack"
+      }
+    ],
+    "notes": "Дословно на стр. 1, секция 1.1.",
+    "gold": {
+      "value": "VISOCOLOR HE Nitrite, refill pack",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Product name\nVISOCOLOR HE Nitrite, refill pack"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_08.pdf",
+    "field": "flash_point",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 9,
+        "text": "Flash point:\n120 °C"
+      }
+    ],
+    "notes": "Дословно в SECTION 9 (стр. 9); значение продукта целиком, не ингредиента.",
+    "gold": {
+      "value": "120 °C",
+      "evidence": [
+        {
+          "page": 9,
+          "text": "Flash point:\n120 °C"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_03.pdf",
+    "field": "flash_point",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 6,
+        "text": "Flash Point:\nNon Flammable (>60 ºC)"
+      }
+    ],
+    "notes": "Дословно на стр. 6. Нюанс: значение — не температура, а классификационное утверждение; лексикон онтологии не считает 'Non Flammable' NOT_APPLICABLE-cue, поэтому PRESENT консистентен с правилами схемы и верен документу.",
+    "gold": {
+      "value": "Non Flammable (>60 ºC)",
+      "evidence": [
+        {
+          "page": 6,
+          "text": "Flash Point:\nNon Flammable (>60 ºC)"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_17.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mel-Rol is\ndefined by OSHA as an \"article.\""
+      }
+    ],
+    "notes": "Дословно на стр. 1; OSHA-определение article → ARTICLE по FORM_CUES.",
+    "gold": {
+      "value": "ARTICLE",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mel-Rol is\ndefined by OSHA as an \"article.\""
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_19.pdf",
+    "field": "supplier_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Company:\nBuddy Rhodes Concrete Products"
+      }
+    ],
+    "notes": "Дословно, секция 1.3.",
+    "gold": {
+      "value": "Buddy Rhodes Concrete Products",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Company:\nBuddy Rhodes Concrete Products"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_11.pdf",
+    "field": "product_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "A",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Product identifier:\nLD COVID-19 IgG Rapid Test (Art.-No. COV19_G_10_EN)"
+      }
+    ],
+    "notes": "Дословно, секция 1.1; value (имя без артикула) поддерживается цитатой.",
+    "gold": {
+      "value": "LD COVID-19 IgG Rapid Test",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Product identifier:\nLD COVID-19 IgG Rapid Test (Art.-No. COV19_G_10_EN)"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_02.pdf",
+    "field": "chemical_formula",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 4,
+        "text": "Substance or preparation: Preparation"
+      }
+    ],
+    "notes": "Premise дословно на стр. 4; 'Preparation' → MIXTURE по FORM_CUES; формула определена только для substance → N/A. Химически корректно: батарейный элемент — многокомпонентный продукт.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 4,
+          "text": "Substance or preparation: Preparation"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_11.pdf",
+    "field": "molecular_weight",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 2,
+        "text": "3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins."
+      },
+      {
+        "page": 2,
+        "text": "3.2. Mixtures\nComposition of the substances in the mixtures:"
+      }
+    ],
+    "notes": "Оба premise дословно на стр. 2; 3.1 Substances = Not applicable → смесь по конвенции SDS; MW для смеси N/A — химически корректно (тест-набор: кассета + буфер).",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 2,
+          "text": "3.2. Mixtures\nComposition of the substances in the mixtures:"
+        },
+        {
+          "page": 2,
+          "text": "3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_14.pdf",
+    "field": "product_cas_number",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mixture of substances as listed below."
+      },
+      {
+        "page": 1,
+        "text": "Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous."
+      }
+    ],
+    "notes": "Дословно на стр. 1; вакцина (смесь токсоидов/бактеринов) → CAS продукта N/A. CAS ингредиентов (22465-48-1, 54-64-8) правильно не использованы как CAS продукта.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mixture of substances as listed below."
+        },
+        {
+          "page": 1,
+          "text": "Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_17.pdf",
+    "field": "product_cas_number",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mel-Rol is\ndefined by OSHA as an \"article.\""
+      }
+    ],
+    "notes": "Дословно; продукт = article → CAS N/A. CAS 8052-42-4 (Petroleum Asphalt, ингредиент SECTION 3) правильно не взят как CAS продукта — product-vs-ingredient дисциплина соблюдена.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mel-Rol is\ndefined by OSHA as an \"article.\""
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_01.pdf",
+    "field": "chemical_formula",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Chemical description: Mixture of substances"
+      },
+      {
+        "page": 1,
+        "text": "Substance:\nNon-applicable"
+      }
+    ],
+    "notes": "Дословно; 3.1 Substance = Non-applicable → смесь; формула N/A.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Chemical description: Mixture of substances"
+        },
+        {
+          "page": 1,
+          "text": "Substance:\nNon-applicable"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_15.pdf",
+    "field": "molecular_weight",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits."
+      }
+    ],
+    "notes": "Дословно; покрытие-смесь → MW N/A.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_12.pdf",
+    "field": "chemical_formula",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "3.1 N/A"
+      },
+      {
+        "page": 1,
+        "text": "3.2 Description\nGarden fertiliser NPK 3 – 9 - 0"
+      }
+    ],
+    "notes": "Дословно; 3.1 N/A → смесь (костная мука, 45–55% SiO2); формула N/A.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "3.2 Description\nGarden fertiliser NPK 3 – 9 - 0"
+        },
+        {
+          "page": 1,
+          "text": "3.1 N/A"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_02.pdf",
+    "field": "product_cas_number",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "B",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 4,
+        "text": "Substance or preparation: Preparation"
+      }
+    ],
+    "notes": "Дословно; preparation → смесь → CAS продукта N/A. CAS компонентов таблицы композиции правильно не использованы (product-vs-ingredient корректно).",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 4,
+          "text": "Substance or preparation: Preparation"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_04.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "COMPOSITION_IMPLIED",
+    "group": "C",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 2,
+        "text": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100"
+      },
+      {
+        "page": 2,
+        "text": "There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2"
+      }
+    ],
+    "notes": "Дословно на стр. 2; единственный компонент при 100% + отсутствие примесей → SUBSTANCE. Химически корректно (R-134a — чистое вещество).",
+    "gold": {
+      "value": "SUBSTANCE",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100"
+        },
+        {
+          "page": 2,
+          "text": "There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_09.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "COMPOSITION_IMPLIED",
+    "group": "C",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 3,
+        "text": "Substance name:\nsodium chloride\nCAS No.:\n7647-14-5"
+      },
+      {
+        "page": 6,
+        "text": "No data is available for the other parameters for the mixtures"
+      }
+    ],
+    "notes": "Дословно; несколько веществ с концентрациями (NaCl 80–<100%, sulfanilamide, H3PO4) → смесь; стр. 6 прямо: 'for the mixtures'.",
+    "gold": {
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Substance name:\nsodium chloride\nCAS No.:\n7647-14-5"
+        },
+        {
+          "page": 6,
+          "text": "No data is available for the other parameters for the mixtures"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_18.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "COMPOSITION_IMPLIED",
+    "group": "C",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 5,
+        "text": "Ingredient\nC.A.S. No.\n% by Wt"
+      },
+      {
+        "page": 5,
+        "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
+      }
+    ],
+    "notes": "Дословно; многокомпонентная таблица + прямое 'the mixture' → смесь.",
+    "gold": {
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 5,
+          "text": "Ingredient\nC.A.S. No.\n% by Wt"
+        },
+        {
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_20.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "COMPOSITION_IMPLIED",
+    "group": "C",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 3,
+        "text": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l]."
+      }
+    ],
+    "notes": "Дословно; продукт из остатков нескольких процессов → UVCB-смесь; согласуется с '3.1.2 Chemical formula: No.' в том же документе.",
+    "gold": {
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l]."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_20.pdf",
+    "field": "molecular_weight",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 3,
+        "text": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l]."
+      }
+    ],
+    "notes": "Premise дословно; смесь → MW N/A, химически корректно для нефтяного смолистого остатка.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 3,
+          "text": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l]."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_07.pdf",
+    "field": "molecular_weight",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mixture identification:"
+      },
+      {
+        "page": 1,
+        "text": "Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:"
+      }
+    ],
+    "notes": "Оба premise дословно на стр. 1; тонер (смола 60–70%, Fe2O3, PE, силика) → MW N/A.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mixture identification:"
+        },
+        {
+          "page": 1,
+          "text": "Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_15.pdf",
+    "field": "chemical_formula",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits."
+      }
+    ],
+    "notes": "Дословно; смесь → формула N/A.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mixtures\nComposition Comments:\nThe components are not hazardous or are below required disclosure limits."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_03.pdf",
+    "field": "product_cas_number",
+    "state": "NOT_APPLICABLE",
+    "derivation": "EXPLICIT",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Substance:\nNon-applicable"
+      }
+    ],
+    "notes": "Дословно; 3.1 Substance = Non-applicable → смесь (клей) → CAS продукта N/A.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Substance:\nNon-applicable"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_07.pdf",
+    "field": "product_cas_number",
+    "state": "NOT_APPLICABLE",
+    "derivation": "ONTOLOGY",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Mixture identification:"
+      },
+      {
+        "page": 1,
+        "text": "Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:"
+      }
+    ],
+    "notes": "Дословно; тонер = смесь → CAS N/A; CAS 1309-37-1 (Fe2O3, ингредиент) правильно не использован.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mixture identification:"
+        },
+        {
+          "page": 1,
+          "text": "Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_13.pdf",
+    "field": "chemical_formula",
+    "state": "NOT_STATED",
+    "derivation": "ABSENT",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 2,
+        "text": "Substance/mixture\n: Substance"
+      }
+    ],
+    "notes": "Форма SUBSTANCE объявлена (стр. 2) → поле применимо. Формулы нет нигде в документе (проверены все 11 страниц: в композиции только имя/CAS; MW 39.95 g/mole есть, формулы нет) → NOT_STATED корректен.",
+    "gold": {
+      "value": null,
+      "evidence": []
+    }
+  },
+  {
+    "document": "sds_10.pdf",
+    "field": "molecular_weight",
+    "state": "NOT_STATED",
+    "derivation": "ABSENT",
+    "group": "D",
+    "verdict": "incorrect",
+    "error_type": "wrong-state",
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Designation of ‘ARTICLES’"
+      },
+      {
+        "page": 1,
+        "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users."
+      }
+    ],
+    "notes": "Документ ЯВНО объявляет продукт article (стр. 1, дважды: заголовок 'Designation of ARTICLES' и рекомендация OSHA). По онтологии form=ARTICLE → molecular_weight (defined_for_forms=(SUBSTANCE,)) должен быть NOT_APPLICABLE (ONTOLOGY), а не NOT_STATED. Прецедент: sds_17 с идентичной формулировкой ('defined by OSHA as an article') аннотирован ARTICLE, и его product_cas_number/chemical_formula — N/A ONTOLOGY. Затронуты и соседние поля sds_10 (вне выборки): substance_or_mixture = NOT_STATED при явном объявлении ARTICLE; product_cas_number, chemical_formula — аналогично MW.",
+    "gold": {
+      "value": null,
+      "evidence": []
+    }
+  },
+  {
+    "document": "sds_19.pdf",
+    "field": "product_cas_number",
+    "state": "NOT_STATED",
+    "derivation": "ABSENT",
+    "group": "D",
+    "verdict": "questionable",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "3.1 Substances\nNo ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication\nStandard 29 CFR 1910.1200 criteria."
+      },
+      {
+        "page": 1,
+        "text": "General Use:\nConcrete Admixture"
+      }
+    ],
+    "notes": "Объявления формы в документе нет (проверены все 7 страниц: только boilerplate 'substance or mixture' в заголовках секций и 'Not a hazardous substance or mixture' — hazard-утверждение, не объявление формы). NOT_STATED документ-верен. Но химически Water Reducer 310 — бетонная admixture (раствор полимеров) = смесь → CAS продукта должен быть N/A. ЭСКАЛАЦИЯ Farit: (a) оставить NOT_STATED (документ-верно, без химических допущений); (b) NOT_APPLICABLE (химическая интерпретация).",
+    "gold": {
+      "value": null,
+      "evidence": []
+    }
+  },
+  {
+    "document": "sds_15.pdf",
+    "field": "flash_point",
+    "state": "NO_DATA",
+    "derivation": "EXPLICIT",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 4,
+        "text": "Flash Point:\nNo data available."
+      }
+    ],
+    "notes": "Дословно на стр. 4; value slot = 'No data available' → NO_DATA по лексикону; верен документу.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 4,
+          "text": "Flash Point:\nNo data available."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_16.pdf",
+    "field": "flash_point",
+    "state": "NO_DATA",
+    "derivation": "EXPLICIT",
+    "group": "D",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 5,
+        "text": "Flash Point\nNo information available"
+      }
+    ],
+    "notes": "Дословно на стр. 5; 'No information available' → NO_DATA-cue. Нюанс: продукт — твёрдое вещество (кварцевый песок); химически flash point для негорючего твёрдого скорее NOT_APPLICABLE, но документ сам пишет 'No information available' — gold верен тексту документа.",
+    "gold": {
+      "value": null,
+      "evidence": [
+        {
+          "page": 5,
+          "text": "Flash Point\nNo information available"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_03.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "incorrect",
+    "error_type": "missed-evidence",
+    "quotes": [
+      {
+        "page": 5,
+        "text": "As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability"
+      },
+      {
+        "page": 1,
+        "text": "Mixture:"
+      }
+    ],
+    "notes": "Gold evidence сам корректен (оба фрагмента дословно, поддерживают MIXTURE), но evidence_set неполон: (1) стр. 5 — прямое объявление 'the product is a mixture of several substances' (секция 8, выбор перчаток) — субстантивное, вне evidence_set; (2) стр. 1 — заголовок 3.2 'Mixture:'. Система, цитирующая стр. 5, получит support=SATISFIED, но complete@k её не зачтёт → нечестный штраф.",
+    "gold": {
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "Chemical description: Mixture of polymers, dispersants and organic compounds"
+        },
+        {
+          "page": 1,
+          "text": "Substance:\nNon-applicable"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_09.pdf",
+    "field": "product_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "questionable",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 2,
+        "text": "Safety Data Sheet\naccording to Regulations REACh 1907/2006/EC\nREF: 920163\nVISOCOLOR HE Nitrite, refill pack"
+      }
+    ],
+    "notes": "Колонтитул с именем продукта повторяется на КАЖДОЙ странице (проверены все 10): 'REF: 920163 / VISOCOLOR HE Nitrite, refill pack'. По критерию support (name-substring) любой колонтитул поддерживает значение → gold (только 1.1) неполон по букве критерия; но включение колонтитулов сделало бы complete@k тривиальным (валидна любая страница). ЭСКАЛАЦИЯ Farit — политика: (a) считать повторяющиеся колонтитулы evidence (расширить gold); (b) исключить boilerplate из критерия support; (c) принять каноническую политику gold (только 1.1) и задокументировать.",
+    "gold": {
+      "value": "VISOCOLOR HE Nitrite, refill pack",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Product name\nVISOCOLOR HE Nitrite, refill pack"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_18.pdf",
+    "field": "substance_or_mixture",
+    "state": "PRESENT",
+    "derivation": "COMPOSITION_IMPLIED",
+    "group": "E",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 5,
+        "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
+      }
+    ],
+    "notes": "Альтернативного evidence вне gold нет: 'the mixture' — только стр. 5 (в gold); остальные упоминания — boilerplate заголовков секций. Наблюдение: classify_form_cue даёт ложный ARTICLE на стр. 1 ('Article Information Sheet (AIS)') — это тип документа, не форма продукта; gold-free классификатор мог бы дать support-SATISFIED на неверную claim (не ошибка gold, а риск классификатора).",
+    "gold": {
+      "value": "MIXTURE",
+      "evidence": [
+        {
+          "page": 5,
+          "text": "Ingredient\nC.A.S. No.\n% by Wt"
+        },
+        {
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_12.pdf",
+    "field": "product_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "questionable",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 2,
+        "text": "Trade name:\nWestland Bone Meal"
+      }
+    ],
+    "notes": "Шапка 'Trade name: Westland Bone Meal' повторяется на всех 10 страницах; value 'Bone Meal' — подстрока. Gold — только 1.1 ('Product identifier Bone Meal'). Тот же политика-вопрос, что и sds_09/E: считать ли колонтитульные повторы evidence. Дополнительно: 'Trade name:' — помеченное объявление имени, субстантивнее простого колонтитула.",
+    "gold": {
+      "value": "Bone Meal",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "1.1 Product identifier\nBone Meal"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_13.pdf",
+    "field": "supplier_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 1,
+        "text": "Airgas USA, LLC and its affiliates"
+      }
+    ],
+    "notes": "Единственное вхождение значения в документе — gold-спан (стр. 1); 'Airgas Emergency Response Center' не содержит полного значения → не evidence. Альтернатив нет.",
+    "gold": {
+      "value": "Airgas USA, LLC",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Airgas USA, LLC and its affiliates"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_04.pdf",
+    "field": "product_cas_number",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 2,
+        "text": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100"
+      }
+    ],
+    "notes": "CAS встречается в документе один раз — в gold-спане (стр. 2). Product-vs-ingredient: продукт = единственное вещество при 100% (см. C/sds_04), поэтому CAS из таблицы композиции легитимно является CAS продукта.",
+    "gold": {
+      "value": "811-97-2",
+      "evidence": [
+        {
+          "page": 2,
+          "text": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_01.pdf",
+    "field": "flash_point",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 5,
+        "text": "Flash Point:\nNon Flammable (>60 ºC)"
+      }
+    ],
+    "notes": "Единственное упоминание flash point в документе — gold-спан (стр. 5); альтернатив нет. Нюанс значения как в A/sds_03.",
+    "gold": {
+      "value": "Non Flammable (>60 ºC)",
+      "evidence": [
+        {
+          "page": 5,
+          "text": "Flash Point:\nNon Flammable (>60 ºC)"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_19.pdf",
+    "field": "supplier_name",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "questionable",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 7,
+        "text": "Since the use\nof this product is not within the control of Buddy Rhodes Concrete Products, it is the user's obligation to\ndetermine the suitability of the product for its intended"
+      }
+    ],
+    "notes": "Стр. 7 (секция 16, disclaimer): компания названа вне gold. По букве критерия support (substring) — валидное evidence → gold неполон; по сути — юридическая оговорка, не идентификация поставщика (1.3 в gold). ЭСКАЛАЦИЯ Farit: считать ли упоминания в disclaimer evidence.",
+    "gold": {
+      "value": "Buddy Rhodes Concrete Products",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Company:\nBuddy Rhodes Concrete Products"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_05.pdf",
+    "field": "flash_point",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 3,
+        "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]"
+      },
+      {
+        "page": 7,
+        "text": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92]"
+      }
+    ],
+    "notes": "Оба вхождения значения в документе (стр. 3 и 7) включены в gold evidence_set — альтернатив нет, gold полон.",
+    "gold": {
+      "value": ">225°C (437°F) [ASTM D-92]",
+      "evidence": [
+        {
+          "page": 7,
+          "text": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92]"
+        },
+        {
+          "page": 3,
+          "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]"
+        }
+      ]
+    }
+  },
+  {
+    "document": "sds_16.pdf",
+    "field": "molecular_weight",
+    "state": "PRESENT",
+    "derivation": "EXPLICIT",
+    "group": "E",
+    "verdict": "correct",
+    "error_type": null,
+    "quotes": [
+      {
+        "page": 5,
+        "text": "Molecular Weight\n60.08"
+      }
+    ],
+    "notes": "Единственное вхождение 60.08 — gold-спан (стр. 5); на стр. 1 есть 'Molecular Formula O2 Si', но без веса. Альтернатив нет.",
+    "gold": {
+      "value": "60.08",
+      "evidence": [
+        {
+          "page": 5,
+          "text": "Molecular Weight\n60.08"
+        }
+      ]
+    }
+  }
+]

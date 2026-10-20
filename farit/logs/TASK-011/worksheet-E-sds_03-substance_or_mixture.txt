@@ -1,0 +1,1019 @@
+# TASK-011 worksheet — group E — sds_03.pdf / substance_or_mixture
+state=PRESENT  derivation=EXPLICIT  gold_value='MIXTURE'
+
+## gold evidence_set
+- page 2: 'Chemical description: Mixture of polymers, dispersants and organic compounds'
+- page 1: 'Substance:\nNon-applicable'
+
+===== PAGE 1 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+STYCCOBOND F49 BASE
+Other means of identification:
+Not relevant
+1.2
+Relevant identified uses of the substance or mixture and uses advised against:
+Relevant uses: Adhesive. For professional users only.
+Uses advised against: All uses not specified in this section or in section 7.3
+1.3
+Details of the supplier of the safety data sheet:
+F. Ball and Co. Ltd.
+Churnetside Business Park, Station Road
+ST13 7RS Cheddleton - Leek - England
+Phone: +44(0) 1538 361633
+msds@f-ball.co.uk
+www.f-ball.com
+1.4
+Emergency telephone number: 111
+SECTION 2: HAZARDS IDENTIFICATION
+2.1
+Classification of the substance or mixture:
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+Classification of this product has been carried out in accordance with GB CLP Regulation (UK S.I. 2019/720 and UK S.I.
+2020/1567).
+Eye Irrit. 2: Eye irritation, Category 2, H319
+Skin Irrit. 2: Skin irritation, Category 2, H315
+Skin Sens. 1: Sensitisation, skin, Category 1, H317
+2.2
+Label elements:
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+Warning
+Hazard statements:
+Eye Irrit. 2: H319 - Causes serious eye irritation.
+Skin Irrit. 2: H315 - Causes skin irritation.
+Skin Sens. 1: H317 - May cause an allergic skin reaction.
+Precautionary statements:
+P264: Wash hands thoroughly after handling.
+P280: Wear protective gloves/protective clothing/eye protection.
+P302+P352: IF ON SKIN: Wash with plenty of soap and water.
+P305+P351+P338: IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to
+do. Continue rinsing.
+P313: Get medical advice/attention.
+P501: Dispose of the contents and/or its container in line with regulations on dangerous waste or packaging and waste packaging
+respectively.
+Supplementary information:
+Contains 1,2-benzisothiazol-3(2H)-one, m-phenylenebis(methylamine), Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one
+and 2-methyl-2H-isothiazol-3-one (3:1).
+2.3
+Other hazards:
+Product does not meet PBT/vPvB criteria
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1
+Substance:
+Non-applicable
+3.2
+Mixture:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 1/11
+
+===== PAGE 2 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS (continued)
+Chemical description: Mixture of polymers, dispersants and organic compounds
+Components:
+In accordance with Annex II of The REACH etc. (Amendment etc.) (EU Exit) Regulations 2020, the product contains:
+Identification
+Chemical name/Classification
+Concentration
+CAS:
+1219458-07-7
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated
+Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 - Danger
+1 - <2.5 %
+CAS:
+1477-55-0
+m-phenylenebis(methylamine)
+Acute Tox. 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317;
+EUH071 - Danger
+<1 %
+CAS:
+2634-33-5
+1,2-benzisothiazol-3(2H)-one
+Acute Tox. 4: H302; Aquatic Acute 1: H400; Eye Dam. 1: H318; Skin Irrit. 2: H315; Skin Sens. 1: H317 - Danger
+<1 %
+CAS:
+55965-84-9
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1)
+Acute Tox. 2: H310+H330; Acute Tox. 3: H301; Aquatic Acute 1: H400; Aquatic Chronic 1: H410; Eye Dam. 1:
+H318; Skin Corr. 1C: H314; Skin Sens. 1A: H317; EUH071 - Danger
+<1 %
+To obtain more information on the hazards of the substances consult sections 11, 12 and 16.
+Acute toxicity estimate for the substance in Part 3 of Annex VI to Regulation (EC) No 1272/2008 or as determined in accordance
+with Annex I to that Regulation:
+Identification
+Acute toxicity
+Genus
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine,
+hydrogenated
+LD50 oral
+500 mg/kg (ATEi)
+CAS: 1219458-07-7
+LD50 dermal
+Not relevant
+LC50 inhalation
+Not relevant
+m-phenylenebis(methylamine)
+LD50 oral
+1090 mg/kg
+Rat
+CAS: 1477-55-0
+LD50 dermal
+Not relevant
+LC50 inhalation
+Not relevant
+1,2-benzisothiazol-3(2H)-one
+LD50 oral
+500 mg/kg
+Rat
+CAS: 2634-33-5
+LD50 dermal
+Not relevant
+LC50 inhalation
+Not relevant
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one
+(3:1)
+LD50 oral
+64 mg/kg
+Rat
+CAS: 55965-84-9
+LD50 dermal
+87.12 mg/kg
+Rabbit
+LC50 inhalation
+Not relevant
+SECTION 4: FIRST AID MEASURES
+4.1
+Description of first aid measures:
+The symptoms resulting from intoxication can appear after exposure, therefore, in case of doubt, seek medical attention for
+direct exposure to the chemical product or persistent discomfort, showing the SDS of this product.
+By inhalation:
+This product is not classified as hazardous through inhalation. However, in case of intoxication symptoms it is recommended to
+remove the person affected from the area of exposure, provide clean air and keep at rest. Request medical attention if symptoms
+persist.
+By skin contact:
+Remove contaminated clothing and footwear, rinse skin or shower the person affected if appropriate with plenty of cold water
+and neutral soap. In serious cases see a doctor. If the product causes burns or freezing, clothing should not be removed as this
+could worsen the injury caused if it is stuck to the skin. If blisters form on the skin, these should never be burst as this will
+increase the risk of infection.
+By eye contact:
+Rinse eyes thoroughly with lukewarm water for at least 15 minutes. Do not allow the person affected to rub or close their eyes.
+If the injured person uses contact lenses, these should be removed unless they are stuck to the eyes, in which case this could
+cause further damage. In all cases, after cleaning, a doctor should be consulted as quickly as possible with the SDS of the
+product.
+By ingestion/aspiration:
+Do not induce vomiting, but if it does happen keep the head down to avoid aspiration. Keep the person affected at rest. Rinse
+out the mouth and throat, as they may have been affected during ingestion.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 2/11
+
+===== PAGE 3 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 4: FIRST AID MEASURES (continued)
+4.2
+Most important symptoms and effects, both acute and delayed:
+Acute and delayed effects are indicated in sections 2 and 11.
+4.3
+Indication of any immediate medical attention and special treatment needed:
+Not relevant
+SECTION 5: FIREFIGHTING MEASURES
+5.1
+Extinguishing media:
+Suitable extinguishing media:
+Product is non-flammable under normal conditions of storage, handling and use. In the case of combustion as a result of
+improper handling, storage or use preferably use polyvalent powder extinguishers (ABC powder), in accordance with the
+Regulation on fire protection systems.
+Unsuitable extinguishing media:
+Non-applicable
+5.2
+Special hazards arising from the substance or mixture:
+As a result of combustion or thermal decomposition reactive sub-products are created that can become highly toxic and,
+consequently, can present a serious health risk.
+5.3
+Advice for firefighters:
+Depending on the magnitude of the fire it may be necessary to use full protective clothing and self-contained breathing apparatus
+(SCBA). Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit,...).
+Additional provisions:
+Act in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other
+emergencies. Eliminate all sources of ignition. In case of fire, cool the storage containers and tanks for products susceptible to
+combustion, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an
+aqueous medium.
+SECTION 6: ACCIDENTAL RELEASE MEASURES
+6.1
+Personal precautions, protective equipment and emergency procedures:
+For non-emergency personnel:
+Isolate leaks provided that there is no additional risk for the people performing this task. Personal protection equipment must be
+used against potential contact with the spilt product (See section 8). Evacuate the area and keep out those who do not have
+protection.
+For emergency responders:
+Wear protective equipment. Keep unprotected persons away. See section 8.
+6.2
+Environmental precautions:
+It is recommended to avoid environmental spillage of both the product and its container.
+6.3
+Methods and material for containment and cleaning up:
+It is recommended:
+Absorb the spillage using sand or inert absorbent and move it to a safe place. Do not absorb in sawdust or other combustible
+absorbents. For any concern related to disposal consult section 13.
+6.4
+Reference to other sections:
+See sections 8 and 13.
+SECTION 7: HANDLING AND STORAGE
+7.1
+Precautions for safe handling:
+A.- General precautions for safe use
+Comply with the current legislation concerning the prevention of industrial risks with regards manually handling weights.
+Maintain order, cleanliness and dispose of using safe methods (section 6).
+B.- Technical recommendations for the prevention of fires and explosions
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 3/11
+
+===== PAGE 4 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 7: HANDLING AND STORAGE (continued)
+Product is non-flammable under normal conditions of storage, handling and use. It is recommended to transfer at slow speeds
+to avoid the generation of electrostatic charges that can affect flammable products. Consult section 10 for information on
+conditions and materials that should be avoided.
+C.- Technical recommendations on general occupational hygiene
+Do not eat or drink during the process, washing hands afterwards with suitable cleaning products.
+D.- Technical recommendations to prevent environmental risks
+It is recommended to have absorbent material available at close proximity to the product (See subsection 6.3)
+7.2
+Conditions for safe storage, including any incompatibilities:
+A.- Specific storage requirements
+Minimum Temp.:
+5 ºC
+Maximum Temp.:
+30 ºC
+B.- General conditions for storage
+Avoid sources of heat, radiation, static electricity and contact with food. For additional information see subsection 10.5
+7.3
+Specific end use(s):
+Except for the instructions already specified it is not necessary to provide any special recommendation regarding the uses of this
+product.
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION
+8.1
+Control parameters:
+Substances whose occupational exposure limits have to be monitored in the workplace:
+There are no applicable occupational exposure limits for the substances contained in the product
+DNEL (Workers):
+Short exposure
+Long exposure
+Identification
+Systemic
+Local
+Systemic
+Local
+m-phenylenebis(methylamine)
+Oral
+Not relevant
+Not relevant
+Not relevant
+Not relevant
+CAS: 1477-55-0
+Dermal
+Not relevant
+Not relevant
+0.33 mg/kg
+Not relevant
+EC: 216-032-5
+Inhalation
+Not relevant
+Not relevant
+1.2 mg/m³
+0.2 mg/m³
+1,2-benzisothiazol-3(2H)-one
+Oral
+Not relevant
+Not relevant
+Not relevant
+Not relevant
+CAS: 2634-33-5
+Dermal
+Not relevant
+Not relevant
+0.966 mg/kg
+Not relevant
+EC: 220-120-9
+Inhalation
+Not relevant
+Not relevant
+6.81 mg/m³
+Not relevant
+DNEL (General population):
+Short exposure
+Long exposure
+Identification
+Systemic
+Local
+Systemic
+Local
+1,2-benzisothiazol-3(2H)-one
+Oral
+Not relevant
+Not relevant
+Not relevant
+Not relevant
+CAS: 2634-33-5
+Dermal
+Not relevant
+Not relevant
+0.345 mg/kg
+Not relevant
+EC: 220-120-9
+Inhalation
+Not relevant
+Not relevant
+1.2 mg/m³
+Not relevant
+PNEC:
+Identification
+Reaction products of benzaldehyde diethylenetriamine and
+triethylenetetramine, hydrogenated
+STP
+1 mg/L
+Fresh water
+0.003 mg/L
+CAS: 1219458-07-7
+Soil
+Not relevant
+Marine water
+0 mg/L
+EC: 846-447-2
+Intermittent
+Not relevant
+Sediment (Fresh water)
+Not relevant
+Oral
+Not relevant
+Sediment (Marine water)
+Not relevant
+m-phenylenebis(methylamine)
+STP
+10 mg/L
+Fresh water
+0.094 mg/L
+CAS: 1477-55-0
+Soil
+2.44 mg/kg
+Marine water
+0.009 mg/L
+EC: 216-032-5
+Intermittent
+0.152 mg/L
+Sediment (Fresh water)
+12.4 mg/kg
+Oral
+Not relevant
+Sediment (Marine water)
+1.24 mg/kg
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 4/11
+
+===== PAGE 5 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)
+Identification
+1,2-benzisothiazol-3(2H)-one
+STP
+1.03 mg/L
+Fresh water
+0.00403 mg/L
+CAS: 2634-33-5
+Soil
+3 mg/kg
+Marine water
+0.000403 mg/L
+EC: 220-120-9
+Intermittent
+0.0011 mg/L
+Sediment (Fresh water)
+0.0499 mg/kg
+Oral
+Not relevant
+Sediment (Marine water)
+0.00499 mg/kg
+8.2
+Exposure controls:
+A.- Individual protection measures, such as personal protective equipment
+As a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<UKCA
+marking>> or <<CE marking>>. For more information on Personal Protective Equipment (storage, use, cleaning,
+maintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more information see
+subsection 7.1. All information contained herein is a recommendation which needs some specification from the labour risk
+prevention services as it is not known whether the company has additional measures at its disposal.
+B.- Respiratory protection
+The use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.
+C.- Specific protection for the hands
+Pictogram
+PPE
+Remarks
+Mandatory hand
+protection
+Chemical protective gloves
+Replace the gloves at any sign of deterioration.
+As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with
+total reliability and has therefore to be checked prior to the application.
+D.- Eye and face protection
+Pictogram
+PPE
+Remarks
+Mandatory face
+protection
+Panoramic glasses against splash/projections.
+Clean daily and disinfect periodically according to the manufacturer´s instructions.
+Use if there is a risk of splashing.
+E.- Body protection
+Pictogram
+PPE
+Remarks
+Work clothing
+Replace before any evidence of deterioration. For periods of prolonged exposure
+to the product for professional/industrial users CE III is recommended, in
+accordance with the regulations in EN ISO 6529:2013, EN ISO 6530:2005, EN ISO
+13688:2013, EN 464:1994.
+Anti-slip work shoes
+Replace before any evidence of deterioration. For periods of prolonged exposure
+to the product for professional/industrial users CE III is recommended, in
+accordance with the regulations in EN ISO 20345:2012 y EN 13832-1:2007
+F.- Additional emergency measures
+Emergency measure
+Standards
+Emergency measure
+Standards
+Emergency shower
+ANSI Z358-1
+ISO 3864-1:2011, ISO 3864-4:2011
+Eyewash stations
+DIN 12 899
+ISO 3864-1:2011, ISO 3864-4:2011
+Environmental exposure controls:
+In accordance with the community legislation for the protection of the environment it is recommended to avoid environmental
+spillage of both the product and its container. For additional information see subsection 7.1.D
+The Volatile Organic Compounds in Paints, Varnishes and Vehicle Refinishing Products Regulations 2012:
+V.O.C. (Supply):
+0 % weight
+V.O.C. density at 20 ºC:
+0 kg/m³ (0 g/L)
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 5/11
+
+===== PAGE 6 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES
+9.1
+Information on basic physical and chemical properties:
+For complete information see the product datasheet.
+Appearance:
+Physical state at 20 ºC:
+Liquid
+Appearance:
+Not available
+Colour:
+White
+Odour:
+Not available
+Odour threshold:
+Not relevant *
+Volatility:
+Boiling point at atmospheric pressure:
+327 ºC
+Vapour pressure at 20 ºC:
+4.076E-2 Pa
+Vapour pressure at 50 ºC:
+0.95 Pa (0 kPa)
+Evaporation rate at 20 ºC:
+Not relevant *
+Product description:
+Density at 20 ºC:
+Not relevant *
+Relative density at 20 ºC:
+0.95 - 1.05
+Dynamic viscosity at 20 ºC:
+35000 - 45000 cP
+Kinematic viscosity at 20 ºC:
+Not relevant *
+Kinematic viscosity at 40 ºC:
+Not relevant *
+Concentration:
+Not relevant *
+pH:
+9 - 10
+Vapour density at 20 ºC:
+Not relevant *
+Partition coefficient n-octanol/water 20 ºC:
+Not relevant *
+Solubility in water at 20 ºC:
+Not relevant *
+Solubility properties:
+Not relevant *
+Decomposition temperature:
+Not relevant *
+Melting point/freezing point:
+Not relevant *
+Flammability:
+Flash Point:
+Non Flammable (>60 ºC)
+Flammability (solid, gas):
+Not relevant *
+Autoignition temperature:
+351 ºC
+Lower flammability limit:
+Not relevant *
+Upper flammability limit:
+Not relevant *
+Particle characteristics:
+Median equivalent diameter:
+Non-applicable
+9.2
+Other information:
+Information with regard to physical hazard classes:
+Explosive properties:
+Not relevant *
+Oxidising properties:
+Not relevant *
+Corrosive to metals:
+Not relevant *
+Heat of combustion:
+Not relevant *
+Aerosols-total percentage (by mass) of flammable
+components:
+Not relevant *
+Other safety characteristics:
+Surface tension at 20 ºC:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 6/11
+
+===== PAGE 7 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES (continued)
+Refraction index:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+SECTION 10: STABILITY AND REACTIVITY
+10.1
+Reactivity:
+No hazardous reactions are expected because the product is stable under recommended storage conditions. See section 7 from
+Safety Data Sheet.
+10.2
+Chemical stability:
+Chemically stable under the indicated conditions of storage, handling and use.
+10.3
+Possibility of hazardous reactions:
+Under the specified conditions, hazardous reactions that lead to excessive temperatures or pressure are not expected.
+10.4
+Conditions to avoid:
+Applicable for handling and storage at room temperature:
+Shock and friction
+Contact with air
+Increase in temperature
+Sunlight
+Humidity
+Not applicable
+Not applicable
+Not applicable
+Not applicable
+Not applicable
+10.5
+Incompatible materials:
+Acids
+Water
+Oxidising materials
+Combustible materials
+Others
+Avoid strong acids
+Not applicable
+Avoid direct impact
+Not applicable
+Avoid alkalis or strong bases
+10.6
+Hazardous decomposition products:
+See subsection 10.3, 10.4 and 10.5 to find out the specific decomposition products. Depending on the decomposition conditions,
+complex mixtures of chemical substances can be released: carbon dioxide (CO₂), carbon monoxide and other organic compounds.
+SECTION 11: TOXICOLOGICAL INFORMATION
+11.1
+Information on toxicological effects:
+The experimental information related to the toxicological properties of the product itself is not available
+Dangerous health implications:
+In case of exposure that is repetitive, prolonged or at concentrations higher than the recommended occupational exposure limits,
+adverse effects on health may result, depending on the means of exposure:
+A- Ingestion (acute effect):
+- Acute toxicity: Based on available data, the classification criteria are not met, however, it contains substances classified as
+dangerous for consumption. For more information see section 3.
+- Corrosivity/Irritability: The consumption of a considerable dose can cause irritation in the throat, abdominal pain, nausea
+and vomiting.
+B- Inhalation (acute effect):
+- Acute toxicity : Based on available data, the classification criteria are not met. However, it contains substances classified
+as hazardous for inhalation. For more information see section 3.
+- Corrosivity/Irritability: Prolonged inhalation of the product is corrosive to mucous membranes and the upper respiratory
+tract
+C- Contact with the skin and the eyes (acute effect):
+- Contact with the skin: Produces skin inflammation.
+- Contact with the eyes: Produces eye damage after contact.
+D- CMR effects (carcinogenicity, mutagenicity and toxicity to reproduction):
+- Carcinogenicity: Based on available data, the classification criteria are not met, as it does not contain substances classified
+as hazardous for the effects mentioned. For more information see section 3.
+IARC: Distillates (petroleum), solvent-refined heavy paraffinic , < 3 % IP 346 (3)
+- Mutagenicity: Based on available data, the classification criteria are not met, as it does not contain substances classified as
+hazardous for this effect. For more information see section 3.
+- Reproductive toxicity: Based on available data, the classification criteria are not met, as it does not contain substances
+classified as hazardous for this effect. For more information see section 3.
+E- Sensitizing effects:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 7/11
+
+===== PAGE 8 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 11: TOXICOLOGICAL INFORMATION (continued)
+- Respiratory: Based on available data, the classification criteria are not met, as it does not contain substances classified as
+hazardous with sensitising effects. For more information see section 3.
+- Skin: Prolonged contact with the skin can result in episodes of allergic contact dermatitis.
+F- Specific target organ toxicity (STOT) - single exposure:
+Based on available data, the classification criteria are not met, as it does not contain substances classified as hazardous for
+this effect. For more information see section 3.
+G- Specific target organ toxicity (STOT)-repeated exposure:
+- Specific target organ toxicity (STOT)-repeated exposure: Based on available data, the classification criteria are not met, as
+it does not contain substances classified as hazardous for this effect. For more information see section 3.
+- Skin: Based on available data, the classification criteria are not met, as it does not contain substances classified as
+hazardous for this effect. For more information see section 3.
+H- Aspiration hazard:
+Based on available data, the classification criteria are not met, as it does not contain substances classified as hazardous for
+this effect. For more information see section 3.
+Other information:
+Not relevant
+Specific toxicology information on the substances:
+Identification
+Acute toxicity
+Genus
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine,
+hydrogenated
+LD50 oral
+500 mg/kg (ATEi)
+CAS: 1219458-07-7
+LD50 dermal
+>5000 mg/kg
+LC50 inhalation
+>20 mg/L
+m-phenylenebis(methylamine)
+LD50 oral
+1090 mg/kg
+Rat
+CAS: 1477-55-0
+LD50 dermal
+>5000 mg/kg
+LC50 inhalation
+>20 mg/L
+1,2-benzisothiazol-3(2H)-one
+LD50 oral
+500 mg/kg
+Rat
+CAS: 2634-33-5
+LD50 dermal
+>5000 mg/kg
+LC50 inhalation
+>5 mg/L
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one
+(3:1)
+LD50 oral
+64 mg/kg
+Rat
+CAS: 55965-84-9
+LD50 dermal
+87.12 mg/kg
+Rabbit
+LC50 inhalation
+0.33 mg/L (4 h)
+Rat
+SECTION 12: ECOLOGICAL INFORMATION
+The experimental information related to the eco-toxicological properties of the product itself is not available
+Based on available data, the classification criteria are not met. However, it does contain substances classified as hazardous for this
+effect. For more information see section 3.
+12.1
+Toxicity:
+Acute toxicity:
+Identification
+Concentration
+Species
+Genus
+Reaction products of benzaldehyde diethylenetriamine and
+triethylenetetramine, hydrogenated
+LC50
+282.69 mg/L (96 h)
+Oncorhynchus mykiss
+Fish
+CAS: 1219458-07-7
+EC50
+9.966 mg/L (48 h)
+Daphnia magna
+Crustacean
+EC50
+2.766 mg/L (72 h)
+Pseudokirchneriella subcapitata
+Algae
+m-phenylenebis(methylamine)
+LC50
+88 mg/L (96 h)
+Oryzias latipes
+Fish
+CAS: 1477-55-0
+EC50
+15 mg/L (48 h)
+Daphnia magna
+Crustacean
+EC50
+20 mg/L (72 h)
+Selenastrum capricornutum
+Algae
+1,2-benzisothiazol-3(2H)-one
+LC50
+>0.1 - 1 mg/L (96 h)
+Fish
+CAS: 2634-33-5
+EC50
+>0.1 - 1 mg/L (48 h)
+Crustacean
+EC50
+>0.1 - 1 mg/L (72 h)
+Algae
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 8/11
+
+===== PAGE 9 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 12: ECOLOGICAL INFORMATION (continued)
+Identification
+Concentration
+Species
+Genus
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-
+methyl-2H-isothiazol-3-one (3:1)
+LC50
+>0.1 - 1 mg/L (96 h)
+Fish
+CAS: 55965-84-9
+EC50
+>0.1 - 1 mg/L (48 h)
+Crustacean
+EC50
+>0.1 - 1 mg/L (72 h)
+Algae
+Chronic toxicity:
+Identification
+Concentration
+Species
+Genus
+m-phenylenebis(methylamine)
+NOEC
+Not relevant
+CAS: 1477-55-0
+NOEC
+4.7 mg/L
+Daphnia magna
+Crustacean
+12.2
+Persistence and degradability:
+Substance-specific information:
+Identification
+Degradability
+Biodegradability
+Reaction products of benzaldehyde diethylenetriamine and
+triethylenetetramine, hydrogenated
+BOD5
+Not relevant
+Concentration
+5 mg/L
+CAS: 1219458-07-7
+COD
+Not relevant
+Period
+28 days
+BOD5/COD
+Not relevant
+% Biodegradable
+-1.9 %
+m-phenylenebis(methylamine)
+BOD5
+Not relevant
+Concentration
+14 mg/L
+CAS: 1477-55-0
+COD
+Not relevant
+Period
+28 days
+BOD5/COD
+Not relevant
+% Biodegradable
+49 %
+1,2-benzisothiazol-3(2H)-one
+BOD5
+Not relevant
+Concentration
+100 mg/L
+CAS: 2634-33-5
+COD
+Not relevant
+Period
+28 days
+BOD5/COD
+Not relevant
+% Biodegradable
+0 %
+12.3
+Bioaccumulative potential:
+Substance-specific information:
+Identification
+Bioaccumulation potential
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated
+BCF
+CAS: 1219458-07-7
+Pow Log
+1
+Potential
+m-phenylenebis(methylamine)
+BCF
+3
+CAS: 1477-55-0
+Pow Log
+0.18
+Potential
+Low
+1,2-benzisothiazol-3(2H)-one
+BCF
+2
+CAS: 2634-33-5
+Pow Log
+1.45
+Potential
+Low
+12.4
+Mobility in soil:
+Identification
+Absorption/desorption
+Volatility
+m-phenylenebis(methylamine)
+Koc
+1300
+Henry
+Not relevant
+CAS: 1477-55-0
+Conclusion
+Low
+Dry soil
+Not relevant
+Surface tension
+Not relevant
+Moist soil
+Not relevant
+12.5
+Results of PBT and vPvB assessment:
+Product does not meet PBT/vPvB criteria
+12.6
+Other adverse effects:
+Not described
+SECTION 13: DISPOSAL CONSIDERATIONS
+13.1
+Waste treatment methods:
+Code
+Description
+Waste class
+08 04 10
+waste adhesives and sealants other than those mentioned in 08 04 09
+Non-hazardous
+Type of waste:
+Not relevant
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 9/11
+
+===== PAGE 10 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 13: DISPOSAL CONSIDERATIONS (continued)
+Waste management (disposal and evaluation):
+Consult the authorized waste service manager on the assessment and disposal operations in accordance The Waste (England &
+Wales) Regulations 2011, 2011 No. 988. As under 15 01 of the code and in case the container has been in direct contact with
+the product, it will be processed the same way as the actual product. Otherwise, it will be processed as non-hazardous residue.
+Waste should not be disposed of to drains. See paragraph 6.2.
+Regulations related to waste management:
+In accordance with Annex II of UK REACH the provisions related to waste management are stated:
+UK legislation: The Waste (England & Wales) Regulations 2011.
+SECTION 14: TRANSPORT INFORMATION
+This product is not regulated for transport (ADR/RID,IMDG,IATA)
+SECTION 15: REGULATORY INFORMATION
+15.1
+Safety, health and environmental regulations/legislation specific for the substance or mixture:
+- Substances listed in UK candidate list of substances of very high concern (SVHCs): Not relevant
+- Substances listed in UK REACH Authorisation List (Annex 14): Not relevant
+The Control of Major Accident Hazards Regulations 2015:
+Not relevant
+Restrictions to commercialisation and the use of certain dangerous substances and mixtures (Annex XVII UK
+REACH, etc ….):
+Shall not be used in:
+—ornamental articles intended to produce light or colour effects by means of different phases, for example in ornamental lamps
+and ashtrays,
+—tricks and jokes,
+—games for one or more participants, or any article intended to be used as such, even with ornamental aspects.
+Specific provisions in terms of protecting people or the environment:
+It is recommended to use the information included in this safety data sheet as a basis for conducting workplace-specific risk
+assessments in order to establish the necessary risk prevention measures for the handling, use, storage and disposal of this
+product.
+Other legislation:
+The REACH etc. (Amendment etc.) (EU Exit) Regulations 2020.
+The Chemicals (Health and Safety) and Genetically Modified Organisms (Contained Use) (Amendment etc.) (EU Exit) Regulations
+2020.
+Control of Substances Hazardous to Health Regulations 2002 (as amended)
+EH40/2005 Workplace exposure limits.
+SECTION 16: OTHER INFORMATION
+Legislation related to safety data sheets:
+This safety data sheet has been designed in accordance with ANNEX II-The REACH etc. (Amendment etc.) (EU Exit) Regulations
+2020.
+Texts of the legislative phrases mentioned in section 2:
+H315: Causes skin irritation.
+H319: Causes serious eye irritation.
+H317: May cause an allergic skin reaction.
+Texts of the legislative phrases mentioned in section 3:
+The phrases indicated do not refer to the product itself; they are present merely for informative purposes and refer to the
+individual components which appear in section 3
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 10/11
+
+===== PAGE 11 (native) =====
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 16: OTHER INFORMATION (continued)
+Acute Tox. 2: H310+H330 - Fatal in contact with skin or if inhaled.
+Acute Tox. 3: H301 - Toxic if swallowed.
+Acute Tox. 4: H302 - Harmful if swallowed.
+Acute Tox. 4: H302+H332 - Harmful if swallowed or if inhaled.
+Aquatic Acute 1: H400 - Very toxic to aquatic life.
+Aquatic Chronic 1: H410 - Very toxic to aquatic life with long lasting effects.
+Aquatic Chronic 2: H411 - Toxic to aquatic life with long lasting effects.
+Aquatic Chronic 3: H412 - Harmful to aquatic life with long lasting effects.
+Eye Dam. 1: H318 - Causes serious eye damage.
+Skin Corr. 1B: H314 - Causes severe skin burns and eye damage.
+Skin Corr. 1C: H314 - Causes severe skin burns and eye damage.
+Skin Irrit. 2: H315 - Causes skin irritation.
+Skin Sens. 1: H317 - May cause an allergic skin reaction.
+Skin Sens. 1A: H317 - May cause an allergic skin reaction.
+Skin Sens. 1B: H317 - May cause an allergic skin reaction.
+Advice related to training:
+Training is recommended in order to prevent industrial risks for staff using this product and to facilitate their comprehension and
+interpretation of this safety data sheet, as well as the label on the product.
+Principal bibliographical sources:
+http://echa.europa.eu
+http://eur-lex.europa.eu
+Abbreviations and acronyms:
+ADR: European agreement concerning the international carriage of dangerous goods by road
+IMDG: International maritime dangerous goods code
+IATA: International Air Transport Association
+ICAO: International Civil Aviation Organisation
+COD: Chemical Oxygen Demand
+BOD5: 5day biochemical oxygen demand
+BCF: Bioconcentration factor
+LD50: Lethal Dose 50
+LC50: Lethal Concentration 50
+EC50: Effective concentration 50
+LogPOW: Octanolwater partition coefficient
+Koc: Partition coefficient of organic carbon
+UFI: unique formula identifier
+IARC: International Agency for Research on Cancer
+The information contained in this safety data sheet is based on sources, technical knowledge and current legislation at UK, without being able to guarantee its accuracy. This information cannot
+be considered a guarantee of the properties of the product, it is simply a description of the security requirements. The occupational methodology and conditions for users of this product are not
+within our awareness or control, and it is ultimately the responsibility of the user to take the necessary measures to obtain the legal requirements concerning the manipulation, storage, use and
+disposal of chemical products. The information on this safety data sheet only refers to this product, which should not be used for needs other than those specified.
+- END OF SAFETY DATA SHEET -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 11/11

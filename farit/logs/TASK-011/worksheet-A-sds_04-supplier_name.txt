@@ -1,0 +1,47 @@
+# TASK-011 worksheet — group A — sds_04.pdf / supplier_name
+state=PRESENT  derivation=EXPLICIT  gold_value='National Refrigerants, Inc.'
+
+## gold evidence_set
+- page 1: 'DISTRIBUTOR:\nNational Refrigerants, Inc.'
+
+===== PAGE 1 (native) =====
+R-134a
+Safety Data Sheet
+R-134a
+1. CHEMICAL PRODUCT AND COMPANY IDENTIFICATION
+PRODUCT NAME:
+R-134a
+OTHER NAME:
+1,1,1,2-Tetrafluoroethane
+USE:
+Refrigerant Gas
+DISTRIBUTOR:
+National Refrigerants, Inc.
+661 Kenyon Avenue
+Bridgeton, New Jersey 08302
+FOR MORE INFORMATION CALL:
+IN CASE OF EMERGENCY CALL:
+(Monday-Friday, 8:00am-5:00pm)
+CHEMTREC: 1-800-424-9300
+1-800-262-0012
+2. HAZARDS IDENTIFICATION
+CLASSIFICATION: Gases under pressure, Liquefied Gas
+SIGNAL WORD: WARNING
+HAZARD STATEMENT: Contains gas under pressure, may explode if heated
+SYMBOL: Gas Cylinder
+PRECAUTIONARY STATEMENT: STORAGE: Protect from sunlight, store in a well ventilated place
+EMERGENCY OVERVIEW: Colorless, volatile liquid with ethereal and faint sweetish odor. Non-flammable material.
+Overexposure may cause dizziness and loss of concentration. At higher levels, CNS depression and cardiac arrhythmia
+may result from exposure. Vapors displace air and can cause asphyxiation in confined spaces. At higher temperatures,
+(>250C), decomposition products may include Hydrofluoric Acid (HF) and carbonyl halides.
+POTENTIAL HEALTH HAZARDS
+SKIN: Irritation would result from a defatting action on tissue. Liquid contact could cause frostbite.
+EYES: Liquid contact can cause severe irritation and frostbite. Mist may irritate.
+INHALATION: R-134a is low in acute toxicity in animals. When oxygen levels in air are reduced to 12-14% by
+displacement, symptoms of asphyxiation, loss of coordination, increased pulse rate and deeper respiration
+will occur. At high levels, cardiac arrhythmia may occur.
+INGESTION: Ingestion is unlikely because of the low boiling point of the material. Should it occur, discomfort in the
+gastrointestinal tract from rapid evaporation of the material and consequent evolution of gas would result.
+Some effects of inhalation and skin exposure would be expected.
+DELAYED EFFECTS: None Known
+Ingredients found on one of the OSHA designated carcinogen lists are listed below.

@@ -1,0 +1,91 @@
+# TASK-011 worksheet — group D — sds_16.pdf / flash_point
+state=NO_DATA  derivation=EXPLICIT  gold_value=None
+
+## gold evidence_set
+- page 5: 'Flash Point\nNo information available'
+
+===== PAGE 5 (native) =====
+SAFETY DATA SHEET
+______________________________________________________________________________________________
+Sand, Ottawa
+Revision Date 20-Oct-2023
+Skin and body protection
+Wear appropriate protective gloves and clothing to prevent skin exposure.
+Inspect gloves before use.
+Please observe the instructions regarding permeability and breakthrough time which are provided by the supplier of the gloves.
+(Refer to manufacturer/supplier for information)
+Ensure gloves are suitable for the task: Chemical compatability, Dexterity, Operational conditions, User susceptibility, e.g.
+sensitisation effects, also take into consideration the specific local conditions under which the product is used, such as the danger
+of cuts, abrasion.
+Remove gloves with care avoiding skin contamination.
+Respiratory Protection
+No protective equipment is needed under normal use conditions.
+Large scale/emergency use
+Use a NIOSH/MSHA or European Standard EN 136 approved respirator if exposure limits
+are exceeded or if irritation or other symptoms are experienced
+Recommended Filter type: Particle filter
+Small scale/Laboratory use
+Maintain adequate ventilation
+Environmental exposure controls
+No information available.
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES
+9.1. Information on basic physical and chemical properties
+Particle characteristics
+No data available
+9.2. Other information
+Molecular Formula
+O2 Si
+Molecular Weight
+60.08
+Evaporation Rate
+Not applicable - Solid
+Physical State
+Solid: Crystalline, Granules.
+Appearance
+Beige
+Odor
+No information available
+Odor Threshold
+No data available
+Melting Point/Range
+1610 °C / 2930 °F
+Softening Point
+No data available
+Boiling Point/Range
+2230 °C / 4046 °F
+Flammability (liquid)
+Not applicable
+Solid
+Flammability (solid,gas)
+No information available
+Explosion Limits
+No data available
+Flash Point
+No information available
+Method - No information available
+Autoignition Temperature
+No data available
+Decomposition Temperature
+No data available
+pH
+No information available
+Viscosity
+Not applicable
+Solid
+Water Solubility
+Insoluble
+Solubility in other solvents
+No information available
+Partition Coefficient (n-octanol/water)
+Vapor Pressure
+No data available
+Density / Specific Gravity
+No data available
+Bulk Density
+No data available
+Vapor Density
+Not applicable
+______________________________________________________________________________________________
+FSUS0365
+Page 5 / 10
+Solid

@@ -1,0 +1,63 @@
+# TASK-011 worksheet — group A — sds_19.pdf / supplier_name
+state=PRESENT  derivation=EXPLICIT  gold_value='Buddy Rhodes Concrete Products'
+
+## gold evidence_set
+- page 1: 'Company:\nBuddy Rhodes Concrete Products'
+
+===== PAGE 1 (native) =====
+SAFETY DATA SHEET
+SDS No. 1224
+Revision Date: December 5, 2023 Version 3.0
+GHS Compliant
+Page 1 of 7
+Section 1 - Identification of the substance/mixture and of the company
+1.1
+Product Identifier
+Trade Name:
+Water Reducer 310
+1.2
+Relevant identified uses of the substance or mixture and uses advised against
+General Use:
+Concrete Admixture
+Restrictions on Use:
+None known
+1.3
+Details of the supplier of the safety data sheet:
+Company:
+Buddy Rhodes Concrete Products
+5600 Lower Macungie Rd., Macungie, PA 18062
+Telephone:
+Domestic: 1 (877) 706-5303
+International: (610) 252-5800 (collect calls accepted)
+E-mail address:
+Visit our website at www.buddyrhodes.com
+1.4
+Emergency Contact:
+Chem-Tel
+Domestic: 800-255-3924 International: 813-248-0585
+Section 2 – Hazard(s) Identification
+2.1
+Classification of the substance or mixture
+Not a hazardous substance or mixture according to United States Occupational Safety and Health
+Administration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian
+Workplace Hazardous Materials Information System (WHMIS) and Regulation (EC) No 1272/2008
+and subsequent amendments.
+2.2
+GHS Label elements, including precautionary statements
+Pictogram(s): none
+Signal word: none
+General Precautions:
+P101: If medical advice is needed, have product container or label at hand.
+P102: Keep out of reach of children.
+P103: Read label before use.
+2.3
+Hazards not otherwise classified (HNOC) or not covered by GHS – none
+Section 3 - Composition / Information on Ingredients
+3.1 Substances
+No ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication
+Standard 29 CFR 1910.1200 criteria.
+Section 4 - First Aid Measures
+4.1
+Description of first aid measures
+Inhalation
+Remove source(s) of contamination and move victim to fresh air. If breathing has stopped, give

@@ -1,0 +1,355 @@
+# TASK-011 worksheet — group E — sds_04.pdf / product_cas_number
+state=PRESENT  derivation=EXPLICIT  gold_value='811-97-2'
+
+## gold evidence_set
+- page 2: '1,1,1,2-Tetrafluoroethane\n811-97-2\n100'
+
+===== PAGE 1 (native) =====
+R-134a
+Safety Data Sheet
+R-134a
+1. CHEMICAL PRODUCT AND COMPANY IDENTIFICATION
+PRODUCT NAME:
+R-134a
+OTHER NAME:
+1,1,1,2-Tetrafluoroethane
+USE:
+Refrigerant Gas
+DISTRIBUTOR:
+National Refrigerants, Inc.
+661 Kenyon Avenue
+Bridgeton, New Jersey 08302
+FOR MORE INFORMATION CALL:
+IN CASE OF EMERGENCY CALL:
+(Monday-Friday, 8:00am-5:00pm)
+CHEMTREC: 1-800-424-9300
+1-800-262-0012
+2. HAZARDS IDENTIFICATION
+CLASSIFICATION: Gases under pressure, Liquefied Gas
+SIGNAL WORD: WARNING
+HAZARD STATEMENT: Contains gas under pressure, may explode if heated
+SYMBOL: Gas Cylinder
+PRECAUTIONARY STATEMENT: STORAGE: Protect from sunlight, store in a well ventilated place
+EMERGENCY OVERVIEW: Colorless, volatile liquid with ethereal and faint sweetish odor. Non-flammable material.
+Overexposure may cause dizziness and loss of concentration. At higher levels, CNS depression and cardiac arrhythmia
+may result from exposure. Vapors displace air and can cause asphyxiation in confined spaces. At higher temperatures,
+(>250C), decomposition products may include Hydrofluoric Acid (HF) and carbonyl halides.
+POTENTIAL HEALTH HAZARDS
+SKIN: Irritation would result from a defatting action on tissue. Liquid contact could cause frostbite.
+EYES: Liquid contact can cause severe irritation and frostbite. Mist may irritate.
+INHALATION: R-134a is low in acute toxicity in animals. When oxygen levels in air are reduced to 12-14% by
+displacement, symptoms of asphyxiation, loss of coordination, increased pulse rate and deeper respiration
+will occur. At high levels, cardiac arrhythmia may occur.
+INGESTION: Ingestion is unlikely because of the low boiling point of the material. Should it occur, discomfort in the
+gastrointestinal tract from rapid evaporation of the material and consequent evolution of gas would result.
+Some effects of inhalation and skin exposure would be expected.
+DELAYED EFFECTS: None Known
+Ingredients found on one of the OSHA designated carcinogen lists are listed below.
+
+===== PAGE 2 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 2 of 7
+Current Issue Date: January 04, 2021
+INGREDIENT NAME
+NTP STATUS
+IARC STATUS
+OSHA LIST
+No ingredients listed in this section
+3. COMPOSITION / INFORMATION ON INGREDIENTS
+INGREDIENT NAME
+CAS NUMBER
+WEIGHT %
+1,1,1,2-Tetrafluoroethane
+811-97-2
+100
+COMMON NAME AND SYNONYMS
+R-134a; HFC134a
+There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2
+4. FIRST AID MEASURES
+SKIN: Promptly flush skin with water until all chemical is removed. If there is evidence of frostbite, bathe (do not rub) with
+lukewarm (not hot) water. If water is not available, cover with a clean, soft cloth or similar covering. Get medical attention
+if symptoms persist.
+EYES: Immediately flush eyes with large amounts of water for at least 15 minutes (in case of frostbite, water should be lukewarm,
+not hot) lifting eyelids occasionally to facilitate irrigation. Get medical attention if symptoms persist.
+INHALATION: Immediately move to fresh air. If breathing has stopped, give artificial respiration. Use oxygen as
+required, provided a qualified operator is available. Get medical attention immediately. DO NOT give epinephrine
+(adrenaline).
+INGESTION: Ingestion is unlikely because of the physical properties and is not expected to be hazardous. DO NOT induce
+vomiting unless instructed to do so by a physician.
+ADVICE TO PHYSICIAN: Because of the possible disturbances of cardiac rhythm, catecholamine drugs, such as
+epinephrine, should be used with special caution and only in situations of emergency life support.
+Treatment of overexposure should be directed at the control of symptoms and the clinical
+conditions.
+5. FIRE FIGHTING MEASURES
+FLAMMABLE PROPERTIES
+FLASH POINT:
+Gas, not applicable per DOT regulations
+FLASH POINT METHOD:
+Not applicable
+AUTOIGNITION TEMPERATURE:
+>750C
+UPPER FLAME LIMIT (volume % in air):
+None*
+LOWER FLAME LIMIT (volume % in air):
+None*
+*Based on ASHRAE Standard 34 with match ignition
+FLAME PROPAGATION RATE (solids):
+Not applicable
+OSHA FLAMMABILITY CLASS:
+Not applicable
+EXTINGUISHING MEDIA:
+Use any standard agent – choose the one most appropriate for type of surrounding fire (material itself is not flammable)
+
+===== PAGE 3 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 3 of 7
+Current Issue Date: January 04, 2021
+UNUSUAL FIRE AND EXPLOSION HAZARDS:
+R-134a is not flammable at ambient temperatures and atmospheric pressure. However, this material will become
+combustible when mixed with air under pressure and exposed to strong ignition sources.
+Contact with certain reactive metals may result in formation of explosive or exothermic reactions under specific conditions
+(e.g. very high temperatures and/or appropriate pressures).
+SPECIAL FIRE FIGHTING PRECAUTIONS/INSTRUCTIONS:
+Firefighters should wear self-contained, NIOSH-approved breathing apparatus for protection against possible toxic
+decomposition products. Proper eye and skin protection should be provided. Use water spray to keep fire-exposed
+containers cool.
+6. ACCIDENTAL RELEASE MEASURES
+IN CASE OF SPILL OR OTHER RELEASE: (Always wear recommended personal protective equipment.)
+Evacuate unprotected personnel. Product dissipates upon release. Protected personnel should remove ignition sources and
+shut off leak, if without risk, and provide ventilation. Unprotected personnel should not return to the affected area until air
+has been tested and determined safe, including low-lying areas.
+Spills and releases may have to be reported to Federal and/or local authorities. See Section 15 regarding reporting
+requirements.
+7. HANDLING AND STORAGE
+NORMAL HANDLING:
+(Always wear recommended personal protective equipment.)
+Avoid breathing vapors and liquid contact with eyes, skin or clothing. Do not puncture or drop cylinders, expose them to
+open flame or excessive heat. Use authorized cylinders only. Follow standard safety precautions for handling and use of
+compressed gas cylinders.
+R-134a should not be mixed with air above atmospheric pressure for leak testing or any other purpose.
+STORAGE RECOMMENDATIONS:
+Store in a cool, well-ventilated area of low fire risk and out of direct sunlight. Protect cylinder and its fittings from physical
+damage. Storage in subsurface locations should be avoided. Close valve tightly after use and when empty.
+INCOMPATIBILITIES:
+Freshly abraded aluminum surfaces at specific temperatures and pressures may cause a strong exothermic reaction.
+Chemically reactive metals: potassium, calcium, powdered aluminum, magnesium, and zinc.
+8. EXPOSURE CONTROLS / PERSONAL PROTECTION
+ENGINEERING CONTROLS:
+Provide local ventilation at filling zones and areas where leakage is probable. Mechanical (general) ventilation may be
+adequate for other operating and storage areas.
+
+===== PAGE 4 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 4 of 7
+Current Issue Date: January 04, 2021
+PERSONAL PROTECTIVE EQUIPMENT
+SKIN PROTECTION:
+Skin contact with refrigerant may cause frostbite. General work clothing and gloves (leather) should provide
+adequate protection. If prolonged contact with liquid or gas is anticipated, insulated gloves constructed of PVA,
+neoprene or butyl rubber should be used. Any contaminated clothing should be promptly removed and washed
+before reuse.
+EYE PROTECTION:
+For normal conditions, wear safety glasses. Where there is reasonable probability of liquid contact, wear chemical
+safety goggles.
+RESPIRATORY PROTECTION:
+None generally required for adequately ventilated work situations. For accidental release or non-ventilated
+situations, or release into confined space, where the concentration may be above the PEL of 1,000 ppm, use a self-
+contained, NIOSH approved breathing apparatus or supplied air respirator. For escape: use the former or a NIOSH
+approved gas mask with organic vapor canister.
+ADDITIONAL RECOMMENDATIONS:
+Where contact with liquid is likely, such as in a spill or leak, impervious boots and clothing should be worn. High
+dose-level warning signs are recommended for areas of principle exposure. Provide eyewash stations and quick-
+drench shower facilities at convenient locations. For tank cleaning operations, see OSHA regulations, 29 CFR
+1910.132 and 29 CFR 1910.133.
+EXPOSURE GUIDELINES
+INGREDIENT NAME
+ACGIH TLV
+OSHA PEL
+OTHER LIMIT
+1,1,1,2-Tetrafluoroethane
+None
+None
+*1000 ppm TWA (8hr)
+* = Workplace Environmental Exposure Level (AIHA)
+OTHER EXPOSURE LIMITS FOR POTENTIAL DECOMPOSITION PRODUCTS:
+Hydrogen Fluoride: ACGIH TLV: 2 ppm ceiling, 0.5 ppm TLV-TWA
+9. PHYSICAL AND CHEMICAL PROPERTIES
+APPEARANCE:
+Clear, colorless liquid and vapor
+PHYSICAL STATE:
+Gas at ambient temperatures
+MOLECULAR WEIGHT:
+102
+CHEMICAL FORMULA:
+F3CCH2 F
+ODOR:
+Faint ethereal odor
+SPECIFIC GRAVITY (water = 1.0):
+<1.22
+SOLUBILITY IN WATER (weight %): 0.15 wt%
+pH:
+Neutral
+BOILING POINT:
+-26.2C (-15.1F)
+FREEZING POINT:
+-92.5C (-141.9F)
+VAPOR PRESSURE:
+85.8 psia @ 70F
+213.4 psia @ 130F
+VAPOR DENSITY (air = 1.0):
+3.5
+EVAPORATION RATE:
+>1 COMPARED TO: CC14 = 1
+% VOLATILES:
+100
+
+===== PAGE 5 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 5 of 7
+Current Issue Date: January 04, 2021
+ODOR THRESHHOLD: Not established
+FLAMMABILITY: Not applicable
+LEL/UEL: None/None
+RELATIVE DENSITY: 1.21g/cm3 at 25˚C
+PARTITION COEFF (n-octanol/water) Log Pow: 1.06
+AUTO IGNITION TEMP: >750˚C
+DECOMPOSITION TEMPERATURE: >250˚C
+VISCOSITY: Not applicable
+FLASH POINT:
+Not applicable
+(Flash point method and additional flammability data are found in Section 5.)
+10. STABILITY AND REACTIVITY
+NORMALLY STABLE: (CONDITIONS TO AVOID):
+The product is stable.
+Do not mix with oxygen or air above atmospheric pressure. Any source of high temperatures, such as lighted cigarettes,
+flames, hot spots or welding may yield toxic and/or corrosive decomposition products.
+INCOMPATIBILITIES:
+(Under specific conditions: e.g. very high temperatures and/or appropriate pressures) – Freshly abraded aluminum surfaces
+(may cause strong exothermic reaction). Chemically reactive metals: potassium, calcium, powdered aluminum, magnesium,
+and zinc.
+HAZARDOUS DECOMPOSITION PRODUCTS:
+Halogens, halogen acids and possibly carbonyl halides.
+HAZARDOUS POLYMERIZATION:
+Will not occur.
+11. TOXICOLOGICAL INFORMATION
+IMMEDIATE (ACUTE) EFFECTS:
+LC50 :Inhalation 4 hr. (rat) - > 500,000 ppm / Cardiac Sensitization threshold (dog) 80,000 ppm. NOEL – 50,000 ppm
+DELAYED (SUBCHRONIC AND CHRONIC) EFFECTS:
+Not mutagenic in four tests
+Teratogenic NOEL (rat and rabbit) – 40,000 ppm
+Subchronic inhalation (rat) NOEL – 50,000 ppm
+Chronic NOEL – 10,000 ppm
+REPEATED DOSE TOXICITY:
+Lifetime inhalation exposure of male rats was associated with a small increase in salivary gland fibrosarcomas.
+FURTHER INFORMATION:
+Acute effects of rapid evaporation of the liquid may cause frostbite. Vapors are heavier than air and can displace oxygen
+causing difficulty breathing or suffocation. May cause cardiac arrhythmia.
+OTHER DATA:
+Metabolism <0.5% as CO2 in tests at 50,000 ppm, late developing benign tumors were found.
+
+===== PAGE 6 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 6 of 7
+Current Issue Date: January 04, 2021
+12. ECOLOGICAL INFORMATION
+Degradability (BOD):
+R-134a is a gas at room temperature; therefore, it is unlikely to remain in water.
+Octanol Water Partition Coefficient: See Section 9
+13. DISPOSAL CONSIDERATIONS
+RCRA
+Is the unused product a RCRA hazardous waste if discarded?
+Not a hazardous waste
+If yes, the RCRA ID number is:
+Not applicable
+OTHER DISPOSAL CONSIDERATIONS:
+Disposal must comply with federal, state, and local disposal or discharge laws. R-134a is subject to U.S. Environmental
+Protection Agency Clean Air Act Regulations Section 608 in 40 CFR Part 82 regarding refrigerant recycling.
+The information offered here is for the product as shipped. Use and/or alterations to the product such as mixing with other materials
+may significantly change the characteristics of the material and alter the RCRA classification and the proper disposal method.
+14. TRANSPORT INFORMATION
+US DOT ID NUMBER:
+UN3159
+US DOT PROPER SHIPPING NAME: 1,1,1,2-Tetrafluoroethane or Refrigerant Gas R 134a
+US DOT HAZARD CLASS:
+2.2
+US DOT PACKING GROUP:
+Not applicable
+For additional information on shipping regulations affecting this material, contact the information number found in Section 1.
+15. REGULATORY INFORMATION
+TOXIC SUBSTANCES CONTROL ACT (TSCA)
+TSCA INVENTORY STATUS: Listed on the TSCA inventory
+OTHER TSCA ISSUES:
+Subject to Section 12(b) export notification. May contain 0-10 ppm Ethane, 2-chloro-
+1,1,1-trifluoro, CAS# 75-88-7
+SARA TITLE III / CERCLA
+“Reportable Quantities” (RQs) and/or “Threshold Planning Quantities” (TPQs) exist for the following ingredients.
+INGREDIENT NAME
+SARA / CERCLA RQ (lb.)
+SARA EHS TPQ (lb.)
+No ingredients listed in this section
+Spills or releases resulting in the loss of any ingredient at or above its RQ requires immediate notification to the
+National Response Center [(800) 424-8802] and to your Local Emergency Planning Committee.
+SECTION 311 HAZARD CLASS:
+IMMEDIATE
+PRESSURE
+SARA 313 TOXIC CHEMICALS:
+The following ingredients are SARA 313 “Toxic Chemicals”. CAS numbers and weight percents are found in Section 2.
+INGREDIENT NAME
+COMMENT
+No ingredients listed in this section
+
+===== PAGE 7 (native) =====
+R-134a
+____________________________________________________________________________________________________________
+SDS: R-134a
+Page 7 of 7
+Current Issue Date: January 04, 2021
+STATE RIGHT-TO-KNOW
+In addition to the ingredients found in Section 2, the following are listed for state right-to-know purposes.
+INGREDIENT NAME
+WEIGHT %
+COMMENT
+No ingredients listed in this section
+ADDITIONAL REGULATORY INFORMATION:
+R-134a is subject to U.S. Environmental Protection Agency Clean Air Act Regulations at 40 CFR Part 82.
+WARNING: DO NOT vent to the atmosphere. To comply with provisions of the U.S. Clean Air Act, any residual must be
+recovered. Contains 1,1,1,2-Tetrafluoroethane (HFC-134a), a greenhouse gas which may contribute to
+global warming.
+WHMIS CLASSIFICATION (CANADA):
+This product has been evaluated in accordance with the hazard criteria of the CPR and the SDS contains all the information
+required by the CPR.
+FOREIGN INVENTORY STATUS:
+Canada – Listed on DSL
+EU - EINECS # 223770
+16. OTHER INFORMATION
+CURRENT ISSUE DATE:
+January 04, 2021
+PREVIOUS ISSUE DATE:
+April, 2018
+OTHER INFORMATION:
+HMIS Classification: Health – 1, Flammability – 1, Reactivity – 0
+NFPA Classification: Health – 2, Flammability – 1, Reactivity – 0
+ANSI/ASHRAE 34 Safety Group – A1
+UL Classified
+Regulatory Standards:
+1. OSHA regulations for compressed gases: 29 CFR 1910.101
+2. DOT classification per 49 CFR 172.101
+Toxicity information per PAFT Testing
+DISCLAIMER:
+National Refrigerants, Inc. believes that the information and recommendations contained herein (including data and statements are
+accurate as of the date hereof. NO WARRANTY OF FITNESS FOR ANY PARTICULAR PURPOSE, WARRANTY OF
+MERCHANTABILITY, OR ANY OTHER WARRANTY, EXPRESSED OR IMPLIED, IS MADE CONCERNING THE
+INFORMATION PROVIDED HEREIN. The information provided herein relates only to the specific product designated and may not
+be valid where such product is used in combination with any other methods of use of the product and of the information referred to
+herein are beyond the control of National Refrigerants. National Refrigerants expressly disclaims any and all liability as to any results
+obtained or arising from any use of the product or reliance on such information.

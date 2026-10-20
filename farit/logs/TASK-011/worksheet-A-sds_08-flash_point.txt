@@ -1,0 +1,72 @@
+# TASK-011 worksheet — group A — sds_08.pdf / flash_point
+state=PRESENT  derivation=EXPLICIT  gold_value='120 °C'
+
+## gold evidence_set
+- page 9: 'Flash point:\n120 °C'
+
+===== PAGE 9 (native) =====
+Page: 9/20
+BASF Safety data sheet according to Regulation UK SI 2019/758 and UK SI 2020/1577 as amended from
+time to time.
+Date / Revised: 03.02.2026
+Version: 5.0
+Date / Previous version: 03.02.2022
+Previous version: 4.0
+Product: Revygold®
+(ID no. 30703727/SDS_CPA_GB/EN)
+Date of print 03.02.2026
+Body protection:
+Body protection must be chosen depending on activity and possible exposure, e.g. apron, protecting
+boots, chemical-protection suit (according to EN 14605 in case of splashes or EN ISO 13982 in case
+of dust).
+General safety and hygiene measures
+The statements on personal protective equipment in the instructions for use apply when handling
+crop-protection agents in final-consumer packing. Wearing of closed work clothing is recommended.
+Store work clothing separately. Keep away from food, drink and animal feeding stuffs.
+SECTION 9: Physical and Chemical Properties
+9.1. Information on basic physical and chemical properties
+Form:
+liquid
+Colour:
+light yellow to brownish
+Odour:
+faintly aromatic
+Odour threshold:
+Not determined since harmful by
+inhalation.
+pH value:
+approx. 2.5 - 4.5
+(20 °C)
+Freezing point:
+-15 °C
+Boiling point:
+The product has not been tested.
+Flash point:
+120 °C
+Evaporation rate:
+not applicable
+Flammability:
+not applicable
+Lower explosion limit:
+As a result of our experience with this
+product and our knowledge of its
+composition we do not expect any
+hazard as long as the product is used
+appropriately and in accordance with
+the intended use.
+Upper explosion limit:
+As a result of our experience with this
+product and our knowledge of its
+composition we do not expect any
+hazard as long as the product is used
+appropriately and in accordance with
+the intended use.
+Ignition temperature:
+375 °C
+Vapour pressure:
+approx. 0.0011 hPa
+(25 °C)
+Information applies to the solvent.
+Density:
+approx. 1.00 g/cm3
+(20 °C)

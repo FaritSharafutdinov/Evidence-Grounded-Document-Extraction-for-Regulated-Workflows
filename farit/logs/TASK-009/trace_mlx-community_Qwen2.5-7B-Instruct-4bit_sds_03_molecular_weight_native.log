@@ -1,0 +1,1714 @@
+# TASK-009 zero-score trace
+# instance: sds_03.pdf:molecular_weight  layer: native  pages: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+# model: mlx-community/Qwen2.5-7B-Instruct-4bit
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 1 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2663 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 1 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+STYCCOBOND F49 BASE
+Other means of identification:
+Not relevant
+1.2
+Relevant identified uses of the substance or mixture and uses advised against:
+Relevant uses: Adhesive. For professional users only.
+Uses advised against: All uses not specified in this section or in section 7.3
+1.3
+Details of the supplier of the safety data sheet:
+F. Ball and Co. Ltd.
+Churnetside Business Park, Station Road
+ST13 7RS Cheddleton - Leek - England
+Phone: +44(0) 1538 361633
+msds@f-ball.co.uk
+www.f-ball.com
+1.4
+Emergency telephone number: 111
+SECTION 2: HAZARDS IDENTIFICATION
+2.1
+Classification of the substance or mixture:
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+Classification of this product has been carried out in accordance with GB CLP Regulation (UK S.I. 2019/720 and UK S.I.
+2020/1567).
+Eye Irrit. 2: Eye irritation, Category 2, H319
+Skin Irrit. 2: Skin irritation, Category 2, H315
+Skin Sens. 1: Sensitisation, skin, Category 1, H317
+2.2
+Label elements:
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+Warning
+Hazard statements:
+Eye Irrit. 2: H319 - Causes serious eye irritation.
+Skin Irrit. 2: H315 - Causes skin irritation.
+Skin Sens. 1: H317 - May cause an allergic skin reaction.
+Precautionary statements:
+P264: Wash hands thoroughly after handling.
+P280: Wear protective gloves/protective clothing/eye protection.
+P302+P352: IF ON SKIN: Wash with plenty of soap and water.
+P305+P351+P338: IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to
+do. Continue rinsing.
+P313: Get medical advice/attention.
+P501: Dispose of the contents and/or its container in line with regulations on dangerous waste or packaging and waste packaging
+respectively.
+Supplementary information:
+Contains 1,2-benzisothiazol-3(2H)-one, m-phenylenebis(methylamine), Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one
+and 2-methyl-2H-isothiazol-3-one (3:1).
+2.3
+Other hazards:
+Product does not meet PBT/vPvB criteria
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1
+Substance:
+Non-applicable
+3.2
+Mixture:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 1/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 34ac969b7e6fe2f0dfc8a5593e4cb2437ff384a9fc68614d900564742e25932b
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 1 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING\n1.1\nProduct identifier:\nSTYCCOBOND F49 BASE\nOther means of identification:\nNot relevant\n1.2\nRelevant identified uses of the substance or mixture and uses advised against:\nRelevant uses: Adhesive. For professional users only.\nUses advised against: All uses not specified in this section or in section 7.3\n1.3\nDetails of the supplier of the safety data sheet:\nF. Ball and Co. Ltd.\nChurnetside Business Park, Station Road\nST13 7RS Cheddleton - Leek - England\nPhone: +44(0) 1538 361633\nmsds@f-ball.co.uk\nwww.f-ball.com\n1.4\nEmergency telephone number: 111\nSECTION 2: HAZARDS IDENTIFICATION\n2.1\nClassification of the substance or mixture:\nGB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):\nClassification of this product has been carried out in accordance with GB CLP Regulation (UK S.I. 2019/720 and UK S.I.\n2020/1567).\nEye Irrit. 2: Eye irritation, Category 2, H319\nSkin Irrit. 2: Skin irritation, Category 2, H315\nSkin Sens. 1: Sensitisation, skin, Category 1, H317\n2.2\nLabel elements:\nGB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):\nWarning\nHazard statements:\nEye Irrit. 2: H319 - Causes serious eye irritation.\nSkin Irrit. 2: H315 - Causes skin irritation.\nSkin Sens. 1: H317 - May cause an allergic skin reaction.\nPrecautionary statements:\nP264: Wash hands thoroughly after handling.\nP280: Wear protective gloves/protective clothing/eye protection.\nP302+P352: IF ON SKIN: Wash with plenty of soap and water.\nP305+P351+P338: IF IN EYES: Rinse cautiously with water for several minutes. Remove contact lenses, if present and easy to\ndo. Continue rinsing.\nP313: Get medical advice/attention.\nP501: Dispose of the contents and/or its container in line with regulations on dangerous waste or packaging and waste packaging\nrespectively.\nSupplementary information:\nContains 1,2-benzisothiazol-3(2H)-one, m-phenylenebis(methylamine), Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one\nand 2-methyl-2H-isothiazol-3-one (3:1).\n2.3\nOther hazards:\nProduct does not meet PBT/vPvB criteria\nSECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS\n3.1\nSubstance:\nNon-applicable\n3.2\nMixture:\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 1/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.687500 |      0.000000e+00 |       -1.627701e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.390625 |     -1.433594e+01 |       -1.429688e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.843750 |     -1.484375e+01 |       -1.484375e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.812500 |     -1.484375e+01 |       -1.487500e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.671875 |     -1.594531e+01 |       -1.601563e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.562500 |     -1.594531e+01 |       -1.612500e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.578125 |     -1.664062e+01 |       -1.710938e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.875000 |              -inf |       -1.781250e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.484375 |              -inf |       -1.820313e+01 | 'ĠNo' (decode: ' No')
+      10 |    28715 |     21.000000 |              -inf |       -1.868750e+01 | 'Based' (decode: 'Based')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.318750163e+01 / -1.627700785e-06
+    ln(P(Yes)/P(No)) float64 = -23.187500  ->  P(Yes)/P(No) = 8.507397e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 8.507383174e-11
+    P(No)   float64 (np.exp)          = 9.999983723e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 2 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=4189 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 2 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS (continued)
+Chemical description: Mixture of polymers, dispersants and organic compounds
+Components:
+In accordance with Annex II of The REACH etc. (Amendment etc.) (EU Exit) Regulations 2020, the product contains:
+Identification
+Chemical name/Classification
+Concentration
+CAS:
+1219458-07-7
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated
+Acute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 - Danger
+1 - <2.5 %
+CAS:
+1477-55-0
+m-phenylenebis(methylamine)
+Acute Tox. 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317;
+EUH071 - Danger
+<1 %
+CAS:
+2634-33-5
+1,2-benzisothiazol-3(2H)-one
+Acute Tox. 4: H302; Aquatic Acute 1: H400; Eye Dam. 1: H318; Skin Irrit. 2: H315; Skin Sens. 1: H317 - Danger
+<1 %
+CAS:
+55965-84-9
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1)
+Acute Tox. 2: H310+H330; Acute Tox. 3: H301; Aquatic Acute 1: H400; Aquatic Chronic 1: H410; Eye Dam. 1:
+H318; Skin Corr. 1C: H314; Skin Sens. 1A: H317; EUH071 - Danger
+<1 %
+To obtain more information on the hazards of the substances consult sections 11, 12 and 16.
+Acute toxicity estimate for the substance in Part 3 of Annex VI to Regulation (EC) No 1272/2008 or as determined in accordance
+with Annex I to that Regulation:
+Identification
+Acute toxicity
+Genus
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine,
+hydrogenated
+LD50 oral
+500 mg/kg (ATEi)
+CAS: 1219458-07-7
+LD50 dermal
+Not relevant
+LC50 inhalation
+Not relevant
+m-phenylenebis(methylamine)
+LD50 oral
+1090 mg/kg
+Rat
+CAS: 1477-55-0
+LD50 dermal
+Not relevant
+LC50 inhalation
+Not relevant
+1,2-benzisothiazol-3(2H)-one
+LD50 oral
+500 mg/kg
+Rat
+CAS: 2634-33-5
+LD50 dermal
+Not relevant
+LC50 inhalation
+Not relevant
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one
+(3:1)
+LD50 oral
+64 mg/kg
+Rat
+CAS: 55965-84-9
+LD50 dermal
+87.12 mg/kg
+Rabbit
+LC50 inhalation
+Not relevant
+SECTION 4: FIRST AID MEASURES
+4.1
+Description of first aid measures:
+The symptoms resulting from intoxication can appear after exposure, therefore, in case of doubt, seek medical attention for
+direct exposure to the chemical product or persistent discomfort, showing the SDS of this product.
+By inhalation:
+This product is not classified as hazardous through inhalation. However, in case of intoxication symptoms it is recommended to
+remove the person affected from the area of exposure, provide clean air and keep at rest. Request medical attention if symptoms
+persist.
+By skin contact:
+Remove contaminated clothing and footwear, rinse skin or shower the person affected if appropriate with plenty of cold water
+and neutral soap. In serious cases see a doctor. If the product causes burns or freezing, clothing should not be removed as this
+could worsen the injury caused if it is stuck to the skin. If blisters form on the skin, these should never be burst as this will
+increase the risk of infection.
+By eye contact:
+Rinse eyes thoroughly with lukewarm water for at least 15 minutes. Do not allow the person affected to rub or close their eyes.
+If the injured person uses contact lenses, these should be removed unless they are stuck to the eyes, in which case this could
+cause further damage. In all cases, after cleaning, a doctor should be consulted as quickly as possible with the SDS of the
+product.
+By ingestion/aspiration:
+Do not induce vomiting, but if it does happen keep the head down to avoid aspiration. Keep the person affected at rest. Rinse
+out the mouth and throat, as they may have been affected during ingestion.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 2/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = bf4bf0e3f45d07cea89e3b7c5de11278b0e8238dc3bd91855b3409a592086e86
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 2 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS (continued)\nChemical description: Mixture of polymers, dispersants and organic compounds\nComponents:\nIn accordance with Annex II of The REACH etc. (Amendment etc.) (EU Exit) Regulations 2020, the product contains:\nIdentification\nChemical name/Classification\nConcentration\nCAS:\n1219458-07-7\nReaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated\nAcute Tox. 4: H302; Aquatic Chronic 2: H411; Eye Dam. 1: H318; Skin Corr. 1B: H314 - Danger\n1 - <2.5 %\nCAS:\n1477-55-0\nm-phenylenebis(methylamine)\nAcute Tox. 4: H302+H332; Aquatic Chronic 3: H412; Eye Dam. 1: H318; Skin Corr. 1B: H314; Skin Sens. 1B: H317;\nEUH071 - Danger\n<1 %\nCAS:\n2634-33-5\n1,2-benzisothiazol-3(2H)-one\nAcute Tox. 4: H302; Aquatic Acute 1: H400; Eye Dam. 1: H318; Skin Irrit. 2: H315; Skin Sens. 1: H317 - Danger\n<1 %\nCAS:\n55965-84-9\nReaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one (3:1)\nAcute Tox. 2: H310+H330; Acute Tox. 3: H301; Aquatic Acute 1: H400; Aquatic Chronic 1: H410; Eye Dam. 1:\nH318; Skin Corr. 1C: H314; Skin Sens. 1A: H317; EUH071 - Danger\n<1 %\nTo obtain more information on the hazards of the substances consult sections 11, 12 and 16.\nAcute toxicity estimate for the substance in Part 3 of Annex VI to Regulation (EC) No 1272/2008 or as determined in accordance\nwith Annex I to that Regulation:\nIdentification\nAcute toxicity\nGenus\nReaction products of benzaldehyde diethylenetriamine and triethylenetetramine,\nhydrogenated\nLD50 oral\n500 mg/kg (ATEi)\nCAS: 1219458-07-7\nLD50 dermal\nNot relevant\nLC50 inhalation\nNot relevant\nm-phenylenebis(methylamine)\nLD50 oral\n1090 mg/kg\nRat\nCAS: 1477-55-0\nLD50 dermal\nNot relevant\nLC50 inhalation\nNot relevant\n1,2-benzisothiazol-3(2H)-one\nLD50 oral\n500 mg/kg\nRat\nCAS: 2634-33-5\nLD50 dermal\nNot relevant\nLC50 inhalation\nNot relevant\nReaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one\n(3:1)\nLD50 oral\n64 mg/kg\nRat\nCAS: 55965-84-9\nLD50 dermal\n87.12 mg/kg\nRabbit\nLC50 inhalation\nNot relevant\nSECTION 4: FIRST AID MEASURES\n4.1\nDescription of first aid measures:\nThe symptoms resulting from intoxication can appear after exposure, therefore, in case of doubt, seek medical attention for\ndirect exposure to the chemical product or persistent discomfort, showing the SDS of this product.\nBy inhalation:\nThis product is not classified as hazardous through inhalation. However, in case of intoxication symptoms it is recommended to\nremove the person affected from the area of exposure, provide clean air and keep at rest. Request medical attention if symptoms\npersist.\nBy skin contact:\nRemove contaminated clothing and footwear, rinse skin or shower the person affected if appropriate with plenty of cold water\nand neutral soap. In serious cases see a doctor. If the product causes burns or freezing, clothing should not be removed as this\ncould worsen the injury caused if it is stuck to the skin. If blisters form on the skin, these should never be burst as this will\nincrease the risk of infection.\nBy eye contact:\nRinse eyes thoroughly with lukewarm water for at least 15 minutes. Do not allow the person affected to rub or close their eyes.\nIf the injured person uses contact lenses, these should be removed unless they are stuck to the eyes, in which case this could\ncause further damage. In all cases, after cleaning, a doctor should be consulted as quickly as possible with the SDS of the\nproduct.\nBy ingestion/aspiration:\nDo not induce vomiting, but if it does happen keep the head down to avoid aspiration. Keep the person affected at rest. Rinse\nout the mouth and throat, as they may have been affected during ingestion.\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 2/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     40.437500 |      0.000000e+00 |       -1.190717e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.890625 |     -1.455469e+01 |       -1.454688e+01 | '>No' (decode: '>No')
+       3 |     8996 |     25.156250 |     -1.525000e+01 |       -1.528125e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     25.062500 |     -1.525000e+01 |       -1.537500e+01 | '-No' (decode: '-No')
+       5 |    85076 |     24.062500 |     -1.664062e+01 |       -1.637500e+01 | ',No' (decode: ',No')
+       6 |     9100 |     24.031250 |     -1.664062e+01 |       -1.640625e+01 | '_NO' (decode: '_NO')
+       7 |    36989 |     24.015625 |     -1.664062e+01 |       -1.642188e+01 | '_No' (decode: '_No')
+       8 |    16766 |     22.203125 |              -inf |       -1.823438e+01 | '.No' (decode: '.No')
+       9 |     2308 |     22.078125 |              -inf |       -1.835938e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     21.437500 |              -inf |       -1.900000e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.114062619e+01 / -1.190717019e-06
+    ln(P(Yes)/P(No)) float64 = -21.140625  ->  P(Yes)/P(No) = 6.587843e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 6.587834821e-10
+    P(No)   float64 (np.exp)          = 9.999988093e-01
+    score float64:                    = 0.000000001
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 3 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3416 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 3 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 4: FIRST AID MEASURES (continued)
+4.2
+Most important symptoms and effects, both acute and delayed:
+Acute and delayed effects are indicated in sections 2 and 11.
+4.3
+Indication of any immediate medical attention and special treatment needed:
+Not relevant
+SECTION 5: FIREFIGHTING MEASURES
+5.1
+Extinguishing media:
+Suitable extinguishing media:
+Product is non-flammable under normal conditions of storage, handling and use. In the case of combustion as a result of
+improper handling, storage or use preferably use polyvalent powder extinguishers (ABC powder), in accordance with the
+Regulation on fire protection systems.
+Unsuitable extinguishing media:
+Non-applicable
+5.2
+Special hazards arising from the substance or mixture:
+As a result of combustion or thermal decomposition reactive sub-products are created that can become highly toxic and,
+consequently, can present a serious health risk.
+5.3
+Advice for firefighters:
+Depending on the magnitude of the fire it may be necessary to use full protective clothing and self-contained breathing apparatus
+(SCBA). Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit,...).
+Additional provisions:
+Act in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other
+emergencies. Eliminate all sources of ignition. In case of fire, cool the storage containers and tanks for products susceptible to
+combustion, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an
+aqueous medium.
+SECTION 6: ACCIDENTAL RELEASE MEASURES
+6.1
+Personal precautions, protective equipment and emergency procedures:
+For non-emergency personnel:
+Isolate leaks provided that there is no additional risk for the people performing this task. Personal protection equipment must be
+used against potential contact with the spilt product (See section 8). Evacuate the area and keep out those who do not have
+protection.
+For emergency responders:
+Wear protective equipment. Keep unprotected persons away. See section 8.
+6.2
+Environmental precautions:
+It is recommended to avoid environmental spillage of both the product and its container.
+6.3
+Methods and material for containment and cleaning up:
+It is recommended:
+Absorb the spillage using sand or inert absorbent and move it to a safe place. Do not absorb in sawdust or other combustible
+absorbents. For any concern related to disposal consult section 13.
+6.4
+Reference to other sections:
+See sections 8 and 13.
+SECTION 7: HANDLING AND STORAGE
+7.1
+Precautions for safe handling:
+A.- General precautions for safe use
+Comply with the current legislation concerning the prevention of industrial risks with regards manually handling weights.
+Maintain order, cleanliness and dispose of using safe methods (section 6).
+B.- Technical recommendations for the prevention of fires and explosions
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 3/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 83d222a66f524005845ccaef2799030328cbd92642d665919e5a531dfbfa434a
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 3 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 4: FIRST AID MEASURES (continued)\n4.2\nMost important symptoms and effects, both acute and delayed:\nAcute and delayed effects are indicated in sections 2 and 11.\n4.3\nIndication of any immediate medical attention and special treatment needed:\nNot relevant\nSECTION 5: FIREFIGHTING MEASURES\n5.1\nExtinguishing media:\nSuitable extinguishing media:\nProduct is non-flammable under normal conditions of storage, handling and use. In the case of combustion as a result of\nimproper handling, storage or use preferably use polyvalent powder extinguishers (ABC powder), in accordance with the\nRegulation on fire protection systems.\nUnsuitable extinguishing media:\nNon-applicable\n5.2\nSpecial hazards arising from the substance or mixture:\nAs a result of combustion or thermal decomposition reactive sub-products are created that can become highly toxic and,\nconsequently, can present a serious health risk.\n5.3\nAdvice for firefighters:\nDepending on the magnitude of the fire it may be necessary to use full protective clothing and self-contained breathing apparatus\n(SCBA). Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit,...).\nAdditional provisions:\nAct in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other\nemergencies. Eliminate all sources of ignition. In case of fire, cool the storage containers and tanks for products susceptible to\ncombustion, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an\naqueous medium.\nSECTION 6: ACCIDENTAL RELEASE MEASURES\n6.1\nPersonal precautions, protective equipment and emergency procedures:\nFor non-emergency personnel:\nIsolate leaks provided that there is no additional risk for the people performing this task. Personal protection equipment must be\nused against potential contact with the spilt product (See section 8). Evacuate the area and keep out those who do not have\nprotection.\nFor emergency responders:\nWear protective equipment. Keep unprotected persons away. See section 8.\n6.2\nEnvironmental precautions:\nIt is recommended to avoid environmental spillage of both the product and its container.\n6.3\nMethods and material for containment and cleaning up:\nIt is recommended:\nAbsorb the spillage using sand or inert absorbent and move it to a safe place. Do not absorb in sawdust or other combustible\nabsorbents. For any concern related to disposal consult section 13.\n6.4\nReference to other sections:\nSee sections 8 and 13.\nSECTION 7: HANDLING AND STORAGE\n7.1\nPrecautions for safe handling:\nA.- General precautions for safe use\nComply with the current legislation concerning the prevention of industrial risks with regards manually handling weights.\nMaintain order, cleanliness and dispose of using safe methods (section 6).\nB.- Technical recommendations for the prevention of fires and explosions\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 3/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.062500 |      0.000000e+00 |       -1.980521e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.125000 |     -1.392969e+01 |       -1.393750e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.187500 |     -1.484375e+01 |       -1.487500e+01 | '-No' (decode: '-No')
+       4 |     8996 |     24.109375 |     -1.502344e+01 |       -1.495313e+01 | 'NO' (decode: 'NO')
+       5 |     9100 |     23.515625 |     -1.553906e+01 |       -1.554688e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.109375 |     -1.594531e+01 |       -1.595313e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.625000 |     -1.664062e+01 |       -1.643750e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.203125 |              -inf |       -1.785938e+01 | '.No' (decode: '.No')
+       9 |     2308 |     20.859375 |              -inf |       -1.820313e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     20.234375 |              -inf |       -1.882813e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.344531448e+01 / -1.980520742e-06
+    ln(P(Yes)/P(No)) float64 = -23.445312  ->  P(Yes)/P(No) = 6.574007e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 6.573993868e-11
+    P(No)   float64 (np.exp)          = 9.999980195e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 4 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3340 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 4 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 7: HANDLING AND STORAGE (continued)
+Product is non-flammable under normal conditions of storage, handling and use. It is recommended to transfer at slow speeds
+to avoid the generation of electrostatic charges that can affect flammable products. Consult section 10 for information on
+conditions and materials that should be avoided.
+C.- Technical recommendations on general occupational hygiene
+Do not eat or drink during the process, washing hands afterwards with suitable cleaning products.
+D.- Technical recommendations to prevent environmental risks
+It is recommended to have absorbent material available at close proximity to the product (See subsection 6.3)
+7.2
+Conditions for safe storage, including any incompatibilities:
+A.- Specific storage requirements
+Minimum Temp.:
+5 ºC
+Maximum Temp.:
+30 ºC
+B.- General conditions for storage
+Avoid sources of heat, radiation, static electricity and contact with food. For additional information see subsection 10.5
+7.3
+Specific end use(s):
+Except for the instructions already specified it is not necessary to provide any special recommendation regarding the uses of this
+product.
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION
+8.1
+Control parameters:
+Substances whose occupational exposure limits have to be monitored in the workplace:
+There are no applicable occupational exposure limits for the substances contained in the product
+DNEL (Workers):
+Short exposure
+Long exposure
+Identification
+Systemic
+Local
+Systemic
+Local
+m-phenylenebis(methylamine)
+Oral
+Not relevant
+Not relevant
+Not relevant
+Not relevant
+CAS: 1477-55-0
+Dermal
+Not relevant
+Not relevant
+0.33 mg/kg
+Not relevant
+EC: 216-032-5
+Inhalation
+Not relevant
+Not relevant
+1.2 mg/m³
+0.2 mg/m³
+1,2-benzisothiazol-3(2H)-one
+Oral
+Not relevant
+Not relevant
+Not relevant
+Not relevant
+CAS: 2634-33-5
+Dermal
+Not relevant
+Not relevant
+0.966 mg/kg
+Not relevant
+EC: 220-120-9
+Inhalation
+Not relevant
+Not relevant
+6.81 mg/m³
+Not relevant
+DNEL (General population):
+Short exposure
+Long exposure
+Identification
+Systemic
+Local
+Systemic
+Local
+1,2-benzisothiazol-3(2H)-one
+Oral
+Not relevant
+Not relevant
+Not relevant
+Not relevant
+CAS: 2634-33-5
+Dermal
+Not relevant
+Not relevant
+0.345 mg/kg
+Not relevant
+EC: 220-120-9
+Inhalation
+Not relevant
+Not relevant
+1.2 mg/m³
+Not relevant
+PNEC:
+Identification
+Reaction products of benzaldehyde diethylenetriamine and
+triethylenetetramine, hydrogenated
+STP
+1 mg/L
+Fresh water
+0.003 mg/L
+CAS: 1219458-07-7
+Soil
+Not relevant
+Marine water
+0 mg/L
+EC: 846-447-2
+Intermittent
+Not relevant
+Sediment (Fresh water)
+Not relevant
+Oral
+Not relevant
+Sediment (Marine water)
+Not relevant
+m-phenylenebis(methylamine)
+STP
+10 mg/L
+Fresh water
+0.094 mg/L
+CAS: 1477-55-0
+Soil
+2.44 mg/kg
+Marine water
+0.009 mg/L
+EC: 216-032-5
+Intermittent
+0.152 mg/L
+Sediment (Fresh water)
+12.4 mg/kg
+Oral
+Not relevant
+Sediment (Marine water)
+1.24 mg/kg
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 4/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 79c8c4b7a61bd44906f2493fc54a2d4b3283bb6b9ac2302b27f6aad55c081065
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 4 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 7: HANDLING AND STORAGE (continued)\nProduct is non-flammable under normal conditions of storage, handling and use. It is recommended to transfer at slow speeds\nto avoid the generation of electrostatic charges that can affect flammable products. Consult section 10 for information on\nconditions and materials that should be avoided.\nC.- Technical recommendations on general occupational hygiene\nDo not eat or drink during the process, washing hands afterwards with suitable cleaning products.\nD.- Technical recommendations to prevent environmental risks\nIt is recommended to have absorbent material available at close proximity to the product (See subsection 6.3)\n7.2\nConditions for safe storage, including any incompatibilities:\nA.- Specific storage requirements\nMinimum Temp.:\n5 ºC\nMaximum Temp.:\n30 ºC\nB.- General conditions for storage\nAvoid sources of heat, radiation, static electricity and contact with food. For additional information see subsection 10.5\n7.3\nSpecific end use(s):\nExcept for the instructions already specified it is not necessary to provide any special recommendation regarding the uses of this\nproduct.\nSECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION\n8.1\nControl parameters:\nSubstances whose occupational exposure limits have to be monitored in the workplace:\nThere are no applicable occupational exposure limits for the substances contained in the product\nDNEL (Workers):\nShort exposure\nLong exposure\nIdentification\nSystemic\nLocal\nSystemic\nLocal\nm-phenylenebis(methylamine)\nOral\nNot relevant\nNot relevant\nNot relevant\nNot relevant\nCAS: 1477-55-0\nDermal\nNot relevant\nNot relevant\n0.33 mg/kg\nNot relevant\nEC: 216-032-5\nInhalation\nNot relevant\nNot relevant\n1.2 mg/m³\n0.2 mg/m³\n1,2-benzisothiazol-3(2H)-one\nOral\nNot relevant\nNot relevant\nNot relevant\nNot relevant\nCAS: 2634-33-5\nDermal\nNot relevant\nNot relevant\n0.966 mg/kg\nNot relevant\nEC: 220-120-9\nInhalation\nNot relevant\nNot relevant\n6.81 mg/m³\nNot relevant\nDNEL (General population):\nShort exposure\nLong exposure\nIdentification\nSystemic\nLocal\nSystemic\nLocal\n1,2-benzisothiazol-3(2H)-one\nOral\nNot relevant\nNot relevant\nNot relevant\nNot relevant\nCAS: 2634-33-5\nDermal\nNot relevant\nNot relevant\n0.345 mg/kg\nNot relevant\nEC: 220-120-9\nInhalation\nNot relevant\nNot relevant\n1.2 mg/m³\nNot relevant\nPNEC:\nIdentification\nReaction products of benzaldehyde diethylenetriamine and\ntriethylenetetramine, hydrogenated\nSTP\n1 mg/L\nFresh water\n0.003 mg/L\nCAS: 1219458-07-7\nSoil\nNot relevant\nMarine water\n0 mg/L\nEC: 846-447-2\nIntermittent\nNot relevant\nSediment (Fresh water)\nNot relevant\nOral\nNot relevant\nSediment (Marine water)\nNot relevant\nm-phenylenebis(methylamine)\nSTP\n10 mg/L\nFresh water\n0.094 mg/L\nCAS: 1477-55-0\nSoil\n2.44 mg/kg\nMarine water\n0.009 mg/L\nEC: 216-032-5\nIntermittent\n0.152 mg/L\nSediment (Fresh water)\n12.4 mg/kg\nOral\nNot relevant\nSediment (Marine water)\n1.24 mg/kg\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 4/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.093750 |      0.000000e+00 |       -1.637287e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.109375 |     -1.400000e+01 |       -1.398438e+01 | '>No' (decode: '>No')
+       3 |    97976 |     23.828125 |     -1.525000e+01 |       -1.526563e+01 | '-No' (decode: '-No')
+       4 |     8996 |     23.812500 |     -1.525000e+01 |       -1.528125e+01 | 'NO' (decode: 'NO')
+       5 |    36989 |     23.000000 |     -1.594531e+01 |       -1.609375e+01 | '_No' (decode: '_No')
+       6 |     9100 |     22.828125 |     -1.664062e+01 |       -1.626563e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     22.375000 |     -1.664062e+01 |       -1.671875e+01 | ',No' (decode: ',No')
+       8 |    28715 |     21.671875 |              -inf |       -1.742188e+01 | 'Based' (decode: 'Based')
+       9 |    16766 |     21.500000 |              -inf |       -1.759375e+01 | '.No' (decode: '.No')
+      10 |     2308 |     20.734375 |              -inf |       -1.835938e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.187500164e+01 / -1.637286802e-06
+    ln(P(Yes)/P(No)) float64 = -21.875000  ->  P(Yes)/P(No) = 3.160881e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 3.160876279e-10
+    P(No)   float64 (np.exp)          = 9.999983627e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 5 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3437 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 5 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)
+Identification
+1,2-benzisothiazol-3(2H)-one
+STP
+1.03 mg/L
+Fresh water
+0.00403 mg/L
+CAS: 2634-33-5
+Soil
+3 mg/kg
+Marine water
+0.000403 mg/L
+EC: 220-120-9
+Intermittent
+0.0011 mg/L
+Sediment (Fresh water)
+0.0499 mg/kg
+Oral
+Not relevant
+Sediment (Marine water)
+0.00499 mg/kg
+8.2
+Exposure controls:
+A.- Individual protection measures, such as personal protective equipment
+As a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<UKCA
+marking>> or <<CE marking>>. For more information on Personal Protective Equipment (storage, use, cleaning,
+maintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more information see
+subsection 7.1. All information contained herein is a recommendation which needs some specification from the labour risk
+prevention services as it is not known whether the company has additional measures at its disposal.
+B.- Respiratory protection
+The use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.
+C.- Specific protection for the hands
+Pictogram
+PPE
+Remarks
+Mandatory hand
+protection
+Chemical protective gloves
+Replace the gloves at any sign of deterioration.
+As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with
+total reliability and has therefore to be checked prior to the application.
+D.- Eye and face protection
+Pictogram
+PPE
+Remarks
+Mandatory face
+protection
+Panoramic glasses against splash/projections.
+Clean daily and disinfect periodically according to the manufacturer´s instructions.
+Use if there is a risk of splashing.
+E.- Body protection
+Pictogram
+PPE
+Remarks
+Work clothing
+Replace before any evidence of deterioration. For periods of prolonged exposure
+to the product for professional/industrial users CE III is recommended, in
+accordance with the regulations in EN ISO 6529:2013, EN ISO 6530:2005, EN ISO
+13688:2013, EN 464:1994.
+Anti-slip work shoes
+Replace before any evidence of deterioration. For periods of prolonged exposure
+to the product for professional/industrial users CE III is recommended, in
+accordance with the regulations in EN ISO 20345:2012 y EN 13832-1:2007
+F.- Additional emergency measures
+Emergency measure
+Standards
+Emergency measure
+Standards
+Emergency shower
+ANSI Z358-1
+ISO 3864-1:2011, ISO 3864-4:2011
+Eyewash stations
+DIN 12 899
+ISO 3864-1:2011, ISO 3864-4:2011
+Environmental exposure controls:
+In accordance with the community legislation for the protection of the environment it is recommended to avoid environmental
+spillage of both the product and its container. For additional information see subsection 7.1.D
+The Volatile Organic Compounds in Paints, Varnishes and Vehicle Refinishing Products Regulations 2012:
+V.O.C. (Supply):
+0 % weight
+V.O.C. density at 20 ºC:
+0 kg/m³ (0 g/L)
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 5/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = bef14367abe95b9d03cde7dab5e27d6156c9379a7501b21ed83a2d099711e0b1
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 5 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)\nIdentification\n1,2-benzisothiazol-3(2H)-one\nSTP\n1.03 mg/L\nFresh water\n0.00403 mg/L\nCAS: 2634-33-5\nSoil\n3 mg/kg\nMarine water\n0.000403 mg/L\nEC: 220-120-9\nIntermittent\n0.0011 mg/L\nSediment (Fresh water)\n0.0499 mg/kg\nOral\nNot relevant\nSediment (Marine water)\n0.00499 mg/kg\n8.2\nExposure controls:\nA.- Individual protection measures, such as personal protective equipment\nAs a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<UKCA\nmarking>> or <<CE marking>>. For more information on Personal Protective Equipment (storage, use, cleaning,\nmaintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more information see\nsubsection 7.1. All information contained herein is a recommendation which needs some specification from the labour risk\nprevention services as it is not known whether the company has additional measures at its disposal.\nB.- Respiratory protection\nThe use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.\nC.- Specific protection for the hands\nPictogram\nPPE\nRemarks\nMandatory hand\nprotection\nChemical protective gloves\nReplace the gloves at any sign of deterioration.\nAs the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.\nD.- Eye and face protection\nPictogram\nPPE\nRemarks\nMandatory face\nprotection\nPanoramic glasses against splash/projections.\nClean daily and disinfect periodically according to the manufacturer´s instructions.\nUse if there is a risk of splashing.\nE.- Body protection\nPictogram\nPPE\nRemarks\nWork clothing\nReplace before any evidence of deterioration. For periods of prolonged exposure\nto the product for professional/industrial users CE III is recommended, in\naccordance with the regulations in EN ISO 6529:2013, EN ISO 6530:2005, EN ISO\n13688:2013, EN 464:1994.\nAnti-slip work shoes\nReplace before any evidence of deterioration. For periods of prolonged exposure\nto the product for professional/industrial users CE III is recommended, in\naccordance with the regulations in EN ISO 20345:2012 y EN 13832-1:2007\nF.- Additional emergency measures\nEmergency measure\nStandards\nEmergency measure\nStandards\nEmergency shower\nANSI Z358-1\nISO 3864-1:2011, ISO 3864-4:2011\nEyewash stations\nDIN 12 899\nISO 3864-1:2011, ISO 3864-4:2011\nEnvironmental exposure controls:\nIn accordance with the community legislation for the protection of the environment it is recommended to avoid environmental\nspillage of both the product and its container. For additional information see subsection 7.1.D\nThe Volatile Organic Compounds in Paints, Varnishes and Vehicle Refinishing Products Regulations 2012:\nV.O.C. (Supply):\n0 % weight\nV.O.C. density at 20 ºC:\n0 kg/m³ (0 g/L)\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 5/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.250000 |      0.000000e+00 |       -1.570908e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.078125 |     -1.414844e+01 |       -1.417188e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.218750 |     -1.502344e+01 |       -1.503125e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     23.812500 |     -1.553906e+01 |       -1.543750e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.484375 |     -1.594531e+01 |       -1.576563e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.312500 |     -1.594531e+01 |       -1.593750e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.359375 |     -1.664062e+01 |       -1.689063e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.609375 |              -inf |       -1.764063e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.093750 |              -inf |       -1.815625e+01 | 'ĠNo' (decode: ' No')
+      10 |    28715 |     20.796875 |              -inf |       -1.845313e+01 | 'Based' (decode: 'Based')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.220312657e+01 / -1.570908260e-06
+    ln(P(Yes)/P(No)) float64 = -22.203125  ->  P(Yes)/P(No) = 2.276698e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 2.276693928e-10
+    P(No)   float64 (np.exp)          = 9.999984291e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 6 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2240 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 6 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES
+9.1
+Information on basic physical and chemical properties:
+For complete information see the product datasheet.
+Appearance:
+Physical state at 20 ºC:
+Liquid
+Appearance:
+Not available
+Colour:
+White
+Odour:
+Not available
+Odour threshold:
+Not relevant *
+Volatility:
+Boiling point at atmospheric pressure:
+327 ºC
+Vapour pressure at 20 ºC:
+4.076E-2 Pa
+Vapour pressure at 50 ºC:
+0.95 Pa (0 kPa)
+Evaporation rate at 20 ºC:
+Not relevant *
+Product description:
+Density at 20 ºC:
+Not relevant *
+Relative density at 20 ºC:
+0.95 - 1.05
+Dynamic viscosity at 20 ºC:
+35000 - 45000 cP
+Kinematic viscosity at 20 ºC:
+Not relevant *
+Kinematic viscosity at 40 ºC:
+Not relevant *
+Concentration:
+Not relevant *
+pH:
+9 - 10
+Vapour density at 20 ºC:
+Not relevant *
+Partition coefficient n-octanol/water 20 ºC:
+Not relevant *
+Solubility in water at 20 ºC:
+Not relevant *
+Solubility properties:
+Not relevant *
+Decomposition temperature:
+Not relevant *
+Melting point/freezing point:
+Not relevant *
+Flammability:
+Flash Point:
+Non Flammable (>60 ºC)
+Flammability (solid, gas):
+Not relevant *
+Autoignition temperature:
+351 ºC
+Lower flammability limit:
+Not relevant *
+Upper flammability limit:
+Not relevant *
+Particle characteristics:
+Median equivalent diameter:
+Non-applicable
+9.2
+Other information:
+Information with regard to physical hazard classes:
+Explosive properties:
+Not relevant *
+Oxidising properties:
+Not relevant *
+Corrosive to metals:
+Not relevant *
+Heat of combustion:
+Not relevant *
+Aerosols-total percentage (by mass) of flammable
+components:
+Not relevant *
+Other safety characteristics:
+Surface tension at 20 ºC:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 6/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 13c1f0152c93a80367d2c2247dc56efd17c69f1967b9ae7f7014a877606e9a42
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 6 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 9: PHYSICAL AND CHEMICAL PROPERTIES\n9.1\nInformation on basic physical and chemical properties:\nFor complete information see the product datasheet.\nAppearance:\nPhysical state at 20 ºC:\nLiquid\nAppearance:\nNot available\nColour:\nWhite\nOdour:\nNot available\nOdour threshold:\nNot relevant *\nVolatility:\nBoiling point at atmospheric pressure:\n327 ºC\nVapour pressure at 20 ºC:\n4.076E-2 Pa\nVapour pressure at 50 ºC:\n0.95 Pa (0 kPa)\nEvaporation rate at 20 ºC:\nNot relevant *\nProduct description:\nDensity at 20 ºC:\nNot relevant *\nRelative density at 20 ºC:\n0.95 - 1.05\nDynamic viscosity at 20 ºC:\n35000 - 45000 cP\nKinematic viscosity at 20 ºC:\nNot relevant *\nKinematic viscosity at 40 ºC:\nNot relevant *\nConcentration:\nNot relevant *\npH:\n9 - 10\nVapour density at 20 ºC:\nNot relevant *\nPartition coefficient n-octanol/water 20 ºC:\nNot relevant *\nSolubility in water at 20 ºC:\nNot relevant *\nSolubility properties:\nNot relevant *\nDecomposition temperature:\nNot relevant *\nMelting point/freezing point:\nNot relevant *\nFlammability:\nFlash Point:\nNon Flammable (>60 ºC)\nFlammability (solid, gas):\nNot relevant *\nAutoignition temperature:\n351 ºC\nLower flammability limit:\nNot relevant *\nUpper flammability limit:\nNot relevant *\nParticle characteristics:\nMedian equivalent diameter:\nNon-applicable\n9.2\nOther information:\nInformation with regard to physical hazard classes:\nExplosive properties:\nNot relevant *\nOxidising properties:\nNot relevant *\nCorrosive to metals:\nNot relevant *\nHeat of combustion:\nNot relevant *\nAerosols-total percentage (by mass) of flammable\ncomponents:\nNot relevant *\nOther safety characteristics:\nSurface tension at 20 ºC:\nNot relevant *\n*Not relevant due to the nature of the product, not providing information property of its hazards.\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 6/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.718750 |      0.000000e+00 |       -1.726941e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.968750 |     -1.374219e+01 |       -1.375000e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.281250 |     -1.553906e+01 |       -1.543750e+01 | '-No' (decode: '-No')
+       4 |     8996 |     23.875000 |     -1.594531e+01 |       -1.584375e+01 | 'NO' (decode: 'NO')
+       5 |    36989 |     23.468750 |     -1.664062e+01 |       -1.625000e+01 | '_No' (decode: '_No')
+       6 |    28715 |     23.312500 |     -1.664062e+01 |       -1.640625e+01 | 'Based' (decode: 'Based')
+       7 |    85076 |     23.109375 |     -1.664062e+01 |       -1.660938e+01 | ',No' (decode: ',No')
+       8 |     9100 |     22.984375 |     -1.664062e+01 |       -1.673438e+01 | '_NO' (decode: '_NO')
+       9 |    16766 |     21.703125 |              -inf |       -1.801563e+01 | '.No' (decode: '.No')
+      10 |     2308 |     21.578125 |              -inf |       -1.814063e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.129687673e+01 / -1.726940798e-06
+    ln(P(Yes)/P(No)) float64 = -21.296875  ->  P(Yes)/P(No) = 5.634880e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 5.634870709e-10
+    P(No)   float64 (np.exp)          = 9.999982731e-01
+    score float64:                    = 0.000000001
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided section'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 7 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3938 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 7 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES (continued)
+Refraction index:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+SECTION 10: STABILITY AND REACTIVITY
+10.1
+Reactivity:
+No hazardous reactions are expected because the product is stable under recommended storage conditions. See section 7 from
+Safety Data Sheet.
+10.2
+Chemical stability:
+Chemically stable under the indicated conditions of storage, handling and use.
+10.3
+Possibility of hazardous reactions:
+Under the specified conditions, hazardous reactions that lead to excessive temperatures or pressure are not expected.
+10.4
+Conditions to avoid:
+Applicable for handling and storage at room temperature:
+Shock and friction
+Contact with air
+Increase in temperature
+Sunlight
+Humidity
+Not applicable
+Not applicable
+Not applicable
+Not applicable
+Not applicable
+10.5
+Incompatible materials:
+Acids
+Water
+Oxidising materials
+Combustible materials
+Others
+Avoid strong acids
+Not applicable
+Avoid direct impact
+Not applicable
+Avoid alkalis or strong bases
+10.6
+Hazardous decomposition products:
+See subsection 10.3, 10.4 and 10.5 to find out the specific decomposition products. Depending on the decomposition conditions,
+complex mixtures of chemical substances can be released: carbon dioxide (CO₂), carbon monoxide and other organic compounds.
+SECTION 11: TOXICOLOGICAL INFORMATION
+11.1
+Information on toxicological effects:
+The experimental information related to the toxicological properties of the product itself is not available
+Dangerous health implications:
+In case of exposure that is repetitive, prolonged or at concentrations higher than the recommended occupational exposure limits,
+adverse effects on health may result, depending on the means of exposure:
+A- Ingestion (acute effect):
+- Acute toxicity: Based on available data, the classification criteria are not met, however, it contains substances classified as
+dangerous for consumption. For more information see section 3.
+- Corrosivity/Irritability: The consumption of a considerable dose can cause irritation in the throat, abdominal pain, nausea
+and vomiting.
+B- Inhalation (acute effect):
+- Acute toxicity : Based on available data, the classification criteria are not met. However, it contains substances classified
+as hazardous for inhalation. For more information see section 3.
+- Corrosivity/Irritability: Prolonged inhalation of the product is corrosive to mucous membranes and the upper respiratory
+tract
+C- Contact with the skin and the eyes (acute effect):
+- Contact with the skin: Produces skin inflammation.
+- Contact with the eyes: Produces eye damage after contact.
+D- CMR effects (carcinogenicity, mutagenicity and toxicity to reproduction):
+- Carcinogenicity: Based on available data, the classification criteria are not met, as it does not contain substances classified
+as hazardous for the effects mentioned. For more information see section 3.
+IARC: Distillates (petroleum), solvent-refined heavy paraffinic , < 3 % IP 346 (3)
+- Mutagenicity: Based on available data, the classification criteria are not met, as it does not contain substances classified as
+hazardous for this effect. For more information see section 3.
+- Reproductive toxicity: Based on available data, the classification criteria are not met, as it does not contain substances
+classified as hazardous for this effect. For more information see section 3.
+E- Sensitizing effects:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 7/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 5ada8fb083eae4e3c0c1914710c91ae151aa868bf704d7bdfd1e0a5561a1a403
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 7 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 9: PHYSICAL AND CHEMICAL PROPERTIES (continued)\nRefraction index:\nNot relevant *\n*Not relevant due to the nature of the product, not providing information property of its hazards.\nSECTION 10: STABILITY AND REACTIVITY\n10.1\nReactivity:\nNo hazardous reactions are expected because the product is stable under recommended storage conditions. See section 7 from\nSafety Data Sheet.\n10.2\nChemical stability:\nChemically stable under the indicated conditions of storage, handling and use.\n10.3\nPossibility of hazardous reactions:\nUnder the specified conditions, hazardous reactions that lead to excessive temperatures or pressure are not expected.\n10.4\nConditions to avoid:\nApplicable for handling and storage at room temperature:\nShock and friction\nContact with air\nIncrease in temperature\nSunlight\nHumidity\nNot applicable\nNot applicable\nNot applicable\nNot applicable\nNot applicable\n10.5\nIncompatible materials:\nAcids\nWater\nOxidising materials\nCombustible materials\nOthers\nAvoid strong acids\nNot applicable\nAvoid direct impact\nNot applicable\nAvoid alkalis or strong bases\n10.6\nHazardous decomposition products:\nSee subsection 10.3, 10.4 and 10.5 to find out the specific decomposition products. Depending on the decomposition conditions,\ncomplex mixtures of chemical substances can be released: carbon dioxide (CO₂), carbon monoxide and other organic compounds.\nSECTION 11: TOXICOLOGICAL INFORMATION\n11.1\nInformation on toxicological effects:\nThe experimental information related to the toxicological properties of the product itself is not available\nDangerous health implications:\nIn case of exposure that is repetitive, prolonged or at concentrations higher than the recommended occupational exposure limits,\nadverse effects on health may result, depending on the means of exposure:\nA- Ingestion (acute effect):\n- Acute toxicity: Based on available data, the classification criteria are not met, however, it contains substances classified as\ndangerous for consumption. For more information see section 3.\n- Corrosivity/Irritability: The consumption of a considerable dose can cause irritation in the throat, abdominal pain, nausea\nand vomiting.\nB- Inhalation (acute effect):\n- Acute toxicity : Based on available data, the classification criteria are not met. However, it contains substances classified\nas hazardous for inhalation. For more information see section 3.\n- Corrosivity/Irritability: Prolonged inhalation of the product is corrosive to mucous membranes and the upper respiratory\ntract\nC- Contact with the skin and the eyes (acute effect):\n- Contact with the skin: Produces skin inflammation.\n- Contact with the eyes: Produces eye damage after contact.\nD- CMR effects (carcinogenicity, mutagenicity and toxicity to reproduction):\n- Carcinogenicity: Based on available data, the classification criteria are not met, as it does not contain substances classified\nas hazardous for the effects mentioned. For more information see section 3.\nIARC: Distillates (petroleum), solvent-refined heavy paraffinic , < 3 % IP 346 (3)\n- Mutagenicity: Based on available data, the classification criteria are not met, as it does not contain substances classified as\nhazardous for this effect. For more information see section 3.\n- Reproductive toxicity: Based on available data, the classification criteria are not met, as it does not contain substances\nclassified as hazardous for this effect. For more information see section 3.\nE- Sensitizing effects:\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 7/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.468750 |      0.000000e+00 |       -1.809101e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.437500 |     -1.400000e+01 |       -1.403125e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.562500 |     -1.484375e+01 |       -1.490625e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.468750 |     -1.502344e+01 |       -1.500000e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.796875 |     -1.553906e+01 |       -1.567188e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.359375 |     -1.594531e+01 |       -1.610938e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.515625 |     -1.664062e+01 |       -1.695313e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.671875 |              -inf |       -1.779688e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.125000 |              -inf |       -1.834375e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     20.734375 |              -inf |       -1.873438e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.332812681e+01 / -1.809101142e-06
+    ln(P(Yes)/P(No)) float64 = -23.328125  ->  P(Yes)/P(No) = 7.391355e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 7.391341251e-11
+    P(No)   float64 (np.exp)          = 9.999981909e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No.'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 8 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3481 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 8 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 11: TOXICOLOGICAL INFORMATION (continued)
+- Respiratory: Based on available data, the classification criteria are not met, as it does not contain substances classified as
+hazardous with sensitising effects. For more information see section 3.
+- Skin: Prolonged contact with the skin can result in episodes of allergic contact dermatitis.
+F- Specific target organ toxicity (STOT) - single exposure:
+Based on available data, the classification criteria are not met, as it does not contain substances classified as hazardous for
+this effect. For more information see section 3.
+G- Specific target organ toxicity (STOT)-repeated exposure:
+- Specific target organ toxicity (STOT)-repeated exposure: Based on available data, the classification criteria are not met, as
+it does not contain substances classified as hazardous for this effect. For more information see section 3.
+- Skin: Based on available data, the classification criteria are not met, as it does not contain substances classified as
+hazardous for this effect. For more information see section 3.
+H- Aspiration hazard:
+Based on available data, the classification criteria are not met, as it does not contain substances classified as hazardous for
+this effect. For more information see section 3.
+Other information:
+Not relevant
+Specific toxicology information on the substances:
+Identification
+Acute toxicity
+Genus
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine,
+hydrogenated
+LD50 oral
+500 mg/kg (ATEi)
+CAS: 1219458-07-7
+LD50 dermal
+>5000 mg/kg
+LC50 inhalation
+>20 mg/L
+m-phenylenebis(methylamine)
+LD50 oral
+1090 mg/kg
+Rat
+CAS: 1477-55-0
+LD50 dermal
+>5000 mg/kg
+LC50 inhalation
+>20 mg/L
+1,2-benzisothiazol-3(2H)-one
+LD50 oral
+500 mg/kg
+Rat
+CAS: 2634-33-5
+LD50 dermal
+>5000 mg/kg
+LC50 inhalation
+>5 mg/L
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one
+(3:1)
+LD50 oral
+64 mg/kg
+Rat
+CAS: 55965-84-9
+LD50 dermal
+87.12 mg/kg
+Rabbit
+LC50 inhalation
+0.33 mg/L (4 h)
+Rat
+SECTION 12: ECOLOGICAL INFORMATION
+The experimental information related to the eco-toxicological properties of the product itself is not available
+Based on available data, the classification criteria are not met. However, it does contain substances classified as hazardous for this
+effect. For more information see section 3.
+12.1
+Toxicity:
+Acute toxicity:
+Identification
+Concentration
+Species
+Genus
+Reaction products of benzaldehyde diethylenetriamine and
+triethylenetetramine, hydrogenated
+LC50
+282.69 mg/L (96 h)
+Oncorhynchus mykiss
+Fish
+CAS: 1219458-07-7
+EC50
+9.966 mg/L (48 h)
+Daphnia magna
+Crustacean
+EC50
+2.766 mg/L (72 h)
+Pseudokirchneriella subcapitata
+Algae
+m-phenylenebis(methylamine)
+LC50
+88 mg/L (96 h)
+Oryzias latipes
+Fish
+CAS: 1477-55-0
+EC50
+15 mg/L (48 h)
+Daphnia magna
+Crustacean
+EC50
+20 mg/L (72 h)
+Selenastrum capricornutum
+Algae
+1,2-benzisothiazol-3(2H)-one
+LC50
+>0.1 - 1 mg/L (96 h)
+Fish
+CAS: 2634-33-5
+EC50
+>0.1 - 1 mg/L (48 h)
+Crustacean
+EC50
+>0.1 - 1 mg/L (72 h)
+Algae
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 8/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 7da28280ee60d8aee7175b3cc6a7ed664258a5db8108dec0edd0a6de2744c078
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 8 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 11: TOXICOLOGICAL INFORMATION (continued)\n- Respiratory: Based on available data, the classification criteria are not met, as it does not contain substances classified as\nhazardous with sensitising effects. For more information see section 3.\n- Skin: Prolonged contact with the skin can result in episodes of allergic contact dermatitis.\nF- Specific target organ toxicity (STOT) - single exposure:\nBased on available data, the classification criteria are not met, as it does not contain substances classified as hazardous for\nthis effect. For more information see section 3.\nG- Specific target organ toxicity (STOT)-repeated exposure:\n- Specific target organ toxicity (STOT)-repeated exposure: Based on available data, the classification criteria are not met, as\nit does not contain substances classified as hazardous for this effect. For more information see section 3.\n- Skin: Based on available data, the classification criteria are not met, as it does not contain substances classified as\nhazardous for this effect. For more information see section 3.\nH- Aspiration hazard:\nBased on available data, the classification criteria are not met, as it does not contain substances classified as hazardous for\nthis effect. For more information see section 3.\nOther information:\nNot relevant\nSpecific toxicology information on the substances:\nIdentification\nAcute toxicity\nGenus\nReaction products of benzaldehyde diethylenetriamine and triethylenetetramine,\nhydrogenated\nLD50 oral\n500 mg/kg (ATEi)\nCAS: 1219458-07-7\nLD50 dermal\n>5000 mg/kg\nLC50 inhalation\n>20 mg/L\nm-phenylenebis(methylamine)\nLD50 oral\n1090 mg/kg\nRat\nCAS: 1477-55-0\nLD50 dermal\n>5000 mg/kg\nLC50 inhalation\n>20 mg/L\n1,2-benzisothiazol-3(2H)-one\nLD50 oral\n500 mg/kg\nRat\nCAS: 2634-33-5\nLD50 dermal\n>5000 mg/kg\nLC50 inhalation\n>5 mg/L\nReaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-methyl-2H-isothiazol-3-one\n(3:1)\nLD50 oral\n64 mg/kg\nRat\nCAS: 55965-84-9\nLD50 dermal\n87.12 mg/kg\nRabbit\nLC50 inhalation\n0.33 mg/L (4 h)\nRat\nSECTION 12: ECOLOGICAL INFORMATION\nThe experimental information related to the eco-toxicological properties of the product itself is not available\nBased on available data, the classification criteria are not met. However, it does contain substances classified as hazardous for this\neffect. For more information see section 3.\n12.1\nToxicity:\nAcute toxicity:\nIdentification\nConcentration\nSpecies\nGenus\nReaction products of benzaldehyde diethylenetriamine and\ntriethylenetetramine, hydrogenated\nLC50\n282.69 mg/L (96 h)\nOncorhynchus mykiss\nFish\nCAS: 1219458-07-7\nEC50\n9.966 mg/L (48 h)\nDaphnia magna\nCrustacean\nEC50\n2.766 mg/L (72 h)\nPseudokirchneriella subcapitata\nAlgae\nm-phenylenebis(methylamine)\nLC50\n88 mg/L (96 h)\nOryzias latipes\nFish\nCAS: 1477-55-0\nEC50\n15 mg/L (48 h)\nDaphnia magna\nCrustacean\nEC50\n20 mg/L (72 h)\nSelenastrum capricornutum\nAlgae\n1,2-benzisothiazol-3(2H)-one\nLC50\n>0.1 - 1 mg/L (96 h)\nFish\nCAS: 2634-33-5\nEC50\n>0.1 - 1 mg/L (48 h)\nCrustacean\nEC50\n>0.1 - 1 mg/L (72 h)\nAlgae\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 8/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.375000 |      0.000000e+00 |       -1.710317e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.406250 |     -1.400000e+01 |       -1.396875e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.250000 |     -1.502344e+01 |       -1.512500e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.156250 |     -1.525000e+01 |       -1.521875e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.406250 |     -1.594531e+01 |       -1.596875e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.265625 |     -1.594531e+01 |       -1.610938e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.250000 |     -1.664062e+01 |       -1.712500e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.640625 |              -inf |       -1.773438e+01 | '.No' (decode: '.No')
+       9 |    28715 |     21.546875 |              -inf |       -1.782813e+01 | 'Based' (decode: 'Based')
+      10 |     2308 |     21.500000 |              -inf |       -1.787500e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.217187671e+01 / -1.710317115e-06
+    ln(P(Yes)/P(No)) float64 = -22.171875  ->  P(Yes)/P(No) = 2.348968e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 2.348963624e-10
+    P(No)   float64 (np.exp)          = 9.999982897e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 9 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2567 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 9 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 12: ECOLOGICAL INFORMATION (continued)
+Identification
+Concentration
+Species
+Genus
+Reaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-
+methyl-2H-isothiazol-3-one (3:1)
+LC50
+>0.1 - 1 mg/L (96 h)
+Fish
+CAS: 55965-84-9
+EC50
+>0.1 - 1 mg/L (48 h)
+Crustacean
+EC50
+>0.1 - 1 mg/L (72 h)
+Algae
+Chronic toxicity:
+Identification
+Concentration
+Species
+Genus
+m-phenylenebis(methylamine)
+NOEC
+Not relevant
+CAS: 1477-55-0
+NOEC
+4.7 mg/L
+Daphnia magna
+Crustacean
+12.2
+Persistence and degradability:
+Substance-specific information:
+Identification
+Degradability
+Biodegradability
+Reaction products of benzaldehyde diethylenetriamine and
+triethylenetetramine, hydrogenated
+BOD5
+Not relevant
+Concentration
+5 mg/L
+CAS: 1219458-07-7
+COD
+Not relevant
+Period
+28 days
+BOD5/COD
+Not relevant
+% Biodegradable
+-1.9 %
+m-phenylenebis(methylamine)
+BOD5
+Not relevant
+Concentration
+14 mg/L
+CAS: 1477-55-0
+COD
+Not relevant
+Period
+28 days
+BOD5/COD
+Not relevant
+% Biodegradable
+49 %
+1,2-benzisothiazol-3(2H)-one
+BOD5
+Not relevant
+Concentration
+100 mg/L
+CAS: 2634-33-5
+COD
+Not relevant
+Period
+28 days
+BOD5/COD
+Not relevant
+% Biodegradable
+0 %
+12.3
+Bioaccumulative potential:
+Substance-specific information:
+Identification
+Bioaccumulation potential
+Reaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated
+BCF
+CAS: 1219458-07-7
+Pow Log
+1
+Potential
+m-phenylenebis(methylamine)
+BCF
+3
+CAS: 1477-55-0
+Pow Log
+0.18
+Potential
+Low
+1,2-benzisothiazol-3(2H)-one
+BCF
+2
+CAS: 2634-33-5
+Pow Log
+1.45
+Potential
+Low
+12.4
+Mobility in soil:
+Identification
+Absorption/desorption
+Volatility
+m-phenylenebis(methylamine)
+Koc
+1300
+Henry
+Not relevant
+CAS: 1477-55-0
+Conclusion
+Low
+Dry soil
+Not relevant
+Surface tension
+Not relevant
+Moist soil
+Not relevant
+12.5
+Results of PBT and vPvB assessment:
+Product does not meet PBT/vPvB criteria
+12.6
+Other adverse effects:
+Not described
+SECTION 13: DISPOSAL CONSIDERATIONS
+13.1
+Waste treatment methods:
+Code
+Description
+Waste class
+08 04 10
+waste adhesives and sealants other than those mentioned in 08 04 09
+Non-hazardous
+Type of waste:
+Not relevant
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 9/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = e63ebca9a04f115eaea95b47b4650790dd0a1eea654b1ca75d64c9f0e1098cd1
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 9 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 12: ECOLOGICAL INFORMATION (continued)\nIdentification\nConcentration\nSpecies\nGenus\nReaction mass of 5-chloro-2-methyl-2H-isothiazol-3-one and 2-\nmethyl-2H-isothiazol-3-one (3:1)\nLC50\n>0.1 - 1 mg/L (96 h)\nFish\nCAS: 55965-84-9\nEC50\n>0.1 - 1 mg/L (48 h)\nCrustacean\nEC50\n>0.1 - 1 mg/L (72 h)\nAlgae\nChronic toxicity:\nIdentification\nConcentration\nSpecies\nGenus\nm-phenylenebis(methylamine)\nNOEC\nNot relevant\nCAS: 1477-55-0\nNOEC\n4.7 mg/L\nDaphnia magna\nCrustacean\n12.2\nPersistence and degradability:\nSubstance-specific information:\nIdentification\nDegradability\nBiodegradability\nReaction products of benzaldehyde diethylenetriamine and\ntriethylenetetramine, hydrogenated\nBOD5\nNot relevant\nConcentration\n5 mg/L\nCAS: 1219458-07-7\nCOD\nNot relevant\nPeriod\n28 days\nBOD5/COD\nNot relevant\n% Biodegradable\n-1.9 %\nm-phenylenebis(methylamine)\nBOD5\nNot relevant\nConcentration\n14 mg/L\nCAS: 1477-55-0\nCOD\nNot relevant\nPeriod\n28 days\nBOD5/COD\nNot relevant\n% Biodegradable\n49 %\n1,2-benzisothiazol-3(2H)-one\nBOD5\nNot relevant\nConcentration\n100 mg/L\nCAS: 2634-33-5\nCOD\nNot relevant\nPeriod\n28 days\nBOD5/COD\nNot relevant\n% Biodegradable\n0 %\n12.3\nBioaccumulative potential:\nSubstance-specific information:\nIdentification\nBioaccumulation potential\nReaction products of benzaldehyde diethylenetriamine and triethylenetetramine, hydrogenated\nBCF\nCAS: 1219458-07-7\nPow Log\n1\nPotential\nm-phenylenebis(methylamine)\nBCF\n3\nCAS: 1477-55-0\nPow Log\n0.18\nPotential\nLow\n1,2-benzisothiazol-3(2H)-one\nBCF\n2\nCAS: 2634-33-5\nPow Log\n1.45\nPotential\nLow\n12.4\nMobility in soil:\nIdentification\nAbsorption/desorption\nVolatility\nm-phenylenebis(methylamine)\nKoc\n1300\nHenry\nNot relevant\nCAS: 1477-55-0\nConclusion\nLow\nDry soil\nNot relevant\nSurface tension\nNot relevant\nMoist soil\nNot relevant\n12.5\nResults of PBT and vPvB assessment:\nProduct does not meet PBT/vPvB criteria\n12.6\nOther adverse effects:\nNot described\nSECTION 13: DISPOSAL CONSIDERATIONS\n13.1\nWaste treatment methods:\nCode\nDescription\nWaste class\n08 04 10\nwaste adhesives and sealants other than those mentioned in 08 04 09\nNon-hazardous\nType of waste:\nNot relevant\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 9/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.343750 |      0.000000e+00 |       -2.549796e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.765625 |     -1.359375e+01 |       -1.357813e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.906250 |     -1.443750e+01 |       -1.443750e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.312500 |     -1.502344e+01 |       -1.503125e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.656250 |     -1.553906e+01 |       -1.568750e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.640625 |     -1.553906e+01 |       -1.570313e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.781250 |     -1.664062e+01 |       -1.656250e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.812500 |              -inf |       -1.753125e+01 | '.No' (decode: '.No')
+       9 |    28715 |     21.218750 |              -inf |       -1.812500e+01 | 'Based' (decode: 'Based')
+      10 |     6536 |     20.953125 |              -inf |       -1.839063e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.331250255e+01 / -2.549796313e-06
+    ln(P(Yes)/P(No)) float64 = -23.312500  ->  P(Yes)/P(No) = 7.507752e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 7.507732378e-11
+    P(No)   float64 (np.exp)          = 9.999974502e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 10 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3413 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 10 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 13: DISPOSAL CONSIDERATIONS (continued)
+Waste management (disposal and evaluation):
+Consult the authorized waste service manager on the assessment and disposal operations in accordance The Waste (England &
+Wales) Regulations 2011, 2011 No. 988. As under 15 01 of the code and in case the container has been in direct contact with
+the product, it will be processed the same way as the actual product. Otherwise, it will be processed as non-hazardous residue.
+Waste should not be disposed of to drains. See paragraph 6.2.
+Regulations related to waste management:
+In accordance with Annex II of UK REACH the provisions related to waste management are stated:
+UK legislation: The Waste (England & Wales) Regulations 2011.
+SECTION 14: TRANSPORT INFORMATION
+This product is not regulated for transport (ADR/RID,IMDG,IATA)
+SECTION 15: REGULATORY INFORMATION
+15.1
+Safety, health and environmental regulations/legislation specific for the substance or mixture:
+- Substances listed in UK candidate list of substances of very high concern (SVHCs): Not relevant
+- Substances listed in UK REACH Authorisation List (Annex 14): Not relevant
+The Control of Major Accident Hazards Regulations 2015:
+Not relevant
+Restrictions to commercialisation and the use of certain dangerous substances and mixtures (Annex XVII UK
+REACH, etc ….):
+Shall not be used in:
+—ornamental articles intended to produce light or colour effects by means of different phases, for example in ornamental lamps
+and ashtrays,
+—tricks and jokes,
+—games for one or more participants, or any article intended to be used as such, even with ornamental aspects.
+Specific provisions in terms of protecting people or the environment:
+It is recommended to use the information included in this safety data sheet as a basis for conducting workplace-specific risk
+assessments in order to establish the necessary risk prevention measures for the handling, use, storage and disposal of this
+product.
+Other legislation:
+The REACH etc. (Amendment etc.) (EU Exit) Regulations 2020.
+The Chemicals (Health and Safety) and Genetically Modified Organisms (Contained Use) (Amendment etc.) (EU Exit) Regulations
+2020.
+Control of Substances Hazardous to Health Regulations 2002 (as amended)
+EH40/2005 Workplace exposure limits.
+SECTION 16: OTHER INFORMATION
+Legislation related to safety data sheets:
+This safety data sheet has been designed in accordance with ANNEX II-The REACH etc. (Amendment etc.) (EU Exit) Regulations
+2020.
+Texts of the legislative phrases mentioned in section 2:
+H315: Causes skin irritation.
+H319: Causes serious eye irritation.
+H317: May cause an allergic skin reaction.
+Texts of the legislative phrases mentioned in section 3:
+The phrases indicated do not refer to the product itself; they are present merely for informative purposes and refer to the
+individual components which appear in section 3
+GB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 10/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 507bcd54896f7100fce44659357c184c3eb197d69ab27c9039d934c0cba4b55a
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 10 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 13: DISPOSAL CONSIDERATIONS (continued)\nWaste management (disposal and evaluation):\nConsult the authorized waste service manager on the assessment and disposal operations in accordance The Waste (England &\nWales) Regulations 2011, 2011 No. 988. As under 15 01 of the code and in case the container has been in direct contact with\nthe product, it will be processed the same way as the actual product. Otherwise, it will be processed as non-hazardous residue.\nWaste should not be disposed of to drains. See paragraph 6.2.\nRegulations related to waste management:\nIn accordance with Annex II of UK REACH the provisions related to waste management are stated:\nUK legislation: The Waste (England & Wales) Regulations 2011.\nSECTION 14: TRANSPORT INFORMATION\nThis product is not regulated for transport (ADR/RID,IMDG,IATA)\nSECTION 15: REGULATORY INFORMATION\n15.1\nSafety, health and environmental regulations/legislation specific for the substance or mixture:\n- Substances listed in UK candidate list of substances of very high concern (SVHCs): Not relevant\n- Substances listed in UK REACH Authorisation List (Annex 14): Not relevant\nThe Control of Major Accident Hazards Regulations 2015:\nNot relevant\nRestrictions to commercialisation and the use of certain dangerous substances and mixtures (Annex XVII UK\nREACH, etc ….):\nShall not be used in:\n—ornamental articles intended to produce light or colour effects by means of different phases, for example in ornamental lamps\nand ashtrays,\n—tricks and jokes,\n—games for one or more participants, or any article intended to be used as such, even with ornamental aspects.\nSpecific provisions in terms of protecting people or the environment:\nIt is recommended to use the information included in this safety data sheet as a basis for conducting workplace-specific risk\nassessments in order to establish the necessary risk prevention measures for the handling, use, storage and disposal of this\nproduct.\nOther legislation:\nThe REACH etc. (Amendment etc.) (EU Exit) Regulations 2020.\nThe Chemicals (Health and Safety) and Genetically Modified Organisms (Contained Use) (Amendment etc.) (EU Exit) Regulations\n2020.\nControl of Substances Hazardous to Health Regulations 2002 (as amended)\nEH40/2005 Workplace exposure limits.\nSECTION 16: OTHER INFORMATION\nLegislation related to safety data sheets:\nThis safety data sheet has been designed in accordance with ANNEX II-The REACH etc. (Amendment etc.) (EU Exit) Regulations\n2020.\nTexts of the legislative phrases mentioned in section 2:\nH315: Causes skin irritation.\nH319: Causes serious eye irritation.\nH317: May cause an allergic skin reaction.\nTexts of the legislative phrases mentioned in section 3:\nThe phrases indicated do not refer to the product itself; they are present merely for informative purposes and refer to the\nindividual components which appear in section 3\nGB CLP Regulation (UK S.I. 2019/720 and UK S.I. 2020/1567):\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 10/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.656250 |      0.000000e+00 |       -1.638092e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.359375 |     -1.433594e+01 |       -1.429688e+01 | '>No' (decode: '>No')
+       3 |     8996 |     25.125000 |     -1.455469e+01 |       -1.453125e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.140625 |     -1.553906e+01 |       -1.551563e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.968750 |     -1.553906e+01 |       -1.568750e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.500000 |     -1.594531e+01 |       -1.615625e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.781250 |     -1.664062e+01 |       -1.687500e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.562500 |              -inf |       -1.809375e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.328125 |              -inf |       -1.832813e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     20.812500 |              -inf |       -1.884375e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.389062664e+01 / -1.638092118e-06
+    ln(P(Yes)/P(No)) float64 = -23.890625  ->  P(Yes)/P(No) = 4.211467e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 4.211460016e-11
+    P(No)   float64 (np.exp)          = 9.999983619e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 11 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3103 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 11 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 16: OTHER INFORMATION (continued)
+Acute Tox. 2: H310+H330 - Fatal in contact with skin or if inhaled.
+Acute Tox. 3: H301 - Toxic if swallowed.
+Acute Tox. 4: H302 - Harmful if swallowed.
+Acute Tox. 4: H302+H332 - Harmful if swallowed or if inhaled.
+Aquatic Acute 1: H400 - Very toxic to aquatic life.
+Aquatic Chronic 1: H410 - Very toxic to aquatic life with long lasting effects.
+Aquatic Chronic 2: H411 - Toxic to aquatic life with long lasting effects.
+Aquatic Chronic 3: H412 - Harmful to aquatic life with long lasting effects.
+Eye Dam. 1: H318 - Causes serious eye damage.
+Skin Corr. 1B: H314 - Causes severe skin burns and eye damage.
+Skin Corr. 1C: H314 - Causes severe skin burns and eye damage.
+Skin Irrit. 2: H315 - Causes skin irritation.
+Skin Sens. 1: H317 - May cause an allergic skin reaction.
+Skin Sens. 1A: H317 - May cause an allergic skin reaction.
+Skin Sens. 1B: H317 - May cause an allergic skin reaction.
+Advice related to training:
+Training is recommended in order to prevent industrial risks for staff using this product and to facilitate their comprehension and
+interpretation of this safety data sheet, as well as the label on the product.
+Principal bibliographical sources:
+http://echa.europa.eu
+http://eur-lex.europa.eu
+Abbreviations and acronyms:
+ADR: European agreement concerning the international carriage of dangerous goods by road
+IMDG: International maritime dangerous goods code
+IATA: International Air Transport Association
+ICAO: International Civil Aviation Organisation
+COD: Chemical Oxygen Demand
+BOD5: 5day biochemical oxygen demand
+BCF: Bioconcentration factor
+LD50: Lethal Dose 50
+LC50: Lethal Concentration 50
+EC50: Effective concentration 50
+LogPOW: Octanolwater partition coefficient
+Koc: Partition coefficient of organic carbon
+UFI: unique formula identifier
+IARC: International Agency for Research on Cancer
+The information contained in this safety data sheet is based on sources, technical knowledge and current legislation at UK, without being able to guarantee its accuracy. This information cannot
+be considered a guarantee of the properties of the product, it is simply a description of the security requirements. The occupational methodology and conditions for users of this product are not
+within our awareness or control, and it is ultimately the responsibility of the user to take the necessary measures to obtain the legal requirements concerning the manipulation, storage, use and
+disposal of chemical products. The information on this safety data sheet only refers to this product, which should not be used for needs other than those specified.
+- END OF SAFETY DATA SHEET -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 11/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 512721a4ff512a66a4f61786c843647e08fad5d2ee57ca20b0781f112aae38d2
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 11 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 16: OTHER INFORMATION (continued)\nAcute Tox. 2: H310+H330 - Fatal in contact with skin or if inhaled.\nAcute Tox. 3: H301 - Toxic if swallowed.\nAcute Tox. 4: H302 - Harmful if swallowed.\nAcute Tox. 4: H302+H332 - Harmful if swallowed or if inhaled.\nAquatic Acute 1: H400 - Very toxic to aquatic life.\nAquatic Chronic 1: H410 - Very toxic to aquatic life with long lasting effects.\nAquatic Chronic 2: H411 - Toxic to aquatic life with long lasting effects.\nAquatic Chronic 3: H412 - Harmful to aquatic life with long lasting effects.\nEye Dam. 1: H318 - Causes serious eye damage.\nSkin Corr. 1B: H314 - Causes severe skin burns and eye damage.\nSkin Corr. 1C: H314 - Causes severe skin burns and eye damage.\nSkin Irrit. 2: H315 - Causes skin irritation.\nSkin Sens. 1: H317 - May cause an allergic skin reaction.\nSkin Sens. 1A: H317 - May cause an allergic skin reaction.\nSkin Sens. 1B: H317 - May cause an allergic skin reaction.\nAdvice related to training:\nTraining is recommended in order to prevent industrial risks for staff using this product and to facilitate their comprehension and\ninterpretation of this safety data sheet, as well as the label on the product.\nPrincipal bibliographical sources:\nhttp://echa.europa.eu\nhttp://eur-lex.europa.eu\nAbbreviations and acronyms:\nADR: European agreement concerning the international carriage of dangerous goods by road\nIMDG: International maritime dangerous goods code\nIATA: International Air Transport Association\nICAO: International Civil Aviation Organisation\nCOD: Chemical Oxygen Demand\nBOD5: 5day biochemical oxygen demand\nBCF: Bioconcentration factor\nLD50: Lethal Dose 50\nLC50: Lethal Concentration 50\nEC50: Effective concentration 50\nLogPOW: Octanolwater partition coefficient\nKoc: Partition coefficient of organic carbon\nUFI: unique formula identifier\nIARC: International Agency for Research on Cancer\nThe information contained in this safety data sheet is based on sources, technical knowledge and current legislation at UK, without being able to guarantee its accuracy. This information cannot\nbe considered a guarantee of the properties of the product, it is simply a description of the security requirements. The occupational methodology and conditions for users of this product are not\nwithin our awareness or control, and it is ultimately the responsibility of the user to take the necessary measures to obtain the legal requirements concerning the manipulation, storage, use and\ndisposal of chemical products. The information on this safety data sheet only refers to this product, which should not be used for needs other than those specified.\n- END OF SAFETY DATA SHEET -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 11/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.812500 |      0.000000e+00 |       -1.124512e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.234375 |     -1.455469e+01 |       -1.457813e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.687500 |     -1.502344e+01 |       -1.512500e+01 | 'NO' (decode: 'NO')
+       4 |     9100 |     23.968750 |     -1.594531e+01 |       -1.584375e+01 | '_NO' (decode: '_NO')
+       5 |    97976 |     23.937500 |     -1.594531e+01 |       -1.587500e+01 | '-No' (decode: '-No')
+       6 |    36989 |     23.312500 |     -1.664062e+01 |       -1.650000e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.031250 |              -inf |       -1.778125e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.703125 |              -inf |       -1.810938e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.375000 |              -inf |       -1.843750e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     20.765625 |              -inf |       -1.904688e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.416406362e+01 / -1.124511999e-06
+    ln(P(Yes)/P(No)) float64 = -24.164062  ->  P(Yes)/P(No) = 3.203915e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 3.203911472e-11
+    P(No)   float64 (np.exp)          = 9.999988755e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No.'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+SUMMARY sds_03.pdf:molecular_weight layer=native pages=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+================================================================================
+page | score_f32(frozen) | yes_lp64        | no_lp64         | score_f64      | greedy | cache
+   1 | 0.000000          | -2.318750e+01 | -1.627701e-06 | 0.000000 |     no | 0.0
+   2 | 0.000000          | -2.114063e+01 | -1.190717e-06 | 0.000000 |     no | 0.0
+   3 | 0.000000          | -2.344531e+01 | -1.980521e-06 | 0.000000 |     no | 0.0
+   4 | 0.000000          | -2.187500e+01 | -1.637287e-06 | 0.000000 |     no | 0.0
+   5 | 0.000000          | -2.220313e+01 | -1.570908e-06 | 0.000000 |     no | 0.0
+   6 | 0.000000          | -2.129688e+01 | -1.726941e-06 | 0.000000 |     no | 0.0
+   7 | 0.000000          | -2.332813e+01 | -1.809101e-06 | 0.000000 |     no | 0.0
+   8 | 0.000000          | -2.217188e+01 | -1.710317e-06 | 0.000000 |     no | 0.0
+   9 | 0.000000          | -2.331250e+01 | -2.549796e-06 | 0.000000 |     no | 0.0
+  10 | 0.000000          | -2.389063e+01 | -1.638092e-06 | 0.000000 |     no | 0.0
+  11 | 0.000000          | -2.416406e+01 | -1.124512e-06 | 0.000000 |     no | 0.0

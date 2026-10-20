@@ -16,6 +16,8 @@ import sys
 from collections import Counter
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[3]))
+
 from sdsbench import textlayer
 
 # Paths relative to repository root

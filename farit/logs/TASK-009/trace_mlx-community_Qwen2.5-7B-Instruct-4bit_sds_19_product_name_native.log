@@ -1,0 +1,799 @@
+# TASK-009 zero-score trace
+# instance: sds_19.pdf:product_name  layer: native  pages: [1, 2, 3, 4, 5, 6, 7]
+# model: mlx-community/Qwen2.5-7B-Instruct-4bit
+
+================================================================================
+TRACING sds_19.pdf:product_name page 1 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2087 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 1 of sds_19.pdf:
+"""
+SAFETY DATA SHEET
+SDS No. 1224
+Revision Date: December 5, 2023 Version 3.0
+GHS Compliant
+Page 1 of 7
+Section 1 - Identification of the substance/mixture and of the company
+1.1
+Product Identifier
+Trade Name:
+Water Reducer 310
+1.2
+Relevant identified uses of the substance or mixture and uses advised against
+General Use:
+Concrete Admixture
+Restrictions on Use:
+None known
+1.3
+Details of the supplier of the safety data sheet:
+Company:
+Buddy Rhodes Concrete Products
+5600 Lower Macungie Rd., Macungie, PA 18062
+Telephone:
+Domestic: 1 (877) 706-5303
+International: (610) 252-5800 (collect calls accepted)
+E-mail address:
+Visit our website at www.buddyrhodes.com
+1.4
+Emergency Contact:
+Chem-Tel
+Domestic: 800-255-3924 International: 813-248-0585
+Section 2 – Hazard(s) Identification
+2.1
+Classification of the substance or mixture
+Not a hazardous substance or mixture according to United States Occupational Safety and Health
+Administration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian
+Workplace Hazardous Materials Information System (WHMIS) and Regulation (EC) No 1272/2008
+and subsequent amendments.
+2.2
+GHS Label elements, including precautionary statements
+Pictogram(s): none
+Signal word: none
+General Precautions:
+P101: If medical advice is needed, have product container or label at hand.
+P102: Keep out of reach of children.
+P103: Read label before use.
+2.3
+Hazards not otherwise classified (HNOC) or not covered by GHS – none
+Section 3 - Composition / Information on Ingredients
+3.1 Substances
+No ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication
+Standard 29 CFR 1910.1200 criteria.
+Section 4 - First Aid Measures
+4.1
+Description of first aid measures
+Inhalation
+Remove source(s) of contamination and move victim to fresh air. If breathing has stopped, give
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = da4e6a7cff015697e5699e5a7f375dbc8a63668ae005ac0ec3bdc699a44d3653
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 1 of sds_19.pdf:\n"""\nSAFETY DATA SHEET\nSDS No. 1224\nRevision Date: December 5, 2023 Version 3.0\nGHS Compliant\nPage 1 of 7\nSection 1 - Identification of the substance/mixture and of the company\n1.1\nProduct Identifier\nTrade Name:\nWater Reducer 310\n1.2\nRelevant identified uses of the substance or mixture and uses advised against\nGeneral Use:\nConcrete Admixture\nRestrictions on Use:\nNone known\n1.3\nDetails of the supplier of the safety data sheet:\nCompany:\nBuddy Rhodes Concrete Products\n5600 Lower Macungie Rd., Macungie, PA 18062\nTelephone:\nDomestic: 1 (877) 706-5303\nInternational: (610) 252-5800 (collect calls accepted)\nE-mail address:\nVisit our website at www.buddyrhodes.com\n1.4\nEmergency Contact:\nChem-Tel\nDomestic: 800-255-3924 International: 813-248-0585\nSection 2 – Hazard(s) Identification\n2.1\nClassification of the substance or mixture\nNot a hazardous substance or mixture according to United States Occupational Safety and Health\nAdministration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian\nWorkplace Hazardous Materials Information System (WHMIS) and Regulation (EC) No 1272/2008\nand subsequent amendments.\n2.2\nGHS Label elements, including precautionary statements\nPictogram(s): none\nSignal word: none\nGeneral Precautions:\nP101: If medical advice is needed, have product container or label at hand.\nP102: Keep out of reach of children.\nP103: Read label before use.\n2.3\nHazards not otherwise classified (HNOC) or not covered by GHS – none\nSection 3 - Composition / Information on Ingredients\n3.1 Substances\nNo ingredients are hazardous according to Regulation 2012 OSHA Hazard Communication\nStandard 29 CFR 1910.1200 criteria.\nSection 4 - First Aid Measures\n4.1\nDescription of first aid measures\nInhalation\nRemove source(s) of contamination and move victim to fresh air. If breathing has stopped, give\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     9454 |     41.562500 |      0.000000e+00 |       -1.636842e-06 | 'Yes' (decode: 'Yes')
+       2 |     7414 |     28.062500 |     -1.350000e+01 |       -1.350000e+01 | 'ĠYes' (decode: ' Yes')
+       3 |    14004 |     26.031250 |     -1.553906e+01 |       -1.553125e+01 | 'YES' (decode: 'YES')
+       4 |     9834 |     24.328125 |     -1.664062e+01 |       -1.723438e+01 | 'Ġyes' (decode: ' yes')
+       5 |     2753 |     23.484375 |              -inf |       -1.807813e+01 | 'No' (decode: 'No')
+       6 |    59744 |     23.453125 |              -inf |       -1.810938e+01 | '_yes' (decode: '_yes')
+       7 |     9693 |     22.953125 |              -inf |       -1.860938e+01 | 'yes' (decode: 'yes')
+       8 |    14080 |     22.812500 |              -inf |       -1.875000e+01 | 'ĠYES' (decode: ' YES')
+       9 |    40798 |     22.109375 |              -inf |       -1.945313e+01 | '.Yes' (decode: '.Yes')
+      10 |    57741 |     21.796875 |              -inf |       -1.976563e+01 | '"Yes' (decode: '"Yes')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = 0.000000000e+00
+    no_logprob  (best single-token No;  float32 log_softmax path) = -inf
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.636842332e-06 / -1.807812664e+01
+    ln(P(Yes)/P(No)) float64 = 18.078125  ->  P(Yes)/P(No) = 7.099535e+07
+    P(Yes)  float32 (mx.exp, frozen)  = 1.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 0.000000000e+00
+    score float32 (frozen math)       = 1.000000000
+    frozen score_page_mlx() direct    = 1.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 9.999983632e-01
+    P(No)   float64 (np.exp)          = 1.408540564e-08
+    score float64:                    = 0.999999986
+    float32 vs float64 score equal:   False
+    cache score for this key          = 1.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'Yes. The page contains'
+    first-token answer: yes
+    consistency vs frozen score 1.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_19.pdf:product_name page 2 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2665 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 2 of sds_19.pdf:
+"""
+SDS No. 1224
+Page 2 of 7
+artificial respiration, then oxygen if needed. Contact physician immediately.
+Eye Contact
+Flush eyes with plenty of water. If irritation persists, seek medical attention.
+Skin Contact
+In case of skin contact, wash thoroughly with soap and water.
+Ingestion
+Do not induce vomiting unless instructed by a physician. Never give anything by mouth to an
+unconscious person.
+4.2
+Most important symptoms and effects, both acute and delayed.
+None known.
+4.3
+Indication of any immediate medical attention and specific treatment needed.
+None known.
+Section 5 - Fire-Fighting Measures
+5.1
+Extinguishing Media
+Water Fog, Dry Chemical, and Carbon Dioxide Foam
+5.2
+Special hazards arising from the substance or mixture
+None known.
+5.3
+Advice for firefighters
+Use water spray to cool fire-exposed surfaces and to protect personnel. Shut off “fuel” to fire. If a
+leak or spill has not ignited, use water spray to disperse the vapors. Either allow fire to burn under
+controlled conditions or extinguish with foam or dry chemical. Try to cover liquid spills with foam.
+Because fire may produce toxic thermal decomposition products, wear a self-contained breathing
+apparatus (SCBA) with a full-face piece operated in pressure demand or positive-pressure mode.
+Section 6 - Accidental Release Measures
+6.1
+Personal precautions, protective equipment and emergency procedures
+Only properly protected personnel should remain in the spill area; dike and contain spill. Stop or
+reduce discharge if it can be done safely.
+6.2
+Environmental precautions
+Stop spill/release if it can be done safely. Prevent spilled material from entering sewers, storm
+drains or unauthorized drainage systems and natural waterways by using sand, earth, or other
+appropriate barriers. No special environmental precautions required.
+6.3
+Methods and material for containment and cleaning up
+Put on appropriate protective gear including NIOSH/MSHA approved self-contained breathing
+apparatus, rubber boots and heavy rubber gloves. Dike and contain spill; absorb or scrape up
+excess into suitable container for disposal; wash area with dilute ammonia solution. Stop or
+reduce discharge if it can be done safely. Follow applicable OSHA regulations (29 CFR 1910.120)
+for disposal.
+6.4
+Reference to other sections
+See Section 3 for list of Hazardous Ingredients; Sections 8 for Exposure Controls; and Section 13
+for Disposal.
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = ce400da741c3ab7ae89bf6d70b989dfe5236c1c8c05c819243a256029341e1c8
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 2 of sds_19.pdf:\n"""\nSDS No. 1224\nPage 2 of 7\nartificial respiration, then oxygen if needed. Contact physician immediately.\nEye Contact\nFlush eyes with plenty of water. If irritation persists, seek medical attention.\nSkin Contact\nIn case of skin contact, wash thoroughly with soap and water.\nIngestion\nDo not induce vomiting unless instructed by a physician. Never give anything by mouth to an\nunconscious person.\n4.2\nMost important symptoms and effects, both acute and delayed.\nNone known.\n4.3\nIndication of any immediate medical attention and specific treatment needed.\nNone known.\nSection 5 - Fire-Fighting Measures\n5.1\nExtinguishing Media\nWater Fog, Dry Chemical, and Carbon Dioxide Foam\n5.2\nSpecial hazards arising from the substance or mixture\nNone known.\n5.3\nAdvice for firefighters\nUse water spray to cool fire-exposed surfaces and to protect personnel. Shut off “fuel” to fire. If a\nleak or spill has not ignited, use water spray to disperse the vapors. Either allow fire to burn under\ncontrolled conditions or extinguish with foam or dry chemical. Try to cover liquid spills with foam.\nBecause fire may produce toxic thermal decomposition products, wear a self-contained breathing\napparatus (SCBA) with a full-face piece operated in pressure demand or positive-pressure mode.\nSection 6 - Accidental Release Measures\n6.1\nPersonal precautions, protective equipment and emergency procedures\nOnly properly protected personnel should remain in the spill area; dike and contain spill. Stop or\nreduce discharge if it can be done safely.\n6.2\nEnvironmental precautions\nStop spill/release if it can be done safely. Prevent spilled material from entering sewers, storm\ndrains or unauthorized drainage systems and natural waterways by using sand, earth, or other\nappropriate barriers. No special environmental precautions required.\n6.3\nMethods and material for containment and cleaning up\nPut on appropriate protective gear including NIOSH/MSHA approved self-contained breathing\napparatus, rubber boots and heavy rubber gloves. Dike and contain spill; absorb or scrape up\nexcess into suitable container for disposal; wash area with dilute ammonia solution. Stop or\nreduce discharge if it can be done safely. Follow applicable OSHA regulations (29 CFR 1910.120)\nfor disposal.\n6.4\nReference to other sections\nSee Section 3 for list of Hazardous Ingredients; Sections 8 for Exposure Controls; and Section 13\nfor Disposal.\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.875000 |      0.000000e+00 |       -1.001766e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.375000 |     -1.455469e+01 |       -1.450000e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.281250 |     -1.553906e+01 |       -1.559375e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.265625 |     -1.553906e+01 |       -1.560938e+01 | '-No' (decode: '-No')
+       5 |    36989 |     23.093750 |     -1.664062e+01 |       -1.678125e+01 | '_No' (decode: '_No')
+       6 |     9100 |     22.843750 |     -1.664062e+01 |       -1.703125e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     22.078125 |              -inf |       -1.779688e+01 | ',No' (decode: ',No')
+       8 |    16766 |     22.062500 |              -inf |       -1.781250e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.468750 |              -inf |       -1.840625e+01 | 'ĠNo' (decode: ' No')
+      10 |    28715 |     21.046875 |              -inf |       -1.882813e+01 | 'Based' (decode: 'Based')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.976562600e+01 / -1.001765997e-06
+    ln(P(Yes)/P(No)) float64 = -19.765625  ->  P(Yes)/P(No) = 2.605542e-09
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 2.605539708e-09
+    P(No)   float64 (np.exp)          = 9.999989982e-01
+    score float64:                    = 0.000000003
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No.'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_19.pdf:product_name page 3 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2757 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 3 of sds_19.pdf:
+"""
+SDS No. 1224
+Page 3 of 7
+Section 7 - Handling and Storage
+7.1
+Precautions for safe handling
+Use good general housekeeping procedures. Wash hands after use. Do not get in eyes, on skin or
+on clothing. Do not breathe vapors or mists. Use good personal hygiene practices.
+7.2
+Conditions for safe storage, including any incompatibilities
+Keep container(s) tightly closed and properly labeled. Store in cool, dry, well ventilated place away
+from heat, direct sunlight, strong oxidizers and any incompatibles. Store in approved containers
+and protect against physical damage. Keep containers securely sealed when not in use. Indoor
+storage should meet local standards and appropriate fire codes. Containers that have been
+opened must be carefully resealed to prevent leakage. Empty containers retain residue and may
+be dangerous. Avoid water contamination.
+7.3
+Specific end use(s)
+These precautions are for room temperature handling. Other uses including elevated temperatures
+or aerosol/spray applications may require added precautions.
+Section 8 - Exposure Controls / Personal Protection
+8.1
+Control parameters
+None defined
+8.2
+Exposure controls
+Respiratory Protection
+Respiratory protection is not normally required when using this product with adequate local
+exhaust ventilation. Where risk assessment shows air-purifying respirators are appropriate, follow
+OSHA respirator regulations 29 CFR 1910.134 and European Standards EN 141, 143 and 371;
+wear an MSHA/NIOSH or European Standards EN 141, 143 and 371 approved respirators
+equipped with appropriate filter cartridges as a backup to engineering controls.
+Hand Protection
+Wear any liquid-tight gloves such as butyl rubber, neoprene or PVC.
+Eye Protection
+Safety glasses with side shields per OSHA eye- and face-protection regulations 29 CFR 1910.133
+and European Standard EN166. Contact lenses are not eye protective devices. Appropriate eye
+protection must be worn instead of, or in conjunction with contact lenses.
+Other Protective Clothing/Equipment
+Additional protective clothing or equipment is not normally required. Provide eye bath and safety
+shower.
+Comments
+Never eat, drink, or smoke in work areas. Practice good personal hygiene after using
+this material, especially before eating, drinking, smoking, using the toilet, or applying cosmetics.
+Wash thoroughly after handling.
+Section 9 - Physical and Chemical Properties
+9.1 Information on basic physical and chemical properties
+Appearance:
+Fine powder
+Vapor pressure:
+No data
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = ffd285bc024602de87b9abd8550afe6edab71e1a98066348390cd462ffd423ff
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 3 of sds_19.pdf:\n"""\nSDS No. 1224\nPage 3 of 7\nSection 7 - Handling and Storage\n7.1\nPrecautions for safe handling\nUse good general housekeeping procedures. Wash hands after use. Do not get in eyes, on skin or\non clothing. Do not breathe vapors or mists. Use good personal hygiene practices.\n7.2\nConditions for safe storage, including any incompatibilities\nKeep container(s) tightly closed and properly labeled. Store in cool, dry, well ventilated place away\nfrom heat, direct sunlight, strong oxidizers and any incompatibles. Store in approved containers\nand protect against physical damage. Keep containers securely sealed when not in use. Indoor\nstorage should meet local standards and appropriate fire codes. Containers that have been\nopened must be carefully resealed to prevent leakage. Empty containers retain residue and may\nbe dangerous. Avoid water contamination.\n7.3\nSpecific end use(s)\nThese precautions are for room temperature handling. Other uses including elevated temperatures\nor aerosol/spray applications may require added precautions.\nSection 8 - Exposure Controls / Personal Protection\n8.1\nControl parameters\nNone defined\n8.2\nExposure controls\nRespiratory Protection\nRespiratory protection is not normally required when using this product with adequate local\nexhaust ventilation. Where risk assessment shows air-purifying respirators are appropriate, follow\nOSHA respirator regulations 29 CFR 1910.134 and European Standards EN 141, 143 and 371;\nwear an MSHA/NIOSH or European Standards EN 141, 143 and 371 approved respirators\nequipped with appropriate filter cartridges as a backup to engineering controls.\nHand Protection\nWear any liquid-tight gloves such as butyl rubber, neoprene or PVC.\nEye Protection\nSafety glasses with side shields per OSHA eye- and face-protection regulations 29 CFR 1910.133\nand European Standard EN166. Contact lenses are not eye protective devices. Appropriate eye\nprotection must be worn instead of, or in conjunction with contact lenses.\nOther Protective Clothing/Equipment\nAdditional protective clothing or equipment is not normally required. Provide eye bath and safety\nshower.\nComments\nNever eat, drink, or smoke in work areas. Practice good personal hygiene after using\nthis material, especially before eating, drinking, smoking, using the toilet, or applying cosmetics.\nWash thoroughly after handling.\nSection 9 - Physical and Chemical Properties\n9.1 Information on basic physical and chemical properties\nAppearance:\nFine powder\nVapor pressure:\nNo data\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     40.625000 |      0.000000e+00 |       -7.036128e-07 | 'No' (decode: 'No')
+       2 |    41157 |     25.750000 |     -1.484375e+01 |       -1.487500e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.781250 |     -1.594531e+01 |       -1.584375e+01 | '-No' (decode: '-No')
+       4 |     8996 |     24.421875 |     -1.594531e+01 |       -1.620313e+01 | 'NO' (decode: 'NO')
+       5 |    36989 |     23.640625 |     -1.664062e+01 |       -1.698438e+01 | '_No' (decode: '_No')
+       6 |     9100 |     22.890625 |              -inf |       -1.773438e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     22.796875 |              -inf |       -1.782813e+01 | ',No' (decode: ',No')
+       8 |     9454 |     22.515625 |              -inf |       -1.810938e+01 | 'Yes' (decode: 'Yes')
+       9 |    16766 |     22.484375 |              -inf |       -1.814063e+01 | '.No' (decode: '.No')
+      10 |     2308 |     22.421875 |              -inf |       -1.820313e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.810937570e+01 / -7.036128372e-07
+    ln(P(Yes)/P(No)) float64 = -18.109375  ->  P(Yes)/P(No) = 1.365207e-08
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 1.365205600e-08
+    P(No)   float64 (np.exp)          = 9.999992964e-01
+    score float64:                    = 0.000000014
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_19.pdf:product_name page 4 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=1809 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 4 of sds_19.pdf:
+"""
+SDS No. 1224
+Page 4 of 7
+Odor:
+Slight
+Vapor density (Air=1):
+450-650 kg/m3
+pH:
+6.5 – 8.5
+Evaporation rate:
+No data
+Flash Point:
+No data
+Solubility in water:
+Soluble
+Melting / freezing point:
+>800°C
+Specific Gravity
+(H2O=1, at 4 °C):
+No data
+Low / high boiling point:
+No data
+Relative density:
+No data
+Upper flammability limits:
+No data
+Auto-ignition temperature:
+400°C
+Lower flammability limits:
+No data
+Viscosity:
+50% dispersion
+Section 10 - Stability and Reactivity
+10.1 Reactivity
+No hazardous reactions if stored and handled as prescribed/indicated., No corrosive effect on
+metal. Not fire propagating.
+10.2 Chemical stability
+These products are stable at room temperature in closed containers under normal storage and
+handling conditions.
+10.3 Possibility of hazardous reactions
+Hazardous polymerization cannot occur
+10.4 Conditions to avoid
+None known
+10.5 Incompatible materials
+Strong bases and acids
+10.6 Hazardous decomposition products
+Thermal oxidative decomposition can produce carbon oxides, gasses/vapors, and traces of
+incompletely burned carbon compounds.
+Section 11- Toxicological Information
+11.1 Information on toxicological effects
+Acute Toxicity
+No data available
+Skin Corrosion/Irritation
+No data available
+Serious Eye Damage/Irritation
+No data available
+Respiratory/Skin Sensitization
+No data available
+Germ Cell Mutagenicity
+No data available
+Carcinogenicity
+No component of these products present at levels greater than or equal to 0.1% is identified as a
+carcinogen or potential carcinogen by IARC, ACGIH or NTP.
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = c8f6dbb881490a4d5adca2dae8fe6c95c178b754f8a86654d10852c5e7a1c29b
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 4 of sds_19.pdf:\n"""\nSDS No. 1224\nPage 4 of 7\nOdor:\nSlight\nVapor density (Air=1):\n450-650 kg/m3\npH:\n6.5 – 8.5\nEvaporation rate:\nNo data\nFlash Point:\nNo data\nSolubility in water:\nSoluble\nMelting / freezing point:\n>800°C\nSpecific Gravity\n(H2O=1, at 4 °C):\nNo data\nLow / high boiling point:\nNo data\nRelative density:\nNo data\nUpper flammability limits:\nNo data\nAuto-ignition temperature:\n400°C\nLower flammability limits:\nNo data\nViscosity:\n50% dispersion\nSection 10 - Stability and Reactivity\n10.1 Reactivity\nNo hazardous reactions if stored and handled as prescribed/indicated., No corrosive effect on\nmetal. Not fire propagating.\n10.2 Chemical stability\nThese products are stable at room temperature in closed containers under normal storage and\nhandling conditions.\n10.3 Possibility of hazardous reactions\nHazardous polymerization cannot occur\n10.4 Conditions to avoid\nNone known\n10.5 Incompatible materials\nStrong bases and acids\n10.6 Hazardous decomposition products\nThermal oxidative decomposition can produce carbon oxides, gasses/vapors, and traces of\nincompletely burned carbon compounds.\nSection 11- Toxicological Information\n11.1 Information on toxicological effects\nAcute Toxicity\nNo data available\nSkin Corrosion/Irritation\nNo data available\nSerious Eye Damage/Irritation\nNo data available\nRespiratory/Skin Sensitization\nNo data available\nGerm Cell Mutagenicity\nNo data available\nCarcinogenicity\nNo component of these products present at levels greater than or equal to 0.1% is identified as a\ncarcinogen or potential carcinogen by IARC, ACGIH or NTP.\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     40.281250 |      0.000000e+00 |       -1.047626e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.843750 |     -1.443750e+01 |       -1.443750e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.781250 |     -1.553906e+01 |       -1.550000e+01 | '-No' (decode: '-No')
+       4 |     8996 |     24.218750 |     -1.594531e+01 |       -1.606250e+01 | 'NO' (decode: 'NO')
+       5 |    36989 |     23.484375 |     -1.664062e+01 |       -1.679688e+01 | '_No' (decode: '_No')
+       6 |     9454 |     23.265625 |     -1.664062e+01 |       -1.701563e+01 | 'Yes' (decode: 'Yes')
+       7 |    28715 |     23.203125 |     -1.664062e+01 |       -1.707813e+01 | 'Based' (decode: 'Based')
+       8 |     9100 |     22.828125 |              -inf |       -1.745313e+01 | '_NO' (decode: '_NO')
+       9 |    85076 |     22.671875 |              -inf |       -1.760938e+01 | ',No' (decode: ',No')
+      10 |     2308 |     22.109375 |              -inf |       -1.817188e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -1.664062500e+01
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.701562605e+01 / -1.047626324e-06
+    ln(P(Yes)/P(No)) float64 = -17.015625  ->  P(Yes)/P(No) = 4.075754e-08
+    P(Yes)  float32 (mx.exp, frozen)  = 5.930186830e-08
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000059
+    frozen score_page_mlx() direct    = 0.000000059   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 4.075749664e-08
+    P(No)   float64 (np.exp)          = 9.999989524e-01
+    score float64:                    = 0.000000041
+    float32 vs float64 score equal:   False
+    cache score for this key          = 5.9301864788117154e-08   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_19.pdf:product_name page 5 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=1616 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 5 of sds_19.pdf:
+"""
+SDS No. 1224
+Page 5 of 7
+Reproductive Toxicity
+No data available
+Specific Target Organ Toxicity – Single Exposure
+No data available
+Specific Target Organ Toxicity – Repeated Exposure
+No data available
+Aspiration Hazard
+No data available
+Potential Health Effects – Miscellaneous
+No data available
+Section 12 - Ecological Information
+12.1 Toxicity
+No data available
+12.2 Persistence and Degradability
+No data available
+12.3 Bioaccumulative Potential
+No data available
+12.4 Mobility in Soil
+No data available
+12.5 Results of PBT and vPvB assessment
+No data available
+12.6 Other Adverse Effects
+No data available
+Section 13 - Disposal Considerations
+13.1 Waste treatment methods
+Under RCRA it is the responsibility of the user of the product to determine at the time of disposal
+whether the product meets RCRA criteria for hazardous waste. Waste management should be in
+full compliance with federal, state and local laws.
+Empty containers retain product residue which may exhibit hazards of material, therefore to not
+pressurize, cut, glaze, weld or use for any other purposes. Return drums to reclamation centers for
+proper cleaning and reuse.
+Section 14 - Transport Information
+Not regulated by DOT, IATA or IMDG
+Section 15 - Regulatory Information
+15.1 Safety health and environmental regulations/legislation specific for the
+substance or mixture:
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = e90f3a82bbe777c23e413240ce2421bde96093b3962dabcdfdbda61765b9fb81
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 5 of sds_19.pdf:\n"""\nSDS No. 1224\nPage 5 of 7\nReproductive Toxicity\nNo data available\nSpecific Target Organ Toxicity – Single Exposure\nNo data available\nSpecific Target Organ Toxicity – Repeated Exposure\nNo data available\nAspiration Hazard\nNo data available\nPotential Health Effects – Miscellaneous\nNo data available\nSection 12 - Ecological Information\n12.1 Toxicity\nNo data available\n12.2 Persistence and Degradability\nNo data available\n12.3 Bioaccumulative Potential\nNo data available\n12.4 Mobility in Soil\nNo data available\n12.5 Results of PBT and vPvB assessment\nNo data available\n12.6 Other Adverse Effects\nNo data available\nSection 13 - Disposal Considerations\n13.1 Waste treatment methods\nUnder RCRA it is the responsibility of the user of the product to determine at the time of disposal\nwhether the product meets RCRA criteria for hazardous waste. Waste management should be in\nfull compliance with federal, state and local laws.\nEmpty containers retain product residue which may exhibit hazards of material, therefore to not\npressurize, cut, glaze, weld or use for any other purposes. Return drums to reclamation centers for\nproper cleaning and reuse.\nSection 14 - Transport Information\nNot regulated by DOT, IATA or IMDG\nSection 15 - Regulatory Information\n15.1 Safety health and environmental regulations/legislation specific for the\nsubstance or mixture:\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.343750 |      0.000000e+00 |       -2.314329e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.625000 |     -1.374219e+01 |       -1.371875e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.828125 |     -1.455469e+01 |       -1.451563e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.281250 |     -1.502344e+01 |       -1.506250e+01 | '-No' (decode: '-No')
+       5 |    36989 |     23.468750 |     -1.594531e+01 |       -1.587500e+01 | '_No' (decode: '_No')
+       6 |     9100 |     23.406250 |     -1.594531e+01 |       -1.593750e+01 | '_NO' (decode: '_NO')
+       7 |    28715 |     23.218750 |     -1.594531e+01 |       -1.612500e+01 | 'Based' (decode: 'Based')
+       8 |    16766 |     21.859375 |              -inf |       -1.748438e+01 | '.No' (decode: '.No')
+       9 |    85076 |     21.140625 |              -inf |       -1.820313e+01 | ',No' (decode: ',No')
+      10 |     2308 |     21.015625 |              -inf |       -1.832813e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.380468981e+01 / -2.314328786e-06
+    ln(P(Yes)/P(No)) float64 = -23.804688  ->  P(Yes)/P(No) = 4.589396e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 4.589385828e-11
+    P(No)   float64 (np.exp)          = 9.999976857e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No.'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_19.pdf:product_name page 6 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2488 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 6 of sds_19.pdf:
+"""
+SDS No. 1224
+Page 6 of 7
+REACH: Regulation (EC) No 1907/2006 of The European Parliament and of The Council of
+December 2006 (including amendments and corrigenda as of June 2020)
+This product complies with REACH or is not subject to regulation under REACH. The product does
+not contain an ingredient listed on either the Candidate List or Authorization List for Substances of
+Very High Concern (SVHC).
+In the United States (EPA Regulations)
+TSCA Inventory Status (40 CFR710)
+All components of this formulation are listed in the TSCA Inventory. No component of this
+formulation has been determined to be subject to manufacturing or use restrictions under the
+Significant New Use Rules (SNURs).
+CERCLA Hazardous Substance List (40 CFR 302.4)
+None known.
+SARA 302 Components
+No chemicals in this material are subject to the reporting requirements of SARA Title III, Section
+302.
+Superfund Amendments and Reauthorization Act of 1986 Title lll (Emergency Planning and
+community Right-to-Know Act of 1986) Sections 311 and 312
+None
+Superfund Amendments and Reauthorization Act of 1986 Title lll (Emergency Planning and
+Community Right-to-Know Act of 1986) Section 313
+This material does not contain any chemical components with known CAS numbers that exceed
+the threshold (De Minimis) reporting levels established by SARA Title III, Section 313.
+California Proposition 65
+This product does not intentionally contain any chemicals known to the state of California to cause
+cancer, birth defects or other reproductive harm.
+15.2 Chemical safety assessment
+No chemical safety assessment has been carried out for this substance/mixture by the supplier.
+16 - Other Information
+Revision Date: December 5, 2023 Version 3.0
+NFPA
+Abbreviations and acronyms
+ACGIH-American Conference of Governmental Industrial Hygienists; ANSI-American National
+Standards Institute; Canadian TDG-Canadian Transportation of Dangerous Goods; CAS-Chemical
+Abstract Service; Chemtrec-Chemical Transportation Emergency Center (US); CHIP-Chemical Hazard
+Information and Packaging; DSL-Domestic Substances List; EC-Equivalent Concentration; EH40 (UK)-
+HSE Guidance Note EH40 Occupational Exposure Limits; EPCRA-Emergency Planning and
+HMIS
+H
+1
+F
+0
+R
+0
+0
+0
+1
+0
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = fdb9a36936cd95eb59988b17e8f6a94a21f4a8d5ef4cce8f58ff5aaa93b45d31
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 6 of sds_19.pdf:\n"""\nSDS No. 1224\nPage 6 of 7\nREACH: Regulation (EC) No 1907/2006 of The European Parliament and of The Council of\nDecember 2006 (including amendments and corrigenda as of June 2020)\nThis product complies with REACH or is not subject to regulation under REACH. The product does\nnot contain an ingredient listed on either the Candidate List or Authorization List for Substances of\nVery High Concern (SVHC).\nIn the United States (EPA Regulations)\nTSCA Inventory Status (40 CFR710)\nAll components of this formulation are listed in the TSCA Inventory. No component of this\nformulation has been determined to be subject to manufacturing or use restrictions under the\nSignificant New Use Rules (SNURs).\nCERCLA Hazardous Substance List (40 CFR 302.4)\nNone known.\nSARA 302 Components\nNo chemicals in this material are subject to the reporting requirements of SARA Title III, Section\n302.\nSuperfund Amendments and Reauthorization Act of 1986 Title lll (Emergency Planning and\ncommunity Right-to-Know Act of 1986) Sections 311 and 312\nNone\nSuperfund Amendments and Reauthorization Act of 1986 Title lll (Emergency Planning and\nCommunity Right-to-Know Act of 1986) Section 313\nThis material does not contain any chemical components with known CAS numbers that exceed\nthe threshold (De Minimis) reporting levels established by SARA Title III, Section 313.\nCalifornia Proposition 65\nThis product does not intentionally contain any chemicals known to the state of California to cause\ncancer, birth defects or other reproductive harm.\n15.2 Chemical safety assessment\nNo chemical safety assessment has been carried out for this substance/mixture by the supplier.\n16 - Other Information\nRevision Date: December 5, 2023 Version 3.0\nNFPA\nAbbreviations and acronyms\nACGIH-American Conference of Governmental Industrial Hygienists; ANSI-American National\nStandards Institute; Canadian TDG-Canadian Transportation of Dangerous Goods; CAS-Chemical\nAbstract Service; Chemtrec-Chemical Transportation Emergency Center (US); CHIP-Chemical Hazard\nInformation and Packaging; DSL-Domestic Substances List; EC-Equivalent Concentration; EH40 (UK)-\nHSE Guidance Note EH40 Occupational Exposure Limits; EPCRA-Emergency Planning and\nHMIS\nH\n1\nF\n0\nR\n0\n0\n0\n1\n0\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     40.406250 |      0.000000e+00 |       -8.852822e-07 | 'No' (decode: 'No')
+       2 |    41157 |     25.875000 |     -1.455469e+01 |       -1.453125e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.593750 |     -1.594531e+01 |       -1.581250e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.562500 |     -1.594531e+01 |       -1.584375e+01 | '-No' (decode: '-No')
+       5 |    36989 |     23.421875 |     -1.664062e+01 |       -1.698438e+01 | '_No' (decode: '_No')
+       6 |     9100 |     23.281250 |     -1.664062e+01 |       -1.712500e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     22.453125 |              -inf |       -1.795313e+01 | ',No' (decode: ',No')
+       8 |    16766 |     22.093750 |              -inf |       -1.831250e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.875000 |              -inf |       -1.853125e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     21.250000 |              -inf |       -1.915625e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.028125089e+01 / -8.852822047e-07
+    ln(P(Yes)/P(No)) float64 = -20.281250  ->  P(Yes)/P(No) = 1.555840e-09
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 1.555839003e-09
+    P(No)   float64 (np.exp)          = 9.999991147e-01
+    score float64:                    = 0.000000002
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_19.pdf:product_name page 7 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2692 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: product_name — Trade name / product identifier.
+
+Page 7 of sds_19.pdf:
+"""
+SDS No. 1224
+Page 7 of 7
+Community Right-To-Know Act; ESL-Effects screening levels; GHS-Globally Harmonized System of
+Classification and Labelling of Chemicals; HMIS-Hazardous Material Information Service; IATA-
+International Air Transport Association; IMDG-International Maritime Dangerous Goods Code; LC-Lethal
+Concentration; LD-Lethal Dose; LEL-Lower Explosion Level; NFPA-National Fire Protection Association;
+OEL-Occupational Exposure Limit; OSHA-Occupational Safety and Health Administration, US Dept. of
+Labor; PEL-Permissible Exposure Limit; SARA (Title III)-Superfund Amendments and Reauthorization
+Act; SARA 313-Superfund Amendments and Reauthorization Act, Section 313; SCBA-Self-Contained
+Breathing Apparatus; STEL-Short Term Exposure Limit; TCEQ-Texas Commission on Environmental
+Quality; TLV-Threshold Limit Value; TSCA-Toxic Substances Control Act Public Law 94-469; TWA-Time
+Weighted Value; UEL-Upper Explosion Level; US DOT-US Department of Transportation; WHMIS-
+Workplace Hazardous Materials Information System.
+Disclaimer
+The information contained in this Safety Data Sheet (SDS) is considered accurate as of the version
+date. However, no warranty is expressed or implied regarding the accuracy of the data. Since the use
+of this product is not within the control of Buddy Rhodes Concrete Products, it is the user's obligation to
+determine the suitability of the product for its intended application and assumes all risk and liability for its
+safe use.
+This SDS is prepared to comply with the Globally Harmonized System of Classification and Labelling of
+Chemicals (GHS) as prescribed by the United States (US) Occupational Safety and Health
+Administration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian Workplace
+Hazardous Materials Information System (WHMIS), and European Union Regulation (EC) No
+1907/2006 of the European Parliament and of the Council of 18 December 2006 (REACH).
+Classifications of the chemical in accordance with 29 CFR 1910.1200, signal word, hazard and
+precautionary statement(s), symbol(s) and other information are based on listed concentration of each
+hazardous ingredient. Unlisted ingredients are not "hazardous" per the OSHA Hazard Communication
+Standard (29 CFR 1910.1200), WHMIS and EC No 1907/2006 and are considered trade secrets under
+US Federal Law (29 CFR and 40 CFR), Canadian Law (Health Canada Legislation), and European
+Union Directives.
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 963daae38971087dfcf3dfb9016b8427106a6ec385511798efff129912f61071
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: product_name — Trade name / product identifier.\n\nPage 7 of sds_19.pdf:\n"""\nSDS No. 1224\nPage 7 of 7\nCommunity Right-To-Know Act; ESL-Effects screening levels; GHS-Globally Harmonized System of\nClassification and Labelling of Chemicals; HMIS-Hazardous Material Information Service; IATA-\nInternational Air Transport Association; IMDG-International Maritime Dangerous Goods Code; LC-Lethal\nConcentration; LD-Lethal Dose; LEL-Lower Explosion Level; NFPA-National Fire Protection Association;\nOEL-Occupational Exposure Limit; OSHA-Occupational Safety and Health Administration, US Dept. of\nLabor; PEL-Permissible Exposure Limit; SARA (Title III)-Superfund Amendments and Reauthorization\nAct; SARA 313-Superfund Amendments and Reauthorization Act, Section 313; SCBA-Self-Contained\nBreathing Apparatus; STEL-Short Term Exposure Limit; TCEQ-Texas Commission on Environmental\nQuality; TLV-Threshold Limit Value; TSCA-Toxic Substances Control Act Public Law 94-469; TWA-Time\nWeighted Value; UEL-Upper Explosion Level; US DOT-US Department of Transportation; WHMIS-\nWorkplace Hazardous Materials Information System.\nDisclaimer\nThe information contained in this Safety Data Sheet (SDS) is considered accurate as of the version\ndate. However, no warranty is expressed or implied regarding the accuracy of the data. Since the use\nof this product is not within the control of Buddy Rhodes Concrete Products, it is the user\'s obligation to\ndetermine the suitability of the product for its intended application and assumes all risk and liability for its\nsafe use.\nThis SDS is prepared to comply with the Globally Harmonized System of Classification and Labelling of\nChemicals (GHS) as prescribed by the United States (US) Occupational Safety and Health\nAdministration (OSHA) Hazard Communication Standard (29 CFR 1910.1200), the Canadian Workplace\nHazardous Materials Information System (WHMIS), and European Union Regulation (EC) No\n1907/2006 of the European Parliament and of the Council of 18 December 2006 (REACH).\nClassifications of the chemical in accordance with 29 CFR 1910.1200, signal word, hazard and\nprecautionary statement(s), symbol(s) and other information are based on listed concentration of each\nhazardous ingredient. Unlisted ingredients are not "hazardous" per the OSHA Hazard Communication\nStandard (29 CFR 1910.1200), WHMIS and EC No 1907/2006 and are considered trade secrets under\nUS Federal Law (29 CFR and 40 CFR), Canadian Law (Health Canada Legislation), and European\nUnion Directives.\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     40.000000 |      0.000000e+00 |       -1.156334e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.640625 |     -1.433594e+01 |       -1.435938e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.609375 |     -1.553906e+01 |       -1.539063e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.359375 |     -1.553906e+01 |       -1.564063e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.796875 |     -1.594531e+01 |       -1.620313e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.343750 |     -1.664062e+01 |       -1.665625e+01 | '_No' (decode: '_No')
+       7 |    85076 |     21.890625 |              -inf |       -1.810938e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.875000 |              -inf |       -1.812500e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.609375 |              -inf |       -1.839063e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     20.984375 |              -inf |       -1.901563e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.289062616e+01 / -1.156333779e-06
+    ln(P(Yes)/P(No)) float64 = -22.890625  ->  P(Yes)/P(No) = 1.144795e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 1.144794075e-10
+    P(No)   float64 (np.exp)          = 9.999988437e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+SUMMARY sds_19.pdf:product_name layer=native pages=[1, 2, 3, 4, 5, 6, 7]
+================================================================================
+page | score_f32(frozen) | yes_lp64        | no_lp64         | score_f64      | greedy | cache
+   1 | 1.000000          | -1.636842e-06 | -1.807813e+01 | 1.000000 |    yes | 1.0
+   2 | 0.000000          | -1.976563e+01 | -1.001766e-06 | 0.000000 |     no | 0.0
+   3 | 0.000000          | -1.810938e+01 | -7.036128e-07 | 0.000000 |     no | 0.0
+   4 | 0.000000          | -1.701563e+01 | -1.047626e-06 | 0.000000 |     no | 5.9301864788117154e-08
+   5 | 0.000000          | -2.380469e+01 | -2.314329e-06 | 0.000000 |     no | 0.0
+   6 | 0.000000          | -2.028125e+01 | -8.852822e-07 | 0.000000 |     no | 0.0
+   7 | 0.000000          | -2.289063e+01 | -1.156334e-06 | 0.000000 |     no | 0.0

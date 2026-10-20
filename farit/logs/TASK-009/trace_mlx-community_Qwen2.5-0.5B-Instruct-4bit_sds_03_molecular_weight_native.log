@@ -1,0 +1,161 @@
+# TASK-009 zero-score trace
+# instance: sds_03.pdf:molecular_weight  layer: native  pages: [5]
+# model: mlx-community/Qwen2.5-0.5B-Instruct-4bit
+
+================================================================================
+TRACING sds_03.pdf:molecular_weight page 5 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3437 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: molecular_weight — Molecular weight in g/mol. Defined only for a substance.
+
+Page 5 of sds_03.pdf:
+"""
+Safety data sheet
+According to UK REACH (S.I. 2019/758)
+STYCCOBOND F49 BASE
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)
+Identification
+1,2-benzisothiazol-3(2H)-one
+STP
+1.03 mg/L
+Fresh water
+0.00403 mg/L
+CAS: 2634-33-5
+Soil
+3 mg/kg
+Marine water
+0.000403 mg/L
+EC: 220-120-9
+Intermittent
+0.0011 mg/L
+Sediment (Fresh water)
+0.0499 mg/kg
+Oral
+Not relevant
+Sediment (Marine water)
+0.00499 mg/kg
+8.2
+Exposure controls:
+A.- Individual protection measures, such as personal protective equipment
+As a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<UKCA
+marking>> or <<CE marking>>. For more information on Personal Protective Equipment (storage, use, cleaning,
+maintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more information see
+subsection 7.1. All information contained herein is a recommendation which needs some specification from the labour risk
+prevention services as it is not known whether the company has additional measures at its disposal.
+B.- Respiratory protection
+The use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.
+C.- Specific protection for the hands
+Pictogram
+PPE
+Remarks
+Mandatory hand
+protection
+Chemical protective gloves
+Replace the gloves at any sign of deterioration.
+As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with
+total reliability and has therefore to be checked prior to the application.
+D.- Eye and face protection
+Pictogram
+PPE
+Remarks
+Mandatory face
+protection
+Panoramic glasses against splash/projections.
+Clean daily and disinfect periodically according to the manufacturer´s instructions.
+Use if there is a risk of splashing.
+E.- Body protection
+Pictogram
+PPE
+Remarks
+Work clothing
+Replace before any evidence of deterioration. For periods of prolonged exposure
+to the product for professional/industrial users CE III is recommended, in
+accordance with the regulations in EN ISO 6529:2013, EN ISO 6530:2005, EN ISO
+13688:2013, EN 464:1994.
+Anti-slip work shoes
+Replace before any evidence of deterioration. For periods of prolonged exposure
+to the product for professional/industrial users CE III is recommended, in
+accordance with the regulations in EN ISO 20345:2012 y EN 13832-1:2007
+F.- Additional emergency measures
+Emergency measure
+Standards
+Emergency measure
+Standards
+Emergency shower
+ANSI Z358-1
+ISO 3864-1:2011, ISO 3864-4:2011
+Eyewash stations
+DIN 12 899
+ISO 3864-1:2011, ISO 3864-4:2011
+Environmental exposure controls:
+In accordance with the community legislation for the protection of the environment it is recommended to avoid environmental
+spillage of both the product and its container. For additional information see subsection 7.1.D
+The Volatile Organic Compounds in Paints, Varnishes and Vehicle Refinishing Products Regulations 2012:
+V.O.C. (Supply):
+0 % weight
+V.O.C. density at 20 ºC:
+0 kg/m³ (0 g/L)
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)
+Page 5/11
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = bef14367abe95b9d03cde7dab5e27d6156c9379a7501b21ed83a2d099711e0b1
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: molecular_weight — Molecular weight in g/mol. Defined only for a substance.\n\nPage 5 of sds_03.pdf:\n"""\nSafety data sheet\nAccording to UK REACH (S.I. 2019/758)\nSTYCCOBOND F49 BASE\nSECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)\nIdentification\n1,2-benzisothiazol-3(2H)-one\nSTP\n1.03 mg/L\nFresh water\n0.00403 mg/L\nCAS: 2634-33-5\nSoil\n3 mg/kg\nMarine water\n0.000403 mg/L\nEC: 220-120-9\nIntermittent\n0.0011 mg/L\nSediment (Fresh water)\n0.0499 mg/kg\nOral\nNot relevant\nSediment (Marine water)\n0.00499 mg/kg\n8.2\nExposure controls:\nA.- Individual protection measures, such as personal protective equipment\nAs a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<UKCA\nmarking>> or <<CE marking>>. For more information on Personal Protective Equipment (storage, use, cleaning,\nmaintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more information see\nsubsection 7.1. All information contained herein is a recommendation which needs some specification from the labour risk\nprevention services as it is not known whether the company has additional measures at its disposal.\nB.- Respiratory protection\nThe use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.\nC.- Specific protection for the hands\nPictogram\nPPE\nRemarks\nMandatory hand\nprotection\nChemical protective gloves\nReplace the gloves at any sign of deterioration.\nAs the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.\nD.- Eye and face protection\nPictogram\nPPE\nRemarks\nMandatory face\nprotection\nPanoramic glasses against splash/projections.\nClean daily and disinfect periodically according to the manufacturer´s instructions.\nUse if there is a risk of splashing.\nE.- Body protection\nPictogram\nPPE\nRemarks\nWork clothing\nReplace before any evidence of deterioration. For periods of prolonged exposure\nto the product for professional/industrial users CE III is recommended, in\naccordance with the regulations in EN ISO 6529:2013, EN ISO 6530:2005, EN ISO\n13688:2013, EN 464:1994.\nAnti-slip work shoes\nReplace before any evidence of deterioration. For periods of prolonged exposure\nto the product for professional/industrial users CE III is recommended, in\naccordance with the regulations in EN ISO 20345:2012 y EN 13832-1:2007\nF.- Additional emergency measures\nEmergency measure\nStandards\nEmergency measure\nStandards\nEmergency shower\nANSI Z358-1\nISO 3864-1:2011, ISO 3864-4:2011\nEyewash stations\nDIN 12 899\nISO 3864-1:2011, ISO 3864-4:2011\nEnvironmental exposure controls:\nIn accordance with the community legislation for the protection of the environment it is recommended to avoid environmental\nspillage of both the product and its container. For additional information see subsection 7.1.D\nThe Volatile Organic Compounds in Paints, Varnishes and Vehicle Refinishing Products Regulations 2012:\nV.O.C. (Supply):\n0 % weight\nV.O.C. density at 20 ºC:\n0 kg/m³ (0 g/L)\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 08/03/2023 Revised: 06/06/2023 Version: 10 (Replaced 9)\nPage 5/11\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     9454 |     26.078125 |     -1.049194e-01 |       -1.048135e-01 | 'Yes' (decode: 'Yes')
+       2 |     2753 |     23.859375 |     -2.324219e+00 |       -2.323564e+00 | 'No' (decode: 'No')
+       3 |     2623 |     18.109375 |     -8.070312e+00 |       -8.073564e+00 | 'Not' (decode: 'Not')
+       4 |      785 |     17.968750 |     -8.218750e+00 |       -8.214189e+00 | 'The' (decode: 'The')
+       5 |    16141 |     17.390625 |     -8.789062e+00 |       -8.792314e+00 | 'Answer' (decode: 'Answer')
+       6 |      334 |     17.078125 |     -9.101562e+00 |       -9.104814e+00 | '**' (decode: '**')
+       7 |    28715 |     16.828125 |     -9.359375e+00 |       -9.354814e+00 | 'Based' (decode: 'Based')
+       8 |    11190 |     16.718750 |     -9.460938e+00 |       -9.464189e+00 | 'According' (decode: 'According')
+       9 |     1249 |     15.914062 |     -1.026562e+01 |       -1.026888e+01 | 'To' (decode: 'To')
+      10 |    77045 |     15.554688 |     -1.063281e+01 |       -1.062825e+01 | 'Absolutely' (decode: 'Absolutely')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -1.049194336e-01
+    no_logprob  (best single-token No;  float32 log_softmax path) = -2.324218750e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.048135193e-01 / -2.323563519e+00
+    ln(P(Yes)/P(No)) float64 = 2.218750  ->  P(Yes)/P(No) = 9.195829e+00
+    P(Yes)  float32 (mx.exp, frozen)  = 9.003970623e-01
+    P(No)   float32 (mx.exp, frozen)  = 9.785986692e-02
+    score float32 (frozen math)       = 0.901969259
+    frozen score_page_mlx() direct    = 0.901969259   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 9.004924314e-01
+    P(No)   float64 (np.exp)          = 9.792400902e-02
+    score float64:                    = 0.901920677
+    float32 vs float64 score equal:   False
+    cache score for this key          = None   (not in cache or differs)
+
+[6] GREEDY GENERATION (max_tokens=5): 'Yes.'
+    first-token answer: yes
+    consistency vs frozen score 0.902: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+SUMMARY sds_03.pdf:molecular_weight layer=native pages=[5]
+================================================================================
+page | score_f32(frozen) | yes_lp64        | no_lp64         | score_f64      | greedy | cache
+   5 | 0.901969          | -1.048135e-01 | -2.323564e+00 | 0.901921 |    yes | None

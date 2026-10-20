@@ -1,0 +1,1251 @@
+Loading model mlx-community/Qwen2.5-7B-Instruct-4bit ...
+Fetching 9 files:   0%|          | 0/9 [00:00<?, ?it/s]Fetching 9 files: 100%|██████████| 9/9 [00:00<00:00, 3039.60it/s]
+Model loaded.
+# TASK-009 zero-score trace
+# instance: sds_01.pdf:chemical_formula  layer: native  pages: [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# model: mlx-community/Qwen2.5-7B-Instruct-4bit
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 1 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2493 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 1 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING
+1.1
+Product identifier:
+REDUR AD 04
+Other means of identification:
+UFI:
+MY90-10UT-4008-K1J7
+1.2
+Relevant identified uses of the substance or mixture and uses advised against:
+Relevant uses: Paint
+Uses advised against: All uses not specified in this section or in section 7.3
+1.3
+Details of the supplier of the safety data sheet:
+SECILTEK SA
+Apartado 2
+2406-909 Maceira LRA Leiria - Portugal
+Phone: +351244770220 - Fax: +351244777997
+comercial.seciltek@secil.pt
+https://www.secil.pt
+1.4
+Emergency telephone number:
+SECTION 2: HAZARDS IDENTIFICATION
+2.1
+Classification of the substance or mixture:
+CLP Regulation (EC) No 1272/2008:
+The product is not classified as hazardous according to CLP Regulation (EC) No 1272/2008.
+2.2
+Label elements:
+CLP Regulation (EC) No 1272/2008:
+None
+UFI:
+MY90-10UT-4008-K1J7
+2.3
+Other hazards:
+Product does not meet PBT/vPvB criteria
+Endocrine-disrupting properties: The product does not meet the criteria.
+SECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS
+3.1
+Substance:
+Non-applicable
+3.2
+Mixture:
+Chemical description: Mixture of substances
+Components:
+None of the substances contained in the mixture are above the limits specified in Annex II of Regulation (EC) No 1907/2006
+SECTION 4: FIRST AID MEASURES
+4.1
+Description of first aid measures:
+Consult a doctor in case of discomfort showing the SDS for the product.
+By inhalation:
+In case of symptoms, move the person affected into fresh air.
+By skin contact:
+In case of contact it is recommended to clean the affected area thoroughly with water and neutral soap. In case of changes to
+the skin (stinging, redness, rashes, blisters,…), seek medical advice with this Safety Data Sheet
+By eye contact:
+Rinse with water until the product has been eliminated. In case of problems, consult a doctor showing the SDS for the product.
+By ingestion/aspiration:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 1/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 86e67fcf1990e2da92f8e0922d292465cca9600a7fa11213a763842a8c79b7b7
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 1 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 1: IDENTIFICATION OF THE SUBSTANCE/MIXTURE AND OF THE COMPANY/UNDERTAKING\n1.1\nProduct identifier:\nREDUR AD 04\nOther means of identification:\nUFI:\nMY90-10UT-4008-K1J7\n1.2\nRelevant identified uses of the substance or mixture and uses advised against:\nRelevant uses: Paint\nUses advised against: All uses not specified in this section or in section 7.3\n1.3\nDetails of the supplier of the safety data sheet:\nSECILTEK SA\nApartado 2\n2406-909 Maceira LRA Leiria - Portugal\nPhone: +351244770220 - Fax: +351244777997\ncomercial.seciltek@secil.pt\nhttps://www.secil.pt\n1.4\nEmergency telephone number:\nSECTION 2: HAZARDS IDENTIFICATION\n2.1\nClassification of the substance or mixture:\nCLP Regulation (EC) No 1272/2008:\nThe product is not classified as hazardous according to CLP Regulation (EC) No 1272/2008.\n2.2\nLabel elements:\nCLP Regulation (EC) No 1272/2008:\nNone\nUFI:\nMY90-10UT-4008-K1J7\n2.3\nOther hazards:\nProduct does not meet PBT/vPvB criteria\nEndocrine-disrupting properties: The product does not meet the criteria.\nSECTION 3: COMPOSITION/INFORMATION ON INGREDIENTS\n3.1\nSubstance:\nNon-applicable\n3.2\nMixture:\nChemical description: Mixture of substances\nComponents:\nNone of the substances contained in the mixture are above the limits specified in Annex II of Regulation (EC) No 1907/2006\nSECTION 4: FIRST AID MEASURES\n4.1\nDescription of first aid measures:\nConsult a doctor in case of discomfort showing the SDS for the product.\nBy inhalation:\nIn case of symptoms, move the person affected into fresh air.\nBy skin contact:\nIn case of contact it is recommended to clean the affected area thoroughly with water and neutral soap. In case of changes to\nthe skin (stinging, redness, rashes, blisters,…), seek medical advice with this Safety Data Sheet\nBy eye contact:\nRinse with water until the product has been eliminated. In case of problems, consult a doctor showing the SDS for the product.\nBy ingestion/aspiration:\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 1/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.812500 |      0.000000e+00 |       -1.264503e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.062500 |     -1.468750e+01 |       -1.475000e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.765625 |     -1.502344e+01 |       -1.504688e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     24.750000 |     -1.502344e+01 |       -1.506250e+01 | '-No' (decode: '-No')
+       5 |    36989 |     23.421875 |     -1.664062e+01 |       -1.639063e+01 | '_No' (decode: '_No')
+       6 |     9100 |     23.343750 |     -1.664062e+01 |       -1.646875e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     23.328125 |     -1.664062e+01 |       -1.648438e+01 | ',No' (decode: ',No')
+       8 |    16766 |     22.265625 |              -inf |       -1.754688e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.750000 |              -inf |       -1.806250e+01 | 'ĠNo' (decode: ' No')
+      10 |     9454 |     21.640625 |              -inf |       -1.817188e+01 | 'Yes' (decode: 'Yes')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.817187626e+01 / -1.264502542e-06
+    ln(P(Yes)/P(No)) float64 = -18.171875  ->  P(Yes)/P(No) = 1.282493e-08
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 1.282491255e-08
+    P(No)   float64 (np.exp)          = 9.999987355e-01
+    score float64:                    = 0.000000013
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 2 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3503 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 2 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 4: FIRST AID MEASURES (continued)
+In case of consumption in large quantities, it is recommended to seek medical assistance.
+4.2
+Most important symptoms and effects, both acute and delayed:
+Acute and delayed effects are indicated in sections 2 and 11.
+4.3
+Indication of any immediate medical attention and special treatment needed:
+Not relevant
+SECTION 5: FIREFIGHTING MEASURES
+5.1
+Extinguishing media:
+Suitable extinguishing media:
+Product is non-flammable, with a low risk of fire due to the flammability characteristics of the product in normal conditions of
+storage, handling and use. In the case of the existence of sustained combustion as a result of improper handling, storage or use
+any type of extinguishing agent can be used (ABC Powder, water,...)
+Unsuitable extinguishing media:
+Non-applicable
+5.2
+Special hazards arising from the substance or mixture:
+Due to its non-inflammable nature, the product does not present a fire risk under normal conditions of storage, handling and use.
+5.3
+Advice for firefighters:
+Depending on the magnitude of the fire it may be necessary to use full protective clothing and self-contained breathing apparatus
+(SCBA). Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit,...) in accordance
+with Directive 89/654/EC.
+Additional provisions:
+Act in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other
+emergencies. Eliminate all sources of ignition. In case of fire, cool the storage containers and tanks for products susceptible to
+combustion, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an
+aqueous medium.
+SECTION 6: ACCIDENTAL RELEASE MEASURES
+6.1
+Personal precautions, protective equipment and emergency procedures:
+For non-emergency personnel:
+Isolate leaks provided that there is no additional risk for the people performing this task.
+For emergency responders:
+Wear protective equipment. Keep unprotected persons away. See section 8.
+6.2
+Environmental precautions:
+This product is not classified as hazardous to the environment. Keep product away from drains, surface and ground water.
+6.3
+Methods and material for containment and cleaning up:
+It is recommended:
+Absorb the spillage using sand or inert absorbent and move it to a safe place. Do not absorb in sawdust or other combustible
+absorbents. For any concern related to disposal consult section 13.
+6.4
+Reference to other sections:
+See sections 8 and 13.
+SECTION 7: HANDLING AND STORAGE
+7.1
+Precautions for safe handling:
+A.- General precautions for safe use
+Comply with the current legislation concerning the prevention of industrial risks with regards manually handling weights.
+Maintain order, cleanliness and dispose of using safe methods (section 6).
+B.- Technical recommendations for the prevention of fires and explosions
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 2/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 62a7ee8a99b5dd6e04c6c8ee26e0b780fddd1ea381809cf68bde6fe1ee8b8d99
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 2 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 4: FIRST AID MEASURES (continued)\nIn case of consumption in large quantities, it is recommended to seek medical assistance.\n4.2\nMost important symptoms and effects, both acute and delayed:\nAcute and delayed effects are indicated in sections 2 and 11.\n4.3\nIndication of any immediate medical attention and special treatment needed:\nNot relevant\nSECTION 5: FIREFIGHTING MEASURES\n5.1\nExtinguishing media:\nSuitable extinguishing media:\nProduct is non-flammable, with a low risk of fire due to the flammability characteristics of the product in normal conditions of\nstorage, handling and use. In the case of the existence of sustained combustion as a result of improper handling, storage or use\nany type of extinguishing agent can be used (ABC Powder, water,...)\nUnsuitable extinguishing media:\nNon-applicable\n5.2\nSpecial hazards arising from the substance or mixture:\nDue to its non-inflammable nature, the product does not present a fire risk under normal conditions of storage, handling and use.\n5.3\nAdvice for firefighters:\nDepending on the magnitude of the fire it may be necessary to use full protective clothing and self-contained breathing apparatus\n(SCBA). Minimum emergency facilities and equipment should be available (fire blankets, portable first aid kit,...) in accordance\nwith Directive 89/654/EC.\nAdditional provisions:\nAct in accordance with the Internal Emergency Plan and the Information Sheets on actions to take after an accident or other\nemergencies. Eliminate all sources of ignition. In case of fire, cool the storage containers and tanks for products susceptible to\ncombustion, explosion or BLEVE as a result of high temperatures. Avoid spillage of the products used to extinguish the fire into an\naqueous medium.\nSECTION 6: ACCIDENTAL RELEASE MEASURES\n6.1\nPersonal precautions, protective equipment and emergency procedures:\nFor non-emergency personnel:\nIsolate leaks provided that there is no additional risk for the people performing this task.\nFor emergency responders:\nWear protective equipment. Keep unprotected persons away. See section 8.\n6.2\nEnvironmental precautions:\nThis product is not classified as hazardous to the environment. Keep product away from drains, surface and ground water.\n6.3\nMethods and material for containment and cleaning up:\nIt is recommended:\nAbsorb the spillage using sand or inert absorbent and move it to a safe place. Do not absorb in sawdust or other combustible\nabsorbents. For any concern related to disposal consult section 13.\n6.4\nReference to other sections:\nSee sections 8 and 13.\nSECTION 7: HANDLING AND STORAGE\n7.1\nPrecautions for safe handling:\nA.- General precautions for safe use\nComply with the current legislation concerning the prevention of industrial risks with regards manually handling weights.\nMaintain order, cleanliness and dispose of using safe methods (section 6).\nB.- Technical recommendations for the prevention of fires and explosions\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 2/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.093750 |      0.000000e+00 |       -1.746425e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.265625 |     -1.380469e+01 |       -1.382813e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.125000 |     -1.502344e+01 |       -1.496875e+01 | '-No' (decode: '-No')
+       4 |     8996 |     23.140625 |     -1.594531e+01 |       -1.595313e+01 | 'NO' (decode: 'NO')
+       5 |    36989 |     23.078125 |     -1.594531e+01 |       -1.601563e+01 | '_No' (decode: '_No')
+       6 |     9100 |     22.734375 |     -1.664062e+01 |       -1.635938e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     22.421875 |     -1.664062e+01 |       -1.667188e+01 | ',No' (decode: ',No')
+       8 |    28715 |     21.531250 |              -inf |       -1.756250e+01 | 'Based' (decode: 'Based')
+       9 |    16766 |     21.343750 |              -inf |       -1.775000e+01 | '.No' (decode: '.No')
+      10 |     2308 |     20.906250 |              -inf |       -1.818750e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.029687675e+01 / -1.746424555e-06
+    ln(P(Yes)/P(No)) float64 = -20.296875  ->  P(Yes)/P(No) = 1.531719e-09
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 1.531716636e-09
+    P(No)   float64 (np.exp)          = 9.999982536e-01
+    score float64:                    = 0.000000002
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 3 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3490 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 3 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 7: HANDLING AND STORAGE (continued)
+It is recommended to transfer at a slow speed to avoid the creation of electrostatic charges that could affect flammable
+products. Consult section 10 for conditions and materials that should be avoided.
+C.- Technical recommendations on general occupational hygiene
+Do not eat or drink during the process, washing hands afterwards with suitable cleaning products.
+D.- Technical recommendations to prevent environmental risks
+It is not necessary to take special measures to prevent environmental risks. For more information see subsection 6.2
+7.2
+Conditions for safe storage, including any incompatibilities:
+A.- Specific storage requirements
+Minimum Temp.:
+5 ºC
+Maximum Temp.:
+30 ºC
+Maximum time:
+12 Months
+B.- General conditions for storage
+Avoid sources of heat, radiation, static electricity and contact with food. For additional information see subsection 10.5
+7.3
+Specific end use(s):
+Except for the instructions already specified it is not necessary to provide any special recommendation regarding the uses of this
+product.
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION
+8.1
+Control parameters:
+Substances whose occupational exposure limits have to be monitored in the workplace (European OEL, not country-specific
+legislation):
+There are no applicable occupational exposure limits for the substances contained in the product
+DNEL (Workers):
+Not relevant
+DNEL (General population):
+Not relevant
+PNEC:
+Not relevant
+8.2
+Exposure controls:
+A.- Individual protection measures, such as personal protective equipment
+As a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<CE
+marking>> in accordance with Regulation (EU) 2016/425. For more information on Personal Protective Equipment (storage,
+use, cleaning, maintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more
+information see subsection 7.1. All information contained herein is a recommendation which needs some specification from
+the labour risk prevention services as it is not known whether the company has additional measures at its disposal.
+B.- Respiratory protection
+The use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.
+C.- Specific protection for the hands
+Pictogram
+PPE
+Labelling
+CEN Standard
+Remarks
+Mandatory hand
+protection
+Protective gloves against
+minor risks
+Replace gloves in case of any sign of damage. For
+prolonged periods of exposure to the product for
+professional users/industrials, we recommend using
+CE III gloves in line with standards EN ISO
+21420:2020 and EN ISO 374-1:2016+A1:2018
+As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with
+total reliability and has therefore to be checked prior to the application.
+D.- Eye and face protection
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 3/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 398c26e2f14ccdfcb4d1ef8098fdbb7c9deeab365f0217981c3ed8598f6fdd41
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 3 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 7: HANDLING AND STORAGE (continued)\nIt is recommended to transfer at a slow speed to avoid the creation of electrostatic charges that could affect flammable\nproducts. Consult section 10 for conditions and materials that should be avoided.\nC.- Technical recommendations on general occupational hygiene\nDo not eat or drink during the process, washing hands afterwards with suitable cleaning products.\nD.- Technical recommendations to prevent environmental risks\nIt is not necessary to take special measures to prevent environmental risks. For more information see subsection 6.2\n7.2\nConditions for safe storage, including any incompatibilities:\nA.- Specific storage requirements\nMinimum Temp.:\n5 ºC\nMaximum Temp.:\n30 ºC\nMaximum time:\n12 Months\nB.- General conditions for storage\nAvoid sources of heat, radiation, static electricity and contact with food. For additional information see subsection 10.5\n7.3\nSpecific end use(s):\nExcept for the instructions already specified it is not necessary to provide any special recommendation regarding the uses of this\nproduct.\nSECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION\n8.1\nControl parameters:\nSubstances whose occupational exposure limits have to be monitored in the workplace (European OEL, not country-specific\nlegislation):\nThere are no applicable occupational exposure limits for the substances contained in the product\nDNEL (Workers):\nNot relevant\nDNEL (General population):\nNot relevant\nPNEC:\nNot relevant\n8.2\nExposure controls:\nA.- Individual protection measures, such as personal protective equipment\nAs a preventative measure it is recommended to use basic Personal Protective Equipment, with the corresponding <<CE\nmarking>> in accordance with Regulation (EU) 2016/425. For more information on Personal Protective Equipment (storage,\nuse, cleaning, maintenance, class of protection,…) consult the information leaflet provided by the manufacturer. For more\ninformation see subsection 7.1. All information contained herein is a recommendation which needs some specification from\nthe labour risk prevention services as it is not known whether the company has additional measures at its disposal.\nB.- Respiratory protection\nThe use of protection equipment will be necessary if a mist forms or if the occupational exposure limits are exceeded.\nC.- Specific protection for the hands\nPictogram\nPPE\nLabelling\nCEN Standard\nRemarks\nMandatory hand\nprotection\nProtective gloves against\nminor risks\nReplace gloves in case of any sign of damage. For\nprolonged periods of exposure to the product for\nprofessional users/industrials, we recommend using\nCE III gloves in line with standards EN ISO\n21420:2020 and EN ISO 374-1:2016+A1:2018\nAs the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.\nD.- Eye and face protection\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 3/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.406250 |      0.000000e+00 |       -1.476668e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.453125 |     -1.392969e+01 |       -1.395313e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.000000 |     -1.553906e+01 |       -1.540625e+01 | '-No' (decode: '-No')
+       4 |     8996 |     23.703125 |     -1.553906e+01 |       -1.570313e+01 | 'NO' (decode: 'NO')
+       5 |    36989 |     23.078125 |     -1.664062e+01 |       -1.632813e+01 | '_No' (decode: '_No')
+       6 |     9100 |     23.000000 |     -1.664062e+01 |       -1.640625e+01 | '_NO' (decode: '_NO')
+       7 |    85076 |     22.125000 |     -1.664062e+01 |       -1.728125e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.546875 |              -inf |       -1.785938e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.187500 |              -inf |       -1.821875e+01 | 'ĠNo' (decode: ' No')
+      10 |    28715 |     21.125000 |              -inf |       -1.828125e+01 | 'Based' (decode: 'Based')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.050000148e+01 / -1.476667949e-06
+    ln(P(Yes)/P(No)) float64 = -20.500000  ->  P(Yes)/P(No) = 1.250153e-09
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 1.250151020e-09
+    P(No)   float64 (np.exp)          = 9.999985233e-01
+    score float64:                    = 0.000000001
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 4 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2870 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 4 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)
+Pictogram
+PPE
+Labelling
+CEN Standard
+Remarks
+Mandatory face
+protection
+Panoramic glasses against
+splash/projections.
+EN 166:2002
+EN ISO 4007:2018
+Clean daily and disinfect periodically according to
+the manufacturer´s instructions. Use if there is a
+risk of splashing.
+E.- Body protection
+Pictogram
+PPE
+Labelling
+CEN Standard
+Remarks
+Work clothing
+Replace before any evidence of deterioration. For
+periods of prolonged exposure to the product for
+professional/industrial users CE III is
+recommended, in accordance with the regulations
+in EN ISO 6529:2013, EN ISO 6530:2005, EN ISO
+13688:2013, EN 464:1994.
+Anti-slip work shoes
+EN ISO 20347:2012
+Replace before any evidence of deterioration. For
+periods of prolonged exposure to the product for
+professional/industrial users CE III is
+recommended, in accordance with the regulations
+in EN ISO 20345:2012 y EN 13832-1:2007
+F.- Additional emergency measures
+It is not necessary to take additional emergency measures.
+Environmental exposure controls:
+In accordance with the community legislation for the protection of the environment it is recommended to avoid environmental
+spillage of both the product and its container. For additional information see subsection 7.1.D
+Volatile organic compounds:
+With regard to Directive 2010/75/EU, this product has the following characteristics:
+V.O.C. (Supply):
+0 % weight
+V.O.C. density at 20 ºC:
+0 kg/m³ (0 g/L)
+Average carbon number:
+Not relevant
+Average molecular weight:
+Not relevant
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES
+9.1
+Information on basic physical and chemical properties:
+For complete information see the product datasheet.
+Appearance:
+Physical state at 20 ºC:
+Liquid
+Appearance:
+Characteristic
+Colour:
+Colourless
+Odour:
+Characteristic
+Odour threshold:
+Not relevant *
+Volatility:
+Boiling point at atmospheric pressure:
+Not relevant *
+Vapour pressure at 20 ºC:
+2300 Pa
+Vapour pressure at 50 ºC:
+<300000 Pa (300 kPa)
+Evaporation rate at 20 ºC:
+Not relevant *
+Product description:
+Density at 20 ºC:
+1100,8 kg/m³
+Relative density at 20 ºC:
+1,101
+Dynamic viscosity at 20 ºC:
+Not relevant *
+Kinematic viscosity at 20 ºC:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 4/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = b4833d76c8b247ee23bfc9651943b9118b014bd9e1582758ffb40e0a07f6c540
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 4 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 8: EXPOSURE CONTROLS/PERSONAL PROTECTION (continued)\nPictogram\nPPE\nLabelling\nCEN Standard\nRemarks\nMandatory face\nprotection\nPanoramic glasses against\nsplash/projections.\nEN 166:2002\nEN ISO 4007:2018\nClean daily and disinfect periodically according to\nthe manufacturer´s instructions. Use if there is a\nrisk of splashing.\nE.- Body protection\nPictogram\nPPE\nLabelling\nCEN Standard\nRemarks\nWork clothing\nReplace before any evidence of deterioration. For\nperiods of prolonged exposure to the product for\nprofessional/industrial users CE III is\nrecommended, in accordance with the regulations\nin EN ISO 6529:2013, EN ISO 6530:2005, EN ISO\n13688:2013, EN 464:1994.\nAnti-slip work shoes\nEN ISO 20347:2012\nReplace before any evidence of deterioration. For\nperiods of prolonged exposure to the product for\nprofessional/industrial users CE III is\nrecommended, in accordance with the regulations\nin EN ISO 20345:2012 y EN 13832-1:2007\nF.- Additional emergency measures\nIt is not necessary to take additional emergency measures.\nEnvironmental exposure controls:\nIn accordance with the community legislation for the protection of the environment it is recommended to avoid environmental\nspillage of both the product and its container. For additional information see subsection 7.1.D\nVolatile organic compounds:\nWith regard to Directive 2010/75/EU, this product has the following characteristics:\nV.O.C. (Supply):\n0 % weight\nV.O.C. density at 20 ºC:\n0 kg/m³ (0 g/L)\nAverage carbon number:\nNot relevant\nAverage molecular weight:\nNot relevant\nSECTION 9: PHYSICAL AND CHEMICAL PROPERTIES\n9.1\nInformation on basic physical and chemical properties:\nFor complete information see the product datasheet.\nAppearance:\nPhysical state at 20 ºC:\nLiquid\nAppearance:\nCharacteristic\nColour:\nColourless\nOdour:\nCharacteristic\nOdour threshold:\nNot relevant *\nVolatility:\nBoiling point at atmospheric pressure:\nNot relevant *\nVapour pressure at 20 ºC:\n2300 Pa\nVapour pressure at 50 ºC:\n<300000 Pa (300 kPa)\nEvaporation rate at 20 ºC:\nNot relevant *\nProduct description:\nDensity at 20 ºC:\n1100,8 kg/m³\nRelative density at 20 ºC:\n1,101\nDynamic viscosity at 20 ºC:\nNot relevant *\nKinematic viscosity at 20 ºC:\nNot relevant *\n*Not relevant due to the nature of the product, not providing information property of its hazards.\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 4/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.593750 |      0.000000e+00 |       -1.445937e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.328125 |     -1.423438e+01 |       -1.426563e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.703125 |     -1.484375e+01 |       -1.489063e+01 | '-No' (decode: '-No')
+       4 |     8996 |     24.156250 |     -1.553906e+01 |       -1.543750e+01 | 'NO' (decode: 'NO')
+       5 |     9100 |     23.359375 |     -1.664062e+01 |       -1.623438e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.265625 |     -1.664062e+01 |       -1.632813e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.718750 |     -1.664062e+01 |       -1.687500e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.750000 |              -inf |       -1.784375e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.312500 |              -inf |       -1.828125e+01 | 'ĠNo' (decode: ' No')
+      10 |     6536 |     20.609375 |              -inf |       -1.898438e+01 | '_no' (decode: '_no')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.125000145e+01 / -1.445937333e-06
+    ln(P(Yes)/P(No)) float64 = -21.250000  ->  P(Yes)/P(No) = 5.905304e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 5.905295460e-10
+    P(No)   float64 (np.exp)          = 9.999985541e-01
+    score float64:                    = 0.000000001
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 5 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2686 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 5 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 9: PHYSICAL AND CHEMICAL PROPERTIES (continued)
+Kinematic viscosity at 40 ºC:
+Not relevant *
+Concentration:
+Not relevant *
+pH:
+7,5 - 8,5
+Vapour density at 20 ºC:
+Not relevant *
+Partition coefficient n-octanol/water 20 ºC:
+Not relevant *
+Solubility in water at 20 ºC:
+Not relevant *
+Solubility properties:
+Miscible
+Decomposition temperature:
+Not relevant *
+Melting point/freezing point:
+Not relevant *
+Flammability:
+Flash Point:
+Non Flammable (>60 ºC)
+Flammability (solid, gas):
+Not relevant *
+Autoignition temperature:
+Not relevant *
+Lower flammability limit:
+Not relevant *
+Upper flammability limit:
+Not relevant *
+Particle characteristics:
+Median equivalent diameter:
+Non-applicable
+9.2
+Other information:
+Information with regard to physical hazard classes:
+Explosive properties:
+Not relevant *
+Oxidising properties:
+Not relevant *
+Corrosive to metals:
+Not relevant *
+Heat of combustion:
+Not relevant *
+Aerosols-total percentage (by mass) of flammable
+components:
+Not relevant *
+Other safety characteristics:
+Surface tension at 20 ºC:
+Not relevant *
+Refraction index:
+Not relevant *
+*Not relevant due to the nature of the product, not providing information property of its hazards.
+SECTION 10: STABILITY AND REACTIVITY
+10.1
+Reactivity:
+No hazardous reactions are expected because the product is stable under recommended storage conditions. See section 7 from
+Safety Data Sheet.
+10.2
+Chemical stability:
+Chemically stable under the indicated conditions of storage, handling and use.
+10.3
+Possibility of hazardous reactions:
+Under the specified conditions, hazardous reactions that lead to excessive temperatures or pressure are not expected.
+10.4
+Conditions to avoid:
+Applicable for handling and storage at room temperature:
+Shock and friction
+Contact with air
+Increase in temperature
+Sunlight
+Humidity
+Not applicable
+Not applicable
+Not applicable
+Not applicable
+Not applicable
+10.5
+Incompatible materials:
+Acids
+Water
+Oxidising materials
+Combustible materials
+Others
+Avoid strong acids
+Not applicable
+Not applicable
+Not applicable
+Avoid alkalis or strong bases
+10.6
+Hazardous decomposition products:
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 5/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 0284b81adc0e2123379146993f97ba972c13537b84fd6d12e48dc8ec86df8ec3
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 5 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 9: PHYSICAL AND CHEMICAL PROPERTIES (continued)\nKinematic viscosity at 40 ºC:\nNot relevant *\nConcentration:\nNot relevant *\npH:\n7,5 - 8,5\nVapour density at 20 ºC:\nNot relevant *\nPartition coefficient n-octanol/water 20 ºC:\nNot relevant *\nSolubility in water at 20 ºC:\nNot relevant *\nSolubility properties:\nMiscible\nDecomposition temperature:\nNot relevant *\nMelting point/freezing point:\nNot relevant *\nFlammability:\nFlash Point:\nNon Flammable (>60 ºC)\nFlammability (solid, gas):\nNot relevant *\nAutoignition temperature:\nNot relevant *\nLower flammability limit:\nNot relevant *\nUpper flammability limit:\nNot relevant *\nParticle characteristics:\nMedian equivalent diameter:\nNon-applicable\n9.2\nOther information:\nInformation with regard to physical hazard classes:\nExplosive properties:\nNot relevant *\nOxidising properties:\nNot relevant *\nCorrosive to metals:\nNot relevant *\nHeat of combustion:\nNot relevant *\nAerosols-total percentage (by mass) of flammable\ncomponents:\nNot relevant *\nOther safety characteristics:\nSurface tension at 20 ºC:\nNot relevant *\nRefraction index:\nNot relevant *\n*Not relevant due to the nature of the product, not providing information property of its hazards.\nSECTION 10: STABILITY AND REACTIVITY\n10.1\nReactivity:\nNo hazardous reactions are expected because the product is stable under recommended storage conditions. See section 7 from\nSafety Data Sheet.\n10.2\nChemical stability:\nChemically stable under the indicated conditions of storage, handling and use.\n10.3\nPossibility of hazardous reactions:\nUnder the specified conditions, hazardous reactions that lead to excessive temperatures or pressure are not expected.\n10.4\nConditions to avoid:\nApplicable for handling and storage at room temperature:\nShock and friction\nContact with air\nIncrease in temperature\nSunlight\nHumidity\nNot applicable\nNot applicable\nNot applicable\nNot applicable\nNot applicable\n10.5\nIncompatible materials:\nAcids\nWater\nOxidising materials\nCombustible materials\nOthers\nAvoid strong acids\nNot applicable\nNot applicable\nNot applicable\nAvoid alkalis or strong bases\n10.6\nHazardous decomposition products:\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 5/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.218750 |      0.000000e+00 |       -1.638307e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.265625 |     -1.392969e+01 |       -1.395313e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.078125 |     -1.525000e+01 |       -1.514063e+01 | '-No' (decode: '-No')
+       4 |     8996 |     23.843750 |     -1.525000e+01 |       -1.537500e+01 | 'NO' (decode: 'NO')
+       5 |     9100 |     22.828125 |     -1.664062e+01 |       -1.639063e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     22.796875 |     -1.664062e+01 |       -1.642188e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.765625 |     -1.664062e+01 |       -1.645313e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.500000 |              -inf |       -1.771875e+01 | '.No' (decode: '.No')
+       9 |     2308 |     21.109375 |              -inf |       -1.810938e+01 | 'ĠNo' (decode: ' No')
+      10 |    28715 |     20.671875 |              -inf |       -1.854688e+01 | 'Based' (decode: 'Based')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -1.992187664e+01 / -1.638306888e-06
+    ln(P(Yes)/P(No)) float64 = -19.921875  ->  P(Yes)/P(No) = 2.228638e-09
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 2.228634795e-09
+    P(No)   float64 (np.exp)          = 9.999983617e-01
+    score float64:                    = 0.000000002
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The page does'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 6 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3379 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 6 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 10: STABILITY AND REACTIVITY (continued)
+See subsection 10.3, 10.4 and 10.5 to find out the specific decomposition products. Depending on the decomposition conditions,
+complex mixtures of chemical substances can be released: carbon dioxide (CO₂), carbon monoxide and other organic compounds.
+SECTION 11: TOXICOLOGICAL INFORMATION
+11.1
+Information on hazard classes as defined in Regulation (EC) No 1272/2008:
+LD50 oral > 2000 mg/kg (rat)
+Dangerous health implications:
+In case of exposure that is repetitive, prolonged or at concentrations higher than the recommended occupational exposure limits,
+adverse effects on health may result, depending on the means of exposure:
+A- Ingestion (acute effect):
+- Acute toxicity: Based on available data, the classification criteria are not met
+- Corrosivity/Irritability: Based on available data, the classification criteria are not met
+B- Inhalation (acute effect):
+- Acute toxicity : Based on available data, the classification criteria are not met
+- Corrosivity/Irritability: Based on available data, the classification criteria are not met
+C- Contact with the skin and the eyes (acute effect):
+- Contact with the skin: Based on available data, the classification criteria are not met
+- Contact with the eyes: Based on available data, the classification criteria are not met
+D- CMR effects (carcinogenicity, mutagenicity and toxicity to reproduction):
+- Carcinogenicity: Based on available data, the classification criteria are not met
+IARC: Not relevant
+- Mutagenicity: Based on available data, the classification criteria are not met
+- Reproductive toxicity: Based on available data, the classification criteria are not met
+E- Sensitizing effects:
+- Respiratory: Based on available data, the classification criteria are not met
+- Skin: Based on available data, the classification criteria are not met
+F- Specific target organ toxicity (STOT) - single exposure:
+Based on available data, the classification criteria are not met
+G- Specific target organ toxicity (STOT)-repeated exposure:
+- Specific target organ toxicity (STOT)-repeated exposure: Based on available data, the classification criteria are not met
+- Skin: Based on available data, the classification criteria are not met
+H- Aspiration hazard:
+Based on available data, the classification criteria are not met
+Other information:
+Not relevant
+Specific toxicology information on the substances:
+Not available
+11.2
+Information on other hazards:
+Endocrine disrupting properties
+Endocrine-disrupting properties: The product does not meet the criteria.
+Other information
+Not relevant
+SECTION 12: ECOLOGICAL INFORMATION
+The experimental information related to the eco-toxicological properties of the product itself is not available
+Based on available data, the classification criteria are not met
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 6/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = d7fb90392c4f95e872a98caf208953847f7eb70c6a729369cb4014f8ea13b43f
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 6 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 10: STABILITY AND REACTIVITY (continued)\nSee subsection 10.3, 10.4 and 10.5 to find out the specific decomposition products. Depending on the decomposition conditions,\ncomplex mixtures of chemical substances can be released: carbon dioxide (CO₂), carbon monoxide and other organic compounds.\nSECTION 11: TOXICOLOGICAL INFORMATION\n11.1\nInformation on hazard classes as defined in Regulation (EC) No 1272/2008:\nLD50 oral > 2000 mg/kg (rat)\nDangerous health implications:\nIn case of exposure that is repetitive, prolonged or at concentrations higher than the recommended occupational exposure limits,\nadverse effects on health may result, depending on the means of exposure:\nA- Ingestion (acute effect):\n- Acute toxicity: Based on available data, the classification criteria are not met\n- Corrosivity/Irritability: Based on available data, the classification criteria are not met\nB- Inhalation (acute effect):\n- Acute toxicity : Based on available data, the classification criteria are not met\n- Corrosivity/Irritability: Based on available data, the classification criteria are not met\nC- Contact with the skin and the eyes (acute effect):\n- Contact with the skin: Based on available data, the classification criteria are not met\n- Contact with the eyes: Based on available data, the classification criteria are not met\nD- CMR effects (carcinogenicity, mutagenicity and toxicity to reproduction):\n- Carcinogenicity: Based on available data, the classification criteria are not met\nIARC: Not relevant\n- Mutagenicity: Based on available data, the classification criteria are not met\n- Reproductive toxicity: Based on available data, the classification criteria are not met\nE- Sensitizing effects:\n- Respiratory: Based on available data, the classification criteria are not met\n- Skin: Based on available data, the classification criteria are not met\nF- Specific target organ toxicity (STOT) - single exposure:\nBased on available data, the classification criteria are not met\nG- Specific target organ toxicity (STOT)-repeated exposure:\n- Specific target organ toxicity (STOT)-repeated exposure: Based on available data, the classification criteria are not met\n- Skin: Based on available data, the classification criteria are not met\nH- Aspiration hazard:\nBased on available data, the classification criteria are not met\nOther information:\nNot relevant\nSpecific toxicology information on the substances:\nNot available\n11.2\nInformation on other hazards:\nEndocrine disrupting properties\nEndocrine-disrupting properties: The product does not meet the criteria.\nOther information\nNot relevant\nSECTION 12: ECOLOGICAL INFORMATION\nThe experimental information related to the eco-toxicological properties of the product itself is not available\nBased on available data, the classification criteria are not met\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 6/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     38.781250 |      0.000000e+00 |       -2.107353e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.031250 |     -1.374219e+01 |       -1.375000e+01 | '>No' (decode: '>No')
+       3 |     8996 |     23.968750 |     -1.484375e+01 |       -1.481250e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     23.593750 |     -1.525000e+01 |       -1.518750e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.046875 |     -1.594531e+01 |       -1.573438e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     22.812500 |     -1.594531e+01 |       -1.596875e+01 | '_No' (decode: '_No')
+       7 |    28715 |     21.468750 |     -1.664062e+01 |       -1.731250e+01 | 'Based' (decode: 'Based')
+       8 |    85076 |     21.406250 |              -inf |       -1.737500e+01 | ',No' (decode: ',No')
+       9 |    16766 |     21.312500 |              -inf |       -1.746875e+01 | '.No' (decode: '.No')
+      10 |      334 |     21.171875 |              -inf |       -1.760938e+01 | '**' (decode: '**')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.226562711e+01 / -2.107352955e-06
+    ln(P(Yes)/P(No)) float64 = -22.265625  ->  P(Yes)/P(No) = 2.138759e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 2.138754869e-10
+    P(No)   float64 (np.exp)          = 9.999978926e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 7 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2625 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 7 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 12: ECOLOGICAL INFORMATION (continued)
+12.1
+Toxicity:
+Not available
+12.2
+Persistence and degradability:
+Not available
+12.3
+Bioaccumulative potential:
+Not available
+12.4
+Mobility in soil:
+Not available
+12.5
+Results of PBT and vPvB assessment:
+Product does not meet PBT/vPvB criteria
+12.6
+Endocrine disrupting properties:
+Endocrine-disrupting properties: The product does not meet the criteria.
+12.7
+Other adverse effects:
+Not described
+SECTION 13: DISPOSAL CONSIDERATIONS
+13.1
+Waste treatment methods:
+Code
+Description
+Waste class (Regulation (EU) No
+1357/2014)
+08 01 12
+waste paint and varnish other than those mentioned in 08 01 11
+Non-hazardous
+Type of waste (Regulation (EU) No 1357/2014):
+Not relevant
+Waste management (disposal and evaluation):
+Consult the authorized waste service manager on the assessment and disposal operations in accordance with Annex 1 and Annex
+2 (Directive 2008/98/EC). As under 15 01 (2014/955/EC) of the code and in case the container has been in direct contact with
+the product, it will be processed the same way as the actual product. Otherwise, it will be processed as non-hazardous residue.
+Waste should not be disposed of to drains. See paragraph 6.2.
+Regulations related to waste management:
+In accordance with Annex II of Regulation (EC) No 1907/2006 (REACH) the community or state provisions related to waste
+management are stated
+Community legislation: Directive 2008/98/EC, 2014/955/EU, Regulation (EU) No 1357/2014
+SECTION 14: TRANSPORT INFORMATION
+Transport of dangerous goods by land:
+With regard to ADR 2023 and RID 2023:
+14.1
+UN number or ID number:
+Not relevant
+14.2
+UN proper shipping name:
+Not relevant
+14.3
+Transport hazard class(es):
+Not relevant
+Labels:
+Not relevant
+14.4
+Packing group:
+Not relevant
+14.5
+Environmental hazards:
+No
+14.6
+Special precautions for user
+Special regulations:
+Not relevant
+Tunnel restriction code:
+Not relevant
+Physico-Chemical properties:
+see section 9
+Limited quantities:
+Not relevant
+14.7
+Maritime transport in bulk
+according to IMO
+instruments:
+Not relevant
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 7/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 2c70f18853f747a16b9e94dcd65210336ce4837bff08ccaf29defbfb0230b8a6
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 7 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 12: ECOLOGICAL INFORMATION (continued)\n12.1\nToxicity:\nNot available\n12.2\nPersistence and degradability:\nNot available\n12.3\nBioaccumulative potential:\nNot available\n12.4\nMobility in soil:\nNot available\n12.5\nResults of PBT and vPvB assessment:\nProduct does not meet PBT/vPvB criteria\n12.6\nEndocrine disrupting properties:\nEndocrine-disrupting properties: The product does not meet the criteria.\n12.7\nOther adverse effects:\nNot described\nSECTION 13: DISPOSAL CONSIDERATIONS\n13.1\nWaste treatment methods:\nCode\nDescription\nWaste class (Regulation (EU) No\n1357/2014)\n08 01 12\nwaste paint and varnish other than those mentioned in 08 01 11\nNon-hazardous\nType of waste (Regulation (EU) No 1357/2014):\nNot relevant\nWaste management (disposal and evaluation):\nConsult the authorized waste service manager on the assessment and disposal operations in accordance with Annex 1 and Annex\n2 (Directive 2008/98/EC). As under 15 01 (2014/955/EC) of the code and in case the container has been in direct contact with\nthe product, it will be processed the same way as the actual product. Otherwise, it will be processed as non-hazardous residue.\nWaste should not be disposed of to drains. See paragraph 6.2.\nRegulations related to waste management:\nIn accordance with Annex II of Regulation (EC) No 1907/2006 (REACH) the community or state provisions related to waste\nmanagement are stated\nCommunity legislation: Directive 2008/98/EC, 2014/955/EU, Regulation (EU) No 1357/2014\nSECTION 14: TRANSPORT INFORMATION\nTransport of dangerous goods by land:\nWith regard to ADR 2023 and RID 2023:\n14.1\nUN number or ID number:\nNot relevant\n14.2\nUN proper shipping name:\nNot relevant\n14.3\nTransport hazard class(es):\nNot relevant\nLabels:\nNot relevant\n14.4\nPacking group:\nNot relevant\n14.5\nEnvironmental hazards:\nNo\n14.6\nSpecial precautions for user\nSpecial regulations:\nNot relevant\nTunnel restriction code:\nNot relevant\nPhysico-Chemical properties:\nsee section 9\nLimited quantities:\nNot relevant\n14.7\nMaritime transport in bulk\naccording to IMO\ninstruments:\nNot relevant\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 7/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.062500 |      0.000000e+00 |       -1.917710e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.218750 |     -1.385938e+01 |       -1.384375e+01 | '>No' (decode: '>No')
+       3 |     8996 |     24.234375 |     -1.484375e+01 |       -1.482813e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     23.796875 |     -1.525000e+01 |       -1.526563e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.171875 |     -1.594531e+01 |       -1.589063e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     23.000000 |     -1.594531e+01 |       -1.606250e+01 | '_No' (decode: '_No')
+       7 |    85076 |     22.062500 |     -1.664062e+01 |       -1.700000e+01 | ',No' (decode: ',No')
+       8 |    16766 |     21.546875 |              -inf |       -1.751563e+01 | '.No' (decode: '.No')
+       9 |    28715 |     20.812500 |              -inf |       -1.825000e+01 | 'Based' (decode: 'Based')
+      10 |     2308 |     20.625000 |              -inf |       -1.843750e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.307031442e+01 / -1.917710233e-06
+    ln(P(Yes)/P(No)) float64 = -23.070312  ->  P(Yes)/P(No) = 9.565124e-11
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 9.565105238e-11
+    P(No)   float64 (np.exp)          = 9.999980823e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 8 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=2848 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 8 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 14: TRANSPORT INFORMATION (continued)
+Transport of dangerous goods by sea:
+With regard to IMDG 41-22:
+14.1
+UN number or ID number:
+Not relevant
+14.2
+UN proper shipping name:
+Not relevant
+14.3
+Transport hazard class(es):
+Not relevant
+Labels:
+Not relevant
+14.4
+Packing group:
+Not relevant
+14.5
+Marine pollutant:
+No
+Special precautions for user
+14.6
+Special regulations:
+Not relevant
+EmS Codes:
+Physico-Chemical properties:
+see section 9
+Limited quantities:
+Not relevant
+Segregation group:
+Not relevant
+14.7
+Maritime transport in bulk
+according to IMO
+instruments:
+Not relevant
+Transport of dangerous goods by air:
+With regard to IATA/ICAO 2024:
+14.1
+UN number or ID number:
+Not relevant
+14.2
+UN proper shipping name:
+Not relevant
+14.3
+Transport hazard class(es):
+Not relevant
+Labels:
+Not relevant
+14.4
+Packing group:
+Not relevant
+14.5
+Environmental hazards:
+No
+14.6
+Special precautions for user
+Physico-Chemical properties:
+see section 9
+14.7
+Maritime transport in bulk
+according to IMO
+instruments:
+Not relevant
+SECTION 15: REGULATORY INFORMATION
+15.1
+Safety, health and environmental regulations/legislation specific for the substance or mixture:
+- Article 95, REGULATION (EU) No 528/2012: Not relevant
+- Candidate substances for authorisation under the Regulation (EC) No 1907/2006 (REACH): Not relevant
+- Regulation (EC) No 1005/2009, about substances that deplete the ozone layer: Not relevant
+- REGULATION (EU) No 649/2012, in relation to the import and export of hazardous chemical products: Not relevant
+- Substances included in Annex XIV of REACH ("Authorisation List") and sunset date: Not relevant
+Seveso III:
+Not relevant
+Limitations to commercialisation and the use of certain dangerous substances and mixtures (Annex XVII REACH,
+etc ….):
+Not relevant
+Specific provisions in terms of protecting people or the environment:
+It is recommended to use the information included in this safety data sheet as a basis for conducting workplace-specific risk
+assessments in order to establish the necessary risk prevention measures for the handling, use, storage and disposal of this
+product.
+Other legislation:
+The product could be affected by sectorial legislation
+15.2
+Chemical safety assessment:
+The supplier has not carried out evaluation of chemical safety.
+- CONTINUED ON NEXT PAGE -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 8/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = e1080c42e2ed72f9d01484c9240a9fe3e9c1db9ae0a64343eee6189d62e5eb44
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 8 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 14: TRANSPORT INFORMATION (continued)\nTransport of dangerous goods by sea:\nWith regard to IMDG 41-22:\n14.1\nUN number or ID number:\nNot relevant\n14.2\nUN proper shipping name:\nNot relevant\n14.3\nTransport hazard class(es):\nNot relevant\nLabels:\nNot relevant\n14.4\nPacking group:\nNot relevant\n14.5\nMarine pollutant:\nNo\nSpecial precautions for user\n14.6\nSpecial regulations:\nNot relevant\nEmS Codes:\nPhysico-Chemical properties:\nsee section 9\nLimited quantities:\nNot relevant\nSegregation group:\nNot relevant\n14.7\nMaritime transport in bulk\naccording to IMO\ninstruments:\nNot relevant\nTransport of dangerous goods by air:\nWith regard to IATA/ICAO 2024:\n14.1\nUN number or ID number:\nNot relevant\n14.2\nUN proper shipping name:\nNot relevant\n14.3\nTransport hazard class(es):\nNot relevant\nLabels:\nNot relevant\n14.4\nPacking group:\nNot relevant\n14.5\nEnvironmental hazards:\nNo\n14.6\nSpecial precautions for user\nPhysico-Chemical properties:\nsee section 9\n14.7\nMaritime transport in bulk\naccording to IMO\ninstruments:\nNot relevant\nSECTION 15: REGULATORY INFORMATION\n15.1\nSafety, health and environmental regulations/legislation specific for the substance or mixture:\n- Article 95, REGULATION (EU) No 528/2012: Not relevant\n- Candidate substances for authorisation under the Regulation (EC) No 1907/2006 (REACH): Not relevant\n- Regulation (EC) No 1005/2009, about substances that deplete the ozone layer: Not relevant\n- REGULATION (EU) No 649/2012, in relation to the import and export of hazardous chemical products: Not relevant\n- Substances included in Annex XIV of REACH ("Authorisation List") and sunset date: Not relevant\nSeveso III:\nNot relevant\nLimitations to commercialisation and the use of certain dangerous substances and mixtures (Annex XVII REACH,\netc ….):\nNot relevant\nSpecific provisions in terms of protecting people or the environment:\nIt is recommended to use the information included in this safety data sheet as a basis for conducting workplace-specific risk\nassessments in order to establish the necessary risk prevention measures for the handling, use, storage and disposal of this\nproduct.\nOther legislation:\nThe product could be affected by sectorial legislation\n15.2\nChemical safety assessment:\nThe supplier has not carried out evaluation of chemical safety.\n- CONTINUED ON NEXT PAGE -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 8/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     39.531250 |      0.000000e+00 |       -2.216904e-06 | 'No' (decode: 'No')
+       2 |    41157 |     25.796875 |     -1.374219e+01 |       -1.373438e+01 | '>No' (decode: '>No')
+       3 |    97976 |     24.531250 |     -1.502344e+01 |       -1.500000e+01 | '-No' (decode: '-No')
+       4 |     8996 |     24.453125 |     -1.502344e+01 |       -1.507813e+01 | 'NO' (decode: 'NO')
+       5 |    28715 |     23.828125 |     -1.553906e+01 |       -1.570313e+01 | 'Based' (decode: 'Based')
+       6 |    36989 |     23.734375 |     -1.594531e+01 |       -1.579688e+01 | '_No' (decode: '_No')
+       7 |     9100 |     23.625000 |     -1.594531e+01 |       -1.590625e+01 | '_NO' (decode: '_NO')
+       8 |    85076 |     23.000000 |     -1.664062e+01 |       -1.653125e+01 | ',No' (decode: ',No')
+       9 |    16766 |     22.031250 |              -inf |       -1.750000e+01 | '.No' (decode: '.No')
+      10 |     2308 |     21.062500 |              -inf |       -1.846875e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.226562722e+01 / -2.216903909e-06
+    ln(P(Yes)/P(No)) float64 = -22.265625  ->  P(Yes)/P(No) = 2.138759e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 2.138754634e-10
+    P(No)   float64 (np.exp)          = 9.999977831e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+TRACING sds_01.pdf:chemical_formula page 9 layer native
+================================================================================
+
+[1] PROMPT (build_prompt) — full text, len=3074 chars
+You are checking a Safety Data Sheet page for evidence about a specific field.
+
+Field: chemical_formula — Molecular formula of the product. Defined only for a substance.
+
+Page 9 of sds_01.pdf:
+"""
+REDUR AD 04
+Safety data sheet
+This SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation
+SECTION 16: OTHER INFORMATION
+Legislation related to safety data sheets:
+The SDS shall be supplied in an official language of the country where the product is placed on the market. This safety data sheet
+has been designed in accordance with ANNEX II-Guide to the compilation of safety data sheets of Regulation (EC) No 1907/2006
+(COMMISSION REGULATION (EU) 2020/878).
+Modifications related to the previous Safety Data Sheet which concerns the ways of managing risks.:
+Not relevant
+Texts of the legislative phrases mentioned in section 3:
+The phrases indicated do not refer to the product itself; they are present merely for informative purposes and refer to the
+individual components which appear in section 3
+CLP Regulation (EC) No 1272/2008:
+Not relevant
+Classification procedure:
+Not relevant
+Advice related to training:
+Training is recommended in order to prevent industrial risks for staff using this product and to facilitate their comprehension and
+interpretation of this safety data sheet, as well as the label on the product.
+Principal bibliographical sources:
+http://echa.europa.eu
+http://eur-lex.europa.eu
+Abbreviations and acronyms:
+ADR: European agreement concerning the international carriage of dangerous goods by road
+IMDG: International maritime dangerous goods code
+IATA: International Air Transport Association
+ICAO: International Civil Aviation Organisation
+COD: Chemical Oxygen Demand
+BOD5: 5day biochemical oxygen demand
+BCF: Bioconcentration factor
+LD50: Lethal Dose 50
+LC50: Lethal Concentration 50
+EC50: Effective concentration 50
+LogPOW: Octanolwater partition coefficient
+Koc: Partition coefficient of organic carbon
+UFI: unique formula identifier
+IARC: International Agency for Research on Cancer
+The information contained in this safety data sheet is based on sources, technical knowledge and current legislation at European and state level, without being able to guarantee its accuracy. This
+information cannot be considered a guarantee of the properties of the product, it is simply a description of the security requirements. The occupational methodology and conditions for users of
+this product are not within our awareness or control, and it is ultimately the responsibility of the user to take the necessary measures to obtain the legal requirements concerning the
+manipulation, storage, use and disposal of chemical products. The information on this safety data sheet only refers to this product, which should not be used for needs other than those specified.
+- END OF SAFETY DATA SHEET -
+Date of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)
+Page 9/9
+"""
+
+Does this page contain text that states, implies, or helps derive the field's
+value? Answer Yes or No.
+prompt_sha256 = 93c695e50138fc6aec678b00c6e5529ee2ae692589084e9d6974ad504ae7873e
+
+[2] CHAT TEMPLATE (apply_chat_template, add_generation_prompt=True) — full text
+'<|im_start|>system\nYou are Qwen, created by Alibaba Cloud. You are a helpful assistant.<|im_end|>\n<|im_start|>user\nYou are checking a Safety Data Sheet page for evidence about a specific field.\n\nField: chemical_formula — Molecular formula of the product. Defined only for a substance.\n\nPage 9 of sds_01.pdf:\n"""\nREDUR AD 04\nSafety data sheet\nThis SDS is an English translation of COMMISSION REGULATION (EU) 2020/878, without any country-specific legislation\nSECTION 16: OTHER INFORMATION\nLegislation related to safety data sheets:\nThe SDS shall be supplied in an official language of the country where the product is placed on the market. This safety data sheet\nhas been designed in accordance with ANNEX II-Guide to the compilation of safety data sheets of Regulation (EC) No 1907/2006\n(COMMISSION REGULATION (EU) 2020/878).\nModifications related to the previous Safety Data Sheet which concerns the ways of managing risks.:\nNot relevant\nTexts of the legislative phrases mentioned in section 3:\nThe phrases indicated do not refer to the product itself; they are present merely for informative purposes and refer to the\nindividual components which appear in section 3\nCLP Regulation (EC) No 1272/2008:\nNot relevant\nClassification procedure:\nNot relevant\nAdvice related to training:\nTraining is recommended in order to prevent industrial risks for staff using this product and to facilitate their comprehension and\ninterpretation of this safety data sheet, as well as the label on the product.\nPrincipal bibliographical sources:\nhttp://echa.europa.eu\nhttp://eur-lex.europa.eu\nAbbreviations and acronyms:\nADR: European agreement concerning the international carriage of dangerous goods by road\nIMDG: International maritime dangerous goods code\nIATA: International Air Transport Association\nICAO: International Civil Aviation Organisation\nCOD: Chemical Oxygen Demand\nBOD5: 5day biochemical oxygen demand\nBCF: Bioconcentration factor\nLD50: Lethal Dose 50\nLC50: Lethal Concentration 50\nEC50: Effective concentration 50\nLogPOW: Octanolwater partition coefficient\nKoc: Partition coefficient of organic carbon\nUFI: unique formula identifier\nIARC: International Agency for Research on Cancer\nThe information contained in this safety data sheet is based on sources, technical knowledge and current legislation at European and state level, without being able to guarantee its accuracy. This\ninformation cannot be considered a guarantee of the properties of the product, it is simply a description of the security requirements. The occupational methodology and conditions for users of\nthis product are not within our awareness or control, and it is ultimately the responsibility of the user to take the necessary measures to obtain the legal requirements concerning the\nmanipulation, storage, use and disposal of chemical products. The information on this safety data sheet only refers to this product, which should not be used for needs other than those specified.\n- END OF SAFETY DATA SHEET -\nDate of compilation: 13/03/2019 Revised: 14/10/2024 Version: 02016.04 (Replaced 02016.03)\nPage 9/9\n"""\n\nDoes this page contain text that states, implies, or helps derive the field\'s\nvalue? Answer Yes or No.<|im_end|>\n<|im_start|>assistant\n'
+    -> template check: Qwen2.5 <|im_start|>/<|im_end|> markers present: OK
+
+[3] TOP-10 tokens at last position (sorted by logit, desc)
+    rank | token_id | logit         | logprob_float32   | logprob_float64     | token_string
+       1 |     2753 |     38.375000 |      0.000000e+00 |       -2.303714e-06 | 'No' (decode: 'No')
+       2 |    41157 |     24.578125 |     -1.380469e+01 |       -1.379688e+01 | '>No' (decode: '>No')
+       3 |     8996 |     23.843750 |     -1.455469e+01 |       -1.453125e+01 | 'NO' (decode: 'NO')
+       4 |    97976 |     23.296875 |     -1.502344e+01 |       -1.507813e+01 | '-No' (decode: '-No')
+       5 |     9100 |     23.046875 |     -1.525000e+01 |       -1.532813e+01 | '_NO' (decode: '_NO')
+       6 |    36989 |     22.515625 |     -1.594531e+01 |       -1.585938e+01 | '_No' (decode: '_No')
+       7 |    85076 |     21.390625 |     -1.664062e+01 |       -1.698438e+01 | ',No' (decode: ',No')
+       8 |    16766 |     20.953125 |              -inf |       -1.742188e+01 | '.No' (decode: '.No')
+       9 |    28715 |     20.718750 |              -inf |       -1.765625e+01 | 'Based' (decode: 'Based')
+      10 |     2308 |     20.468750 |              -inf |       -1.790625e+01 | 'ĠNo' (decode: ' No')
+
+[4] YES/NO token-id resolution (frozen variant list + fallbacks)
+  'Yes'    -> ids=[9454] single_token=True pieces=['Yes']
+  ' Yes'   -> ids=[7414] single_token=True pieces=['ĠYes']
+  'yes'    -> ids=[9693] single_token=True pieces=['yes']
+  ' yes'   -> ids=[9834] single_token=True pieces=['Ġyes']
+  'No'     -> ids=[2753] single_token=True pieces=['No']
+  ' No'    -> ids=[2308] single_token=True pieces=['ĠNo']
+  'no'     -> ids=[2152] single_token=True pieces=['no']
+  ' no'    -> ids=[902] single_token=True pieces=['Ġno']
+    resolved yes_ids=[9454, 7414, 9693, 9834]  no_ids=[2753, 2308, 2152, 902]
+
+[5] SCORE PIPELINE
+    yes_logprob (best single-token Yes; float32 log_softmax path) = -inf
+    no_logprob  (best single-token No;  float32 log_softmax path) = 0.000000000e+00
+    yes_logprob / no_logprob recomputed in float64 from same logits = -2.181250230e+01 / -2.303714115e-06
+    ln(P(Yes)/P(No)) float64 = -21.812500  ->  P(Yes)/P(No) = 3.364741e-10
+    P(Yes)  float32 (mx.exp, frozen)  = 0.000000000e+00
+    P(No)   float32 (mx.exp, frozen)  = 1.000000000e+00
+    score float32 (frozen math)       = 0.000000000
+    frozen score_page_mlx() direct    = 0.000000000   (== replica OK)
+    P(Yes)  float64 (np.exp)          = 3.364733042e-10
+    P(No)   float64 (np.exp)          = 9.999976963e-01
+    score float64:                    = 0.000000000
+    float32 vs float64 score equal:   False
+    cache score for this key          = 0.0   (== frozen ok)
+
+[6] GREEDY GENERATION (max_tokens=5): 'No. The provided text'
+    first-token answer: no
+    consistency vs frozen score 0.000: AGREE (high Yes / Yes answer · low Yes / No answer)
+
+================================================================================
+SUMMARY sds_01.pdf:chemical_formula layer=native pages=[1, 2, 3, 4, 5, 6, 7, 8, 9]
+================================================================================
+page | score_f32(frozen) | yes_lp64        | no_lp64         | score_f64      | greedy | cache
+   1 | 0.000000          | -1.817188e+01 | -1.264503e-06 | 0.000000 |     no | 0.0
+   2 | 0.000000          | -2.029688e+01 | -1.746425e-06 | 0.000000 |     no | 0.0
+   3 | 0.000000          | -2.050000e+01 | -1.476668e-06 | 0.000000 |     no | 0.0
+   4 | 0.000000          | -2.125000e+01 | -1.445937e-06 | 0.000000 |     no | 0.0
+   5 | 0.000000          | -1.992188e+01 | -1.638307e-06 | 0.000000 |     no | 0.0
+   6 | 0.000000          | -2.226563e+01 | -2.107353e-06 | 0.000000 |     no | 0.0
+   7 | 0.000000          | -2.307031e+01 | -1.917710e-06 | 0.000000 |     no | 0.0
+   8 | 0.000000          | -2.226563e+01 | -2.216904e-06 | 0.000000 |     no | 0.0
+   9 | 0.000000          | -2.181250e+01 | -2.303714e-06 | 0.000000 |     no | 0.0
+
+Log written to /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/logs/TASK-009/trace_mlx-community_Qwen2.5-7B-Instruct-4bit_sds_01_chemical_formula_native.log

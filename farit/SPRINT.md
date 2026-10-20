@@ -4,9 +4,9 @@ Source: `steering/2026-10-19-note.md`. Rule of the week: **no new complex system
 
 ## Priorities (in the supervisor's order)
 
-- [ ] **1. Reproduce results** — clean-room: fresh clone → corpus build → all baselines → numbers match frozen JSONs. (S1)
+- [x] **1. Reproduce results** — clean-room: fresh clone → corpus build → all baselines → numbers match frozen JSONs. (S1) — ✅ TASK-008; найден и починён баг `build_corpus.py` (sys.path), корпус байт-в-байт
 - [ ] **2. Evaluation audit** — sample gold annotations; check product-vs-ingredient labels, missing-value handling, alternative valid evidence; document what is correct/incorrect. (S2)
-- [ ] **3. Zero-score investigation** — trace the full path prompt → logits → P(Yes)/(P(Yes)+P(No)) → cache → metrics for the degenerate cases; confirm the underflow explanation or find the real bug. (S3)
+- [x] **3. Zero-score investigation** — ✅ TASK-009: механизм = fp16 device-softmax (не fp32-exp), модель честна (27/27 greedy); оговорка про детерминизм на fp16-плече; дизайн-нота для Qwen3.5-2B: softmax в fp32 на host
 - [ ] **4. Strong simple baselines** — (a) whole-document reading; (b) all-fields-in-one-pass extraction; (c) citation verification with surrounding context. These are the bars any future method must clear. (S4)
 - [ ] **5. ~24 real extraction cases** — end-to-end extraction (not retrieval) errors; per-case cause; build the error taxonomy. (S5)
 - [ ] **6. Total cost accounting** — every model call counted (judge passes included), wall-clock + tokens, per method. (S6)

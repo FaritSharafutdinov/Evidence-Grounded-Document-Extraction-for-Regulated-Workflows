@@ -1,11 +1,12 @@
 # farit/AGENTS.md — research workflow conventions
 
-Roles: **K3** (main agent — designs, verifies, owns contact with Farit) and **K2** (separate session — implements per task specs). Farit is the human owner; judgement calls belong to him.
+Roles: **K3** (main agent — designs, verifies, owns contact with Farit) and **K2** (executor in a separate session, e.g. opencode — implements per task specs). K2 is a *role*, not a specific model: any cheap model may fill it (GLM, DeepSeek, Kimi K2, ...). Farit is the human owner; judgement calls belong to him.
 
 ## Task board protocol (`farit/tasks/BOARD.md`, local/gitignored)
 
 - K2 works **only** from a spec file `farit/tasks/TASK-NNN-*.md` (context → hard constraints → design → acceptance criteria → report section at the end).
 - Statuses: `assigned` → `in_progress` → `review` (K2 done, awaits K3) → `done` / `rework`.
+- Before starting a task, K2 writes an ELI5 brief of the spec (skill `eli5`) and saves it to `farit/tasks/eli5/TASK-NNN.md`; work starts only after Farit's «приступай».
 - K2's numbers are *unverified* until K3 moves the task to `done`.
 - K3 documents its own work in the same format (spec written before, or post factum same day).
 

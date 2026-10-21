@@ -312,6 +312,40 @@ V = {
 }
 
 
+# Farit's rulings on the 4 escalations (2026-10-21, recorded in DEC-005).
+# Applied after the base verdicts; notes carry the provenance.
+RESOLUTIONS = {
+    ("D", "sds_19.pdf", "product_cas_number"): dict(
+        verdict="incorrect", error_type="wrong-state",
+        note_add="Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.1): статус — NOT_APPLICABLE. Правило: "
+                 "когда категория использования продукта в документе ('Concrete Admixture') однозначно задаёт "
+                 "форму (admixture = смесь), form-зависимые поля получают N/A — химическая интерпретация "
+                 "разрешена. Gold (NOT_STATED) с решённой политикой несовместим → incorrect/wrong-state; "
+                 "исправление gold — у K3.",
+    ),
+    ("E", "sds_12.pdf", "product_name"): dict(
+        verdict="incorrect", error_type="missed-evidence",
+        note_add="Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.2): колонтитул с ЯВНОЙ меткой ('Trade name: "
+                 "Westland Bone Meal') — валидное evidence, gold расширяется на все страницы с такой шапкой; "
+                 "момент задокументировать. Gold (только 1.1) с решённой политикой неполон → "
+                 "incorrect/missed-evidence; исправление gold — у K3.",
+    ),
+    ("E", "sds_09.pdf", "product_name"): dict(
+        verdict="correct", error_type=None,
+        note_add="Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.2): в колонтитуле sds_09 имя БЕЗ метки "
+                 "('REF: 920163 / VISOCOLOR HE Nitrite, refill pack') — это просто строка, не evidence. Gold "
+                 "(канонический спан 1.1) адекватен. Остаточный риск: gold-free критерий support всё ещё "
+                 "принимает немеченые строки (substring) — возможное будущее уточнение критерия, вне DEC-005.",
+    ),
+    ("E", "sds_19.pdf", "supplier_name"): dict(
+        verdict="correct", error_type=None,
+        note_add="Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.3): упоминание компании в юридическом "
+                 "disclaimer — не evidence; критерий — 'компания ПРЕДСТАВЛЕНА как поставщик' (идентификация в "
+                 "1.3), а не 'названа где угодно'. Gold адекватен.",
+    ),
+}
+
+
 def main() -> None:
     records = json.loads(AUDIT_JSON.read_text())
     assert len(records) == 40, f"expected 40 skeleton records, got {len(records)}"
@@ -329,6 +363,17 @@ def main() -> None:
         r["quotes"] = v["quotes"]
         r["notes"] = v["notes"]
 
+    base_tally = Counter(r["verdict"] for r in records)
+
+    # Stage 2: Farit's rulings on the escalations (DEC-005).
+    for r in records:
+        key = (r["group"], r["document"], r["field"])
+        if key in RESOLUTIONS:
+            res = RESOLUTIONS[key]
+            r["verdict"] = res["verdict"]
+            r["error_type"] = res["error_type"]
+            r["notes"] = r["notes"] + " " + res["note_add"]
+
     AUDIT_JSON.write_text(json.dumps(records, indent=2, ensure_ascii=False) + "\n")
 
     # Verbatim check: every verdict quote must exist on its page (native layer).
@@ -344,7 +389,8 @@ def main() -> None:
             )
 
     tally = Counter(r["verdict"] for r in records)
-    print(f"applied verdicts to {len(records)} records: " +
+    print(f"base audit verdicts: " + ", ".join(f"{k}={v}" for k, v in sorted(base_tally.items())))
+    print(f"after Farit's DEC-005 resolutions: " +
           ", ".join(f"{k}={v}" for k, v in sorted(tally.items())))
     print("all verdict quotes verified verbatim against units_native.jsonl")
 

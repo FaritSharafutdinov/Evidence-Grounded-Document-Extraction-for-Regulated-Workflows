@@ -18,6 +18,7 @@ Source: `steering/2026-10-19-note.md`. Rule of the week: **no new complex system
 - No new agentic architecture.
 - No locked-split (sds_21–29) evaluation — stays untouched (S9).
 - No work on the evidence-completeness *checker* as a product — the direction is under revision (see ROADMAP).
+- Thinking-mode judge variant — deferred to backlog (DEC-004, п.4): bounded cost–quality experiment on derived-field instances, after S4 unblocks.
 
 ## Decisions (resolved 2026-10-19)
 

@@ -746,8 +746,8 @@
     "state": "NOT_STATED",
     "derivation": "ABSENT",
     "group": "D",
-    "verdict": "questionable",
-    "error_type": null,
+    "verdict": "incorrect",
+    "error_type": "wrong-state",
     "quotes": [
       {
         "page": 1,
@@ -758,7 +758,7 @@
         "text": "General Use:\nConcrete Admixture"
       }
     ],
-    "notes": "Объявления формы в документе нет (проверены все 7 страниц: только boilerplate 'substance or mixture' в заголовках секций и 'Not a hazardous substance or mixture' — hazard-утверждение, не объявление формы). NOT_STATED документ-верен. Но химически Water Reducer 310 — бетонная admixture (раствор полимеров) = смесь → CAS продукта должен быть N/A. ЭСКАЛАЦИЯ Farit: (a) оставить NOT_STATED (документ-верно, без химических допущений); (b) NOT_APPLICABLE (химическая интерпретация).",
+    "notes": "Объявления формы в документе нет (проверены все 7 страниц: только boilerplate 'substance or mixture' в заголовках секций и 'Not a hazardous substance or mixture' — hazard-утверждение, не объявление формы). NOT_STATED документ-верен. Но химически Water Reducer 310 — бетонная admixture (раствор полимеров) = смесь → CAS продукта должен быть N/A. ЭСКАЛАЦИЯ Farit: (a) оставить NOT_STATED (документ-верно, без химических допущений); (b) NOT_APPLICABLE (химическая интерпретация). Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.1): статус — NOT_APPLICABLE. Правило: когда категория использования продукта в документе ('Concrete Admixture') однозначно задаёт форму (admixture = смесь), form-зависимые поля получают N/A — химическая интерпретация разрешена. Gold (NOT_STATED) с решённой политикой несовместим → incorrect/wrong-state; исправление gold — у K3.",
     "gold": {
       "value": null,
       "evidence": []
@@ -853,7 +853,7 @@
     "state": "PRESENT",
     "derivation": "EXPLICIT",
     "group": "E",
-    "verdict": "questionable",
+    "verdict": "correct",
     "error_type": null,
     "quotes": [
       {
@@ -861,7 +861,7 @@
         "text": "Safety Data Sheet\naccording to Regulations REACh 1907/2006/EC\nREF: 920163\nVISOCOLOR HE Nitrite, refill pack"
       }
     ],
-    "notes": "Колонтитул с именем продукта повторяется на КАЖДОЙ странице (проверены все 10): 'REF: 920163 / VISOCOLOR HE Nitrite, refill pack'. По критерию support (name-substring) любой колонтитул поддерживает значение → gold (только 1.1) неполон по букве критерия; но включение колонтитулов сделало бы complete@k тривиальным (валидна любая страница). ЭСКАЛАЦИЯ Farit — политика: (a) считать повторяющиеся колонтитулы evidence (расширить gold); (b) исключить boilerplate из критерия support; (c) принять каноническую политику gold (только 1.1) и задокументировать.",
+    "notes": "Колонтитул с именем продукта повторяется на КАЖДОЙ странице (проверены все 10): 'REF: 920163 / VISOCOLOR HE Nitrite, refill pack'. По критерию support (name-substring) любой колонтитул поддерживает значение → gold (только 1.1) неполон по букве критерия; но включение колонтитулов сделало бы complete@k тривиальным (валидна любая страница). ЭСКАЛАЦИЯ Farit — политика: (a) считать повторяющиеся колонтитулы evidence (расширить gold); (b) исключить boilerplate из критерия support; (c) принять каноническую политику gold (только 1.1) и задокументировать. Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.2): в колонтитуле sds_09 имя БЕЗ метки ('REF: 920163 / VISOCOLOR HE Nitrite, refill pack') — это просто строка, не evidence. Gold (канонический спан 1.1) адекватен. Остаточный риск: gold-free критерий support всё ещё принимает немеченые строки (substring) — возможное будущее уточнение критерия, вне DEC-005.",
     "gold": {
       "value": "VISOCOLOR HE Nitrite, refill pack",
       "evidence": [
@@ -907,15 +907,15 @@
     "state": "PRESENT",
     "derivation": "EXPLICIT",
     "group": "E",
-    "verdict": "questionable",
-    "error_type": null,
+    "verdict": "incorrect",
+    "error_type": "missed-evidence",
     "quotes": [
       {
         "page": 2,
         "text": "Trade name:\nWestland Bone Meal"
       }
     ],
-    "notes": "Шапка 'Trade name: Westland Bone Meal' повторяется на всех 10 страницах; value 'Bone Meal' — подстрока. Gold — только 1.1 ('Product identifier Bone Meal'). Тот же политика-вопрос, что и sds_09/E: считать ли колонтитульные повторы evidence. Дополнительно: 'Trade name:' — помеченное объявление имени, субстантивнее простого колонтитула.",
+    "notes": "Шапка 'Trade name: Westland Bone Meal' повторяется на всех 10 страницах; value 'Bone Meal' — подстрока. Gold — только 1.1 ('Product identifier Bone Meal'). Тот же политика-вопрос, что и sds_09/E: считать ли колонтитульные повторы evidence. Дополнительно: 'Trade name:' — помеченное объявление имени, субстантивнее простого колонтитула. Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.2): колонтитул с ЯВНОЙ меткой ('Trade name: Westland Bone Meal') — валидное evidence, gold расширяется на все страницы с такой шапкой; момент задокументировать. Gold (только 1.1) с решённой политикой неполон → incorrect/missed-evidence; исправление gold — у K3.",
     "gold": {
       "value": "Bone Meal",
       "evidence": [
@@ -1007,7 +1007,7 @@
     "state": "PRESENT",
     "derivation": "EXPLICIT",
     "group": "E",
-    "verdict": "questionable",
+    "verdict": "correct",
     "error_type": null,
     "quotes": [
       {
@@ -1015,7 +1015,7 @@
         "text": "Since the use\nof this product is not within the control of Buddy Rhodes Concrete Products, it is the user's obligation to\ndetermine the suitability of the product for its intended"
       }
     ],
-    "notes": "Стр. 7 (секция 16, disclaimer): компания названа вне gold. По букве критерия support (substring) — валидное evidence → gold неполон; по сути — юридическая оговорка, не идентификация поставщика (1.3 в gold). ЭСКАЛАЦИЯ Farit: считать ли упоминания в disclaimer evidence.",
+    "notes": "Стр. 7 (секция 16, disclaimer): компания названа вне gold. По букве критерия support (substring) — валидное evidence → gold неполон; по сути — юридическая оговорка, не идентификация поставщика (1.3 в gold). ЭСКАЛАЦИЯ Farit: считать ли упоминания в disclaimer evidence. Эскалация решена Farit'ом 2026-10-21 (DEC-005, п.3): упоминание компании в юридическом disclaimer — не evidence; критерий — 'компания ПРЕДСТАВЛЕНА как поставщик' (идентификация в 1.3), а не 'названа где угодно'. Gold адекватен.",
     "gold": {
       "value": "Buddy Rhodes Concrete Products",
       "evidence": [

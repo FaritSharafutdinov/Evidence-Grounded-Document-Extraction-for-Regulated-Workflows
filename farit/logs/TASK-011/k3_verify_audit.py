@@ -7,7 +7,7 @@ Checks:
   W2. Broken-evidence-ref recount: every gold evidence_set fragment of the audited
       instances resolves verbatim at its cited page -> recount the "0/49" claim.
   W3. Sample composition: A=8, B=8, C=4, D=10 (N/A 5, NOT_STATED 3, NO_DATA 2), E=10;
-      unique instances = 38; verdict counts 34/2/4.
+      unique instances = 37 (E∩A=2 and E∩C=1); verdict counts 34/2/4.
   W4. Dev-only: no locked document (sds_21+) anywhere in the sample.
 Run from repo root: ~/ds_env/bin/python farit/logs/TASK-011/k3_verify_audit.py
 """

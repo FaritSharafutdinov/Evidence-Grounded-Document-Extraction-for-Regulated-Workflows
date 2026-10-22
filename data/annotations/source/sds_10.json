@@ -1,8 +1,8 @@
 {
   "document": "sds_10.pdf",
   "split": "dev",
-  "note": "Composite bearing material. \"No applicable data available\" is a NO_DATA statement, not a NOT_APPLICABLE one: it says the data is unavailable, and the same sheet uses a separate plain \"Not applicable\" for other rows. The state cue table has to prefer the longer NO_DATA cue.",
-  "product_form": "UNDETERMINED",
+  "note": "Composite bearing material. \"No applicable data available\" is a NO_DATA statement, not a NOT_APPLICABLE one: it says the data is unavailable, and the same sheet uses a separate plain \"Not applicable\" for other rows. The state cue table has to prefer the longer NO_DATA cue. Gold v1.1 (DEC-005): page 1 explicitly designates the product an OSHA article (29 CFR 1910.1200(b)(6)(v)), previously missed — product_form set to ARTICLE and the form-dependent identifier fields moved from NOT_STATED to NOT_APPLICABLE.",
+  "product_form": "ARTICLE",
   "fields": {
     "product_name": {
       "state": "PRESENT",
@@ -16,14 +16,52 @@
       "value": "Columbia Industrial Products",
       "evidence": [{ "page": 1, "text": "Company: Columbia Industrial Products" }]
     },
-    "substance_or_mixture": { "state": "NOT_STATED", "derivation": "ABSENT" },
-    "product_cas_number": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "ARTICLE",
+      "evidence": [
+        { "page": 1, "text": "Designation of ‘ARTICLES’" },
+        {
+          "page": 1,
+          "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users."
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users."
+        }
+      ]
+    },
     "chemical_formula": {
-      "state": "NOT_STATED",
-      "derivation": "ABSENT",
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users."
+        }
+      ],
       "note": "The old ground truth cited \"Product Use: Bearing and wear material\" as formula evidence."
     },
-    "molecular_weight": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users."
+        }
+      ]
+    },
     "flash_point": {
       "state": "NO_DATA",
       "derivation": "EXPLICIT",

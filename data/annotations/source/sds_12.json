@@ -9,7 +9,20 @@
       "derivation": "EXPLICIT",
       "value": "Bone Meal",
       "accepted_values": ["Westland Bone Meal"],
-      "evidence": [{ "page": 1, "text": "1.1 Product identifier Bone Meal" }]
+      "evidence": [
+        { "page": 1, "text": "1.1 Product identifier Bone Meal" },
+        { "page": 1, "text": "Trade name: Westland Bone Meal" },
+        { "page": 2, "text": "Trade name: Westland Bone Meal" },
+        { "page": 3, "text": "Trade name: Westland Bone Meal" },
+        { "page": 4, "text": "Trade name: Westland Bone Meal" },
+        { "page": 5, "text": "Trade name: Westland Bone Meal" },
+        { "page": 6, "text": "Trade name: Westland Bone Meal" },
+        { "page": 7, "text": "Trade name: Westland Bone Meal" },
+        { "page": 8, "text": "Trade name: Westland Bone Meal" },
+        { "page": 9, "text": "Trade name: Westland Bone Meal" },
+        { "page": 10, "text": "Trade name: Westland Bone Meal" }
+      ],
+      "note": "Gold v1.1 (DEC-005): the header \"Trade name: Westland Bone Meal\" is a labeled product-name statement repeated on every page; labeled headers count as evidence, unlabeled ones do not."
     },
     "supplier_name": {
       "state": "PRESENT",

@@ -1420,6 +1420,12 @@
               "text": "Substance: Non-applicable",
               "occurrence": 1,
               "case_sensitive": false
+            },
+            {
+              "page": 5,
+              "text": "As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with total reliability and has therefore to be checked prior to the application.",
+              "occurrence": 1,
+              "case_sensitive": false
             }
           ],
           "rule": null,
@@ -1469,6 +1475,30 @@
               ],
               "ocr_char_start": 2222,
               "ocr_char_end": 2247,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 5,
+              "text": "As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+              "char_start": 1381,
+              "char_end": 1582,
+              "bbox": [
+                0.1457684044076615,
+                0.44113528870063834,
+                0.9052907735359769,
+                0.4647882239552405
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 5,
+              "ocr_bbox": [
+                0.14579552329098608,
+                0.4433518597691321,
+                0.9044162129461585,
+                0.46472851646002566
+              ],
+              "ocr_char_start": 1094,
+              "ocr_char_end": 1295,
               "ocr_exact": true,
               "ocr_score": 100.0
             }
@@ -1586,6 +1616,30 @@
               "ocr_char_end": 2247,
               "ocr_exact": true,
               "ocr_score": 100.0
+            },
+            {
+              "page": 5,
+              "text": "As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+              "char_start": 1381,
+              "char_end": 1582,
+              "bbox": [
+                0.1457684044076615,
+                0.44113528870063834,
+                0.9052907735359769,
+                0.4647882239552405
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 5,
+              "ocr_bbox": [
+                0.14579552329098608,
+                0.4433518597691321,
+                0.9044162129461585,
+                0.46472851646002566
+              ],
+              "ocr_char_start": 1094,
+              "ocr_char_end": 1295,
+              "ocr_exact": true,
+              "ocr_score": 100.0
             }
           ],
           "ambiguous": false,
@@ -1653,6 +1707,30 @@
               ],
               "ocr_char_start": 2222,
               "ocr_char_end": 2247,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 5,
+              "text": "As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+              "char_start": 1381,
+              "char_end": 1582,
+              "bbox": [
+                0.1457684044076615,
+                0.44113528870063834,
+                0.9052907735359769,
+                0.4647882239552405
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 5,
+              "ocr_bbox": [
+                0.14579552329098608,
+                0.4433518597691321,
+                0.9044162129461585,
+                0.46472851646002566
+              ],
+              "ocr_char_start": 1094,
+              "ocr_char_end": 1295,
               "ocr_exact": true,
               "ocr_score": 100.0
             }
@@ -5335,7 +5413,7 @@
     {
       "document": "sds_10.pdf",
       "split": "dev",
-      "product_form": "UNDETERMINED",
+      "product_form": "ARTICLE",
       "fields": {
         "product_name": {
           "state": "PRESENT",
@@ -5428,53 +5506,283 @@
           "note": null
         },
         "substance_or_mixture": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
-          "value": null,
+          "state": "PRESENT",
+          "derivation": "EXPLICIT",
+          "value": "ARTICLE",
           "accepted_values": [],
-          "evidence": [],
+          "evidence": [
+            {
+              "page": 1,
+              "text": "Designation of ‘ARTICLES’",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users.",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
           "rule": null,
-          "resolved_evidence": [],
+          "resolved_evidence": [
+            {
+              "page": 1,
+              "text": "Designation of ‘ARTICLES’",
+              "char_start": 104,
+              "char_end": 129,
+              "bbox": [
+                0.3747875737208946,
+                0.14404040635234178,
+                0.6252581527809692,
+                0.16093434227837455
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.37588235294117645,
+                0.14681818181818182,
+                0.6235294117647059,
+                0.16090909090909092
+              ],
+              "ocr_char_start": 76,
+              "ocr_char_end": 101,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users.",
+              "char_start": 1046,
+              "char_end": 1210,
+              "bbox": [
+                0.11768627790064594,
+                0.4909328113902699,
+                0.8650124743093852,
+                0.5223843352963226
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.11823529411764706,
+                0.49318181818181817,
+                0.8635294117647059,
+                0.5227272727272727
+              ],
+              "ocr_char_start": 1020,
+              "ocr_char_end": 1184,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "resolved_premises": [],
           "ambiguous": false,
           "alternative_state": null,
           "note": null
         },
         "product_cas_number": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users.",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users.",
+              "char_start": 1046,
+              "char_end": 1210,
+              "bbox": [
+                0.11768627790064594,
+                0.4909328113902699,
+                0.8650124743093852,
+                0.5223843352963226
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.11823529411764706,
+                0.49318181818181817,
+                0.8635294117647059,
+                0.5227272727272727
+              ],
+              "ocr_char_start": 1020,
+              "ocr_char_end": 1184,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 1,
+              "text": "Designation of ‘ARTICLES’",
+              "char_start": 104,
+              "char_end": 129,
+              "bbox": [
+                0.3747875737208946,
+                0.14404040635234178,
+                0.6252581527809692,
+                0.16093434227837455
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.37588235294117645,
+                0.14681818181818182,
+                0.6235294117647059,
+                0.16090909090909092
+              ],
+              "ocr_char_start": 76,
+              "ocr_char_end": 101,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
           "note": null
         },
         "chemical_formula": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users.",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users.",
+              "char_start": 1046,
+              "char_end": 1210,
+              "bbox": [
+                0.11768627790064594,
+                0.4909328113902699,
+                0.8650124743093852,
+                0.5223843352963226
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.11823529411764706,
+                0.49318181818181817,
+                0.8635294117647059,
+                0.5227272727272727
+              ],
+              "ocr_char_start": 1020,
+              "ocr_char_end": 1184,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 1,
+              "text": "Designation of ‘ARTICLES’",
+              "char_start": 104,
+              "char_end": 129,
+              "bbox": [
+                0.3747875737208946,
+                0.14404040635234178,
+                0.6252581527809692,
+                0.16093434227837455
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.37588235294117645,
+                0.14681818181818182,
+                0.6235294117647059,
+                0.16090909090909092
+              ],
+              "ocr_char_start": 76,
+              "ocr_char_end": 101,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
           "note": "The old ground truth cited \"Product Use: Bearing and wear material\" as formula evidence."
         },
         "molecular_weight": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”, and therefore, do not require an SDS be created or provided to end users.",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users.",
+              "char_start": 1046,
+              "char_end": 1210,
+              "bbox": [
+                0.11768627790064594,
+                0.4909328113902699,
+                0.8650124743093852,
+                0.5223843352963226
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.11823529411764706,
+                0.49318181818181817,
+                0.8635294117647059,
+                0.5227272727272727
+              ],
+              "ocr_char_start": 1020,
+              "ocr_char_end": 1184,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 1,
+              "text": "Designation of ‘ARTICLES’",
+              "char_start": 104,
+              "char_end": 129,
+              "bbox": [
+                0.3747875737208946,
+                0.14404040635234178,
+                0.6252581527809692,
+                0.16093434227837455
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.37588235294117645,
+                0.14681818181818182,
+                0.6235294117647059,
+                0.16090909090909092
+              ],
+              "ocr_char_start": 76,
+              "ocr_char_end": 101,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
           "note": null
@@ -5594,7 +5902,7 @@
         "items": [],
         "note": "The sheet declares that no contained substance requires disclosure."
       },
-      "note": "Composite bearing material. \"No applicable data available\" is a NO_DATA statement, not a NOT_APPLICABLE one: it says the data is unavailable, and the same sheet uses a separate plain \"Not applicable\" for other rows. The state cue table has to prefer the longer NO_DATA cue."
+      "note": "Composite bearing material. \"No applicable data available\" is a NO_DATA statement, not a NOT_APPLICABLE one: it says the data is unavailable, and the same sheet uses a separate plain \"Not applicable\" for other rows. The state cue table has to prefer the longer NO_DATA cue. Gold v1.1 (DEC-005): page 1 explicitly designates the product an OSHA article (29 CFR 1910.1200(b)(6)(v)), previously missed — product_form set to ARTICLE and the form-dependent identifier fields moved from NOT_STATED to NOT_APPLICABLE."
     },
     {
       "document": "sds_11.pdf",
@@ -6175,6 +6483,66 @@
               "text": "1.1 Product identifier Bone Meal",
               "occurrence": 1,
               "case_sensitive": false
+            },
+            {
+              "page": 1,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 2,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 3,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 4,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 5,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 6,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 7,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 8,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 9,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
+            },
+            {
+              "page": 10,
+              "text": "Trade name: Westland Bone Meal",
+              "occurrence": 1,
+              "case_sensitive": false
             }
           ],
           "rule": null,
@@ -6202,12 +6570,252 @@
               "ocr_char_end": 264,
               "ocr_exact": true,
               "ocr_score": 100.0
+            },
+            {
+              "page": 1,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 74,
+              "ocr_char_end": 104,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 2,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 2,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 74,
+              "ocr_char_end": 104,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 3,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 3,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 74,
+              "ocr_char_end": 104,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 4,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 4,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 77,
+              "ocr_char_end": 107,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 5,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 5,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 77,
+              "ocr_char_end": 107,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 6,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 6,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 77,
+              "ocr_char_end": 107,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 7,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 7,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 74,
+              "ocr_char_end": 104,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 8,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 8,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 77,
+              "ocr_char_end": 107,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 9,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 9,
+              "ocr_bbox": [
+                0.05941176470588235,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 74,
+              "ocr_char_end": 104,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            },
+            {
+              "page": 10,
+              "text": "Trade name:\nWestland Bone Meal",
+              "char_start": 68,
+              "char_end": 98,
+              "bbox": [
+                0.058823529411764705,
+                0.1254623779142746,
+                0.3270588295132506,
+                0.1394843477191347
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 10,
+              "ocr_bbox": [
+                0.058823529411764705,
+                0.12772727272727272,
+                0.32588235294117646,
+                0.13727272727272727
+              ],
+              "ocr_char_start": 77,
+              "ocr_char_end": 107,
+              "ocr_exact": true,
+              "ocr_score": 100.0
             }
           ],
           "resolved_premises": [],
           "ambiguous": false,
           "alternative_state": null,
-          "note": null
+          "note": "Gold v1.1 (DEC-005): the header \"Trade name: Westland Bone Meal\" is a labeled product-name statement repeated on every page; labeled headers count as evidence, unlabeled ones do not."
         },
         "supplier_name": {
           "state": "PRESENT",
@@ -8861,17 +9469,44 @@
           "note": null
         },
         "molecular_weight": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "Mel-Rol is defined by OSHA as an \"article.\"",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "Mel-Rol is\ndefined by OSHA as an \"article.\"",
+              "char_start": 1059,
+              "char_end": 1102,
+              "bbox": [
+                0.3326832061236189,
+                0.2723838990749472,
+                0.7519949113454736,
+                0.30213392304204245
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": null,
+              "ocr_bbox": null,
+              "ocr_char_start": null,
+              "ocr_char_end": null,
+              "ocr_exact": false,
+              "ocr_score": 0.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
-          "note": "The string \"molecular\" does not occur in this document."
+          "note": "The string \"molecular\" does not occur in this document. Gold v1.1 (DEC-005): was NOT_STATED, moved to NOT_APPLICABLE for consistency with product_cas_number/chemical_formula, which derive N/A from the same article premise."
         },
         "flash_point": {
           "state": "NOT_APPLICABLE",
@@ -9000,7 +9635,7 @@
         ],
         "note": null
       },
-      "note": "Waterproofing membrane, explicitly declared an OSHA article. Two corrections to the old ground truth. The molecular weight was annotated as \"MOLECULAR WEIGHT: N/A\" on page 2, but that string does not occur anywhere in the document and Section 9 has no molecular-weight row at all; the correct state is NOT_STATED. The product CAS was annotated as 8052-42-4, which is the CAS of the petroleum asphalt ingredient."
+      "note": "Waterproofing membrane, explicitly declared an OSHA article. Two corrections to the old ground truth. The molecular weight was annotated as \"MOLECULAR WEIGHT: N/A\" on page 2, but that string does not occur anywhere in the document and Section 9 has no molecular-weight row at all; the correct state is NOT_STATED. The product CAS was annotated as 8052-42-4, which is the CAS of the petroleum asphalt ingredient. Gold v1.1 (DEC-005): molecular_weight later moved from NOT_STATED to NOT_APPLICABLE for consistency with the other form-dependent fields — see the field note."
     },
     {
       "document": "sds_18.pdf",
@@ -10016,43 +10651,139 @@
           "note": null
         },
         "product_cas_number": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "General Use: Concrete Admixture",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "General Use:\nConcrete Admixture",
+              "char_start": 307,
+              "char_end": 338,
+              "bbox": [
+                0.12474510093140447,
+                0.2055919338958432,
+                0.5194714614768433,
+                0.22113435918634589
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.12529411764705883,
+                0.20772727272727273,
+                0.5188235294117647,
+                0.21863636363636363
+              ],
+              "ocr_char_start": 336,
+              "ocr_char_end": 367,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
-          "note": null
+          "note": "Gold v1.1 (DEC-005): a concrete admixture is unambiguously a mixture, so the identifier is not applicable; chemical interpretation allowed by policy, not only literal form declarations."
         },
         "chemical_formula": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "General Use: Concrete Admixture",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "General Use:\nConcrete Admixture",
+              "char_start": 307,
+              "char_end": 338,
+              "bbox": [
+                0.12474510093140447,
+                0.2055919338958432,
+                0.5194714614768433,
+                0.22113435918634589
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.12529411764705883,
+                0.20772727272727273,
+                0.5188235294117647,
+                0.21863636363636363
+              ],
+              "ocr_char_start": 336,
+              "ocr_char_end": 367,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
-          "note": null
+          "note": "Gold v1.1 (DEC-005): same admixture-is-a-mixture premise as product_cas_number."
         },
         "molecular_weight": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
+          "state": "NOT_APPLICABLE",
+          "derivation": "ONTOLOGY",
           "value": null,
           "accepted_values": [],
-          "evidence": [],
-          "rule": null,
+          "evidence": [
+            {
+              "page": 1,
+              "text": "General Use: Concrete Admixture",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
+          "rule": "identifier_undefined_for_form",
           "resolved_evidence": [],
-          "resolved_premises": [],
+          "resolved_premises": [
+            {
+              "page": 1,
+              "text": "General Use:\nConcrete Admixture",
+              "char_start": 307,
+              "char_end": 338,
+              "bbox": [
+                0.12474510093140447,
+                0.2055919338958432,
+                0.5194714614768433,
+                0.22113435918634589
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.12529411764705883,
+                0.20772727272727273,
+                0.5188235294117647,
+                0.21863636363636363
+              ],
+              "ocr_char_start": 336,
+              "ocr_char_end": 367,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "ambiguous": false,
           "alternative_state": null,
-          "note": null
+          "note": "Gold v1.1 (DEC-005): same admixture-is-a-mixture premise as product_cas_number."
         },
         "flash_point": {
           "state": "NO_DATA",
@@ -10134,7 +10865,7 @@
         "items": [],
         "note": null
       },
-      "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED."
+      "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED. Gold v1.1 (DEC-005): the identifier fields (CAS, formula, molecular weight) were moved to NOT_APPLICABLE — a concrete admixture is unambiguously a mixture; substance_or_mixture deliberately remains NOT_STATED (the decision sanctioned only the form-dependent fields), a documented residual inconsistency."
     },
     {
       "document": "sds_20.pdf",
@@ -12003,7 +12734,7 @@
               "bbox": [
                 0.15686137380163653,
                 0.21623501633152817,
-                0.28680340137357024,
+                0.2868034263062321,
                 0.22896229137073865
               ],
               "occurrences_on_page": 1,

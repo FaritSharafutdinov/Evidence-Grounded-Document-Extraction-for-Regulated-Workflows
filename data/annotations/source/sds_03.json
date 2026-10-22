@@ -30,7 +30,11 @@
           "page": 2,
           "text": "Chemical description: Mixture of polymers, dispersants and organic compounds"
         },
-        { "page": 1, "text": "Substance: Non-applicable" }
+        { "page": 1, "text": "Substance: Non-applicable" },
+        {
+          "page": 5,
+          "text": "As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with total reliability and has therefore to be checked prior to the application."
+        }
       ]
     },
     "product_cas_number": {

@@ -1,7 +1,7 @@
 {
   "document": "sds_17.pdf",
   "split": "dev",
-  "note": "Waterproofing membrane, explicitly declared an OSHA article. Two corrections to the old ground truth. The molecular weight was annotated as \"MOLECULAR WEIGHT: N/A\" on page 2, but that string does not occur anywhere in the document and Section 9 has no molecular-weight row at all; the correct state is NOT_STATED. The product CAS was annotated as 8052-42-4, which is the CAS of the petroleum asphalt ingredient.",
+  "note": "Waterproofing membrane, explicitly declared an OSHA article. Two corrections to the old ground truth. The molecular weight was annotated as \"MOLECULAR WEIGHT: N/A\" on page 2, but that string does not occur anywhere in the document and Section 9 has no molecular-weight row at all; the correct state is NOT_STATED. The product CAS was annotated as 8052-42-4, which is the CAS of the petroleum asphalt ingredient. Gold v1.1 (DEC-005): molecular_weight later moved from NOT_STATED to NOT_APPLICABLE for consistency with the other form-dependent fields — see the field note.",
   "product_form": "ARTICLE",
   "fields": {
     "product_name": {
@@ -52,9 +52,16 @@
       ]
     },
     "molecular_weight": {
-      "state": "NOT_STATED",
-      "derivation": "ABSENT",
-      "note": "The string \"molecular\" does not occur in this document."
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [
+        {
+          "page": 1,
+          "text": "Mel-Rol is defined by OSHA as an \"article.\""
+        }
+      ],
+      "note": "The string \"molecular\" does not occur in this document. Gold v1.1 (DEC-005): was NOT_STATED, moved to NOT_APPLICABLE for consistency with product_cas_number/chemical_formula, which derive N/A from the same article premise."
     },
     "flash_point": {
       "state": "NOT_APPLICABLE",

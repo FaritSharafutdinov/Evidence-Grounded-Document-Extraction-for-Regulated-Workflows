@@ -1,7 +1,7 @@
 {
   "document": "sds_19.pdf",
   "split": "dev",
-  "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED.",
+  "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED. Gold v1.1 (DEC-005): the identifier fields (CAS, formula, molecular weight) were moved to NOT_APPLICABLE — a concrete admixture is unambiguously a mixture; substance_or_mixture deliberately remains NOT_STATED (the decision sanctioned only the form-dependent fields), a documented residual inconsistency.",
   "product_form": "UNDETERMINED",
   "fields": {
     "product_name": {
@@ -17,9 +17,27 @@
       "evidence": [{ "page": 1, "text": "Company: Buddy Rhodes Concrete Products" }]
     },
     "substance_or_mixture": { "state": "NOT_STATED", "derivation": "ABSENT" },
-    "product_cas_number": { "state": "NOT_STATED", "derivation": "ABSENT" },
-    "chemical_formula": { "state": "NOT_STATED", "derivation": "ABSENT" },
-    "molecular_weight": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "General Use: Concrete Admixture" }],
+      "note": "Gold v1.1 (DEC-005): a concrete admixture is unambiguously a mixture, so the identifier is not applicable; chemical interpretation allowed by policy, not only literal form declarations."
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "General Use: Concrete Admixture" }],
+      "note": "Gold v1.1 (DEC-005): same admixture-is-a-mixture premise as product_cas_number."
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "evidence": [{ "page": 1, "text": "General Use: Concrete Admixture" }],
+      "note": "Gold v1.1 (DEC-005): same admixture-is-a-mixture premise as product_cas_number."
+    },
     "flash_point": {
       "state": "NO_DATA",
       "derivation": "EXPLICIT",

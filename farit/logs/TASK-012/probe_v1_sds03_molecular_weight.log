@@ -1,0 +1,26 @@
+MODEL=mlx-community/Qwen3.5-2B-MLX-4bit MODE=v1 CASE=sds_03.pdf/molecular_weight pages=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] gold_pages=[1, 2, 5] split=dev
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2421.93it/s]
+model loaded in 6.1s
+  template tail (v1): '|im_end|>\n<|im_start|>assistant\n<think>\n'
+  p 1: score=0.9724147186433364 greedy='The' (NOT-ANSWER:'The') gold=Y [2.46s]
+  p 2: score=0.975576909296081 greedy='The' (NOT-ANSWER:'The') gold=Y [3.83s]
+  p 3: score=0.9724147159193047 greedy='The' (NOT-ANSWER:'The') gold= [2.20s]
+  p 4: score=0.9783846658227278 greedy='The' (NOT-ANSWER:'The') gold= [2.87s]
+  p 5: score=0.9688561682855268 greedy='The' (NOT-ANSWER:'The') gold=Y [2.70s]
+  p 6: score=0.9796676469193201 greedy='The' (NOT-ANSWER:'The') gold= [1.94s]
+  p 7: score=0.9626731106632916 greedy='The' (NOT-ANSWER:'The') gold= [3.56s]
+  p 8: score=0.9706877689961259 greedy='The' (NOT-ANSWER:'The') gold= [3.23s]
+  p 9: score=0.9724147178507939 greedy='The' (NOT-ANSWER:'The') gold= [2.70s]
+  p10: score=0.9669140218291686 greedy='The' (NOT-ANSWER:'The') gold= [2.46s]
+  p11: score=0.9740426418013356 greedy='The' (NOT-ANSWER:'The') gold= [2.28s]
+
+[stats] sds_03.pdf/molecular_weight mode=v1
+  min=0.9626731106632916 max=0.9796676469193201
+  mean=0.9721860987297286
+  band=0.016994536256028425
+  n_exact_zero=0
+  gold_page_ranks=[5, 3, 9]  best_rank=3
+  gold p1: greedy_first_token='The' (NOT-ANSWER:'The')
+  gold p2: greedy_first_token='The' (NOT-ANSWER:'The')
+  gold p5: greedy_first_token='The' (NOT-ANSWER:'The')
+[ranks] p6:1  p4:2  p2:3  p11:4  p1:5  p9:6  p3:7  p8:8  p5:9  p10:10  p7:11

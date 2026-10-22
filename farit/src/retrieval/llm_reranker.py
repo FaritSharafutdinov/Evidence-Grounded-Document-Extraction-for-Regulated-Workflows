@@ -9,6 +9,13 @@ CLI:
     python farit/src/retrieval/llm_reranker.py \
         --model mlx-community/Qwen2.5-0.5B-Instruct-4bit \
         --limit-docs 2 --out-tag smoke
+
+Score modes (TASK-012, DEC-004):
+    v1 (default, frozen): default chat template, device softmax via logprobs —
+        byte-identical to the frozen Qwen2.5 baseline path.
+    v2: non-thinking chat template (enable_thinking=False, TypeError fallback),
+        host-side fp32 softmax of last-position logits; cache isolated to
+        reranker_{model_tag}__v2.jsonl.
 """
 from __future__ import annotations
 
@@ -204,6 +211,96 @@ def score_page_mlx(model, tokenizer, prompt: str) -> float:
 
 
 # ---------------------------------------------------------------------------
+# Score mode v2 (TASK-012, DEC-004): non-thinking template + host fp32 softmax
+# ---------------------------------------------------------------------------
+
+def _yes_no_token_ids(tokenizer) -> tuple[list[int], list[int]]:
+    """Single-token ids for Yes/No variants — same table (and fallbacks) as v1.
+
+    Used by the v2 path; v1 keeps its inline copy so the frozen path is untouched.
+    """
+    yes_ids = []
+    no_ids = []
+    for text in ["Yes", " Yes", "yes", " yes"]:
+        ids = tokenizer.encode(text, add_special_tokens=False)
+        if len(ids) == 1:
+            yes_ids.append(ids[0])
+    for text in ["No", " No", "no", " no"]:
+        ids = tokenizer.encode(text, add_special_tokens=False)
+        if len(ids) == 1:
+            no_ids.append(ids[0])
+
+    # If no single-token variants found, fall back to first char
+    if not yes_ids:
+        ids = tokenizer.encode("Y", add_special_tokens=False)
+        if len(ids) == 1:
+            yes_ids.append(ids[0])
+    if not no_ids:
+        ids = tokenizer.encode("N", add_special_tokens=False)
+        if len(ids) == 1:
+            no_ids.append(ids[0])
+    return yes_ids, no_ids
+
+
+def apply_chat_template_v2(tokenizer, messages: list[dict]) -> str:
+    """v2 chat template: close the thinking channel; TypeError fallback.
+
+    Models whose template has no thinking kwarg (e.g. Qwen2.5) fall back to the
+    bare add_generation_prompt=True call, so the v2 path works for any model.
+    """
+    try:
+        return tokenizer.apply_chat_template(
+            messages, tokenize=False, add_generation_prompt=True, enable_thinking=False
+        )
+    except TypeError:
+        return tokenizer.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+
+
+def score_page_mlx_v2(model, tokenizer, prompt: str) -> float:
+    """Score v2: P(Yes) / (P(Yes) + P(No)) under the non-thinking template.
+
+    - Template: apply_chat_template(..., enable_thinking=False) (fallback: bare
+      template without the kwarg for models without a thinking channel).
+    - Softmax of the last-position logits is computed on host in fp32
+      (numerically stable: minus max), so reduced device precision (bf16)
+      cannot underflow small probabilities. The bf16 -> fp32 cast is exact
+      (fp32 is a superset of bf16), then everything is host-side numpy.
+    - P(Yes)/P(No): max probability over the same single-token variant table
+      of Yes/No as v1.
+    """
+    import mlx.core as mx
+    import numpy as np
+
+    messages = [{"role": "user", "content": prompt}]
+    chat_prompt = apply_chat_template_v2(tokenizer, messages)
+
+    tokens = tokenizer.encode(chat_prompt, add_special_tokens=False)
+    logits = model(mx.array(tokens)[None])
+    # Exact cast to fp32 on device (lossless for bf16/fp16), host softmax in fp32.
+    last_logits = np.asarray(logits[0, -1, :].astype(mx.float32), dtype=np.float32)
+    probs = np.exp(last_logits - last_logits.max())
+    probs /= probs.sum()
+
+    yes_ids, no_ids = _yes_no_token_ids(tokenizer)
+    yes_prob = max(float(probs[i]) for i in yes_ids) if yes_ids else 0.0
+    no_prob = max(float(probs[i]) for i in no_ids) if no_ids else 0.0
+
+    denom = yes_prob + no_prob
+    if denom == 0:
+        return 0.5
+    return yes_prob / denom
+
+
+def score_page_by_mode(model, tokenizer, prompt: str, score_mode: str) -> float:
+    """Dispatch scoring by score mode: 'v1' (frozen) or 'v2'."""
+    if score_mode == "v2":
+        return score_page_mlx_v2(model, tokenizer, prompt)
+    if score_mode == "v1":
+        return score_page_mlx(model, tokenizer, prompt)
+    raise ValueError(f"Unknown score mode: {score_mode}")
+
+
+# ---------------------------------------------------------------------------
 # Main pipeline
 # ---------------------------------------------------------------------------
 
@@ -213,6 +310,7 @@ def run_layer(
     model_name: str,
     limit_docs: int | None,
     cache_path: Path,
+    score_mode: str = "v1",
 ) -> dict:
     pages = load_pages(units_path)
     pages = [p for p in pages if p["split"] == "dev"]
@@ -299,7 +397,7 @@ def run_layer(
                     cache_hits += 1
                 else:
                     t0 = time.perf_counter()
-                    score = score_page_mlx(model, tokenizer, prompt)
+                    score = score_page_by_mode(model, tokenizer, prompt, score_mode)
                     t1 = time.perf_counter()
                     total_inference_time += (t1 - t0)
                     n_inference_calls += 1
@@ -551,6 +649,16 @@ def parse_args() -> argparse.Namespace:
         default="qwen7b",
         help="Tag for output files",
     )
+    parser.add_argument(
+        "--score-mode",
+        choices=["v1", "v2"],
+        default="v1",
+        help=(
+            "Scoring mode: v1 (frozen: default template, device softmax) or "
+            "v2 (non-thinking template, host fp32 softmax). v2 uses its own "
+            "cache file reranker_{model_tag}__v2.jsonl."
+        ),
+    )
     return parser.parse_args()
 
 
@@ -561,7 +669,8 @@ def main() -> int:
     CACHE_DIR.mkdir(parents=True, exist_ok=True)
 
     model_tag = args.model.replace("/", "_")
-    cache_path = CACHE_DIR / f"reranker_{model_tag}.jsonl"
+    cache_mode_suffix = "" if args.score_mode == "v1" else "__v2"
+    cache_path = CACHE_DIR / f"reranker_{model_tag}{cache_mode_suffix}.jsonl"
 
     out_json = RESULTS_DIR / f"llm_reranker_{args.out_tag}.json"
     out_md = RESULTS_DIR / f"llm_reranker_{args.out_tag}.md"
@@ -595,6 +704,7 @@ def main() -> int:
             model_name=args.model,
             limit_docs=args.limit_docs,
             cache_path=cache_path,
+            score_mode=args.score_mode,
         )
         results[layer_name] = layer_result
         print(f"Cache hits: {layer_result['cache_hits']}, misses: {layer_result['cache_misses']}")
@@ -606,6 +716,7 @@ def main() -> int:
             "model": args.model,
             "layer": args.layer,
             "limit_docs": args.limit_docs,
+            "score_mode": args.score_mode,
             "out_tag": args.out_tag,
         },
         **results,
@@ -619,6 +730,7 @@ def main() -> int:
         "",
         f"Model: `{args.model}`",
         f"Layer: `{args.layer}`",
+        f"Score mode: `{args.score_mode}`",
         "",
     ]
 

@@ -1,0 +1,26 @@
+MODEL=mlx-community/Qwen3.5-2B-MLX-4bit MODE=v2 CASE=sds_03.pdf/molecular_weight pages=[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] gold_pages=[1, 2, 5] split=dev
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1185.94it/s]
+model loaded in 5.9s
+  template tail (v2): '|im_start|>assistant\n<think>\n\n</think>\n\n'
+  p 1: score=0.43782350377529894 greedy='No' (No) gold=Y [2.47s]
+  p 2: score=0.6791787096077175 greedy='Yes' (Yes) gold=Y [3.91s]
+  p 3: score=0.37754067094234584 greedy='No' (No) gold= [2.19s]
+  p 4: score=0.5312093912254785 greedy='Yes' (Yes) gold= [2.87s]
+  p 5: score=0.7310585698891365 greedy='Yes' (Yes) gold=Y [2.70s]
+  p 6: score=0.468790628746247 greedy='No' (No) gold= [2.02s]
+  p 7: score=0.4073333922375816 greedy='No' (No) gold= [3.37s]
+  p 8: score=0.7310585921599326 greedy='Yes' (Yes) gold= [3.23s]
+  p 9: score=0.5926665841223157 greedy='Yes' (Yes) gold= [2.71s]
+  p10: score=0.3486451439200842 greedy='No' (No) gold= [2.46s]
+  p11: score=0.3486451352340565 greedy='No' (No) gold= [2.28s]
+
+[stats] sds_03.pdf/molecular_weight mode=v2
+  min=0.3486451352340565 max=0.7310585921599326
+  mean=0.5139954838054722
+  band=0.38241345692587614
+  n_exact_zero=0
+  gold_page_ranks=[7, 3, 2]  best_rank=2
+  gold p1: greedy_first_token='No' (No)
+  gold p2: greedy_first_token='Yes' (Yes)
+  gold p5: greedy_first_token='Yes' (Yes)
+[ranks] p8:1  p5:2  p2:3  p9:4  p4:5  p6:6  p1:7  p7:8  p3:9  p10:10  p11:11

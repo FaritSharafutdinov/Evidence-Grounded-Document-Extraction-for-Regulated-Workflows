@@ -1,0 +1,20 @@
+
+============================================================
+Running layer: native
+============================================================
+Loading model mlx-community/Qwen3.5-2B-MLX-4bit ...
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2702.69it/s]
+Model loaded.
+Cache hits: 0, misses: 105
+Avg time per page: 3.957s
+
+============================================================
+Running layer: ocr
+============================================================
+Loading model mlx-community/Qwen3.5-2B-MLX-4bit ...
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 822.03it/s]
+Model loaded.
+Cache hits: 0, misses: 105
+Avg time per page: 2.871s
+
+Results written to /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/results/llm_reranker_smoke_qwen35_2b_v2.json and /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/results/llm_reranker_smoke_qwen35_2b_v2.md

@@ -1,0 +1,23 @@
+MODEL=mlx-community/Qwen3.5-2B-MLX-4bit
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2295.10it/s]
+loaded in 7.2s
+
+[V1] frozen score_page_mlx, sds_01/product_name, native p1..p9
+  p1: 0.983085
+  p2: 0.972415
+  p3: 0.977023
+  p4: 0.975577
+  p5: 0.975577
+  p6: 0.972415
+  p7: 0.966914
+  p8: 0.968856
+  p9: 0.972415
+  min=0.9669 max=0.9831 mean=0.9738
+
+[V2] default template tail: '|im_end|>\n<|im_start|>assistant\n<think>\n'
+[V2] greedy(default) 40 tokens: 'The user wants to know if the provided Safety Data Sheet (SDS) page contains text that states, implies, or helps derive the value of the field "product_name — Trade name / product identifier'
+
+[V3] enable_thinking=False tail: '|im_start|>assistant\n<think>\n\n</think>\n\n'
+[V3] greedy(no-thinking) 10 tokens: 'Yes'
+
+[V4] logits dtype: mlx.core.bfloat16

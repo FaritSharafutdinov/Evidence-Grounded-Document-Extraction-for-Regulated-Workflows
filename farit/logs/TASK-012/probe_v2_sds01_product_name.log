@@ -1,0 +1,22 @@
+MODEL=mlx-community/Qwen3.5-2B-MLX-4bit MODE=v2 CASE=sds_01.pdf/product_name pages=[1, 2, 3, 4, 5, 6, 7, 8, 9] gold_pages=[1] split=dev
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 1712.24it/s]
+model loaded in 5.9s
+  template tail (v2): '|im_start|>assistant\n<think>\n\n</think>\n\n'
+  p 1: score=0.777299849813523 greedy='Yes' (Yes) gold=Y [2.14s]
+  p 2: score=0.40733341240538484 greedy='No' (No) gold= [2.31s]
+  p 3: score=0.7310585706855139 greedy='Yes' (Yes) gold= [2.20s]
+  p 4: score=0.6224593197171028 greedy='Yes' (Yes) gold= [2.36s]
+  p 5: score=0.5 greedy='No' (No) gold= [2.02s]
+  p 6: score=0.46879062613025857 greedy='No' (No) gold= [2.19s]
+  p 7: score=0.40733342111103915 greedy='No' (No) gold= [2.20s]
+  p 8: score=0.37754067493992444 greedy='No' (No) gold= [3.09s]
+  p 9: score=0.4687906365489898 greedy='No' (No) gold= [1.94s]
+
+[stats] sds_01.pdf/product_name mode=v2
+  min=0.37754067493992444 max=0.777299849813523
+  mean=0.5289562790390818
+  band=0.3997591748735985
+  n_exact_zero=0
+  gold_page_ranks=[1]  best_rank=1
+  gold p1: greedy_first_token='Yes' (Yes)
+[ranks] p1:1  p3:2  p4:3  p5:4  p9:5  p6:6  p7:7  p2:8  p8:9

@@ -1,12 +1,20 @@
 # farit/AGENTS.md — research workflow conventions
 
-Roles: **K3** (main agent — designs, verifies, owns contact with Farit) and **K2** (executor in a separate session, e.g. opencode — implements per task specs). K2 is a *role*, not a specific model: any cheap model may fill it (GLM, DeepSeek, Kimi K2, ...). Farit is the human owner; judgement calls belong to him.
+## Agent roles (opencode)
+
+The multi-agent setup lives entirely in opencode; agents are defined in `.opencode/agents/` (committed). Roles:
+
+- **K3** (`.opencode/agents/k3.md`, primary, `alibaba-cloud/deepseek-v4.1-flash`) — main agent: designs, delegates, verifies, owns contact with Farit.
+- **K2** (`.opencode/agents/k2.md`, subagent, `opencode/deepseek-v4.1-flash-free`) — executor, implements per task specs. K2 is a *role*, not a specific model: the model line in the agent file may be swapped for any cheap model (GLM, Qwen, Kimi K2, ...).
+- **critic** (`.opencode/agents/critic.md`, subagent, `opencode/glm-5.3-flash-free`) — adversarial reviewer, deliberately on a *different model family* than K3 to decorrelate blind spots. Read-only except `farit/steering/reviews/`; works per the `critic-pass` skill.
+
+Farit is the human owner; judgement calls belong to him. Visibility into subagent work: opencode child sessions (Leader+Down to enter, Left/Right to cycle) plus `opencode debug agents`.
 
 ## Task board protocol (`farit/tasks/BOARD.md`, local/gitignored)
 
 - K2 works **only** from a spec file `farit/tasks/TASK-NNN-*.md` (context → hard constraints → design → acceptance criteria → report section at the end).
 - Statuses: `assigned` → `in_progress` → `review` (K2 done, awaits K3) → `done` / `rework`.
-- Before starting a task, K2 writes an ELI5 brief of the spec (skill `eli5`) and saves it to `farit/tasks/eli5/TASK-NNN.md`; work starts only after Farit's «приступай».
+- Delegation is two-phase: K3 first invokes K2 with «только eli5» — K2 writes an ELI5 brief (skill `eli5`) to `farit/tasks/eli5/TASK-NNN.md` and stops; after Farit's «приступай» K3 invokes K2 again to execute.
 - K2's numbers are *unverified* until K3 moves the task to `done`.
 - K3 documents its own work in the same format (spec written before, or post factum same day).
 
@@ -32,7 +40,11 @@ Roles: **K3** (main agent — designs, verifies, owns contact with Farit) and **
 Periodic, manual, two kinds:
 
 1. **Literature scans** (Deep Research, web): report saved to `papers/summaries/`, then analyzed and link-checked before any claim is used.
-2. **Teardown reviews** (Argon, web): a project artifact (PROGRESS.md, experiment design, week report) is pasted for critique. The critique + our point-by-point response is filed as `farit/steering/reviews/YYYY-MM-DD-<source>-<topic>.md`. No automation of the web UI (ToS, fragility).
+2. **Teardown reviews** (Argon, web): `farit/docs/RESEARCH-STATE.md` (living document, updated after every significant step) is the artifact under review; the `critic-packet` skill assembles it + fresh artifacts + questions into a paste-ready packet (`farit/docs/argon-packet-YYYY-MM-DD.md`). The critique + our point-by-point response is filed as `farit/steering/reviews/YYYY-MM-DD-<source>-<topic>.md`. No automation of the web UI (ToS, fragility). (`opencode/gemini-4-argon` exists in the zen catalog if API access is ever wanted.)
+
+## Internal criticism (critic agent)
+
+In addition to external reviews, the `critic` subagent runs adversarial passes **inside** the workflow: after every significant artifact (experiment report, week report, direction decision) and ~weekly on the overall research vector. Protocol: `critic-pass` skill; output: `farit/steering/reviews/YYYY-MM-DD-critic-<topic>.md`; K3 writes the point-by-point response and routes consequences to SPRINT/DEC.
 
 ## Reporting
 

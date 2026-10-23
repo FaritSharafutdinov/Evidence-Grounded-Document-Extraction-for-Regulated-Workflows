@@ -18,7 +18,7 @@
 
 ## Git zones
 
-- Committed: code (`farit/src/`), results (`farit/results/`), governance docs (`farit/ROADMAP.md`, `SPRINT.md`, `steering/`, `decisions/`, `experiments/`), evidence logs (`farit/logs/`), project skills (`.agents/skills/`).
+- Committed: code (`farit/src/`), results (`farit/results/`), governance docs (`farit/ROADMAP.md`, `SPRINT.md`, `steering/`, `decisions/`, `experiments/`), evidence logs (`farit/logs/`), project skills (`.agents/skills/`), agent definitions (`.opencode/agents/`).
 - Gitignored (local only): `farit/tasks/` (K2 coordination), `farit/docs/` (working docs), `farit/data/` (regenerable corpus + LLM caches).
 
 ## Numbers discipline (supervisor requirement)

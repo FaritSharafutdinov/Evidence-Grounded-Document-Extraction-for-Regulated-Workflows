@@ -1,0 +1,14 @@
+backend=mlx model=mlx-community/Qwen3.5-2B-MLX-4bit layers=['native', 'ocr'] methods=['M1', 'M2', 'M3', 'M4', 'M5']
+documents (20): sds_01.pdf, sds_02.pdf, sds_03.pdf, sds_04.pdf, sds_05.pdf, sds_06.pdf, sds_07.pdf, sds_08.pdf, sds_09.pdf, sds_10.pdf, sds_11.pdf, sds_12.pdf, sds_13.pdf, sds_14.pdf, sds_15.pdf, sds_16.pdf, sds_17.pdf, sds_18.pdf, sds_19.pdf, sds_20.pdf
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 2925.71it/s]
+  s4_M1_native: 20 docs, calls=20, prompt_tokens=149176, completion_tokens=14923, latency=737.1s -> s4_M1_native.json
+  s4_M1_ocr: 20 docs, calls=20, prompt_tokens=146759, completion_tokens=19159, latency=1127.7s -> s4_M1_ocr.json
+  s4_M2_native: 20 docs, calls=160, prompt_tokens=1083048, completion_tokens=11387, latency=3850.0s -> s4_M2_native.json
+  s4_M2_ocr: 20 docs, calls=160, prompt_tokens=1063712, completion_tokens=9179, latency=4104.7s -> s4_M2_ocr.json
+  s4_M3_native: 20 docs, calls=86, prompt_tokens=126224, completion_tokens=2632, latency=498.6s -> s4_M3_native.json
+  s4_M3_ocr: 20 docs, calls=78, prompt_tokens=111697, completion_tokens=2468, latency=443.0s -> s4_M3_ocr.json
+  s4_M4_native: 20 docs, calls=0, prompt_tokens=0, completion_tokens=0, latency=0.0s -> s4_M4_native.json
+  s4_M4_ocr: 20 docs, calls=0, prompt_tokens=0, completion_tokens=0, latency=0.0s -> s4_M4_ocr.json
+  s4_M5_native: 20 docs, calls=86, prompt_tokens=14198, completion_tokens=86, latency=53.7s -> s4_M5_native.json
+  s4_M5_ocr: 20 docs, calls=78, prompt_tokens=12846, completion_tokens=78, latency=35.9s -> s4_M5_ocr.json
+wrote 10 prediction set(s) + meta -> /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/data/predictions

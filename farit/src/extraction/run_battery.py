@@ -121,7 +121,7 @@ def configuration(
     }
     if method == "M4":
         config["extractor"] = "rules-v4"
-        config["note"] = "inherited rules-v4 (rows), re-scored on gold v1.2, 0 LLM calls"
+        config["note"] = "inherited rules-v4 (rows), re-scored on gold v1.3, 0 LLM calls"
     if method in DEPENDS_ON_M1:
         config["depends_on"] = "M1"
     return config

@@ -6,7 +6,7 @@ Modules
                       interface over a local MLX model and a hub OpenAI-compatible server.
 ``methods``           the five methods M1..M5 (four LLM, one rule-based).
 ``run_battery``       CLI runner: predictions + per-call cost meta under ``farit/``.
-``evaluate_battery``  scores every method x layer against gold v1.2 and writes the table.
+``evaluate_battery``  scores every method x layer against gold v1.3 and writes the table.
 
 Everything writes only inside ``farit/``; ``sdsbench/``, ``scripts/`` and ``data/``
 are imported read-only.

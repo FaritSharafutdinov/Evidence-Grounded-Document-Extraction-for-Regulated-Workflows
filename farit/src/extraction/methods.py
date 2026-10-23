@@ -7,7 +7,7 @@ M3 contextual citation   verifies each M1 citation against the cited page and it
                          neighbours, corrects page/quote; an unrepairable claim
                          degrades to NOT_STATED. Depends on M1.
 M4 rules-v4              the inherited non-LLM rule baseline (rows layout),
-                         re-scored against gold v1.2. Zero LLM calls.
+                         re-scored against gold v1.3. Zero LLM calls.
 M5 basic LLM verifier    per M1 claim, a Yes/No support call (gold-free). Yes
                          keeps the claim verbatim; No downgrades it to
                          NOT_STATED (value and evidence removed). Depends on M1.
@@ -787,7 +787,7 @@ def m5_basic_verifier(
 
 
 # ---------------------------------------------------------------------------
-# M4 — rules-v4 (inherited, re-scored on gold v1.2)
+# M4 — rules-v4 (inherited, re-scored on gold v1.3)
 # ---------------------------------------------------------------------------
 
 
@@ -811,7 +811,7 @@ METHODS = {
     "M1": "all-fields-one-pass (whole document)",
     "M2": "individual-field (one call per field + ingredients)",
     "M3": "contextual citation verification (depends on M1)",
-    "M4": "rules-v4 (inherited, re-scored on gold v1.2)",
+    "M4": "rules-v4 (inherited, re-scored on gold v1.3)",
     "M5": "basic LLM verifier (depends on M1)",
 }
 

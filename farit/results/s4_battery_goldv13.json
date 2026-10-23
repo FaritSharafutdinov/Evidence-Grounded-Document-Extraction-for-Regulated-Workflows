@@ -1,0 +1,1667 @@
+{
+  "configuration": {
+    "gold": "v1.3",
+    "split": "dev",
+    "scope": "full",
+    "methods": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5"
+    ],
+    "files": [
+      "s4_M1_native.json",
+      "s4_M1_ocr.json",
+      "s4_M2_native.json",
+      "s4_M2_ocr.json",
+      "s4_M3_native.json",
+      "s4_M3_ocr.json",
+      "s4_M4_native.json",
+      "s4_M4_ocr.json",
+      "s4_M5_native.json",
+      "s4_M5_ocr.json"
+    ]
+  },
+  "methods": {
+    "M1/native": {
+      "system": "s4-M1-native",
+      "prediction_id": "e5cc22b97315bdf2",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.8214285714285714,
+          "satisfied": 115,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.7857142857142857,
+          "satisfied": 110,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.373134328358209,
+          "satisfied": 50,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.208955223880597,
+          "satisfied": 28,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.19402985074626866,
+          "satisfied": 26,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.664179104477612,
+          "satisfied": 89,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.32857142857142857,
+          "satisfied": 46,
+          "applicable": 140,
+          "undecidable": 20
+        }
+      },
+      "joint_all": 0.15714285714285714,
+      "joint_evidence_bearing": 0.16417910447761194,
+      "conjunction": {
+        "state": {
+          "all": 0.8214285714285714,
+          "evidence_bearing": 0.8582089552238806
+        },
+        "+ value": {
+          "all": 0.7571428571428571,
+          "evidence_bearing": 0.7910447761194029
+        },
+        "+ page": {
+          "all": 0.3,
+          "evidence_bearing": 0.31343283582089554
+        },
+        "+ span": {
+          "all": 0.17857142857142858,
+          "evidence_bearing": 0.1865671641791045
+        },
+        "+ bbox": {
+          "all": 0.16428571428571428,
+          "evidence_bearing": 0.17164179104477612
+        },
+        "+ derivation": {
+          "all": 0.16428571428571428,
+          "evidence_bearing": 0.17164179104477612
+        },
+        "+ support (strict joint)": {
+          "all": 0.15714285714285714,
+          "evidence_bearing": 0.16417910447761194
+        }
+      },
+      "strict_state": 0.8214285714285714,
+      "lenient_state": 0.8214285714285714,
+      "undecidable_instances": 20,
+      "verbatim": {
+        "ok": 71,
+        "cited": 86
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 55,
+        "matched": 42,
+        "records_exact": 27,
+        "records_with_evidence": 9,
+        "precision": 0.4909090909090909,
+        "recall": 0.42857142857142855,
+        "key_recall": 0.6666666666666666
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.24175824175824176
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.18681318681318682
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.10204081632653061
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.15
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.15833333333333333
+        }
+      }
+    },
+    "M1/ocr": {
+      "system": "s4-M1-ocr",
+      "prediction_id": "7e72c88ae082835d",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.7214285714285714,
+          "satisfied": 101,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.7071428571428572,
+          "satisfied": 99,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.35074626865671643,
+          "satisfied": 47,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.20149253731343283,
+          "satisfied": 27,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.08955223880597014,
+          "satisfied": 12,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.5970149253731343,
+          "satisfied": 80,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.2714285714285714,
+          "satisfied": 38,
+          "applicable": 140,
+          "undecidable": 19
+        }
+      },
+      "joint_all": 0.08571428571428572,
+      "joint_evidence_bearing": 0.08955223880597014,
+      "conjunction": {
+        "state": {
+          "all": 0.7214285714285714,
+          "evidence_bearing": 0.753731343283582
+        },
+        "+ value": {
+          "all": 0.6785714285714286,
+          "evidence_bearing": 0.7089552238805971
+        },
+        "+ page": {
+          "all": 0.29285714285714287,
+          "evidence_bearing": 0.30597014925373134
+        },
+        "+ span": {
+          "all": 0.17857142857142858,
+          "evidence_bearing": 0.1865671641791045
+        },
+        "+ bbox": {
+          "all": 0.08571428571428572,
+          "evidence_bearing": 0.08955223880597014
+        },
+        "+ derivation": {
+          "all": 0.08571428571428572,
+          "evidence_bearing": 0.08955223880597014
+        },
+        "+ support (strict joint)": {
+          "all": 0.08571428571428572,
+          "evidence_bearing": 0.08955223880597014
+        }
+      },
+      "strict_state": 0.7214285714285714,
+      "lenient_state": 0.7214285714285714,
+      "undecidable_instances": 19,
+      "verbatim": {
+        "ok": 63,
+        "cited": 78
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 60,
+        "matched": 29,
+        "records_exact": 5,
+        "records_with_evidence": 0,
+        "precision": 0.08333333333333333,
+        "recall": 0.07936507936507936,
+        "key_recall": 0.4603174603174603
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.13186813186813187
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.10989010989010989
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.04081632653061224
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.1
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.08333333333333333
+        }
+      }
+    },
+    "M2/native": {
+      "system": "s4-M2-native",
+      "prediction_id": "0b0919f38b2dce12",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.55,
+          "satisfied": 77,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.65,
+          "satisfied": 91,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.44029850746268656,
+          "satisfied": 59,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.27611940298507465,
+          "satisfied": 37,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.23134328358208955,
+          "satisfied": 31,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.7008547008547008,
+          "satisfied": 82,
+          "applicable": 117,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.4132231404958678,
+          "satisfied": 50,
+          "applicable": 121,
+          "undecidable": 17
+        }
+      },
+      "joint_all": 0.19285714285714287,
+      "joint_evidence_bearing": 0.1865671641791045,
+      "conjunction": {
+        "state": {
+          "all": 0.55,
+          "evidence_bearing": 0.5597014925373134
+        },
+        "+ value": {
+          "all": 0.38571428571428573,
+          "evidence_bearing": 0.3880597014925373
+        },
+        "+ page": {
+          "all": 0.29285714285714287,
+          "evidence_bearing": 0.291044776119403
+        },
+        "+ span": {
+          "all": 0.2357142857142857,
+          "evidence_bearing": 0.23134328358208955
+        },
+        "+ bbox": {
+          "all": 0.19285714285714287,
+          "evidence_bearing": 0.1865671641791045
+        },
+        "+ derivation": {
+          "all": 0.19285714285714287,
+          "evidence_bearing": 0.1865671641791045
+        },
+        "+ support (strict joint)": {
+          "all": 0.19285714285714287,
+          "evidence_bearing": 0.1865671641791045
+        }
+      },
+      "strict_state": 0.55,
+      "lenient_state": 0.55,
+      "undecidable_instances": 17,
+      "verbatim": {
+        "ok": 78,
+        "cited": 92
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 19,
+        "matched": 16,
+        "records_exact": 8,
+        "records_with_evidence": 3,
+        "precision": 0.42105263157894735,
+        "recall": 0.12698412698412698,
+        "key_recall": 0.25396825396825395
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.27472527472527475
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.04081632653061224
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.24175824175824176
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.10204081632653061
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.2
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.19166666666666668
+        }
+      }
+    },
+    "M2/ocr": {
+      "system": "s4-M2-ocr",
+      "prediction_id": "03dc3ac4d3f558bb",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.5428571428571428,
+          "satisfied": 76,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.7,
+          "satisfied": 98,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.417910447761194,
+          "satisfied": 56,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.26119402985074625,
+          "satisfied": 35,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.11940298507462686,
+          "satisfied": 16,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.7053571428571429,
+          "satisfied": 79,
+          "applicable": 112,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.4224137931034483,
+          "satisfied": 49,
+          "applicable": 116,
+          "undecidable": 16
+        }
+      },
+      "joint_all": 0.11428571428571428,
+      "joint_evidence_bearing": 0.1044776119402985,
+      "conjunction": {
+        "state": {
+          "all": 0.5428571428571428,
+          "evidence_bearing": 0.5522388059701493
+        },
+        "+ value": {
+          "all": 0.38571428571428573,
+          "evidence_bearing": 0.3880597014925373
+        },
+        "+ page": {
+          "all": 0.3142857142857143,
+          "evidence_bearing": 0.31343283582089554
+        },
+        "+ span": {
+          "all": 0.2357142857142857,
+          "evidence_bearing": 0.23134328358208955
+        },
+        "+ bbox": {
+          "all": 0.11428571428571428,
+          "evidence_bearing": 0.1044776119402985
+        },
+        "+ derivation": {
+          "all": 0.11428571428571428,
+          "evidence_bearing": 0.1044776119402985
+        },
+        "+ support (strict joint)": {
+          "all": 0.11428571428571428,
+          "evidence_bearing": 0.1044776119402985
+        }
+      },
+      "strict_state": 0.5428571428571428,
+      "lenient_state": 0.5428571428571428,
+      "undecidable_instances": 16,
+      "verbatim": {
+        "ok": 75,
+        "cited": 84
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 6,
+        "matched": 6,
+        "records_exact": 3,
+        "records_with_evidence": 1,
+        "precision": 0.5,
+        "recall": 0.047619047619047616,
+        "key_recall": 0.09523809523809523
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.15384615384615385
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.04081632653061224
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.14285714285714285
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.061224489795918366
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.1
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.11666666666666667
+        }
+      }
+    },
+    "M3/native": {
+      "system": "s4-M3-native",
+      "prediction_id": "5761a050f959cb38",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.7857142857142857,
+          "satisfied": 110,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8,
+          "satisfied": 112,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.3805970149253731,
+          "satisfied": 51,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.22388059701492538,
+          "satisfied": 30,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.208955223880597,
+          "satisfied": 28,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.6370967741935484,
+          "satisfied": 79,
+          "applicable": 124,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.3769230769230769,
+          "satisfied": 49,
+          "applicable": 130,
+          "undecidable": 21
+        }
+      },
+      "joint_all": 0.15714285714285714,
+      "joint_evidence_bearing": 0.16417910447761194,
+      "conjunction": {
+        "state": {
+          "all": 0.7857142857142857,
+          "evidence_bearing": 0.8208955223880597
+        },
+        "+ value": {
+          "all": 0.7285714285714285,
+          "evidence_bearing": 0.7611940298507462
+        },
+        "+ page": {
+          "all": 0.3,
+          "evidence_bearing": 0.31343283582089554
+        },
+        "+ span": {
+          "all": 0.17857142857142858,
+          "evidence_bearing": 0.1865671641791045
+        },
+        "+ bbox": {
+          "all": 0.16428571428571428,
+          "evidence_bearing": 0.17164179104477612
+        },
+        "+ derivation": {
+          "all": 0.16428571428571428,
+          "evidence_bearing": 0.17164179104477612
+        },
+        "+ support (strict joint)": {
+          "all": 0.15714285714285714,
+          "evidence_bearing": 0.16417910447761194
+        }
+      },
+      "strict_state": 0.7857142857142857,
+      "lenient_state": 0.7928571428571428,
+      "undecidable_instances": 21,
+      "verbatim": {
+        "ok": 76,
+        "cited": 76
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 55,
+        "matched": 42,
+        "records_exact": 27,
+        "records_with_evidence": 9,
+        "precision": 0.4909090909090909,
+        "recall": 0.42857142857142855,
+        "key_recall": 0.6666666666666666
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.24175824175824176
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.18681318681318682
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.10204081632653061
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.15
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.15833333333333333
+        }
+      }
+    },
+    "M3/ocr": {
+      "system": "s4-M3-ocr",
+      "prediction_id": "093e7fa70d25d290",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.6785714285714286,
+          "satisfied": 95,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.7357142857142858,
+          "satisfied": 103,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.34328358208955223,
+          "satisfied": 46,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.208955223880597,
+          "satisfied": 28,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.09701492537313433,
+          "satisfied": 13,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.6517857142857143,
+          "satisfied": 73,
+          "applicable": 112,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.3389830508474576,
+          "satisfied": 40,
+          "applicable": 118,
+          "undecidable": 20
+        }
+      },
+      "joint_all": 0.07857142857142857,
+      "joint_evidence_bearing": 0.08208955223880597,
+      "conjunction": {
+        "state": {
+          "all": 0.6785714285714286,
+          "evidence_bearing": 0.7089552238805971
+        },
+        "+ value": {
+          "all": 0.6428571428571429,
+          "evidence_bearing": 0.6716417910447762
+        },
+        "+ page": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.29850746268656714
+        },
+        "+ span": {
+          "all": 0.17142857142857143,
+          "evidence_bearing": 0.1791044776119403
+        },
+        "+ bbox": {
+          "all": 0.07857142857142857,
+          "evidence_bearing": 0.08208955223880597
+        },
+        "+ derivation": {
+          "all": 0.07857142857142857,
+          "evidence_bearing": 0.08208955223880597
+        },
+        "+ support (strict joint)": {
+          "all": 0.07857142857142857,
+          "evidence_bearing": 0.08208955223880597
+        }
+      },
+      "strict_state": 0.6785714285714286,
+      "lenient_state": 0.6785714285714286,
+      "undecidable_instances": 20,
+      "verbatim": {
+        "ok": 70,
+        "cited": 70
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 60,
+        "matched": 29,
+        "records_exact": 5,
+        "records_with_evidence": 0,
+        "precision": 0.08333333333333333,
+        "recall": 0.07936507936507936,
+        "key_recall": 0.4603174603174603
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.12087912087912088
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.0989010989010989
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.04081632653061224
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.1
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.075
+        }
+      }
+    },
+    "M4/native": {
+      "system": "s4-M4-native",
+      "prediction_id": "8fdeba75a73df8ff",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.8,
+          "satisfied": 112,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8642857142857143,
+          "satisfied": 121,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.7388059701492538,
+          "satisfied": 99,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.5970149253731343,
+          "satisfied": 80,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.5671641791044776,
+          "satisfied": 76,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.926605504587156,
+          "satisfied": 101,
+          "applicable": 109,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.9541284403669725,
+          "satisfied": 104,
+          "applicable": 109,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.55,
+      "joint_evidence_bearing": 0.5298507462686567,
+      "conjunction": {
+        "state": {
+          "all": 0.8,
+          "evidence_bearing": 0.7910447761194029
+        },
+        "+ value": {
+          "all": 0.7642857142857142,
+          "evidence_bearing": 0.753731343283582
+        },
+        "+ page": {
+          "all": 0.7142857142857143,
+          "evidence_bearing": 0.7014925373134329
+        },
+        "+ span": {
+          "all": 0.6071428571428571,
+          "evidence_bearing": 0.5895522388059702
+        },
+        "+ bbox": {
+          "all": 0.5785714285714286,
+          "evidence_bearing": 0.5597014925373134
+        },
+        "+ derivation": {
+          "all": 0.5642857142857143,
+          "evidence_bearing": 0.5447761194029851
+        },
+        "+ support (strict joint)": {
+          "all": 0.55,
+          "evidence_bearing": 0.5298507462686567
+        }
+      },
+      "strict_state": 0.8,
+      "lenient_state": 0.8,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 104,
+        "cited": 109
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 39,
+        "matched": 39,
+        "records_exact": 2,
+        "records_with_evidence": 2,
+        "precision": 0.05128205128205128,
+        "recall": 0.031746031746031744,
+        "key_recall": 0.6190476190476191
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.6043956043956044
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.4489795918367347
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.4835164835164835
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.673469387755102
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.6
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.5416666666666666
+        }
+      }
+    },
+    "M4/ocr": {
+      "system": "s4-M4-ocr",
+      "prediction_id": "d5487e77fb07f618",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.7357142857142858,
+          "satisfied": 103,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8285714285714286,
+          "satisfied": 116,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.7089552238805971,
+          "satisfied": 95,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.5597014925373134,
+          "satisfied": 75,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.291044776119403,
+          "satisfied": 39,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.9207920792079208,
+          "satisfied": 93,
+          "applicable": 101,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.9603960396039604,
+          "satisfied": 97,
+          "applicable": 101,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.30714285714285716,
+      "joint_evidence_bearing": 0.27611940298507465,
+      "conjunction": {
+        "state": {
+          "all": 0.7357142857142858,
+          "evidence_bearing": 0.7238805970149254
+        },
+        "+ value": {
+          "all": 0.6928571428571428,
+          "evidence_bearing": 0.6791044776119403
+        },
+        "+ page": {
+          "all": 0.6785714285714286,
+          "evidence_bearing": 0.664179104477612
+        },
+        "+ span": {
+          "all": 0.5714285714285714,
+          "evidence_bearing": 0.5522388059701493
+        },
+        "+ bbox": {
+          "all": 0.3142857142857143,
+          "evidence_bearing": 0.2835820895522388
+        },
+        "+ derivation": {
+          "all": 0.30714285714285716,
+          "evidence_bearing": 0.27611940298507465
+        },
+        "+ support (strict joint)": {
+          "all": 0.30714285714285716,
+          "evidence_bearing": 0.27611940298507465
+        }
+      },
+      "strict_state": 0.7357142857142858,
+      "lenient_state": 0.7428571428571429,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 97,
+        "cited": 101
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 32,
+        "matched": 32,
+        "records_exact": 2,
+        "records_with_evidence": 2,
+        "precision": 0.0625,
+        "recall": 0.031746031746031744,
+        "key_recall": 0.5079365079365079
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.31868131868131866
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.2857142857142857
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.2857142857142857
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.3469387755102041
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.45
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.2833333333333333
+        }
+      }
+    },
+    "M5/native": {
+      "system": "s4-M5-native",
+      "prediction_id": "27dfe196ab67c403",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.7214285714285714,
+          "satisfied": 101,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.75,
+          "satisfied": 105,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.3582089552238806,
+          "satisfied": 48,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.208955223880597,
+          "satisfied": 28,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.19402985074626866,
+          "satisfied": 26,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.6637168141592921,
+          "satisfied": 75,
+          "applicable": 113,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.3898305084745763,
+          "satisfied": 46,
+          "applicable": 118,
+          "undecidable": 5
+        }
+      },
+      "joint_all": 0.16428571428571428,
+      "joint_evidence_bearing": 0.16417910447761194,
+      "conjunction": {
+        "state": {
+          "all": 0.7214285714285714,
+          "evidence_bearing": 0.746268656716418
+        },
+        "+ value": {
+          "all": 0.6714285714285714,
+          "evidence_bearing": 0.6940298507462687
+        },
+        "+ page": {
+          "all": 0.3,
+          "evidence_bearing": 0.30597014925373134
+        },
+        "+ span": {
+          "all": 0.18571428571428572,
+          "evidence_bearing": 0.1865671641791045
+        },
+        "+ bbox": {
+          "all": 0.17142857142857143,
+          "evidence_bearing": 0.17164179104477612
+        },
+        "+ derivation": {
+          "all": 0.17142857142857143,
+          "evidence_bearing": 0.17164179104477612
+        },
+        "+ support (strict joint)": {
+          "all": 0.16428571428571428,
+          "evidence_bearing": 0.16417910447761194
+        }
+      },
+      "strict_state": 0.7214285714285714,
+      "lenient_state": 0.7285714285714285,
+      "undecidable_instances": 5,
+      "verbatim": {
+        "ok": 54,
+        "cited": 64
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 55,
+        "matched": 42,
+        "records_exact": 27,
+        "records_with_evidence": 9,
+        "precision": 0.4909090909090909,
+        "recall": 0.42857142857142855,
+        "key_recall": 0.6666666666666666
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.24175824175824176
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.02040816326530612
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.1978021978021978
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.10204081632653061
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.15
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.16666666666666666
+        }
+      }
+    },
+    "M5/ocr": {
+      "system": "s4-M5-ocr",
+      "prediction_id": "315a0d02f86c3867",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.6428571428571429,
+          "satisfied": 90,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.7285714285714285,
+          "satisfied": 102,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.3208955223880597,
+          "satisfied": 43,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.19402985074626866,
+          "satisfied": 26,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.08955223880597014,
+          "satisfied": 12,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.6699029126213593,
+          "satisfied": 69,
+          "applicable": 103,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.3425925925925926,
+          "satisfied": 37,
+          "applicable": 108,
+          "undecidable": 4
+        }
+      },
+      "joint_all": 0.09285714285714286,
+      "joint_evidence_bearing": 0.08955223880597014,
+      "conjunction": {
+        "state": {
+          "all": 0.6428571428571429,
+          "evidence_bearing": 0.664179104477612
+        },
+        "+ value": {
+          "all": 0.6142857142857143,
+          "evidence_bearing": 0.6343283582089553
+        },
+        "+ page": {
+          "all": 0.2785714285714286,
+          "evidence_bearing": 0.2835820895522388
+        },
+        "+ span": {
+          "all": 0.17857142857142858,
+          "evidence_bearing": 0.1791044776119403
+        },
+        "+ bbox": {
+          "all": 0.09285714285714286,
+          "evidence_bearing": 0.08955223880597014
+        },
+        "+ derivation": {
+          "all": 0.09285714285714286,
+          "evidence_bearing": 0.08955223880597014
+        },
+        "+ support (strict joint)": {
+          "all": 0.09285714285714286,
+          "evidence_bearing": 0.08955223880597014
+        }
+      },
+      "strict_state": 0.6428571428571429,
+      "lenient_state": 0.65,
+      "undecidable_instances": 4,
+      "verbatim": {
+        "ok": 46,
+        "cited": 60
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 60,
+        "matched": 29,
+        "records_exact": 5,
+        "records_with_evidence": 0,
+        "precision": 0.08333333333333333,
+        "recall": 0.07936507936507936,
+        "key_recall": 0.4603174603174603
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.13186813186813187
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.02040816326530612
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.12087912087912088
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.04081632653061224
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.1
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.09166666666666666
+        }
+      }
+    }
+  },
+  "cost": {
+    "M1/native": {
+      "cost": {
+        "n_calls": 20,
+        "n_records": 20,
+        "prompt_tokens": 149176,
+        "completion_tokens": 14923,
+        "latency_s": 737.121,
+        "n_cached": 1,
+        "n_errors": 0
+      },
+      "info": {
+        "documents_with_contract_violations": 20,
+        "contract_violations": {
+          "claim_without_citation": 54,
+          "quote_not_verbatim": 46,
+          "derived_premise_set_incomplete": 6
+        }
+      },
+      "method": "M1",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M1/ocr": {
+      "cost": {
+        "n_calls": 20,
+        "n_records": 20,
+        "prompt_tokens": 146759,
+        "completion_tokens": 19159,
+        "latency_s": 1127.676,
+        "n_cached": 1,
+        "n_errors": 0
+      },
+      "info": {
+        "documents_with_contract_violations": 18,
+        "contract_violations": {
+          "claim_without_citation": 48,
+          "quote_not_verbatim": 51,
+          "derived_premise_set_incomplete": 6
+        }
+      },
+      "method": "M1",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M2/native": {
+      "cost": {
+        "n_calls": 160,
+        "n_records": 160,
+        "prompt_tokens": 1083048,
+        "completion_tokens": 11387,
+        "latency_s": 3849.962,
+        "n_cached": 8,
+        "n_errors": 0
+      },
+      "info": {
+        "contract_violations": {}
+      },
+      "method": "M2",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M2/ocr": {
+      "cost": {
+        "n_calls": 160,
+        "n_records": 160,
+        "prompt_tokens": 1063712,
+        "completion_tokens": 9179,
+        "latency_s": 4104.673,
+        "n_cached": 8,
+        "n_errors": 0
+      },
+      "info": {
+        "contract_violations": {}
+      },
+      "method": "M2",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M3/native": {
+      "cost": {
+        "n_calls": 86,
+        "n_records": 86,
+        "prompt_tokens": 126224,
+        "completion_tokens": 2632,
+        "latency_s": 498.639,
+        "n_cached": 7,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 20,
+          "n_records": 20,
+          "prompt_tokens": 149176,
+          "completion_tokens": 14923,
+          "latency_s": 737.121,
+          "n_cached": 1,
+          "n_errors": 0
+        },
+        "degraded_claims": 0
+      },
+      "method": "M3",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M3/ocr": {
+      "cost": {
+        "n_calls": 78,
+        "n_records": 78,
+        "prompt_tokens": 111697,
+        "completion_tokens": 2468,
+        "latency_s": 442.959,
+        "n_cached": 7,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 20,
+          "n_records": 20,
+          "prompt_tokens": 146759,
+          "completion_tokens": 19159,
+          "latency_s": 1127.676,
+          "n_cached": 1,
+          "n_errors": 0
+        },
+        "degraded_claims": 0
+      },
+      "method": "M3",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M4/native": {
+      "cost": {
+        "n_calls": 0,
+        "n_records": 20,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "latency_s": 0.0,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "extractor": "rules-v4",
+        "n_calls": 0
+      },
+      "method": "M4",
+      "backend": "rules",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M4/ocr": {
+      "cost": {
+        "n_calls": 0,
+        "n_records": 20,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "latency_s": 0.0,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "extractor": "rules-v4",
+        "n_calls": 0
+      },
+      "method": "M4",
+      "backend": "rules",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M5/native": {
+      "cost": {
+        "n_calls": 86,
+        "n_records": 86,
+        "prompt_tokens": 14198,
+        "completion_tokens": 86,
+        "latency_s": 53.672,
+        "n_cached": 8,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 20,
+          "n_records": 20,
+          "prompt_tokens": 149176,
+          "completion_tokens": 14923,
+          "latency_s": 737.121,
+          "n_cached": 1,
+          "n_errors": 0
+        },
+        "yes": 2,
+        "no": 2
+      },
+      "method": "M5",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M5/ocr": {
+      "cost": {
+        "n_calls": 78,
+        "n_records": 78,
+        "prompt_tokens": 12846,
+        "completion_tokens": 78,
+        "latency_s": 35.862,
+        "n_cached": 28,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 20,
+          "n_records": 20,
+          "prompt_tokens": 146759,
+          "completion_tokens": 19159,
+          "latency_s": 1127.676,
+          "n_cached": 1,
+          "n_errors": 0
+        },
+        "yes": 4,
+        "no": 0
+      },
+      "method": "M5",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    }
+  },
+  "inherited": {
+    "llm-qwen2.5-7b-native-rows": {
+      "system": "llm-qwen2.5-7b-native-rows",
+      "prediction_id": "b486c308c8e9d921",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.6214285714285714,
+          "satisfied": 87,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8642857142857143,
+          "satisfied": 121,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.1865671641791045,
+          "satisfied": 25,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.07462686567164178,
+          "satisfied": 10,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.05970149253731343,
+          "satisfied": 8,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8020833333333334,
+          "satisfied": 77,
+          "applicable": 96,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.09,
+          "satisfied": 9,
+          "applicable": 100,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.03571428571428571,
+      "joint_evidence_bearing": 0.022388059701492536,
+      "conjunction": {
+        "state": {
+          "all": 0.6214285714285714,
+          "evidence_bearing": 0.6343283582089553
+        },
+        "+ value": {
+          "all": 0.5714285714285714,
+          "evidence_bearing": 0.582089552238806
+        },
+        "+ page": {
+          "all": 0.15,
+          "evidence_bearing": 0.1417910447761194
+        },
+        "+ span": {
+          "all": 0.06428571428571428,
+          "evidence_bearing": 0.05223880597014925
+        },
+        "+ bbox": {
+          "all": 0.05714285714285714,
+          "evidence_bearing": 0.04477611940298507
+        },
+        "+ derivation": {
+          "all": 0.03571428571428571,
+          "evidence_bearing": 0.022388059701492536
+        },
+        "+ support (strict joint)": {
+          "all": 0.03571428571428571,
+          "evidence_bearing": 0.022388059701492536
+        }
+      },
+      "strict_state": 0.6214285714285714,
+      "lenient_state": 0.6285714285714286,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 22,
+        "cited": 39
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 52,
+        "matched": 49,
+        "records_exact": 32,
+        "records_with_evidence": 5,
+        "precision": 0.6153846153846154,
+        "recall": 0.5079365079365079,
+        "key_recall": 0.7777777777777778
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.01098901098901099
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.08163265306122448
+        },
+        "single_evidence": {
+          "n": 91,
+          "joint_all": 0.054945054945054944
+        },
+        "multi_evidence": {
+          "n": 49,
+          "joint_all": 0.0
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.0
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.041666666666666664
+        }
+      },
+      "gold": "old gold (frozen artifact, shown for orientation; not re-scored against v1.3)",
+      "note": "Qwen2.5-7B native rows, inherited. It was produced on an earlier gold; the numbers below score the frozen predictions against the current gold v1.3 and are shown only as a historical reference, never combined with the battery."
+    }
+  },
+  "errors": {}
+}

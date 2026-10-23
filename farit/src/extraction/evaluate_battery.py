@@ -6,7 +6,7 @@ Usage (from the repository root)::
     ~/ds_env/bin/python farit/src/extraction/evaluate_battery.py --smoke
 
 Loads every ``farit/data/predictions/s4_*.json`` (or explicit paths), scores it
-against gold v1.2 ``dev`` with ``sdsbench.evaluator`` (7 axes + joint, evidence-
+against gold v1.3 ``dev`` with ``sdsbench.evaluator`` (7 axes + joint, evidence-
 bearing subset, slices) and aggregates the per-call cost from the matching
 ``*.meta.json``. The frozen Qwen2.5-7B file is shown in a separate
 "Inherited (old gold)" section; rules-v4 is a first-class method here and is not
@@ -190,10 +190,10 @@ def score_inherited(path: Path, gold_all: list, gold_by_key: dict) -> dict | Non
     if not path.exists():
         return None
     metrics = score_prediction_set(path, gold_all, gold_by_key)
-    metrics["gold"] = "old gold (frozen artifact, shown for orientation; not re-scored against v1.2)"
+    metrics["gold"] = "old gold (frozen artifact, shown for orientation; not re-scored against v1.3)"
     metrics["note"] = (
         "Qwen2.5-7B native rows, inherited. It was produced on an earlier gold; the "
-        "numbers below score the frozen predictions against the current gold v1.2 and "
+        "numbers below score the frozen predictions against the current gold v1.3 and "
         "are shown only as a historical reference, never combined with the battery."
     )
     return metrics
@@ -217,8 +217,8 @@ def render_markdown(result: dict, smoke: bool) -> str:
     lines.append("# S4 baseline battery — " + ("smoke" if smoke else "full") + " run")
     lines.append("")
     lines.append(
-        "Five simple extraction methods on one model, scored against gold v1.2 (dev split). "
-        "M3 and M5 depend on the M1 pass; M4 is the inherited rules-v4 re-scored against v1.2 "
+        "Five simple extraction methods on one model, scored against gold v1.3 (dev split). "
+        "M3 and M5 depend on the M1 pass; M4 is the inherited rules-v4 re-scored against v1.3 "
         "with zero LLM calls."
     )
     lines.append("")
@@ -315,7 +315,7 @@ def render_markdown(result: dict, smoke: bool) -> str:
     if inherited:
         lines.append("## Inherited (old gold)")
         lines.append("")
-        lines.append("Frozen Qwen2.5-7B native-rows artifact. Not re-scored on v1.2; shown only "
+        lines.append("Frozen Qwen2.5-7B native-rows artifact. Not re-scored on v1.3; shown only "
                      "as a historical reference and never mixed with the battery table.")
         lines.append("")
         lines.append("| System | n inst | 7-axis joint | joint (evidence-bearing) |")
@@ -371,7 +371,7 @@ def main() -> int:
     tag = args.tag or ("smoke" if args.smoke else "battery")
     result = {
         "configuration": {
-            "gold": "v1.2",
+            "gold": "v1.3",
             "split": "dev",
             "scope": "smoke" if args.smoke else "full",
             "methods": sorted({method for method, _ in methods}),

@@ -1,0 +1,12 @@
+s4_M1_native_smoke.json: joint=42.9% joint_eb=42.9% n=7 (layer native)
+s4_M1_ocr_smoke.json: joint=28.6% joint_eb=28.6% n=7 (layer ocr)
+s4_M2_native_smoke.json: joint=14.3% joint_eb=14.3% n=7 (layer native)
+s4_M2_ocr_smoke.json: joint=28.6% joint_eb=28.6% n=7 (layer ocr)
+s4_M3_native_smoke.json: joint=42.9% joint_eb=42.9% n=7 (layer native)
+s4_M3_ocr_smoke.json: joint=28.6% joint_eb=28.6% n=7 (layer ocr)
+s4_M4_native_smoke.json: joint=85.7% joint_eb=85.7% n=7 (layer native)
+s4_M4_ocr_smoke.json: joint=71.4% joint_eb=71.4% n=7 (layer ocr)
+s4_M5_native_smoke.json: joint=42.9% joint_eb=42.9% n=7 (layer native)
+s4_M5_ocr_smoke.json: joint=28.6% joint_eb=28.6% n=7 (layer ocr)
+inherited llm-qwen2.5-7b-native-rows: joint=3.6%
+wrote /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/results/s4_battery_smoke.json and /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/results/s4_battery_smoke.md

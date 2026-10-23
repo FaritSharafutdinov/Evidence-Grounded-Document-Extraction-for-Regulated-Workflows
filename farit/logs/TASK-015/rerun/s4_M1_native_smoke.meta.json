@@ -1,0 +1,53 @@
+{
+  "method": "M1",
+  "method_description": "all-fields-one-pass (whole document)",
+  "system": "s4-M1-native-smoke",
+  "backend": "mlx",
+  "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+  "layer": "native",
+  "split": "dev",
+  "documents": [
+    "sds_05.pdf"
+  ],
+  "prediction_id": "14fd03e7ac7025a8",
+  "configuration": {
+    "layer": "native",
+    "layout": "rows",
+    "extractor": "s4:M1",
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke"
+  },
+  "cost": {
+    "n_calls": 1,
+    "n_records": 1,
+    "prompt_tokens": 8747,
+    "completion_tokens": 952,
+    "latency_s": 0.0,
+    "n_cached": 1,
+    "n_errors": 0
+  },
+  "info": {
+    "documents_with_contract_violations": 1,
+    "contract_violations": {
+      "derived_premise_set_incomplete": 3,
+      "quote_not_verbatim": 2
+    }
+  },
+  "calls": [
+    {
+      "method": "M1",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 8747,
+      "completion_tokens": 952,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "all-fields",
+      "error": null
+    }
+  ]
+}

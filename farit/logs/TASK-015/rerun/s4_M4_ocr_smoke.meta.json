@@ -1,0 +1,51 @@
+{
+  "method": "M4",
+  "method_description": "rules-v4 (inherited, re-scored on gold v1.2)",
+  "system": "s4-M4-ocr-smoke",
+  "backend": "rules",
+  "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+  "layer": "ocr",
+  "split": "dev",
+  "documents": [
+    "sds_05.pdf"
+  ],
+  "prediction_id": "fe12b78de3c42a0d",
+  "configuration": {
+    "layer": "ocr",
+    "layout": "rows",
+    "extractor": "rules-v4",
+    "backend": "rules",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke",
+    "note": "inherited rules-v4 (rows), re-scored on gold v1.2, 0 LLM calls"
+  },
+  "cost": {
+    "n_calls": 0,
+    "n_records": 1,
+    "prompt_tokens": 0,
+    "completion_tokens": 0,
+    "latency_s": 0.0,
+    "n_cached": 0,
+    "n_errors": 0
+  },
+  "info": {
+    "extractor": "rules-v4",
+    "n_calls": 0
+  },
+  "calls": [
+    {
+      "method": "M4",
+      "document": "sds_05.pdf",
+      "layer": "ocr",
+      "backend": "rules",
+      "prompt_tokens": 0,
+      "completion_tokens": 0,
+      "latency_s": 0.0,
+      "cached": false,
+      "n_calls": 0,
+      "label": "rules-v4",
+      "error": null
+    }
+  ]
+}

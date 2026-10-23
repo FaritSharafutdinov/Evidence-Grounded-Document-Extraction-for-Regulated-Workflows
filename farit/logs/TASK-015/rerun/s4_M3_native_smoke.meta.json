@@ -1,0 +1,138 @@
+{
+  "method": "M3",
+  "method_description": "contextual citation verification (depends on M1)",
+  "system": "s4-M3-native-smoke",
+  "backend": "mlx",
+  "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+  "layer": "native",
+  "split": "dev",
+  "documents": [
+    "sds_05.pdf"
+  ],
+  "prediction_id": "8e6b14671c5f9b83",
+  "configuration": {
+    "layer": "native",
+    "layout": "rows",
+    "extractor": "s4:M3",
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke",
+    "depends_on": "M1"
+  },
+  "cost": {
+    "n_calls": 7,
+    "n_records": 7,
+    "prompt_tokens": 9781,
+    "completion_tokens": 255,
+    "latency_s": 0.0,
+    "n_cached": 7,
+    "n_errors": 0
+  },
+  "info": {
+    "depends_on": "M1",
+    "m1_dependency_cost": {
+      "n_calls": 1,
+      "n_records": 1,
+      "prompt_tokens": 8747,
+      "completion_tokens": 952,
+      "latency_s": 0.0,
+      "n_cached": 1,
+      "n_errors": 0
+    },
+    "degraded_claims": 0
+  },
+  "calls": [
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 1274,
+      "completion_tokens": 28,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "product_name",
+      "error": null
+    },
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 1269,
+      "completion_tokens": 24,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "supplier_name",
+      "error": null
+    },
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 1269,
+      "completion_tokens": 27,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "substance_or_mixture",
+      "error": null
+    },
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 1285,
+      "completion_tokens": 51,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "product_cas_number",
+      "error": null
+    },
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 1283,
+      "completion_tokens": 43,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "chemical_formula",
+      "error": null
+    },
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 1284,
+      "completion_tokens": 43,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "molecular_weight",
+      "error": null
+    },
+    {
+      "method": "M3",
+      "document": "sds_05.pdf",
+      "layer": "native",
+      "backend": "mlx",
+      "prompt_tokens": 2117,
+      "completion_tokens": 39,
+      "latency_s": 0.0,
+      "cached": true,
+      "n_calls": 1,
+      "label": "flash_point",
+      "error": null
+    }
+  ]
+}

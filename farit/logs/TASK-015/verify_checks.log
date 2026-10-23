@@ -1,0 +1,12 @@
+gold dev docs: 20; locked present in gold: []
+s4_M1_native_smoke.json      split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M1_ocr_smoke.json         split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M2_native_smoke.json      split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M2_ocr_smoke.json         split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M3_native_smoke.json      split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M3_ocr_smoke.json         split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M4_native_smoke.json      split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M4_ocr_smoke.json         split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M5_native_smoke.json      split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+s4_M5_ocr_smoke.json         split=dev docs=['sds_05.pdf'] roundtrip=True leaked=[] locked=[] n_inst=7 empty-claims=0
+ALL CHECKS PASS: True

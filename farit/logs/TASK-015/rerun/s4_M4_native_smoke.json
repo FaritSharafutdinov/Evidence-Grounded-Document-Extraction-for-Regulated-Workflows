@@ -1,0 +1,217 @@
+{
+  "system": "s4-M4-native-smoke",
+  "configuration": {
+    "layer": "native",
+    "layout": "rows",
+    "extractor": "rules-v4",
+    "backend": "rules",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke",
+    "note": "inherited rules-v4 (rows), re-scored on gold v1.2, 0 LLM calls"
+  },
+  "documents": [
+    {
+      "document": "sds_05.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "MOBIL SHC PM 220",
+          "evidence": {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220",
+            "bbox": [
+              0.08251633986928104,
+              0.08000378656868982,
+              0.39515356924019607,
+              0.09551767869429155
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "ExxonMobil Petroleum & Chemical BV",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier: ExxonMobil Petroleum & Chemical BV",
+            "bbox": [
+              0.1323529411764706,
+              0.4753182151100852,
+              0.5760358423968546,
+              0.48942172888553503
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.85,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "bbox": [
+              0.07352941176470588,
+              0.5217790699968434,
+              0.6292972938687194,
+              0.5358825837722933
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07352941176470588,
+                0.5217790699968434,
+                0.6292972938687194,
+                0.5358825837722933
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07352941176470588,
+                0.5217790699968434,
+                0.6292972938687194,
+                0.5358825837722933
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07352941176470588,
+                0.5217790699968434,
+                0.6292972938687194,
+                0.5358825837722933
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "PRESENT",
+          "value": ">225°C (437°F) [ASTM D-92]",
+          "evidence": {
+            "page": 3,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "bbox": [
+              0.1323529411764706,
+              0.8586187651663115,
+              0.5525980432049121,
+              0.8727222789417614
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "Distillates (petroleum), hydrotreated heavy 01-2119484627-25 Asp. Tox. 1 H304",
+            "cas_number": "64742-54-7",
+            "cas_state": "PRESENT",
+            "concentration": "1 - < 5%",
+            "evidence": {
+              "page": 2,
+              "text": "Distillates (petroleum), hydrotreated heavy 64742-54-7 265-157-1 01-2119484627-25 1 - < 5% Asp. Tox. 1 H304",
+              "bbox": [
+                0.07475490196078431,
+                0.7016667067402541,
+                0.9023006663602942,
+                0.7129495023476957
+              ],
+              "bbox_provenance": "system"
+            }
+          },
+          {
+            "name": "TRIS (METHYLPHENYL) PHOSPHATE 01-2119531335-46 Aquatic Acute 1 H400 (M",
+            "cas_number": "1330-78-5",
+            "cas_state": "PRESENT",
+            "concentration": "0.1 - < 1%",
+            "evidence": {
+              "page": 2,
+              "text": "TRIS (METHYLPHENYL) PHOSPHATE 1330-78-5 215-548-8 01-2119531335-46 0.1 - < 1% Aquatic Acute 1 H400 (M",
+              "bbox": [
+                0.07475490196078431,
+                0.725843487363873,
+                0.9466274485868567,
+                0.7371262829713147
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": {
+          "page": 2,
+          "text": "Name CAS# EC# Registration# Concentration GHS/CLP",
+          "bbox": [
+            0.07475490196078431,
+            0.6388359069824219,
+            0.8666747847413705,
+            0.6515291002061632
+          ],
+          "bbox_provenance": "system"
+        }
+      },
+      "error": null
+    }
+  ]
+}

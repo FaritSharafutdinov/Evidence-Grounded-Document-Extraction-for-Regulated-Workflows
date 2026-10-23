@@ -1,0 +1,145 @@
+{
+  "system": "s4-M2-native-smoke",
+  "configuration": {
+    "layer": "native",
+    "layout": "rows",
+    "extractor": "s4:M2",
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke"
+  },
+  "documents": [
+    {
+      "document": "sds_05.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "Synthetic Base Stocks and Additives",
+          "evidence": {
+            "page": 1,
+            "text": "Product Description:\nSynthetic Base Stocks and Additives",
+            "bbox": [
+              0.1323529411764706,
+              0.3156098452481357,
+              0.598545747644761,
+              0.3297133782897333
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "ExxonMobil Petroleum & Chemical BV",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier:\nExxonMobil Petroleum & Chemical BV",
+            "bbox": [
+              0.1323529411764706,
+              0.4753182151100852,
+              0.5760358423968546,
+              0.48942172888553503
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "Synthetic Base Stocks and Additives",
+          "evidence": {
+            "page": 1,
+            "text": "Product Description:\nSynthetic Base Stocks and Additives",
+            "bbox": [
+              0.1323529411764706,
+              0.3156098452481357,
+              0.598545747644761,
+              0.3297133782897333
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "PRESENT",
+          "value": "64742-54-7",
+          "evidence": {
+            "page": 3,
+            "text": "Distillates (petroleum), hydrotreated heavy paraffinic 64742-54-7 265-157-1 01-2119484627-25 1 - < 5% Asp. Tox. 1 H304",
+            "bbox": null,
+            "bbox_provenance": "none"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "PRESENT",
+          "value": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 - 939-717-7",
+          "evidence": {
+            "page": 3,
+            "text": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 - 939-717-7 01-2119980985-16 0.1 - < 1% Skin Irrit. 2 H315, RICH, ALKYLNAPTHALENESULPHONATE) Eye Irrit. 2 H319, Skin Sens. 1B H317",
+            "bbox": null,
+            "bbox_provenance": "none"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "PRESENT",
+          "value": "220",
+          "evidence": {
+            "page": 9,
+            "text": "Vapour Density (Air = 1): > 2 at 101 kPa [Estimated]",
+            "bbox": null,
+            "bbox_provenance": "none"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "PRESENT",
+          "value": ">225°C (437°F)",
+          "evidence": {
+            "page": 5,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "bbox": null,
+            "bbox_provenance": "none"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_APPLICABLE",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    }
+  ]
+}

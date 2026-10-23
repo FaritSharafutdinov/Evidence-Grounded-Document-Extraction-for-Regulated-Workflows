@@ -1,0 +1,14 @@
+backend=mlx model=mlx-community/Qwen3.5-2B-MLX-4bit layers=['native', 'ocr'] methods=['M1', 'M2', 'M3', 'M4', 'M5']
+documents (1): sds_05.pdf
+Fetching 10 files:   0%|          | 0/10 [00:00<?, ?it/s]Fetching 10 files: 100%|██████████| 10/10 [00:00<00:00, 4367.25it/s]
+  s4_M1_native_smoke: 1 docs, calls=1, prompt_tokens=8747, completion_tokens=952, latency=0.0s -> s4_M1_native_smoke.json
+  s4_M1_ocr_smoke: 1 docs, calls=1, prompt_tokens=8610, completion_tokens=1101, latency=37.3s -> s4_M1_ocr_smoke.json
+  s4_M2_native_smoke: 1 docs, calls=8, prompt_tokens=64458, completion_tokens=689, latency=141.6s -> s4_M2_native_smoke.json
+  s4_M2_ocr_smoke: 1 docs, calls=8, prompt_tokens=63362, completion_tokens=390, latency=134.3s -> s4_M2_ocr_smoke.json
+  s4_M3_native_smoke: 1 docs, calls=7, prompt_tokens=9781, completion_tokens=255, latency=23.6s -> s4_M3_native_smoke.json
+  s4_M3_ocr_smoke: 1 docs, calls=7, prompt_tokens=9251, completion_tokens=291, latency=23.8s -> s4_M3_ocr_smoke.json
+  s4_M4_native_smoke: 1 docs, calls=0, prompt_tokens=0, completion_tokens=0, latency=0.0s -> s4_M4_native_smoke.json
+  s4_M4_ocr_smoke: 1 docs, calls=0, prompt_tokens=0, completion_tokens=0, latency=0.0s -> s4_M4_ocr_smoke.json
+  s4_M5_native_smoke: 1 docs, calls=7, prompt_tokens=1174, completion_tokens=7, latency=3.0s -> s4_M5_native_smoke.json
+  s4_M5_ocr_smoke: 1 docs, calls=7, prompt_tokens=1279, completion_tokens=7, latency=2.6s -> s4_M5_ocr_smoke.json
+wrote 10 prediction set(s) + meta -> /Users/faritsharafutdinov/Projects/research_thesis/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows/farit/data/predictions

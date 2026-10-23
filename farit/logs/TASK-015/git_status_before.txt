@@ -1,0 +1,4 @@
+?? farit/logs/TASK-015/
+?? farit/results/s4_battery_smoke.json
+?? farit/results/s4_battery_smoke.md
+?? farit/src/extraction/

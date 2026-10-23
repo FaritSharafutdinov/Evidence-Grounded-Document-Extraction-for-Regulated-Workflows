@@ -1,0 +1,3 @@
+MD5 (farit/data/llm_cache/reranker_mlx-community_Qwen2.5-0.5B-Instruct-4bit.jsonl) = 4a29bf8ff83ccebfc82fc83f4453322d
+MD5 (farit/data/llm_cache/reranker_mlx-community_Qwen2.5-7B-Instruct-4bit.jsonl) = 95daa8f71d5dad8207dfb2fe506e34bf
+MD5 (farit/data/llm_cache/reranker_mlx-community_Qwen3.5-2B-MLX-4bit__v2.jsonl) = 8df08f488e06a080e0ca9ee5bd77c4c7

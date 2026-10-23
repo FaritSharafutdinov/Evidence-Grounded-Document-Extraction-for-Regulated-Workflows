@@ -1,0 +1,1665 @@
+{
+  "configuration": {
+    "gold": "v1.2",
+    "split": "dev",
+    "scope": "smoke",
+    "methods": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5"
+    ],
+    "files": [
+      "s4_M1_native_smoke.json",
+      "s4_M1_ocr_smoke.json",
+      "s4_M2_native_smoke.json",
+      "s4_M2_ocr_smoke.json",
+      "s4_M3_native_smoke.json",
+      "s4_M3_ocr_smoke.json",
+      "s4_M4_native_smoke.json",
+      "s4_M4_ocr_smoke.json",
+      "s4_M5_native_smoke.json",
+      "s4_M5_ocr_smoke.json"
+    ]
+  },
+  "methods": {
+    "M1/native": {
+      "system": "s4-M1-native-smoke",
+      "prediction_id": "14fd03e7ac7025a8",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 4
+        }
+      },
+      "joint_all": 0.42857142857142855,
+      "joint_evidence_bearing": 0.42857142857142855,
+      "conjunction": {
+        "state": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ value": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ derivation": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ support (strict joint)": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        }
+      },
+      "strict_state": 1.0,
+      "lenient_state": 1.0,
+      "undecidable_instances": 4,
+      "verbatim": {
+        "ok": 7,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.6
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.3333333333333333
+        }
+      }
+    },
+    "M1/ocr": {
+      "system": "s4-M1-ocr-smoke",
+      "prediction_id": "67771710ecdfaef5",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 4
+        }
+      },
+      "joint_all": 0.2857142857142857,
+      "joint_evidence_bearing": 0.2857142857142857,
+      "conjunction": {
+        "state": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ value": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ derivation": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ support (strict joint)": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        }
+      },
+      "strict_state": 1.0,
+      "lenient_state": 1.0,
+      "undecidable_instances": 4,
+      "verbatim": {
+        "ok": 7,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.2
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.16666666666666666
+        }
+      }
+    },
+    "M2/native": {
+      "system": "s4-M2-native-smoke",
+      "prediction_id": "ad5746a74264a338",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 0.5714285714285714,
+          "satisfied": 4,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.14285714285714285,
+          "satisfied": 1,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.14285714285714285,
+          "satisfied": 1,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.7142857142857143,
+          "satisfied": 5,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 1
+        }
+      },
+      "joint_all": 0.14285714285714285,
+      "joint_evidence_bearing": 0.14285714285714285,
+      "conjunction": {
+        "state": {
+          "all": 0.5714285714285714,
+          "evidence_bearing": 0.5714285714285714
+        },
+        "+ value": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ page": {
+          "all": 0.14285714285714285,
+          "evidence_bearing": 0.14285714285714285
+        },
+        "+ span": {
+          "all": 0.14285714285714285,
+          "evidence_bearing": 0.14285714285714285
+        },
+        "+ bbox": {
+          "all": 0.14285714285714285,
+          "evidence_bearing": 0.14285714285714285
+        },
+        "+ derivation": {
+          "all": 0.14285714285714285,
+          "evidence_bearing": 0.14285714285714285
+        },
+        "+ support (strict joint)": {
+          "all": 0.14285714285714285,
+          "evidence_bearing": 0.14285714285714285
+        }
+      },
+      "strict_state": 0.5714285714285714,
+      "lenient_state": 0.5714285714285714,
+      "undecidable_instances": 1,
+      "verbatim": {
+        "ok": 3,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 0,
+        "matched": 0,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": null,
+        "recall": 0.0,
+        "key_recall": 0.0
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.2
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.0
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 0.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.16666666666666666
+        }
+      }
+    },
+    "M2/ocr": {
+      "system": "s4-M2-ocr-smoke",
+      "prediction_id": "6db626416e39330f",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 0.5714285714285714,
+          "satisfied": 4,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.7142857142857143,
+          "satisfied": 5,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 1
+        }
+      },
+      "joint_all": 0.2857142857142857,
+      "joint_evidence_bearing": 0.2857142857142857,
+      "conjunction": {
+        "state": {
+          "all": 0.5714285714285714,
+          "evidence_bearing": 0.5714285714285714
+        },
+        "+ value": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ derivation": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ support (strict joint)": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        }
+      },
+      "strict_state": 0.5714285714285714,
+      "lenient_state": 0.5714285714285714,
+      "undecidable_instances": 1,
+      "verbatim": {
+        "ok": 4,
+        "cited": 4
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 0,
+        "matched": 0,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": null,
+        "recall": 0.0,
+        "key_recall": 0.0
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.2
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.16666666666666666
+        }
+      }
+    },
+    "M3/native": {
+      "system": "s4-M3-native-smoke",
+      "prediction_id": "8e6b14671c5f9b83",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 4
+        }
+      },
+      "joint_all": 0.42857142857142855,
+      "joint_evidence_bearing": 0.42857142857142855,
+      "conjunction": {
+        "state": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ value": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ derivation": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ support (strict joint)": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        }
+      },
+      "strict_state": 1.0,
+      "lenient_state": 1.0,
+      "undecidable_instances": 4,
+      "verbatim": {
+        "ok": 7,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.6
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.3333333333333333
+        }
+      }
+    },
+    "M3/ocr": {
+      "system": "s4-M3-ocr-smoke",
+      "prediction_id": "ec12cbbf40b9bf2c",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 4
+        }
+      },
+      "joint_all": 0.2857142857142857,
+      "joint_evidence_bearing": 0.2857142857142857,
+      "conjunction": {
+        "state": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ value": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ derivation": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ support (strict joint)": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        }
+      },
+      "strict_state": 1.0,
+      "lenient_state": 1.0,
+      "undecidable_instances": 4,
+      "verbatim": {
+        "ok": 7,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.2
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.16666666666666666
+        }
+      }
+    },
+    "M4/native": {
+      "system": "s4-M4-native-smoke",
+      "prediction_id": "08e83b7daec493ec",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.8571428571428571,
+      "joint_evidence_bearing": 0.8571428571428571,
+      "conjunction": {
+        "state": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ value": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ page": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ span": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ bbox": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ derivation": {
+          "all": 0.8571428571428571,
+          "evidence_bearing": 0.8571428571428571
+        },
+        "+ support (strict joint)": {
+          "all": 0.8571428571428571,
+          "evidence_bearing": 0.8571428571428571
+        }
+      },
+      "strict_state": 1.0,
+      "lenient_state": 1.0,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 7,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 2,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.6666666666666666
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.8
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 1.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 1.0
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.8333333333333334
+        }
+      }
+    },
+    "M4/ocr": {
+      "system": "s4-M4-ocr-smoke",
+      "prediction_id": "fe12b78de3c42a0d",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 1.0,
+          "satisfied": 7,
+          "applicable": 7,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.7142857142857143,
+      "joint_evidence_bearing": 0.7142857142857143,
+      "conjunction": {
+        "state": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ value": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ page": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ span": {
+          "all": 1.0,
+          "evidence_bearing": 1.0
+        },
+        "+ bbox": {
+          "all": 0.8571428571428571,
+          "evidence_bearing": 0.8571428571428571
+        },
+        "+ derivation": {
+          "all": 0.7142857142857143,
+          "evidence_bearing": 0.7142857142857143
+        },
+        "+ support (strict joint)": {
+          "all": 0.7142857142857143,
+          "evidence_bearing": 0.7142857142857143
+        }
+      },
+      "strict_state": 1.0,
+      "lenient_state": 1.0,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 7,
+        "cited": 7
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 1,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.6
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 1.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.8
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.6666666666666666
+        }
+      }
+    },
+    "M5/native": {
+      "system": "s4-M5-native-smoke",
+      "prediction_id": "f9297edfb8d2e484",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 1.0,
+          "satisfied": 3,
+          "applicable": 3,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 1.0,
+          "satisfied": 3,
+          "applicable": 3,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.42857142857142855,
+      "joint_evidence_bearing": 0.42857142857142855,
+      "conjunction": {
+        "state": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ value": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ derivation": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ support (strict joint)": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        }
+      },
+      "strict_state": 0.42857142857142855,
+      "lenient_state": 0.42857142857142855,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 3,
+        "cited": 3
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.6
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.3333333333333333
+        }
+      }
+    },
+    "M5/ocr": {
+      "system": "s4-M5-ocr-smoke",
+      "prediction_id": "5399a08463bd2d6b",
+      "split": "dev",
+      "layer": "ocr",
+      "n_documents": 1,
+      "n_instances": 7,
+      "n_evidence_bearing": 7,
+      "axes": {
+        "state": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8571428571428571,
+          "satisfied": 6,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.42857142857142855,
+          "satisfied": 3,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.2857142857142857,
+          "satisfied": 2,
+          "applicable": 7,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 1.0,
+          "satisfied": 3,
+          "applicable": 3,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 1.0,
+          "satisfied": 3,
+          "applicable": 3,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.2857142857142857,
+      "joint_evidence_bearing": 0.2857142857142857,
+      "conjunction": {
+        "state": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ value": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ page": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ span": {
+          "all": 0.42857142857142855,
+          "evidence_bearing": 0.42857142857142855
+        },
+        "+ bbox": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ derivation": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        },
+        "+ support (strict joint)": {
+          "all": 0.2857142857142857,
+          "evidence_bearing": 0.2857142857142857
+        }
+      },
+      "strict_state": 0.42857142857142855,
+      "lenient_state": 0.42857142857142855,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 3,
+        "cited": 3
+      },
+      "ingredients": {
+        "gold_rows": 3,
+        "predicted_rows": 2,
+        "matched": 1,
+        "records_exact": 0,
+        "records_with_evidence": 0,
+        "precision": 0.0,
+        "recall": 0.0,
+        "key_recall": 0.3333333333333333
+      },
+      "slices": {
+        "explicit": {
+          "n": 5,
+          "joint_all": 0.4
+        },
+        "derived": {
+          "n": 2,
+          "joint_all": 0.0
+        },
+        "single_evidence": {
+          "n": 2,
+          "joint_all": 0.5
+        },
+        "multi_evidence": {
+          "n": 5,
+          "joint_all": 0.2
+        },
+        "cross_page": {
+          "n": 1,
+          "joint_all": 1.0
+        },
+        "single_page": {
+          "n": 6,
+          "joint_all": 0.16666666666666666
+        }
+      }
+    }
+  },
+  "cost": {
+    "M1/native": {
+      "cost": {
+        "n_calls": 1,
+        "n_records": 1,
+        "prompt_tokens": 8747,
+        "completion_tokens": 952,
+        "latency_s": 35.507,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "documents_with_contract_violations": 1,
+        "contract_violations": {
+          "derived_premise_set_incomplete": 3,
+          "quote_not_verbatim": 2
+        }
+      },
+      "method": "M1",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M1/ocr": {
+      "cost": {
+        "n_calls": 1,
+        "n_records": 1,
+        "prompt_tokens": 8610,
+        "completion_tokens": 1101,
+        "latency_s": 37.341,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "documents_with_contract_violations": 1,
+        "contract_violations": {
+          "derived_premise_set_incomplete": 3,
+          "quote_not_verbatim": 2
+        }
+      },
+      "method": "M1",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M2/native": {
+      "cost": {
+        "n_calls": 8,
+        "n_records": 8,
+        "prompt_tokens": 64458,
+        "completion_tokens": 689,
+        "latency_s": 141.574,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "contract_violations": {}
+      },
+      "method": "M2",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M2/ocr": {
+      "cost": {
+        "n_calls": 8,
+        "n_records": 8,
+        "prompt_tokens": 63362,
+        "completion_tokens": 390,
+        "latency_s": 134.273,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "contract_violations": {}
+      },
+      "method": "M2",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M3/native": {
+      "cost": {
+        "n_calls": 7,
+        "n_records": 7,
+        "prompt_tokens": 9781,
+        "completion_tokens": 255,
+        "latency_s": 23.554,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 1,
+          "n_records": 1,
+          "prompt_tokens": 8747,
+          "completion_tokens": 952,
+          "latency_s": 0.0,
+          "n_cached": 1,
+          "n_errors": 0
+        },
+        "degraded_claims": 0
+      },
+      "method": "M3",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M3/ocr": {
+      "cost": {
+        "n_calls": 7,
+        "n_records": 7,
+        "prompt_tokens": 9251,
+        "completion_tokens": 291,
+        "latency_s": 23.822,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 1,
+          "n_records": 1,
+          "prompt_tokens": 8610,
+          "completion_tokens": 1101,
+          "latency_s": 37.341,
+          "n_cached": 0,
+          "n_errors": 0
+        },
+        "degraded_claims": 0
+      },
+      "method": "M3",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M4/native": {
+      "cost": {
+        "n_calls": 0,
+        "n_records": 1,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "latency_s": 0.0,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "extractor": "rules-v4",
+        "n_calls": 0
+      },
+      "method": "M4",
+      "backend": "rules",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M4/ocr": {
+      "cost": {
+        "n_calls": 0,
+        "n_records": 1,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "latency_s": 0.0,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "extractor": "rules-v4",
+        "n_calls": 0
+      },
+      "method": "M4",
+      "backend": "rules",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M5/native": {
+      "cost": {
+        "n_calls": 7,
+        "n_records": 7,
+        "prompt_tokens": 1174,
+        "completion_tokens": 7,
+        "latency_s": 3.04,
+        "n_cached": 0,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 1,
+          "n_records": 1,
+          "prompt_tokens": 8747,
+          "completion_tokens": 952,
+          "latency_s": 0.0,
+          "n_cached": 1,
+          "n_errors": 0
+        },
+        "yes": 3,
+        "no": 4
+      },
+      "method": "M5",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    },
+    "M5/ocr": {
+      "cost": {
+        "n_calls": 7,
+        "n_records": 7,
+        "prompt_tokens": 1279,
+        "completion_tokens": 7,
+        "latency_s": 2.552,
+        "n_cached": 2,
+        "n_errors": 0
+      },
+      "info": {
+        "depends_on": "M1",
+        "m1_dependency_cost": {
+          "n_calls": 1,
+          "n_records": 1,
+          "prompt_tokens": 8610,
+          "completion_tokens": 1101,
+          "latency_s": 37.341,
+          "n_cached": 0,
+          "n_errors": 0
+        },
+        "yes": 3,
+        "no": 4
+      },
+      "method": "M5",
+      "backend": "mlx",
+      "model": "mlx-community/Qwen3.5-2B-MLX-4bit"
+    }
+  },
+  "inherited": {
+    "llm-qwen2.5-7b-native-rows": {
+      "system": "llm-qwen2.5-7b-native-rows",
+      "prediction_id": "b486c308c8e9d921",
+      "split": "dev",
+      "layer": "native",
+      "n_documents": 20,
+      "n_instances": 140,
+      "n_evidence_bearing": 134,
+      "axes": {
+        "state": {
+          "rate": 0.6214285714285714,
+          "satisfied": 87,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "value": {
+          "rate": 0.8642857142857143,
+          "satisfied": 121,
+          "applicable": 140,
+          "undecidable": 0
+        },
+        "page": {
+          "rate": 0.1865671641791045,
+          "satisfied": 25,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "span": {
+          "rate": 0.07462686567164178,
+          "satisfied": 10,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "bbox": {
+          "rate": 0.05970149253731343,
+          "satisfied": 8,
+          "applicable": 134,
+          "undecidable": 0
+        },
+        "derivation": {
+          "rate": 0.8020833333333334,
+          "satisfied": 77,
+          "applicable": 96,
+          "undecidable": 0
+        },
+        "support": {
+          "rate": 0.09,
+          "satisfied": 9,
+          "applicable": 100,
+          "undecidable": 0
+        }
+      },
+      "joint_all": 0.03571428571428571,
+      "joint_evidence_bearing": 0.022388059701492536,
+      "conjunction": {
+        "state": {
+          "all": 0.6214285714285714,
+          "evidence_bearing": 0.6343283582089553
+        },
+        "+ value": {
+          "all": 0.5714285714285714,
+          "evidence_bearing": 0.582089552238806
+        },
+        "+ page": {
+          "all": 0.15,
+          "evidence_bearing": 0.1417910447761194
+        },
+        "+ span": {
+          "all": 0.06428571428571428,
+          "evidence_bearing": 0.05223880597014925
+        },
+        "+ bbox": {
+          "all": 0.05714285714285714,
+          "evidence_bearing": 0.04477611940298507
+        },
+        "+ derivation": {
+          "all": 0.03571428571428571,
+          "evidence_bearing": 0.022388059701492536
+        },
+        "+ support (strict joint)": {
+          "all": 0.03571428571428571,
+          "evidence_bearing": 0.022388059701492536
+        }
+      },
+      "strict_state": 0.6214285714285714,
+      "lenient_state": 0.6285714285714286,
+      "undecidable_instances": 0,
+      "verbatim": {
+        "ok": 22,
+        "cited": 39
+      },
+      "ingredients": {
+        "gold_rows": 63,
+        "predicted_rows": 52,
+        "matched": 49,
+        "records_exact": 32,
+        "records_with_evidence": 5,
+        "precision": 0.6153846153846154,
+        "recall": 0.5079365079365079,
+        "key_recall": 0.7777777777777778
+      },
+      "slices": {
+        "explicit": {
+          "n": 91,
+          "joint_all": 0.01098901098901099
+        },
+        "derived": {
+          "n": 49,
+          "joint_all": 0.08163265306122448
+        },
+        "single_evidence": {
+          "n": 87,
+          "joint_all": 0.05747126436781609
+        },
+        "multi_evidence": {
+          "n": 53,
+          "joint_all": 0.0
+        },
+        "cross_page": {
+          "n": 20,
+          "joint_all": 0.0
+        },
+        "single_page": {
+          "n": 120,
+          "joint_all": 0.041666666666666664
+        }
+      },
+      "gold": "old gold (frozen artifact, shown for orientation; not re-scored against v1.2)",
+      "note": "Qwen2.5-7B native rows, inherited. It was produced on an earlier gold; the numbers below score the frozen predictions against the current gold v1.2 and are shown only as a historical reference, never combined with the battery."
+    }
+  },
+  "errors": {}
+}

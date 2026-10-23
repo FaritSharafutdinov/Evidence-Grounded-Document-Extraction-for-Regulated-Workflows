@@ -1,0 +1,190 @@
+{
+  "system": "s4-M4-ocr-smoke",
+  "configuration": {
+    "layer": "ocr",
+    "layout": "rows",
+    "extractor": "rules-v4",
+    "backend": "rules",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke",
+    "note": "inherited rules-v4 (rows), re-scored on gold v1.2, 0 LLM calls"
+  },
+  "documents": [
+    {
+      "document": "sds_05.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "MOBIL SHC PM 220",
+          "evidence": {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220",
+            "bbox": [
+              0.08411764705882353,
+              0.08272727272727273,
+              0.3947058823529412,
+              0.09272727272727273
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.925,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "ExxonMobil Petroleum & Chemical BV",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier: ExxonMobil Petroleum & Chemical BV",
+            "bbox": [
+              0.13294117647058823,
+              0.4759090909090909,
+              0.5758823529411765,
+              0.4913636363636364
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8967,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "bbox": [
+              0.07411764705882352,
+              0.524090909090909,
+              0.6276470588235294,
+              0.5359090909090909
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.8,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07411764705882352,
+                0.524090909090909,
+                0.6276470588235294,
+                0.5359090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07411764705882352,
+                0.524090909090909,
+                0.6276470588235294,
+                0.5359090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 2,
+              "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+              "bbox": [
+                0.07411764705882352,
+                0.524090909090909,
+                0.6276470588235294,
+                0.5359090909090909
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.8,
+          "rationale": "derived: identifiers are undefined for MIXTURE"
+        },
+        "flash_point": {
+          "state": "PRESENT",
+          "value": ">225°C (437°F) [ASTM D-92]",
+          "evidence": {
+            "page": 3,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "bbox": [
+              0.13352941176470587,
+              0.860909090909091,
+              0.5511764705882353,
+              0.8727272727272727
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.9021,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "ITRIS (METHYLPHENYL) PHOSPHATE 01-2119531335-46 0.1-<1% Aquatic Acute H400 (M",
+            "cas_number": "1330-78-5",
+            "cas_state": "PRESENT",
+            "concentration": "1",
+            "evidence": {
+              "page": 2,
+              "text": "ITRIS (METHYLPHENYL) PHOSPHATE 1330-78-5 215-548-8 | 01-2119531335-46 | 0.1-<1% Aquatic Acute 1 H400 (M",
+              "bbox": [
+                0.07470588235294118,
+                0.7240909090909091,
+                0.9458823529411765,
+                0.74
+              ],
+              "bbox_provenance": "system"
+            }
+          }
+        ],
+        "evidence": null
+      },
+      "error": null
+    }
+  ]
+}

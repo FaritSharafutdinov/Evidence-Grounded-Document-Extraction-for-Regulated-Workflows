@@ -1,0 +1,197 @@
+{
+  "system": "s4-M3-native-smoke",
+  "configuration": {
+    "layer": "native",
+    "layout": "rows",
+    "extractor": "s4:M3",
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke",
+    "depends_on": "M1"
+  },
+  "documents": [
+    {
+      "document": "sds_05.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "MOBIL SHC PM 220",
+          "evidence": {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220",
+            "bbox": [
+              0.08251633986928104,
+              0.08000378656868982,
+              0.39515356924019607,
+              0.09551767869429155
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "ExxonMobil Petroleum & Chemical BV",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier:\nExxonMobil Petroleum & Chemical BV",
+            "bbox": [
+              0.1323529411764706,
+              0.4753182151100852,
+              0.5760358423968546,
+              0.48942172888553503
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "MIXTURE",
+          "evidence": {
+            "page": 1,
+            "text": "Product Description:\nSynthetic Base Stocks and Additives",
+            "bbox": [
+              0.1323529411764706,
+              0.3156098452481357,
+              0.598545747644761,
+              0.3297133782897333
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Product Code:\n201560501020, 603530-60",
+              "bbox": [
+                0.1323529411764706,
+                0.3301288335010259,
+                0.5495751075495302,
+                0.34423234727647567
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Product Code:\n201560501020, 603530-60",
+              "bbox": [
+                0.1323529411764706,
+                0.3301288335010259,
+                0.5495751075495302,
+                0.34423234727647567
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NOT_APPLICABLE",
+          "value": null,
+          "evidence": null,
+          "derivation": "DERIVED",
+          "rule": "identifier_undefined_for_form",
+          "premises": [
+            {
+              "page": 1,
+              "text": "Product Code:\n201560501020, 603530-60",
+              "bbox": [
+                0.1323529411764706,
+                0.3301288335010259,
+                0.5495751075495302,
+                0.34423234727647567
+              ],
+              "bbox_provenance": "system"
+            }
+          ],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "PRESENT",
+          "value": ">225°C (437°F)",
+          "evidence": {
+            "page": 3,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "bbox": [
+              0.1323529411764706,
+              0.8586187651663115,
+              0.5525980432049121,
+              0.8727222789417614
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "PRESENT",
+        "items": [
+          {
+            "name": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 - 939-717-7 01-2119980985-16 0.1 - < 1% Skin Irrit. 2 H315, RICH, ALKYLNAPTHALENESULPHONATE)",
+            "cas_number": null,
+            "cas_state": "PRESENT",
+            "concentration": "< 1%",
+            "evidence": {
+              "page": 1,
+              "text": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 - 939-717-7 01-2119980985-16 0.1 - < 1% Skin Irrit. 2 H315, RICH, ALKYLNAPTHALENESULPHONATE)",
+              "bbox": null,
+              "bbox_provenance": "none"
+            }
+          },
+          {
+            "name": "DISTILLATES (PETROLEUM), HYDROTREATED HEAVY PARAFFINIC",
+            "cas_number": null,
+            "cas_state": "PRESENT",
+            "concentration": "< 5%",
+            "evidence": {
+              "page": 1,
+              "text": "DISTILLATES (PETROLEUM), HYDROTREATED HEAVY PARAFFINIC 64742-54-7 265-157-1 01-2119484627-25 1 - < 5% Asp. Tox. 1 H304",
+              "bbox": null,
+              "bbox_provenance": "none"
+            }
+          }
+        ],
+        "evidence": null
+      },
+      "error": null
+    }
+  ]
+}

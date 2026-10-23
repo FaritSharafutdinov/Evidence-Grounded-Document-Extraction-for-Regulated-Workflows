@@ -1,0 +1,135 @@
+{
+  "system": "s4-M2-ocr-smoke",
+  "configuration": {
+    "layer": "ocr",
+    "layout": "rows",
+    "extractor": "s4:M2",
+    "backend": "mlx",
+    "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+    "split": "dev",
+    "scope": "smoke"
+  },
+  "documents": [
+    {
+      "document": "sds_05.pdf",
+      "fields": {
+        "product_name": {
+          "state": "PRESENT",
+          "value": "MOBIL SHC PM 220",
+          "evidence": {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220",
+            "bbox": [
+              0.08411764705882353,
+              0.08272727272727273,
+              0.3947058823529412,
+              0.09272727272727273
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "supplier_name": {
+          "state": "PRESENT",
+          "value": "ExxonMobil Petroleum & Chemical BV",
+          "evidence": {
+            "page": 1,
+            "text": "Supplier: ExxonMobil Petroleum & Chemical BV",
+            "bbox": [
+              0.13294117647058823,
+              0.4759090909090909,
+              0.5758823529411765,
+              0.4913636363636364
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "substance_or_mixture": {
+          "state": "PRESENT",
+          "value": "Synthetic Base Stocks and Additives",
+          "evidence": {
+            "page": 1,
+            "text": "Product Description: Synthetic Base Stocks and Additives",
+            "bbox": [
+              0.13352941176470587,
+              0.31772727272727275,
+              0.5976470588235294,
+              0.32954545454545453
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "product_cas_number": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "chemical_formula": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "molecular_weight": {
+          "state": "NO_DATA",
+          "value": null,
+          "evidence": null,
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        },
+        "flash_point": {
+          "state": "PRESENT",
+          "value": ">225°C (437°F)",
+          "evidence": {
+            "page": 3,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "bbox": [
+              0.13352941176470587,
+              0.860909090909091,
+              0.5511764705882353,
+              0.8727272727272727
+            ],
+            "bbox_provenance": "system"
+          },
+          "derivation": "DIRECT",
+          "rule": null,
+          "premises": [],
+          "confidence": 0.0,
+          "rationale": null
+        }
+      },
+      "ingredients": {
+        "state": "NOT_APPLICABLE",
+        "items": [],
+        "evidence": null
+      },
+      "error": null
+    }
+  ]
+}

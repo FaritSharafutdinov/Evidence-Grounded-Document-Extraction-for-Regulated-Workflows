@@ -1,0 +1,507 @@
+{
+  "document": "sds_18.pdf",
+  "split": "dev",
+  "product_form": "MIXTURE",
+  "fields": {
+    "product_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "rule": null,
+      "value": "3M™ Semi-Rigid Plastic Repair PN 04240",
+      "defined_for_form": true,
+      "description": "Trade name / product identifier.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 1,
+          "text": "Product identifier 3M™ Semi-Rigid Plastic Repair PN 04240",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        },
+        {
+          "role": "source",
+          "page": 3,
+          "text": "1.1. Product identifier 3M™ Plastic Repair, Semi-Rigid PNs 04240 (Part A)",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_evidence",
+          "page": 1,
+          "text": "Product identifier\n3M™ Semi-Rigid Plastic Repair PN 04240",
+          "bbox": [
+            0.058823529411764705,
+            0.2983105977376302,
+            0.3421633851294424,
+            0.32680681016710067
+          ],
+          "ocr_exact": true
+        },
+        {
+          "role": "resolved_evidence",
+          "page": 3,
+          "text": "1.1. Product identifier\n3M™ Plastic Repair, Semi-Rigid PNs 04240 (Part A)",
+          "bbox": [
+            0.058823529411764705,
+            0.3379545500784209,
+            0.40960127387950623,
+            0.36645076250789144
+          ],
+          "ocr_exact": true
+        }
+      ]
+    },
+    "supplier_name": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "rule": null,
+      "value": "3M",
+      "defined_for_form": true,
+      "description": "Supplier, manufacturer or distributor named on the SDS.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 1,
+          "text": "MANUFACTURER: 3M",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": true,
+          "context": ""
+        },
+        {
+          "role": "source",
+          "page": 3,
+          "text": "MANUFACTURER: 3M",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": true,
+          "context": ""
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_evidence",
+          "page": 1,
+          "text": "MANUFACTURER:\n3M",
+          "bbox": [
+            0.061274509803921566,
+            0.5291628596758602,
+            0.28495097939485037,
+            0.5431401416508839
+          ],
+          "ocr_exact": true
+        },
+        {
+          "role": "resolved_evidence",
+          "page": 3,
+          "text": "MANUFACTURER:\n3M",
+          "bbox": [
+            0.08594770992503446,
+            0.5267007230508207,
+            0.34900328692267923,
+            0.5406780050258444
+          ],
+          "ocr_exact": true
+        }
+      ]
+    },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "COMPOSITION_IMPLIED",
+      "rule": "composition_implies_form",
+      "value": "MIXTURE",
+      "defined_for_form": true,
+      "description": "Whether the product is a substance, mixture or article.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 5,
+          "text": "Ingredient C.A.S. No. % by Wt",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        },
+        {
+          "role": "source",
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity.",
+          "exact_native": true,
+          "fuzzy_score": null,
+          "ocr_exact": true,
+          "context": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "Ingredient\nC.A.S. No.\n% by Wt",
+          "bbox": [
+            0.061274509803921566,
+            0.2060808123964252,
+            0.657826791401782,
+            0.22005809437144885
+          ],
+          "ocr_exact": false
+        },
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity.",
+          "bbox": [
+            0.058823529411764705,
+            0.1393560544408933,
+            0.5442826015497345,
+            0.15333333641591698
+          ],
+          "ocr_exact": true
+        }
+      ]
+    },
+    "product_cas_number": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "value": null,
+      "defined_for_form": false,
+      "description": "CAS of the product itself. Defined only for a substance.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 5,
+          "text": "Ingredient C.A.S. No. % by Wt",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "Ingredient\nC.A.S. No.\n% by Wt",
+          "bbox": [
+            0.061274509803921566,
+            0.2060808123964252,
+            0.657826791401782,
+            0.22005809437144885
+          ],
+          "ocr_exact": false
+        },
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity.",
+          "bbox": [
+            0.058823529411764705,
+            0.1393560544408933,
+            0.5442826015497345,
+            0.15333333641591698
+          ],
+          "ocr_exact": true
+        }
+      ]
+    },
+    "chemical_formula": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "value": null,
+      "defined_for_form": false,
+      "description": "Molecular formula of the product. Defined only for a substance.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 5,
+          "text": "Ingredient C.A.S. No. % by Wt",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "Ingredient\nC.A.S. No.\n% by Wt",
+          "bbox": [
+            0.061274509803921566,
+            0.2060808123964252,
+            0.657826791401782,
+            0.22005809437144885
+          ],
+          "ocr_exact": false
+        },
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity.",
+          "bbox": [
+            0.058823529411764705,
+            0.1393560544408933,
+            0.5442826015497345,
+            0.15333333641591698
+          ],
+          "ocr_exact": true
+        }
+      ]
+    },
+    "molecular_weight": {
+      "state": "NOT_APPLICABLE",
+      "derivation": "ONTOLOGY",
+      "rule": "identifier_undefined_for_form",
+      "value": null,
+      "defined_for_form": false,
+      "description": "Molecular weight in g/mol. Defined only for a substance.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 5,
+          "text": "Ingredient C.A.S. No. % by Wt",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "Ingredient\nC.A.S. No.\n% by Wt",
+          "bbox": [
+            0.061274509803921566,
+            0.2060808123964252,
+            0.657826791401782,
+            0.22005809437144885
+          ],
+          "ocr_exact": false
+        },
+        {
+          "role": "resolved_premise",
+          "page": 5,
+          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity.",
+          "bbox": [
+            0.058823529411764705,
+            0.1393560544408933,
+            0.5442826015497345,
+            0.15333333641591698
+          ],
+          "ocr_exact": true
+        }
+      ]
+    },
+    "flash_point": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "rule": null,
+      "value": ">=290 ºF [Test Method:Tagliabue Closed Cup]",
+      "defined_for_form": true,
+      "description": "Flash point, compared in degrees Celsius.",
+      "resolved": [
+        {
+          "role": "source",
+          "page": 8,
+          "text": "Flash Point >=290 ºF [Test Method:Tagliabue Closed Cup]",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        },
+        {
+          "role": "source",
+          "page": 19,
+          "text": "Flash Point >=290 ºF [Test Method:Tagliabue Closed Cup]",
+          "exact_native": false,
+          "fuzzy_score": 100.0,
+          "ocr_exact": false,
+          "context": ""
+        }
+      ],
+      "resolved_spans": [
+        {
+          "role": "resolved_evidence",
+          "page": 8,
+          "text": "Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup]",
+          "bbox": [
+            0.08823529411764706,
+            0.6102120755898832,
+            0.7940375633489073,
+            0.6241893575649069
+          ],
+          "ocr_exact": true
+        },
+        {
+          "role": "resolved_evidence",
+          "page": 19,
+          "text": "Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup]",
+          "bbox": [
+            0.08823529411764706,
+            0.43598483307193026,
+            0.7940375633489073,
+            0.44996211504695394
+          ],
+          "ocr_exact": true
+        }
+      ]
+    }
+  },
+  "ingredients": {
+    "state": "PRESENT",
+    "items": [
+      {
+        "name": "Castor Oil, Polymer With 1,1'-Methylenebis[4-Isocyanatobenzene]",
+        "cas": "68424-09-9",
+        "cas_state": "PRESENT",
+        "concentration": "30 - 60",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "68424-09-9",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "68424-09-9"
+          }
+        ]
+      },
+      {
+        "name": "P,P'-Methylenebis(phenyl isocyanate)",
+        "cas": "101-68-8",
+        "cas_state": "PRESENT",
+        "concentration": "30 - 60",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "101-68-8",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "101-68-8"
+          }
+        ]
+      },
+      {
+        "name": "4,4'-Diisocyanatodiphenylmethane polymer",
+        "cas": "25686-28-6",
+        "cas_state": "PRESENT",
+        "concentration": "< 20",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "25686-28-6",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "25686-28-6"
+          }
+        ]
+      },
+      {
+        "name": "Oxirane, Methyl-, Polymer With Oxirane, Ether With 1,2,3-Propanetriol (3:1), Polymer With 1,1'-Methylenebis[4-Isocyantobenzene]",
+        "cas": "59675-67-1",
+        "cas_state": "PRESENT",
+        "concentration": "1 - 5",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "59675-67-1",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "59675-67-1"
+          }
+        ]
+      },
+      {
+        "name": "Carbon Black",
+        "cas": "1333-86-4",
+        "cas_state": "PRESENT",
+        "concentration": "0.1 - 1",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "1333-86-4",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "1333-86-4"
+          }
+        ]
+      },
+      {
+        "name": "Chromium Compound 1",
+        "cas": "71701-12-7",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.3",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "71701-12-7",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "71701-12-7"
+          }
+        ]
+      },
+      {
+        "name": "Chromium Compound 2",
+        "cas": "74421-71-9",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.1",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "74421-71-9",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "74421-71-9"
+          }
+        ]
+      },
+      {
+        "name": "Chromium Compound 3",
+        "cas": "71839-90-2",
+        "cas_state": "PRESENT",
+        "concentration": "0.01 - 0.1",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "71839-90-2",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "71839-90-2"
+          }
+        ]
+      },
+      {
+        "name": "Chromium",
+        "cas": "7440-47-3",
+        "cas_state": "PRESENT",
+        "concentration": "< 0.02",
+        "resolved": [
+          {
+            "page": 5,
+            "text": "7440-47-3",
+            "exact_native": true,
+            "fuzzy_score": null,
+            "ocr_exact": true,
+            "context": "7440-47-3"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,8 +1,8 @@
 {
   "document": "sds_19.pdf",
   "split": "dev",
-  "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED. Gold v1.1 (DEC-005): the identifier fields (CAS, formula, molecular weight) were moved to NOT_APPLICABLE — a concrete admixture is unambiguously a mixture; substance_or_mixture deliberately remains NOT_STATED (the decision sanctioned only the form-dependent fields), a documented residual inconsistency.",
-  "product_form": "UNDETERMINED",
+  "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Gold v1.1 (DEC-005): the identifier fields (CAS, formula, molecular weight) were moved to NOT_APPLICABLE — a concrete admixture is unambiguously a mixture. Gold v1.2 completes the interpretation coherently: product_form -> MIXTURE and substance_or_mixture -> PRESENT/MIXTURE on the same \"General Use: Concrete Admixture\" premise, which removes the three resolver consistency warnings without any literal form declaration in the document.",
+  "product_form": "MIXTURE",
   "fields": {
     "product_name": {
       "state": "PRESENT",
@@ -16,7 +16,13 @@
       "value": "Buddy Rhodes Concrete Products",
       "evidence": [{ "page": 1, "text": "Company: Buddy Rhodes Concrete Products" }]
     },
-    "substance_or_mixture": { "state": "NOT_STATED", "derivation": "ABSENT" },
+    "substance_or_mixture": {
+      "state": "PRESENT",
+      "derivation": "EXPLICIT",
+      "value": "MIXTURE",
+      "evidence": [{ "page": 1, "text": "General Use: Concrete Admixture" }],
+      "note": "Gold v1.2 (DEC-005 п.1): \"Concrete Admixture\" unambiguously denotes a mixture — a chemical interpretation allowed by policy, not a literal form declaration. Derivation is EXPLICIT (not COMPOSITION_IMPLIED): no composition table exists to derive the form, the rule registry would flag the premises unverifiable."
+    },
     "product_cas_number": {
       "state": "NOT_APPLICABLE",
       "derivation": "ONTOLOGY",

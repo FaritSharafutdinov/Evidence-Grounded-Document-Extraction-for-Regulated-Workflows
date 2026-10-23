@@ -10545,7 +10545,7 @@
     {
       "document": "sds_19.pdf",
       "split": "dev",
-      "product_form": "UNDETERMINED",
+      "product_form": "MIXTURE",
       "fields": {
         "product_name": {
           "state": "PRESENT",
@@ -10638,17 +10638,49 @@
           "note": null
         },
         "substance_or_mixture": {
-          "state": "NOT_STATED",
-          "derivation": "ABSENT",
-          "value": null,
+          "state": "PRESENT",
+          "derivation": "EXPLICIT",
+          "value": "MIXTURE",
           "accepted_values": [],
-          "evidence": [],
+          "evidence": [
+            {
+              "page": 1,
+              "text": "General Use: Concrete Admixture",
+              "occurrence": 1,
+              "case_sensitive": false
+            }
+          ],
           "rule": null,
-          "resolved_evidence": [],
+          "resolved_evidence": [
+            {
+              "page": 1,
+              "text": "General Use:\nConcrete Admixture",
+              "char_start": 307,
+              "char_end": 338,
+              "bbox": [
+                0.12474510093140447,
+                0.2055919338958432,
+                0.5194714614768433,
+                0.22113435918634589
+              ],
+              "occurrences_on_page": 1,
+              "ocr_page": 1,
+              "ocr_bbox": [
+                0.12529411764705883,
+                0.20772727272727273,
+                0.5188235294117647,
+                0.21863636363636363
+              ],
+              "ocr_char_start": 336,
+              "ocr_char_end": 367,
+              "ocr_exact": true,
+              "ocr_score": 100.0
+            }
+          ],
           "resolved_premises": [],
           "ambiguous": false,
           "alternative_state": null,
-          "note": null
+          "note": "Gold v1.2 (DEC-005 п.1): \"Concrete Admixture\" unambiguously denotes a mixture — a chemical interpretation allowed by policy, not a literal form declaration. Derivation is EXPLICIT (not COMPOSITION_IMPLIED): no composition table exists to derive the form, the rule registry would flag the premises unverifiable."
         },
         "product_cas_number": {
           "state": "NOT_APPLICABLE",
@@ -10865,7 +10897,7 @@
         "items": [],
         "note": null
       },
-      "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Nothing determines the product form, so it stays UNDETERMINED and the conditional identifier fields are NOT_STATED. Gold v1.1 (DEC-005): the identifier fields (CAS, formula, molecular weight) were moved to NOT_APPLICABLE — a concrete admixture is unambiguously a mixture; substance_or_mixture deliberately remains NOT_STATED (the decision sanctioned only the form-dependent fields), a documented residual inconsistency."
+      "note": "Concrete admixture. Section 3 is filed under \"3.1 Substances\" but only says that no ingredient is hazardous, and Section 2 calls the product \"not a hazardous substance or mixture\". Gold v1.1 (DEC-005): the identifier fields (CAS, formula, molecular weight) were moved to NOT_APPLICABLE — a concrete admixture is unambiguously a mixture. Gold v1.2 completes the interpretation coherently: product_form -> MIXTURE and substance_or_mixture -> PRESENT/MIXTURE on the same \"General Use: Concrete Admixture\" premise, which removes the three resolver consistency warnings without any literal form declaration in the document."
     },
     {
       "document": "sds_20.pdf",

@@ -1,5 +1,36 @@
 # Changelog — gold annotations
 
+## v1.2 — 2026-10-23 (DEC-005 п.1, TASK-014)
+
+Когерентное завершение интерпретации sds_19 (единственный оставшийся artifact-gold
+остаток от v1.1). Источник: `data/annotations/source/`, регенерация `gold.json` —
+`python -m scripts.build_annotations`.
+
+### Исправлено
+
+- **sds_19** — `product_form` UNDETERMINED→MIXTURE и `substance_or_mixture`
+  NOT_STATED/ABSENT→PRESENT/EXPLICIT/MIXTURE (evidence: `«General Use: Concrete Admixture»`,
+  стр. 1 — та же строка, что у identifier-полей → дедуп по `EvidenceRef.key` не меняет
+  их premises). Обоснование — DEC-005 п.1 (admixture = смесь). Механика: `ONTOLOGY`
+  запрещён для PRESENT-поля, а `COMPOSITION_IMPLIED` требует premise-роли состава
+  (таблицы состава у sds_19 нет → правило не верифицируется), поэтому derivation
+  EXPLICIT с note, документирующей политическую интерпретацию.
+
+### Эффект
+
+- `scripts/build_annotations` — **0 PROBLEM(S)** (было 3 варнинга «ONTOLOGY derivation
+  but the field is defined for UNDETERMINED»). Убраны именно варнинги консистентности;
+  информационный список `unverifiable` по sds_19 (3 поля) существовал и в v1.1 — не регрессия.
+- `gold_evidence.jsonl`: 232 записи (число не изменилось — запись = инстанс поля, лишь
+  наполнение sds_19/substance_or_mixture). State: NOT_STATED 13→12, EXPLICIT 135→136;
+  ABSENT 12, ONTOLOGY 51. Фрагментов: 277→278 (+1 evidence).
+- Включённых dev-инстансов retrieval-оценки: 133 → **134** (+1 — sds_19 substance_or_mixture).
+- `units_native/ocr.jsonl` — байт-в-байт идентичны (md5 сверен).
+- Дельта BM25/dense (gold v1.1 → v1.2): max |Δ| по всем metric-ячейкам = **0.0069** (вверх);
+  headline native macro complete@3: BM25 0.602→0.604, dense 0.632→0.634, naive 0.684→0.687.
+  Новые числа: `farit/results/*_goldv12.{json,md}`; frozen-выходы (gold v1.0) и `*_goldv11`
+  сохранены без изменений. Рабочий gold для батареи S4 — **v1.2**.
+
 ## v1.1 — 2026-10-21/22 (DEC-005, TASK-013)
 
 Исправления по результатам аудита TASK-011 и решений Farit'а (DEC-005). Источник:

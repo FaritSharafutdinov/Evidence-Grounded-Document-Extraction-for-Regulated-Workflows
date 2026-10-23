@@ -70,3 +70,12 @@ gold (v1.1) дешёвые baselines (BM25, dense) пересчитываютс�
 (old-gold). Известный остаток: `substance_or_mixture` у sds_19 сознательно не меняется
 (DEC-005 санкционирует только form-зависимые поля) — задокументировать в changelog.
 Исполнение: TASK-013 (K3).
+
+**Scope extended (2026-10-23, Farit).** Оставшийся варнинг-остаток закрыт по решению
+Farit'а: `substance_or_mixture` у sds_19 — не исключение, а часть той же интерпретации
+п.1 («Concrete Admixture» = смесь). Когерентное завершение: `product_form`
+UNDETERMINED→MIXTURE, `substance_or_mixture` NOT_STATED→PRESENT/EXPLICIT/MIXTURE на том же
+premise `«General Use: Concrete Admixture»`. Это убирает 3 consistency-варнинга резолвера
+и делает gold sds_19 внутренне непротиворечивым. Технический выбор derivation —
+EXPLICIT, а не COMPOSITION_IMPLIED (нет таблицы состава → правило не верифицируется).
+Исполнение: TASK-014 (K3) → gold v1.2; BM25/dense пересчитаны в `*_goldv12`.

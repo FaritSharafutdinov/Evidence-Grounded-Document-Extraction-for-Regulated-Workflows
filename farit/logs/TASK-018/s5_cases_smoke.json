@@ -1,0 +1,3814 @@
+{
+  "configuration": {
+    "gold": "v1.3",
+    "split": "dev",
+    "scope": "smoke",
+    "unit": "(document, field)",
+    "methods": [
+      "M1",
+      "M2",
+      "M3",
+      "M4",
+      "M5"
+    ],
+    "layers": [
+      "native",
+      "ocr"
+    ],
+    "seed": 42,
+    "category_priority": [
+      "annotations",
+      "entity attribution",
+      "reasoning",
+      "values",
+      "evidence"
+    ]
+  },
+  "readiness": {
+    "ready": false,
+    "smoke": true,
+    "expected_documents": 20,
+    "cells": {
+      "M1/native": {
+        "present": true,
+        "file": "s4_M1_native_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M1/ocr": {
+        "present": true,
+        "file": "s4_M1_ocr_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M2/native": {
+        "present": true,
+        "file": "s4_M2_native_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M2/ocr": {
+        "present": true,
+        "file": "s4_M2_ocr_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M3/native": {
+        "present": true,
+        "file": "s4_M3_native_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M3/ocr": {
+        "present": true,
+        "file": "s4_M3_ocr_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M4/native": {
+        "present": true,
+        "file": "s4_M4_native_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M4/ocr": {
+        "present": true,
+        "file": "s4_M4_ocr_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M5/native": {
+        "present": true,
+        "file": "s4_M5_native_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      },
+      "M5/ocr": {
+        "present": true,
+        "file": "s4_M5_ocr_smoke.json",
+        "scope": "smoke",
+        "documents": 1,
+        "missing_documents": [
+          "sds_01.pdf",
+          "sds_02.pdf",
+          "sds_03.pdf",
+          "sds_04.pdf",
+          "sds_06.pdf",
+          "sds_07.pdf",
+          "sds_08.pdf",
+          "sds_09.pdf",
+          "sds_10.pdf",
+          "sds_11.pdf",
+          "sds_12.pdf",
+          "sds_13.pdf",
+          "sds_14.pdf",
+          "sds_15.pdf",
+          "sds_16.pdf",
+          "sds_17.pdf",
+          "sds_18.pdf",
+          "sds_19.pdf",
+          "sds_20.pdf"
+        ]
+      }
+    }
+  },
+  "skipped_cells": [],
+  "deterministic": true,
+  "summary": {
+    "n_cases": 11,
+    "n_hard": 5,
+    "n_control": 6,
+    "selection": {
+      "seed": 42,
+      "n_total_pairs": 140,
+      "n_hard_pool": 5,
+      "n_hard": 5,
+      "n_control": 6,
+      "n_control_pool": 135,
+      "hard_slices": [
+        "derived",
+        "cross_page",
+        "multi_evidence"
+      ],
+      "slice_priority": [
+        "derived",
+        "cross_page",
+        "multi_evidence",
+        "single_evidence"
+      ],
+      "hard_rule": "pairs whose slices include any of derived/cross_page/multi_evidence and where at least one method fails the 7-axis joint on at least one layer",
+      "control_rule": "random sample (seed=42) from all dev pairs minus the hard pairs",
+      "primary_slices_hard": {
+        "derived": 2,
+        "cross_page": 1,
+        "multi_evidence": 2
+      },
+      "primary_slices_control": {
+        "single_evidence": 5,
+        "unknown": 1
+      }
+    },
+    "taxonomy_counts": {
+      "reasoning": 3,
+      "evidence": 3,
+      "none": 5
+    },
+    "category_totals": {
+      "annotations": 0,
+      "entity attribution": 0,
+      "reasoning": 3,
+      "values": 0,
+      "evidence": 3,
+      "none": 5
+    },
+    "taxonomy_by_selection": {
+      "hard": {
+        "reasoning": 2,
+        "evidence": 3
+      },
+      "control": {
+        "none": 5,
+        "reasoning": 1
+      }
+    },
+    "category_solvers": {
+      "annotations": {},
+      "entity attribution": {},
+      "reasoning": {
+        "M4": 2,
+        "(none)": 1
+      },
+      "values": {},
+      "evidence": {
+        "M1": 1,
+        "M3": 1,
+        "M4": 2,
+        "M5": 1,
+        "(none)": 1
+      },
+      "none": {
+        "(none)": 5
+      }
+    },
+    "unresolved_cases": [
+      {
+        "case_id": 4,
+        "document": "sds_05.pdf",
+        "field": "product_name",
+        "taxonomy": "evidence"
+      },
+      {
+        "case_id": 7,
+        "document": "sds_05.pdf",
+        "field": "product_cas_number",
+        "taxonomy": "reasoning"
+      }
+    ],
+    "n_unresolved": 2,
+    "method_cost": {
+      "M1/native": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 1,
+          "n_records": 1,
+          "prompt_tokens": 8747,
+          "completion_tokens": 952,
+          "latency_s": 35.507,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M1/ocr": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 1,
+          "n_records": 1,
+          "prompt_tokens": 8610,
+          "completion_tokens": 1101,
+          "latency_s": 37.341,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M2/native": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 8,
+          "n_records": 8,
+          "prompt_tokens": 64458,
+          "completion_tokens": 689,
+          "latency_s": 141.574,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M2/ocr": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 8,
+          "n_records": 8,
+          "prompt_tokens": 63362,
+          "completion_tokens": 390,
+          "latency_s": 134.273,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M3/native": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 7,
+          "n_records": 7,
+          "prompt_tokens": 9781,
+          "completion_tokens": 255,
+          "latency_s": 23.554,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M3/ocr": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 7,
+          "n_records": 7,
+          "prompt_tokens": 9251,
+          "completion_tokens": 291,
+          "latency_s": 23.822,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M4/native": {
+        "backend": "rules",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 0,
+          "n_records": 1,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "latency_s": 0.0,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M4/ocr": {
+        "backend": "rules",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 0,
+          "n_records": 1,
+          "prompt_tokens": 0,
+          "completion_tokens": 0,
+          "latency_s": 0.0,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M5/native": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 7,
+          "n_records": 7,
+          "prompt_tokens": 1174,
+          "completion_tokens": 7,
+          "latency_s": 3.04,
+          "n_cached": 0,
+          "n_errors": 0
+        }
+      },
+      "M5/ocr": {
+        "backend": "mlx",
+        "model": "mlx-community/Qwen3.5-2B-MLX-4bit",
+        "cost": {
+          "n_calls": 7,
+          "n_records": 7,
+          "prompt_tokens": 1279,
+          "completion_tokens": 7,
+          "latency_s": 2.552,
+          "n_cached": 2,
+          "n_errors": 0
+        }
+      }
+    }
+  },
+  "cases": [
+    {
+      "case_id": 1,
+      "document": "sds_05.pdf",
+      "field": "chemical_formula",
+      "selection": "hard",
+      "slices": [
+        "derived",
+        "multi_evidence"
+      ],
+      "primary_slice": "derived",
+      "evidence_set_size": 2,
+      "partial_coverage": false,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 2,
+        "M5": 0
+      },
+      "gold": {
+        "state": "NOT_APPLICABLE",
+        "value": null,
+        "all_values": [],
+        "derivation": "ONTOLOGY",
+        "rule": "identifier_undefined_for_form",
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          2
+        ],
+        "evidence": [
+          {
+            "page": 2,
+            "text": "This material is defined as a mixture."
+          },
+          {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+          }
+        ]
+      },
+      "reference_method": "M1",
+      "reference_layer": "native",
+      "per_layer": {
+        "native": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Code:\n201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 - 939-717-7",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "CALCIUM BIS(DI C8-C10, BRANCHED, C9 - 939-717-7 01-2119980985-16 0.1 - < 1% Skin Irrit. 2 H315, RICH, ALKYLNAPTHALENESULPHONATE) Eye Irrit. 2 H319, Skin Sens. 1B H317",
+            "verbatim": false,
+            "verbatim_fuzzy_score": 33.735,
+            "support": "violated",
+            "support_note": "citation is not verbatim",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "cited quote does not occur verbatim on the cited page; gold is derived, prediction is direct"
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Code:\n201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "premise declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          }
+        },
+        "ocr": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "1.1. PRODUCT IDENTIFIER\nProduct Name: MOBIL SHC PM 220\nProduct Description: Synthetic Base Stocks and Additives\nProduct Code: 201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "no citation",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is derived, prediction is direct"
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "1.1. PRODUCT IDENTIFIER\nProduct Name: MOBIL SHC PM 220\nProduct Description: Synthetic Base Stocks and Additives\nProduct Code: 201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "premise declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8312,
+            "bbox_coverage": 0.8327,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          }
+        }
+      },
+      "solved_by": [
+        "M4"
+      ],
+      "min_cost_solved": {
+        "method": "M4",
+        "latency_s": 0.0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "n_calls": 0,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
+      "min_cost_llm_solved": null,
+      "actual_error": "reasoning (derived)",
+      "cause": "located 0/1 required premise role(s)",
+      "taxonomy": "reasoning",
+      "classification_reasons": [
+        "located 0/1 required premise role(s)"
+      ]
+    },
+    {
+      "case_id": 2,
+      "document": "sds_05.pdf",
+      "field": "flash_point",
+      "selection": "hard",
+      "slices": [
+        "cross_page",
+        "multi_evidence"
+      ],
+      "primary_slice": "cross_page",
+      "evidence_set_size": 2,
+      "partial_coverage": false,
+      "per_method_passes": {
+        "M1": 2,
+        "M2": 1,
+        "M3": 2,
+        "M4": 2,
+        "M5": 2
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": ">225°C (437°F) [ASTM D-92]",
+        "all_values": [
+          ">225°C (437°F) [ASTM D-92]",
+          ">225°C"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          3,
+          7
+        ],
+        "evidence": [
+          {
+            "page": 7,
+            "text": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92]"
+          },
+          {
+            "page": 3,
+            "text": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]"
+          }
+        ]
+      },
+      "reference_method": "M2",
+      "reference_layer": "native",
+      "per_layer": {
+        "native": {
+          "M1": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 5,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": false,
+            "verbatim_fuzzy_score": 35.417,
+            "support": "violated",
+            "support_note": "citation is not verbatim",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M3": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F) [ASTM D-92]",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M5": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          }
+        },
+        "ocr": {
+          "M1": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8321,
+            "bbox_coverage": 0.8324,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M2": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8321,
+            "bbox_coverage": 0.8324,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M3": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8321,
+            "bbox_coverage": 0.8324,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F) [ASTM D-92]",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8321,
+            "bbox_coverage": 0.8324,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          },
+          "M5": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">225°C (437°F)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8321,
+            "bbox_coverage": 0.8324,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              3,
+              7
+            ],
+            "gold_evidence": "Flash Point [Method]:\n>225°C (437°F) [ASTM D-92] | Flash Point [Method]: >225°C (437°F) [ASTM D-92]",
+            "note": ""
+          }
+        }
+      },
+      "solved_by": [
+        "M1",
+        "M3",
+        "M4",
+        "M5"
+      ],
+      "min_cost_solved": {
+        "method": "M4",
+        "latency_s": 0.0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "n_calls": 0,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
+      "min_cost_llm_solved": {
+        "method": "M5",
+        "latency_s": 5.592,
+        "prompt_tokens": 2453,
+        "completion_tokens": 14,
+        "n_calls": 14,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
+      "actual_error": "evidence localization",
+      "cause": "cited page 5 vs gold page(s) [3, 7]; span IoU 0.0 / coverage 0.0 below threshold; bbox IoU 0.0 / coverage 0.0 below threshold; cited quote is not verbatim on its page; support: citation is not verbatim",
+      "taxonomy": "evidence",
+      "classification_reasons": [
+        "cited page 5 vs gold page(s) [3, 7]",
+        "span IoU 0.0 / coverage 0.0 below threshold",
+        "bbox IoU 0.0 / coverage 0.0 below threshold",
+        "cited quote is not verbatim on its page",
+        "support: citation is not verbatim"
+      ]
+    },
+    {
+      "case_id": 3,
+      "document": "sds_05.pdf",
+      "field": "molecular_weight",
+      "selection": "hard",
+      "slices": [
+        "derived",
+        "multi_evidence"
+      ],
+      "primary_slice": "derived",
+      "evidence_set_size": 2,
+      "partial_coverage": false,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 2,
+        "M5": 0
+      },
+      "gold": {
+        "state": "NOT_APPLICABLE",
+        "value": null,
+        "all_values": [],
+        "derivation": "ONTOLOGY",
+        "rule": "identifier_undefined_for_form",
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          2
+        ],
+        "evidence": [
+          {
+            "page": 2,
+            "text": "This material is defined as a mixture."
+          },
+          {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+          }
+        ]
+      },
+      "reference_method": "M1",
+      "reference_layer": "native",
+      "per_layer": {
+        "native": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Code:\n201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 9,
+            "predicted_evidence": "Vapour Density (Air = 1): > 2 at 101 kPa [Estimated]",
+            "verbatim": false,
+            "verbatim_fuzzy_score": 39.583,
+            "support": "violated",
+            "support_note": "citation is not verbatim",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "cited quote does not occur verbatim on the cited page; gold is derived, prediction is direct"
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Code:\n201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "premise declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          }
+        },
+        "ocr": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "1.1. PRODUCT IDENTIFIER\nProduct Name: MOBIL SHC PM 220\nProduct Description: Synthetic Base Stocks and Additives\nProduct Code: 201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "no citation",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is derived, prediction is direct"
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "premise declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8312,
+            "bbox_coverage": 0.8327,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "This material is defined as a mixture. | 3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          }
+        }
+      },
+      "solved_by": [
+        "M4"
+      ],
+      "min_cost_solved": {
+        "method": "M4",
+        "latency_s": 0.0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "n_calls": 0,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
+      "min_cost_llm_solved": null,
+      "actual_error": "reasoning (derived)",
+      "cause": "located 0/1 required premise role(s)",
+      "taxonomy": "reasoning",
+      "classification_reasons": [
+        "located 0/1 required premise role(s)"
+      ]
+    },
+    {
+      "case_id": 4,
+      "document": "sds_05.pdf",
+      "field": "product_name",
+      "selection": "hard",
+      "slices": [
+        "multi_evidence"
+      ],
+      "primary_slice": "multi_evidence",
+      "evidence_set_size": 2,
+      "partial_coverage": false,
+      "per_method_passes": {
+        "M1": 1,
+        "M2": 0,
+        "M3": 1,
+        "M4": 1,
+        "M5": 1
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": "MOBIL SHC PM 220",
+        "all_values": [
+          "MOBIL SHC PM 220"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          1
+        ],
+        "evidence": [
+          {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220"
+          },
+          {
+            "page": 1,
+            "text": "Product Name: MOBIL SHC PM 220"
+          }
+        ]
+      },
+      "reference_method": "M4",
+      "reference_layer": "ocr",
+      "per_layer": {
+        "native": {
+          "M1": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "value",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Synthetic Base Stocks and Additives",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Description:\nSynthetic Base Stocks and Additives",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 0.0833,
+            "span_coverage": 0.1667,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M3": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M5": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          }
+        },
+        "ocr": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.6404,
+            "bbox_coverage": 0.6404,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.6404,
+            "bbox_coverage": 0.6404,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.6404,
+            "bbox_coverage": 0.6404,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M4": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.6404,
+            "bbox_coverage": 0.6404,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MOBIL SHC PM 220",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Name: MOBIL SHC PM 220",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.6404,
+            "bbox_coverage": 0.6404,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Name: MOBIL SHC PM 220 | Product Name: MOBIL SHC PM 220",
+            "note": ""
+          }
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "evidence localization",
+      "cause": "bbox IoU 0.6404 / coverage 0.6404 below threshold",
+      "taxonomy": "evidence",
+      "classification_reasons": [
+        "bbox IoU 0.6404 / coverage 0.6404 below threshold"
+      ]
+    },
+    {
+      "case_id": 5,
+      "document": "sds_05.pdf",
+      "field": "substance_or_mixture",
+      "selection": "hard",
+      "slices": [
+        "multi_evidence"
+      ],
+      "primary_slice": "multi_evidence",
+      "evidence_set_size": 2,
+      "partial_coverage": false,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 2,
+        "M5": 0
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": "MIXTURE",
+        "all_values": [
+          "MIXTURE"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          2
+        ],
+        "evidence": [
+          {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+          },
+          {
+            "page": 2,
+            "text": "This material is defined as a mixture."
+          }
+        ]
+      },
+      "reference_method": "M1",
+      "reference_layer": "native",
+      "per_layer": {
+        "native": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MIXTURE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Description:\nSynthetic Base Stocks and Additives",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Synthetic Base Stocks and Additives",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Description:\nSynthetic Base Stocks and Additives",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MIXTURE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Description:\nSynthetic Base Stocks and Additives",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MIXTURE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          }
+        },
+        "ocr": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MIXTURE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "1.3. DETAILS OF THE SUPPLIER OF THE SAFETY DATA SHEET\nSupplier: ExxonMobil Petroleum & Chemical BV",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Synthetic Base Stocks and Additives",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Description: Synthetic Base Stocks and Additives",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MIXTURE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Supplier: ExxonMobil Petroleum & Chemical BV",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M4": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MIXTURE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8312,
+            "bbox_coverage": 0.8327,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
+          }
+        }
+      },
+      "solved_by": [
+        "M4"
+      ],
+      "min_cost_solved": {
+        "method": "M4",
+        "latency_s": 0.0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "n_calls": 0,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
+      "min_cost_llm_solved": null,
+      "actual_error": "evidence localization",
+      "cause": "cited page 1 vs gold page(s) [2]; span IoU 0.0 / coverage 0.0 below threshold; bbox IoU 0.0 / coverage 0.0 below threshold; support: cited span declares no product form",
+      "taxonomy": "evidence",
+      "classification_reasons": [
+        "cited page 1 vs gold page(s) [2]",
+        "span IoU 0.0 / coverage 0.0 below threshold",
+        "bbox IoU 0.0 / coverage 0.0 below threshold",
+        "support: cited span declares no product form"
+      ]
+    },
+    {
+      "case_id": 6,
+      "document": "sds_01.pdf",
+      "field": "supplier_name",
+      "selection": "control",
+      "slices": [
+        "single_evidence"
+      ],
+      "primary_slice": "single_evidence",
+      "evidence_set_size": 1,
+      "partial_coverage": true,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": "SECILTEK SA",
+        "all_values": [
+          "SECILTEK SA"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          1
+        ],
+        "evidence": [
+          {
+            "page": 1,
+            "text": "Details of the supplier of the safety data sheet:\nSECILTEK SA"
+          }
+        ]
+      },
+      "reference_method": null,
+      "reference_layer": null,
+      "per_layer": {
+        "native": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        },
+        "ocr": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "none (control)",
+      "cause": "all methods pass joint on both layers",
+      "taxonomy": "none",
+      "classification_reasons": []
+    },
+    {
+      "case_id": 7,
+      "document": "sds_05.pdf",
+      "field": "product_cas_number",
+      "selection": "control",
+      "slices": [
+        "single_evidence"
+      ],
+      "primary_slice": "single_evidence",
+      "evidence_set_size": 1,
+      "partial_coverage": false,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0
+      },
+      "gold": {
+        "state": "NOT_APPLICABLE",
+        "value": null,
+        "all_values": [],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          2
+        ],
+        "evidence": [
+          {
+            "page": 2,
+            "text": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture."
+          }
+        ]
+      },
+      "reference_method": "M4",
+      "reference_layer": "native",
+      "per_layer": {
+        "native": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Code:\n201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is direct, prediction is derived"
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "64742-54-7",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Distillates (petroleum), hydrotreated heavy paraffinic 64742-54-7 265-157-1 01-2119484627-25 1 - < 5% Asp. Tox. 1 H304",
+            "verbatim": false,
+            "verbatim_fuzzy_score": 32.203,
+            "support": "violated",
+            "support_note": "citation is not verbatim",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "Product Code:\n201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is direct, prediction is derived"
+          },
+          "M4": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "violated",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "derivation"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "premise declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is direct, prediction is derived"
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          }
+        },
+        "ocr": {
+          "M1": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "1.1. PRODUCT IDENTIFIER\nProduct Name: MOBIL SHC PM 220\nProduct Description: Synthetic Base Stocks and Additives\nProduct Code: 201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is direct, prediction is derived"
+          },
+          "M2": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "no citation",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          },
+          "M3": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 1,
+            "predicted_evidence": "1.1. PRODUCT IDENTIFIER\nProduct Name: MOBIL SHC PM 220\nProduct Description: Synthetic Base Stocks and Additives\nProduct Code: 201560501020, 603530-60",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited premises establish no product form: no span declares one and the composition premise set is incomplete for SUBSTANCE [missing sole_constituent (0/1: a constituent row declared at exactly 100 %), completeness_statement (0/1: a span ruling out any further constituent (impurity, stabiliser, additive))]",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is direct, prediction is derived"
+          },
+          "M4": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "violated",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "derivation"
+            ],
+            "predicted_state": "NOT_APPLICABLE",
+            "predicted_value": null,
+            "predicted_derivation": "DERIVED",
+            "predicted_rule": "identifier_undefined_for_form",
+            "predicted_page": 2,
+            "predicted_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "premise declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8312,
+            "bbox_coverage": 0.8327,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": "gold is direct, prediction is derived"
+          },
+          "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture.",
+            "note": ""
+          }
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "reasoning (derivation)",
+      "cause": "gold is a direct (EXPLICIT) claim but the prediction declares DERIVED with rule 'identifier_undefined_for_form'",
+      "taxonomy": "reasoning",
+      "classification_reasons": [
+        "gold is a direct (EXPLICIT) claim but the prediction declares DERIVED with rule 'identifier_undefined_for_form'"
+      ]
+    },
+    {
+      "case_id": 8,
+      "document": "sds_06.pdf",
+      "field": "substance_or_mixture",
+      "selection": "control",
+      "slices": [],
+      "primary_slice": "unknown",
+      "evidence_set_size": 0,
+      "partial_coverage": true,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0
+      },
+      "gold": {
+        "state": "NOT_STATED",
+        "value": null,
+        "all_values": [],
+        "derivation": "ABSENT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": "Section 3 lists a single ingredient at 85-100 weight percent, which is neither a 100 percent single substance nor an explicit mixture declaration.",
+        "pages": [],
+        "evidence": []
+      },
+      "reference_method": null,
+      "reference_layer": null,
+      "per_layer": {
+        "native": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        },
+        "ocr": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "none (control)",
+      "cause": "all methods pass joint on both layers",
+      "taxonomy": "none",
+      "classification_reasons": []
+    },
+    {
+      "case_id": 9,
+      "document": "sds_09.pdf",
+      "field": "supplier_name",
+      "selection": "control",
+      "slices": [
+        "single_evidence"
+      ],
+      "primary_slice": "single_evidence",
+      "evidence_set_size": 1,
+      "partial_coverage": true,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": "MACHEREY-NAGEL GmbH & Co. KG",
+        "all_values": [
+          "MACHEREY-NAGEL GmbH & Co. KG"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          1
+        ],
+        "evidence": [
+          {
+            "page": 1,
+            "text": "Manufactured by:\nMACHEREY-NAGEL GmbH & Co. KG"
+          }
+        ]
+      },
+      "reference_method": null,
+      "reference_layer": null,
+      "per_layer": {
+        "native": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        },
+        "ocr": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "none (control)",
+      "cause": "all methods pass joint on both layers",
+      "taxonomy": "none",
+      "classification_reasons": []
+    },
+    {
+      "case_id": 10,
+      "document": "sds_10.pdf",
+      "field": "product_name",
+      "selection": "control",
+      "slices": [
+        "single_evidence"
+      ],
+      "primary_slice": "single_evidence",
+      "evidence_set_size": 1,
+      "partial_coverage": true,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": "CIP Composites",
+        "all_values": [
+          "CIP Composites"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          1
+        ],
+        "evidence": [
+          {
+            "page": 1,
+            "text": "Product Name:\nCIP Composites"
+          }
+        ]
+      },
+      "reference_method": null,
+      "reference_layer": null,
+      "per_layer": {
+        "native": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        },
+        "ocr": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "none (control)",
+      "cause": "all methods pass joint on both layers",
+      "taxonomy": "none",
+      "classification_reasons": []
+    },
+    {
+      "case_id": 11,
+      "document": "sds_11.pdf",
+      "field": "substance_or_mixture",
+      "selection": "control",
+      "slices": [
+        "single_evidence"
+      ],
+      "primary_slice": "single_evidence",
+      "evidence_set_size": 1,
+      "partial_coverage": true,
+      "per_method_passes": {
+        "M1": 0,
+        "M2": 0,
+        "M3": 0,
+        "M4": 0,
+        "M5": 0
+      },
+      "gold": {
+        "state": "PRESENT",
+        "value": "MIXTURE",
+        "all_values": [
+          "MIXTURE"
+        ],
+        "derivation": "EXPLICIT",
+        "rule": null,
+        "ambiguous": false,
+        "alternative_state": null,
+        "note": null,
+        "pages": [
+          2
+        ],
+        "evidence": [
+          {
+            "page": 2,
+            "text": "3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins."
+          }
+        ]
+      },
+      "reference_method": null,
+      "reference_layer": null,
+      "per_layer": {
+        "native": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        },
+        "ocr": {
+          "M1": null,
+          "M2": null,
+          "M3": null,
+          "M4": null,
+          "M5": null
+        }
+      },
+      "solved_by": [],
+      "min_cost_solved": null,
+      "min_cost_llm_solved": null,
+      "actual_error": "none (control)",
+      "cause": "all methods pass joint on both layers",
+      "taxonomy": "none",
+      "classification_reasons": []
+    }
+  ]
+}

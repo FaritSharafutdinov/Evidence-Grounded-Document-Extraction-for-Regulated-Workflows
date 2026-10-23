@@ -1,5 +1,44 @@
 # Changelog — gold annotations
 
+## v1.3 — 2026-10-23 (TASK-016/017, ownership-фикс sds_18)
+
+Устранение evidence-ownership нарушения в sds_18 (аудит TASK-016, решение Farit'а: пакет A).
+Источник: `data/annotations/source/`, регенерация `gold.json` — `python -m scripts.build_annotations`.
+
+### Исправлено
+
+- **sds_18** (kit/multipart product) — product-level form-выводы были обоснованы **premise из
+  состава компонента Part A (стр. 5, заголовок «Ingredient C.A.S. No. % by Wt»)**. Заменено на
+  **product-level kit-декларацию с титула** (стр. 1, дословно): «This product is a kit or a
+  multipart product which consists of multiple, independently packaged components.»
+  - `substance_or_mixture` (COMPOSITION_IMPLIED/MIXTURE): evidence `[p5 header, p5 «35% of the
+    mixture…»]` → `[p1 kit]`.
+  - `product_cas_number` / `chemical_formula` / `molecular_weight` (NOT_APPLICABLE/ONTOLOGY):
+    premise `p5 header` → `p1 kit`. Форма остаётся **MIXTURE** (в онтологии нет формы KIT/MULTIPART;
+    пакет A — минимальный ownership-фикс без правки инфраструктуры Марии).
+
+### Не менялось
+
+- Состояния/значения полей sds_18 не изменены; `ingredients` — по-прежнему только Part A (p5),
+  политика «один компонент»; locked не тронут.
+
+### Эффект
+
+- `scripts/build_annotations` — **0 PROBLEM(S)**. Информационный список `unverifiable` вырос
+  6→10: реестр правил больше не распознаёт premise sds_18 как `form_declaration` (p1 kit-текст не
+  матчится детектором декларации формы, в отличие от p5-заголовка состава) — это ограничение
+  чекера, не дефект gold.
+- `gold_evidence.jsonl`: 232 записи (число не изменилось), **изменены 4 записи** (sds_18:
+  substance_or_mixture + 3 identifier) — gold-страница p5 → p1. Из-за сокращения premise-множества
+  эти 4 инстанса перешли **multi_evidence → single_evidence** (срез: single 81→85, multi 53→49).
+- Включённых dev-инстансов: **134 → 134** (без изменений).
+- `units_native/ocr.jsonl` — байт-в-байт (md5 сверен).
+- Дельта BM25/dense (v1.2 → v1.3): max |Δ| = **0.065** (BM25) / **0.070** (dense), сосредоточена в
+  срезе `derived` (4 поля sds_18 — все derived) и на щедрых бюджетах; знаки смешанные.
+  Headline native macro complete@3: BM25 0.604→**0.612**, dense 0.634→0.627, naive 0.687→**0.716**
+  (naive/BM25 выросли из-за multi→single переклассификации). Новые числа:
+  `farit/results/*_goldv13.{json,md}`; frozen и `*_goldv12` сохранены. **Рабочий gold для S4 — v1.3.**
+
 ## v1.2 — 2026-10-23 (DEC-005 п.1, TASK-014)
 
 Когерентное завершение интерпретации sds_19 (единственный оставшийся artifact-gold

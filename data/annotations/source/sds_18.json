@@ -1,7 +1,7 @@
 {
   "document": "sds_18.pdf",
   "split": "dev",
-  "note": "Two-part adhesive kit. The file is a cover page followed by two complete safety data sheets, one per part, so several fields have two equally correct locations. The flash point is the headline correction: the old ground truth recorded it as missing even though pages 8 and 19 both print \">=290 \u00baF [Test Method:Tagliabue Closed Cup]\". The old ground truth also recorded the ingredient CAS 101-68-8 as the product CAS.",
+  "note": "Two-part adhesive kit. The file is a cover page followed by two complete safety data sheets, one per part, so several fields have two equally correct locations. The flash point is the headline correction: the old ground truth recorded it as missing even though pages 8 and 19 both print \">=290 \u00baF [Test Method:Tagliabue Closed Cup]\". The old ground truth also recorded the ingredient CAS 101-68-8 as the product CAS. Gold v1.3 (TASK-016/017): the product-level form premise moved from Part A's composition table (p5, component-level) to the cover's kit declaration (p1, product-level); the kit/multipart product is still represented as MIXTURE (no KIT form exists in the ontology). Ingredients remain annotated for Part A only (policy).",
   "product_form": "MIXTURE",
   "fields": {
     "product_name": {
@@ -38,30 +38,30 @@
       "rule": "composition_implies_form",
       "value": "MIXTURE",
       "evidence": [
-        { "page": 5, "text": "Ingredient C.A.S. No. % by Wt" },
-        {
-          "page": 5,
-          "text": "35% of the mixture consists of ingredients of unknown acute oral toxicity."
-        }
-      ]
+        { "page": 1, "text": "This product is a kit or a multipart product which consists of multiple, independently packaged components." }
+      ],
+      "note": "Gold v1.3 (TASK-016/017): premise moved from Part A's composition table (p5, component-level) to the product-level kit declaration on the cover (p1) — the ownership fix. The kit/multipart bundle of multiple components is represented as MIXTURE (no KIT form exists in the ontology). The p5 composition table belongs to component Part A, not to the kit."
     },
     "product_cas_number": {
       "state": "NOT_APPLICABLE",
       "derivation": "ONTOLOGY",
       "rule": "identifier_undefined_for_form",
-      "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }]
+      "evidence": [{ "page": 1, "text": "This product is a kit or a multipart product which consists of multiple, independently packaged components." }],
+      "note": "Gold v1.3 (TASK-016/017): product-level kit premise (p1) instead of Part A's composition header (p5) — ownership fix."
     },
     "chemical_formula": {
       "state": "NOT_APPLICABLE",
       "derivation": "ONTOLOGY",
       "rule": "identifier_undefined_for_form",
-      "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }]
+      "evidence": [{ "page": 1, "text": "This product is a kit or a multipart product which consists of multiple, independently packaged components." }],
+      "note": "Gold v1.3 (TASK-016/017): product-level kit premise (p1) instead of Part A's composition header (p5) — ownership fix."
     },
     "molecular_weight": {
       "state": "NOT_APPLICABLE",
       "derivation": "ONTOLOGY",
       "rule": "identifier_undefined_for_form",
-      "evidence": [{ "page": 5, "text": "Ingredient C.A.S. No. % by Wt" }]
+      "evidence": [{ "page": 1, "text": "This product is a kit or a multipart product which consists of multiple, independently packaged components." }],
+      "note": "Gold v1.3 (TASK-016/017): product-level kit premise (p1) instead of Part A's composition header (p5) — ownership fix."
     },
     "flash_point": {
       "state": "PRESENT",

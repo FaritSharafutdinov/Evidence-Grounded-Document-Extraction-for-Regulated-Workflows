@@ -172,7 +172,7 @@ run_battery() {  # $1 = extra args
   # shellcheck disable=SC2086
   python farit/src/extraction/run_battery.py \
     --backend openai --model "$SERVED_NAME" --base-url "$BASE_URL" \
-    --layer "$LAYER" --methods M1,M2,M3,M4,M5 $1
+    --layer "$LAYER" --methods M1,M2,M3,M4,M5,M6 $1
 }
 
 evaluate_battery() {

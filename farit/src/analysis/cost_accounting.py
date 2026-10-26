@@ -32,6 +32,7 @@ METHODS = {
     "M3": "contextual citation verification (Qwen3.5-2B)",
     "M4": "rules-v4 (non-LLM, inherited)",
     "M5": "basic LLM verifier (Qwen3.5-2B)",
+    "M6": "section-routed individual-field (simple rules + Qwen3.5-2B)",
 }
 
 

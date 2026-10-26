@@ -23,6 +23,7 @@ repaired before validation.
 from __future__ import annotations
 
 import json
+import re
 from dataclasses import dataclass, asdict
 from typing import Any
 
@@ -554,6 +555,114 @@ def _m2_ingredients_schema() -> dict:
 
 
 # ---------------------------------------------------------------------------
+# M6 — section-routed individual-field.
+#
+# The supervisor's list item "simple entity/section rules" on the same
+# Qwen3.5-2B config: a small HAND-WRITTEN map routes each field to the SDS
+# sections / label cues that carry it, and the 2B model extracts the field from
+# just those pages. No learned router; distinct from Maria's rules-v4 (M4, which
+# is a full non-LLM extractor). Tests whether cheap section/entity routing helps
+# the model's grounding.
+# ---------------------------------------------------------------------------
+
+_SECTION_CUES: dict[str, tuple[str, ...]] = {
+    "product_name": (r"SECTION\s*1\b", r"Product identifier", r"Trade name", r"Product name"),
+    "supplier_name": (r"Supplier", r"Manufacturer", r"Company", r"Distributor", r"Details of the supplier", r"Emergency telephone"),
+    "substance_or_mixture": (r"SECTION\s*1\b", r"SECTION\s*2\b", r"SECTION\s*3\b", r"Substance", r"Mixture"),
+    "product_cas_number": (r"SECTION\s*3\b", r"\bCAS\b", r"Composition"),
+    "chemical_formula": (r"SECTION\s*3\b", r"Formula", r"Composition"),
+    "molecular_weight": (r"SECTION\s*3\b", r"Molecular weight", r"Composition"),
+    "flash_point": (r"SECTION\s*9\b", r"Flash point"),
+}
+_INGREDIENT_CUES = (r"SECTION\s*3\b", r"Composition", r"C\.A\.S", r"\bCAS\b", r"% by Wt")
+
+
+def routed_pages(document_text: textlayer.DocumentText, cues: tuple[str, ...]) -> list:
+    """Pages whose row text matches any cue; all pages if nothing matches."""
+    pages = list(document_text.pages)
+    if cues:
+        matched = [p for p in pages if any(re.search(cue, p.row_text, re.IGNORECASE) for cue in cues)]
+        if matched:
+            return matched
+    return pages
+
+
+def _page_block(pages: list) -> str:
+    return "\n\n".join(f"=== PAGE {p.page_number} ===\n{p.row_text}" for p in pages)
+
+
+def m6_section_rules(
+    document: str,
+    layer: str,
+    backend: backends.Backend,
+    max_tokens: int = 600,
+    ingredients_max_tokens: int = 1200,
+) -> tuple[DocumentPrediction, list[CallRecord], dict]:
+    document_text = textlayer.load(document, layer)
+    calls: list[CallRecord] = []
+    fields: dict[str, FieldPrediction] = {}
+    notes: list[str] = []
+
+    for name in M2_FIELDS:
+        spec = FIELD_SPECS[name]
+        user = f"Document: {document}\n\n{_page_block(routed_pages(document_text, _SECTION_CUES.get(name, ())))}"
+        system = _M2_SYSTEM.replace("__NAME__", spec.name).replace(
+            "__DESCRIPTION__", spec.description
+        )
+        system = f"{system}\n\n{_M2_FORMAT}"
+        text, record = _call(
+            backend, "M6", document, layer, system, user,
+            llm.LlmField.model_json_schema(), max_tokens, label=name,
+        )
+        calls.append(record)
+        raw = None if record.error else parse_llm_field(text)
+        if raw is None:
+            fields[name] = FieldPrediction(state=FieldState.NOT_STATED)
+            notes.append(f"{name}: no structured output")
+            continue
+        prediction, note, _ = llm._field_prediction(name, raw, document_text, _LAYOUT)
+        fields[name] = prediction
+        if note:
+            notes.append(f"{name}: {note}")
+
+    user = f"Document: {document}\n\n{_page_block(routed_pages(document_text, _INGREDIENT_CUES))}"
+    text, record = _call(
+        backend, "M6", document, layer,
+        f"{_M2_INGREDIENTS_SYSTEM}\n\n{_M2_INGREDIENTS_FORMAT}", user,
+        json.loads(json.dumps(_m2_ingredients_schema())), ingredients_max_tokens, label="ingredients",
+    )
+    calls.append(record)
+    parsed = None if record.error else parse_llm_ingredients(text)
+    if parsed is None:
+        ingredients = IngredientsPrediction(state=FieldState.NOT_STATED, items=[])
+        notes.append("ingredients: no structured output")
+    else:
+        items = [
+            IngredientPrediction(
+                name=item["name"],
+                cas_number=item["cas_number"],
+                cas_state=FieldState(item["cas_state"]),
+                concentration=item["concentration"],
+                evidence=llm.resolve_citation(
+                    document_text,
+                    llm.LlmCitation.model_validate(item["citation"]) if item["citation"] else None,
+                    _LAYOUT,
+                ),
+            )
+            for item in parsed["ingredients"]
+        ]
+        ingredients = IngredientsPrediction(
+            state=FieldState(parsed["ingredients_state"]), items=items
+        )
+
+    prediction = DocumentPrediction(
+        document=document, fields=fields, ingredients=ingredients,
+        error="; ".join(notes) or None,
+    )
+    return prediction, calls, {"contract_violations": {}}
+
+
+# ---------------------------------------------------------------------------
 # M3 — contextual citation verification (depends on M1)
 # ---------------------------------------------------------------------------
 
@@ -814,6 +923,7 @@ METHODS = {
     "M3": "contextual citation verification (depends on M1)",
     "M4": "rules-v4 (inherited, re-scored on gold v1.3)",
     "M5": "basic LLM verifier (depends on M1)",
+    "M6": "section-routed individual-field (simple section/entity rules + Qwen3.5-2B)",
 }
 
 LLM_METHODS = ("M1", "M2", "M3", "M5")

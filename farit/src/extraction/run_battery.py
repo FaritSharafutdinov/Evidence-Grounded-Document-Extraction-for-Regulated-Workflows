@@ -40,6 +40,7 @@ from methods import (  # noqa: E402
     m3_contextual_verification,
     m4_rules_v4,
     m5_basic_verifier,
+    m6_section_rules,
 )
 
 DEFAULT_MODEL = "mlx-community/Qwen3.5-2B-MLX-4bit"
@@ -55,8 +56,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--layer", choices=["native", "ocr", "both"], default="both")
     parser.add_argument(
         "--methods",
-        default="M1,M2,M3,M4,M5",
-        help="comma-separated subset of M1,M2,M3,M4,M5",
+        default="M1,M2,M3,M4,M5,M6",
+        help="comma-separated subset of M1,M2,M3,M4,M5,M6",
     )
     parser.add_argument("--docs", default=None, help="comma-separated document names to run")
     parser.add_argument("--limit", type=int, default=None, help="keep only the first N documents")
@@ -247,6 +248,15 @@ def main() -> int:
                 predictions, calls, info = {}, [], {"contract_violations": {}}
                 for document in documents:
                     prediction, records, document_info = m2_individual_field(
+                        document, layer, backend
+                    )
+                    predictions[document] = prediction
+                    calls.extend(records)
+                    info.update(document_info)
+            elif method == "M6":
+                predictions, calls, info = {}, [], {"contract_violations": {}}
+                for document in documents:
+                    prediction, records, document_info = m6_section_rules(
                         document, layer, backend
                     )
                     predictions[document] = prediction

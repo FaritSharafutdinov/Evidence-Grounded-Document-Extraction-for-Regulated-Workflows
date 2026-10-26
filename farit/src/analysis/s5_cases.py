@@ -62,11 +62,11 @@ from sdsbench.ontology import (  # noqa: E402
 from sdsbench.schema import PredictionSet  # noqa: E402
 from scripts.evaluate import guard_split  # noqa: E402
 
-METHODS: tuple[str, ...] = ("M1", "M2", "M3", "M4", "M5")
+METHODS: tuple[str, ...] = ("M1", "M2", "M3", "M4", "M5", "M6")
 LAYERS: tuple[str, ...] = ("native", "ocr")
 # Preference order when ranking methods (M4 = the strong non-LLM rule baseline).
 METHOD_ORDER: dict[str, int] = {"M4": 0, "M1": 1, "M3": 2, "M5": 3, "M2": 4}
-LLM_METHODS: tuple[str, ...] = ("M1", "M2", "M3", "M5")
+LLM_METHODS: tuple[str, ...] = ("M1", "M2", "M3", "M5", "M6")
 IDENTIFIER_FIELDS: tuple[str, ...] = (
     "product_cas_number",
     "chemical_formula",

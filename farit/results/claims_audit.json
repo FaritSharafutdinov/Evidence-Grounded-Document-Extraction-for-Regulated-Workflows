@@ -487,7 +487,9 @@
     {
       "id": "cost.hub_judge_calls",
       "docs": {
-        "cost": "hub bf16\\) \\| (\\d+)"
+        "cost": "hub bf16\\) \\| (\\d+)",
+        "state": "judge = \\*\\*(\\d+) calls\\*\\*",
+        "report": "full run \\((\\d+) calls"
       },
       "expect": 2698,
       "expect_str": "2698",
@@ -497,7 +499,9 @@
       "falsifier": "a judge rerun changes the call count",
       "status": "PASS",
       "found": {
-        "cost": "2698"
+        "cost": "2698",
+        "state": "2698",
+        "report": "2698"
       }
     }
   ],

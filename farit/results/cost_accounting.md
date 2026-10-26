@@ -24,6 +24,7 @@ Every model call of the **final canonical runs** is counted (retrieval judges in
 | retrieval LLM judge (inherited, old gold) | judge | ocr | mlx | mlx-community/Qwen2.5-7B-Instruct-4bit | 1303 | n/a | n/a | 8069.8 |
 | judge smoke/probe (not a full run) | judge-smoke | both | mlx | mlx-community/Qwen3.5-2B-MLX-4bit | 210 | n/a | n/a | n/a |
 | judge smoke/probe (not a full run) | judge-smoke | both | mlx | mlx-community/Qwen2.5-0.5B-Instruct-4bit | 210 | n/a | n/a | n/a |
+| S4 battery (prompt-broken first hub run — estimate) | M1-M5 | both | openai | Qwen/Qwen3.5-2B | 916 | n/a | n/a | n/a |
 
 ## Totals by family
 
@@ -33,7 +34,8 @@ Every model call of the **final canonical runs** is counted (retrieval judges in
 | retrieval LLM judge (Qwen3.5-2B, hub bf16) | 2698 | 0 | 0 | 0.0 |
 | retrieval LLM judge (inherited, old gold) | 2606 | 0 | 0 | 16365.5 |
 | judge smoke/probe (not a full run) | 420 | 0 | 0 | 0.0 |
-| **ALL** | 6960 | 3951500 | 94166 | 17410.5 |
+| S4 battery (prompt-broken first hub run — estimate) | 916 | 0 | 0 | 0.0 |
+| **ALL** | 7876 | 3951500 | 94166 | 17410.5 |
 
 **SUPERSEDED (local MLX dev run):** S4 full-battery wall-clock from the old runner log = 10850.7s ≈ 181 min. The canonical run is the hub bf16 battery above; its wall-clock is the sum of the per-cell latencies (cached cells show 0.0).
 

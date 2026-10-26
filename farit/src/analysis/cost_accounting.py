@@ -139,10 +139,29 @@ def hub_judge_rows() -> list[dict]:
                 "prompt_tokens": None,
                 "completion_tokens": None,
                 "wall_clock_s": round(calls * avg, 1),
-                "note": f"avg {avg:.3f}s/page; full run, tokens not recorded by the judge runner",
+                "note": "avg page time not retained by the committed judge artifact (cached re-run); tokens not recorded by the judge runner",
             }
         )
     return rows
+
+
+def prompt_broken_row() -> list[dict]:
+    """The first (pre-fix) hub run — dropped output, but real GPU work (estimate)."""
+    return [
+        {
+            "family": "S4 battery (prompt-broken first hub run — estimate)",
+            "method": "M1-M5",
+            "description": "first IDH hub run before the prompt/schema fix; M1/M3/M5 output discarded",
+            "layer": "both",
+            "backend": "openai",
+            "model": "Qwen/Qwen3.5-2B",
+            "n_calls": 916,
+            "prompt_tokens": None,
+            "completion_tokens": None,
+            "wall_clock_s": None,
+            "note": "estimated call count (fixed 5-method run); real GPU work, not summed into the canonical ledger",
+        }
+    ]
 
 
 def run_wall_clock() -> float | None:
@@ -226,7 +245,7 @@ def md(rows: list[dict], run_wc: float | None) -> str:
 
 
 def main() -> int:
-    rows = s4_rows() + hub_judge_rows() + judge_rows() + judge_smoke_rows()
+    rows = s4_rows() + hub_judge_rows() + judge_rows() + judge_smoke_rows() + prompt_broken_row()
     run_wc = run_wall_clock()
     RESULTS.mkdir(parents=True, exist_ok=True)
     payload = {"rows": rows, "s4_run_wall_clock_s": run_wc,

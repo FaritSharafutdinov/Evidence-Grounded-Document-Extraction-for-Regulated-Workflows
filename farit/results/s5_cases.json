@@ -352,7 +352,7 @@
       },
       "M4/native": {
         "backend": "rules",
-        "model": "Qwen/Qwen3.5-2B",
+        "model": "rules-none",
         "cost": {
           "n_calls": 0,
           "n_records": 20,
@@ -365,7 +365,7 @@
       },
       "M4/ocr": {
         "backend": "rules",
-        "model": "Qwen/Qwen3.5-2B",
+        "model": "rules-none",
         "cost": {
           "n_calls": 0,
           "n_records": 20,

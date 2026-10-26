@@ -59,6 +59,10 @@ OVERCLAIM_PATTERNS = [
     r"\bno (?:product-vs-ingredient|broken evidence)\b",
     r"\bclearly better\b",
     r"\bsolves the problem\b",
+    r"\bentirely\b",
+    r"\bdoes not improve\b",
+    r"\bstill owed\b",
+    r"\bremains owed\b",
 ]
 
 SPLIT_FORBIDDEN = [
@@ -305,7 +309,7 @@ def build_claims(a: dict) -> list[dict]:
         claims.append(
             claim(
                 "cost.hub_judge_calls",
-                {"cost": r"hub bf16\) \| (\d+)"},
+                {"cost": r"hub bf16\) \| (\d+)", "state": r"judge = \*\*(\d+) calls\*\*", "report": r"full run \((\d+) calls"},
                 sum(r["n_calls"] for r in hub_judge),
                 "cost_accounting.json",
                 "hub 2B judge, both layers",

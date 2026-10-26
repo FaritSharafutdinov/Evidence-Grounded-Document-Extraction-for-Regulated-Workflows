@@ -277,7 +277,12 @@ def main() -> int:
                         )
                     predictions[document] = prediction
                     calls.extend(records)
-                    info.update(document_info)
+                    for key, value in document_info.items():
+                        # accumulate numeric counters (M5 yes/no/unparsed, M3 degraded)
+                        if isinstance(value, int) and not isinstance(value, bool):
+                            info[key] = info.get(key, 0) + value
+                        else:
+                            info[key] = value
 
             n_evidence = evidence_bearing_count(predictions)
             if method != "M4" and n_evidence == 0 and not args.allow_empty_contract:

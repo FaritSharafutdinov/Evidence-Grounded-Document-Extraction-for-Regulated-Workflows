@@ -698,7 +698,7 @@ def summarize(cases: list[dict], costs: dict, selection_info: dict) -> dict:
             cost = cell.get("cost")
             method_cost[f"{method}/{layer}"] = {
                 "backend": cell.get("backend"),
-                "model": cell.get("model"),
+                "model": "rules-none" if method == "M4" else cell.get("model"),
                 "cost": cost,
             }
     return {

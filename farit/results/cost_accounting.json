@@ -167,7 +167,7 @@
       "prompt_tokens": null,
       "completion_tokens": null,
       "wall_clock_s": 0.0,
-      "note": "avg 0.000s/page; full run, tokens not recorded by the judge runner"
+      "note": "avg page time not retained by the committed judge artifact (cached re-run); tokens not recorded by the judge runner"
     },
     {
       "family": "retrieval LLM judge (Qwen3.5-2B, hub bf16)",
@@ -180,7 +180,7 @@
       "prompt_tokens": null,
       "completion_tokens": null,
       "wall_clock_s": 0.0,
-      "note": "avg 0.000s/page; full run, tokens not recorded by the judge runner"
+      "note": "avg page time not retained by the committed judge artifact (cached re-run); tokens not recorded by the judge runner"
     },
     {
       "family": "retrieval LLM judge (inherited, old gold)",
@@ -233,6 +233,19 @@
       "completion_tokens": null,
       "wall_clock_s": null,
       "note": "smoke only; full Qwen3.5-2B judge run not performed"
+    },
+    {
+      "family": "S4 battery (prompt-broken first hub run \u2014 estimate)",
+      "method": "M1-M5",
+      "description": "first IDH hub run before the prompt/schema fix; M1/M3/M5 output discarded",
+      "layer": "both",
+      "backend": "openai",
+      "model": "Qwen/Qwen3.5-2B",
+      "n_calls": 916,
+      "prompt_tokens": null,
+      "completion_tokens": null,
+      "wall_clock_s": null,
+      "note": "estimated call count (fixed 5-method run); real GPU work, not summed into the canonical ledger"
     }
   ],
   "s4_run_wall_clock_s": 10850.7,

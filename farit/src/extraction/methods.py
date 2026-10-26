@@ -847,6 +847,7 @@ def m5_basic_verifier(
     fields: dict[str, FieldPrediction] = {}
     yes = 0
     no = 0
+    unparsed = 0
 
     for name in PRODUCT_FIELD_NAMES:
         prediction = base.fields.get(name)
@@ -884,16 +885,25 @@ def m5_basic_verifier(
         if verdict is True:
             yes += 1
             fields[name] = prediction
-        else:
+        elif verdict is False:
             no += 1
             fields[name] = FieldPrediction(
                 state=FieldState.NOT_STATED, rationale="M5: unsupported claim"
+            )
+        else:
+            # Unparseable / errored verdict. Treated as "no support" downstream
+            # (behaviour unchanged), but counted separately so the yes/no ledger
+            # cannot hide a parse failure as a real rejection.
+            unparsed += 1
+            no += 1
+            fields[name] = FieldPrediction(
+                state=FieldState.NOT_STATED, rationale="M5: unparsed verdict treated as no"
             )
 
     result = DocumentPrediction(
         document=document, fields=fields, ingredients=base.ingredients
     )
-    return result, calls, {"yes": yes, "no": no}
+    return result, calls, {"yes": yes, "no": no, "unparsed": unparsed}
 
 
 # ---------------------------------------------------------------------------

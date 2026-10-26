@@ -37,7 +37,7 @@
 | contract.m1_docs | PASS | 17 | state=17 | s4_battery_goldv13.json | M1 pass (both layers), canonical hub bf16 |
 | contract.m1_native | PASS | 87 | state=87 | s4_battery_goldv13.json | M1 native violations |
 | contract.m1_ocr | PASS | 86 | state=86 | s4_battery_goldv13.json | M1 ocr violations |
-| cost.hub_judge_calls | PASS | 2698 | cost=2698 | cost_accounting.json | hub 2B judge, both layers |
+| cost.hub_judge_calls | PASS | 2698 | cost=2698, state=2698, report=2698 | cost_accounting.json | hub 2B judge, both layers |
 
 ## Overclaim language (advisory — each line needs evidence or reword)
 

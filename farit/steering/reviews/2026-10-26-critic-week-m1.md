@@ -78,5 +78,5 @@ Target: `farit/docs/RESEARCH-STATE.md`, `farit/docs/report-2026-10-23.md`, S4 (`
 
 ### Outcome
 
-- Правки: `farit/src/extraction/evaluate_battery.py`; `farit/results/s4_battery_goldv13.{json,md}`; `farit/docs/{RESEARCH-STATE.md,report-2026-10-23.md}`; `farit/SPRINT.md`; `farit/tasks/BOARD.md`. Коммит `a72e7f2`.
+- Правки: `farit/src/extraction/evaluate_battery.py`; `farit/results/s4_battery_goldv13.{json,md}`; `farit/docs/{RESEARCH-STATE.md,report-2026-10-23.md}`; `farit/SPRINT.md`; `farit/tasks/BOARD.md`. Коммит `a896f77`.
 - Достигнут вердикт критика для обязательных F1–F4, F9, F13; минорные — в бэклоге SPRINT. Отправка профу разблокирована после вычитки Farit'ом (§4 «strongest problem»).

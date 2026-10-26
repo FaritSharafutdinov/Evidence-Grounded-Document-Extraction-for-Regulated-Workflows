@@ -1,0 +1,76 @@
+{
+  "methods": [
+    "M1",
+    "M2",
+    "M5"
+  ],
+  "result": {
+    "layers": {
+      "native": {
+        "state_accuracy": {
+          "M1": {
+            "state_correct": 124,
+            "n": 140
+          },
+          "M2": {
+            "state_correct": 70,
+            "n": 140
+          },
+          "M5": {
+            "state_correct": 69,
+            "n": 140
+          }
+        },
+        "m1_to": {
+          "M2": {
+            "m1_correct": 124,
+            "kept": 60,
+            "changed": 64,
+            "changed_to_not_stated": 37,
+            "changed_to_other": 27
+          },
+          "M5": {
+            "m1_correct": 124,
+            "kept": 64,
+            "changed": 60,
+            "changed_to_not_stated": 60,
+            "changed_to_other": 0
+          }
+        }
+      },
+      "ocr": {
+        "state_accuracy": {
+          "M1": {
+            "state_correct": 123,
+            "n": 140
+          },
+          "M2": {
+            "state_correct": 66,
+            "n": 140
+          },
+          "M5": {
+            "state_correct": 70,
+            "n": 140
+          }
+        },
+        "m1_to": {
+          "M2": {
+            "m1_correct": 123,
+            "kept": 56,
+            "changed": 67,
+            "changed_to_not_stated": 40,
+            "changed_to_other": 27
+          },
+          "M5": {
+            "m1_correct": 123,
+            "kept": 64,
+            "changed": 59,
+            "changed_to_not_stated": 59,
+            "changed_to_other": 0
+          }
+        }
+      }
+    },
+    "layers_both": {}
+  }
+}

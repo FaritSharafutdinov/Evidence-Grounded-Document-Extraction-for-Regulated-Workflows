@@ -21,7 +21,7 @@ Farit is the human owner; judgement calls belong to him. Visibility into subagen
 ## Verification protocol (K3, before any task → done)
 
 1. Independently recompute the headline numbers from raw artifacts (json/cache), never from the agent's report.
-2. Invariants: A5 (`piece_recall ≥ complete`), instance counts (n=125 dev inclusions), dev-split-only filters.
+2. Invariants: A5 (`piece_recall ≥ complete`), instance counts (dev = 140 non-ingredient instances, 134 evidence-bearing), dev-split-only filters.
 3. Determinism where claimed (rerun or cache replay), with scope stated precisely.
 4. Spot-check at least one concrete case end-to-end (prompt → model → metric).
 5. Check git status: only expected files changed; gitignore zones respected.
@@ -46,6 +46,15 @@ Periodic, manual, two kinds:
 
 In addition to external reviews, the `critic` subagent runs adversarial passes **inside** the workflow: after every significant artifact (experiment report, week report, direction decision) and ~weekly on the overall research vector. Protocol: `critic-pass` skill; output: `farit/steering/reviews/YYYY-MM-DD-critic-<topic>.md`; K3 writes the point-by-point response and routes consequences to SPRINT/DEC.
 
+## Pre-send gate (mandatory, before anything goes to the supervisor)
+
+No document (week report, `RESEARCH-STATE`, packet, letter) may go to the supervisor until **both** of these pass on the exact artifacts being sent:
+
+1. **`claims_audit` gate** — `~/ds_env/bin/python farit/src/analysis/claims_audit.py` must exit 0: every headline number recomputed from raw artifacts (PASS), overclaim lint clean or each hit explicitly dispositioned, split semantics ok, and **derived artifacts fresh** (S5/S6 built from the canonical predictions). A red gate blocks the send.
+2. **`critic` pass** — invoke the `critic` subagent (protocol `critic-pass`) on the artifacts; it files `farit/steering/reviews/YYYY-MM-DD-critic-<topic>.md`; K3 appends the point-by-point response to the same file. **All critical/major findings are resolved or explicitly dispositioned before sending**; minors may go to the SPRINT backlog.
+
+Rationale (2026-10-26): the gate caught stale derived artifacts (S5 on old predictions) and a stale cost table; the critic caught a document that denied its own headline artifact (its §5.8 vs §3) and a decision justified by a subsequent-broken run. "Numbers recomputed by hand" is not enough — run the gate, then the critic.
+
 ## Reporting
 
-- Week report to supervisor = steering action items with evidence links (experiments, logs, commits). Assembled per `SPRINT.md`, verified numbers only.
+- Week report to supervisor = steering action items with evidence links (experiments, logs, commits). Assembled per `SPRINT.md`, verified numbers only, and it must clear the **Pre-send gate** above (claims_audit green + critic pass).

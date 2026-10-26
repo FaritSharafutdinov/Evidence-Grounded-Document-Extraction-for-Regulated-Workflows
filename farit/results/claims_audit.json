@@ -186,16 +186,16 @@
         "state": "evidence (\\d+) /",
         "report": "evidence \\*\\*(\\d+)\\*\\*"
       },
-      "expect": 12,
-      "expect_str": "12",
+      "expect": 14,
+      "expect_str": "14",
       "unit": "n",
       "source": "s5_cases.json",
       "scope": "24 cases (18 hard + 6 control), gold v1.3",
       "falsifier": "resampling or reclassification changes the count",
       "status": "PASS",
       "found": {
-        "state": "12",
-        "report": "12"
+        "state": "14",
+        "report": "14"
       }
     },
     {
@@ -222,24 +222,6 @@
         "state": "values (\\d+)",
         "report": "wrong value \\*\\*(\\d+)\\*\\*"
       },
-      "expect": 2,
-      "expect_str": "2",
-      "unit": "n",
-      "source": "s5_cases.json",
-      "scope": "24 cases (18 hard + 6 control), gold v1.3",
-      "falsifier": "resampling or reclassification changes the count",
-      "status": "PASS",
-      "found": {
-        "state": "2",
-        "report": "2"
-      }
-    },
-    {
-      "id": "S5.entity attribution",
-      "docs": {
-        "state": "entity attribution (\\d+)",
-        "report": "entity attribution \\*\\*(\\d+)\\*\\*"
-      },
       "expect": 1,
       "expect_str": "1",
       "unit": "n",
@@ -250,6 +232,24 @@
       "found": {
         "state": "1",
         "report": "1"
+      }
+    },
+    {
+      "id": "S5.entity attribution",
+      "docs": {
+        "state": "entity attribution (\\d+)",
+        "report": "entity attribution \\*\\*(\\d+)\\*\\*"
+      },
+      "expect": 0,
+      "expect_str": "0",
+      "unit": "n",
+      "source": "s5_cases.json",
+      "scope": "24 cases (18 hard + 6 control), gold v1.3",
+      "falsifier": "resampling or reclassification changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "0",
+        "report": "0"
       }
     },
     {
@@ -276,16 +276,16 @@
         "state": "(\\d+)\\s*calls",
         "report": "(\\d+) model calls"
       },
-      "expect": 688,
-      "expect_str": "688",
+      "expect": 916,
+      "expect_str": "916",
       "unit": "n",
       "source": "cost_accounting.json",
       "scope": "S4 battery, 10 cells",
       "falsifier": "a rerun with a different method set changes the call count",
       "status": "PASS",
       "found": {
-        "state": "688",
-        "report": "688"
+        "state": "916",
+        "report": "916"
       }
     },
     {
@@ -413,5 +413,6 @@
     ],
     "ok": true
   },
+  "derived_issues": [],
   "n_non_pass": 0
 }

@@ -112,6 +112,37 @@ def judge_smoke_rows() -> list[dict]:
     return rows
 
 
+def hub_judge_rows() -> list[dict]:
+    """The full Qwen3.5-2B pointwise judge, run on the hub (vLLM, bf16)."""
+    path = RESULTS / "llm_reranker_hub_Qwen_Qwen3.5-2B_v2.json"
+    if not path.exists():
+        return []
+    j = json.load(open(path))
+    rows = []
+    for layer in ("native", "ocr"):
+        if layer not in j:
+            continue
+        L = j[layer]
+        calls = int(L.get("cache_misses", 0)) + int(L.get("cache_hits", 0))
+        avg = float(L.get("avg_time_per_page_sec", 0.0))
+        rows.append(
+            {
+                "family": "retrieval LLM judge (Qwen3.5-2B, hub bf16)",
+                "method": "judge",
+                "description": "pointwise page judge (Qwen/Qwen3.5-2B, vLLM)",
+                "layer": layer,
+                "backend": "openai",
+                "model": j.get("configuration", {}).get("model", "Qwen/Qwen3.5-2B"),
+                "n_calls": calls,
+                "prompt_tokens": None,
+                "completion_tokens": None,
+                "wall_clock_s": round(calls * avg, 1),
+                "note": f"avg {avg:.3f}s/page; full run, tokens not recorded by the judge runner",
+            }
+        )
+    return rows
+
+
 def run_wall_clock() -> float | None:
     if not LOG.exists():
         return None
@@ -177,15 +208,16 @@ def md(rows: list[dict], run_wc: float | None) -> str:
         "## Notes",
         "",
         "- M4 (rules-v4) is non-LLM: `n_calls = 0` by construction.",
-        "- The Qwen2.5-7B judge numbers are the inherited baseline (old gold) — shown for cost orientation; its 2606 calls (1303 native + 1303 ocr) are the single largest per-run cost of the project (~4.5 h on the M2).",
-        "- The Qwen3.5-2B judge has only a 210-call smoke; no full judge run was performed (the S4 extraction battery replaced it for the supervisor's item 2).",
+        "- **S4 battery is the canonical hub bf16 config (`Qwen/Qwen3.5-2B`, vLLM, A100 MIG — DEC-007).** Wall-clock cells that reuse cache show `0.0` (cached calls are content-identical).",
+        "- The inherited Qwen2.5-7B judge is the old-gold baseline — its 2606 calls (1303 native + 1303 ocr) were ~4.5 h on the M2 (local MLX; tokens not recorded by the legacy runner).",
+        "- The Qwen3.5-2B judge is now a **full run** (hub, vLLM): 1349 pages/layer at ~0.11 s/page; its page rankings do not beat naive order on strict completeness (see `llm_reranker_hub_*.md`).",
         "- `wall_clock_s` for S4 is the sum of per-call latencies (model time); the runner-log total includes model load overhead.",
     ]
     return "\n".join(lines) + "\n"
 
 
 def main() -> int:
-    rows = s4_rows() + judge_rows() + judge_smoke_rows()
+    rows = s4_rows() + hub_judge_rows() + judge_rows() + judge_smoke_rows()
     run_wc = run_wall_clock()
     RESULTS.mkdir(parents=True, exist_ok=True)
     payload = {"rows": rows, "s4_run_wall_clock_s": run_wc}

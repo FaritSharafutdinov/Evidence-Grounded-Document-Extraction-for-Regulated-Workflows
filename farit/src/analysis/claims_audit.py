@@ -328,12 +328,30 @@ def check_split_semantics(state_text: str, report_text: str) -> dict:
     }
 
 
-def render_markdown(claims: list[dict], overclaim: dict, split: dict) -> str:
+def check_derived_freshness(a: dict) -> list[str]:
+    """Derived artifacts must be built from the same predictions as the battery.
+
+    Catches the 2026-10-26 review finding: S5 was left on the old MLX predictions
+    while the canonical battery moved to the hub bf16 run. We compare the per-cell
+    call counts that both artifacts carry from the same ``*.meta.json`` files.
+    """
+    issues: list[str] = []
+    s5_cost = a["s5"]["summary"].get("method_cost", {})
+    for cell, meta in a["s4"].get("cost", {}).items():
+        n_bat = (meta.get("cost") or {}).get("n_calls")
+        n_s5 = ((s5_cost.get(cell) or {}).get("cost") or {}).get("n_calls")
+        if n_bat is not None and n_s5 is not None and n_bat != n_s5:
+            issues.append(f"S5/stale {cell}: n_calls {n_s5} != battery {n_bat}")
+    return issues
+
+
+def render_markdown(claims: list[dict], overclaim: dict, split: dict, derived: list[str]) -> str:
     lines = ["# Claims audit (pre-send gate)", ""]
     lines.append(f"- artifact-backed claims: **{len(claims)}**")
     n_fail = sum(1 for c in claims if c["status"] != "PASS")
     lines.append(f"- non-PASS: **{n_fail}**")
     lines.append(f"- split semantics ok: **{split['ok']}**")
+    lines.append(f"- derived artifacts fresh: **{not derived}**")
     lines.append("")
     lines.append("## Ledger")
     lines.append("")
@@ -360,6 +378,14 @@ def render_markdown(claims: list[dict], overclaim: dict, split: dict) -> str:
     lines.append(f"- forbidden phrases present: {split['forbidden_hits'] or 'none'}")
     lines.append(f"- required phrases present: {split['required_present'] or 'none'}")
     lines.append("")
+    lines.append("## Derived-artifact freshness")
+    lines.append("")
+    if derived:
+        for d in derived:
+            lines.append(f"- STALE: {d}")
+    else:
+        lines.append("_all derived artifacts match the canonical battery_")
+    lines.append("")
     lines.append("## Falsifiers (what would break each claim)")
     lines.append("")
     for c in claims:
@@ -383,26 +409,30 @@ def main() -> int:
         "report-2026-10-23": lint_overclaim(report_text),
     }
     split = check_split_semantics(state_text, report_text)
+    derived = check_derived_freshness(a)
 
     payload = {
         "claims": claims,
         "overclaim": overclaim,
         "split": split,
+        "derived_issues": derived,
         "n_non_pass": sum(1 for c in claims if c["status"] != "PASS"),
     }
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.with_suffix(".json").write_text(json.dumps(payload, indent=2, ensure_ascii=False), encoding="utf-8")
-    args.out.with_suffix(".md").write_text(render_markdown(claims, overclaim, split), encoding="utf-8")
+    args.out.with_suffix(".md").write_text(render_markdown(claims, overclaim, split, derived), encoding="utf-8")
 
-    print(f"claims: {len(claims)} | non-PASS: {payload['n_non_pass']} | split ok: {split['ok']}")
+    print(f"claims: {len(claims)} | non-PASS: {payload['n_non_pass']} | split ok: {split['ok']} | derived fresh: {not derived}")
     for c in claims:
         if c["status"] != "PASS":
             print(f"  {c['status']:8} {c['id']}: expected {c['expect_str']}, found {c['found']}")
+    for d in derived:
+        print(f"  STALE    {d}")
     for key, hits in overclaim.items():
         if hits:
             print(f"  OVERCLAIM {key}: {len(hits)} line(s)")
     print(f"wrote {args.out.with_suffix('.json')} and {args.out.with_suffix('.md')}")
-    return 1 if (payload["n_non_pass"] or not split["ok"]) else 0
+    return 1 if (payload["n_non_pass"] or not split["ok"] or derived) else 0
 
 
 if __name__ == "__main__":

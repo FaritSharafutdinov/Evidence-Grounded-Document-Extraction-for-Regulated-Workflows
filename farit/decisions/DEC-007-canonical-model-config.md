@@ -45,3 +45,12 @@ mixing both and report a caveat — rejected: it undermines the baseline compari
 fixed first). The earlier local MLX numbers become dev-only. Cost/parity statements
 must name the config ("A100 MIG, bf16, vLLM") explicitly. `RESTORE-ENV.md` from the
 hub run records the working stack (vLLM 0.19.1, torch 2.10.0+cu128, CUDA 12.5).
+
+**Addendum (2026-10-26, after the canonical re-run — critic N2/N3/N11).** The
+motivating observation originally cited here ("M2 native 16.4 hub vs 19.3 local,
+identical prompts") came from the **prompt-broken first hub run** and is superseded:
+on the fixed run M2 native is **21.4%**, i.e. the hub is *higher* than the (stale)
+local 19.3%. The decision (canonical = hub bf16) stands, but its rationale is the
+*reproducibility/weight-identity* argument, not that single number. The run's
+provenance is now committed in `farit/logs/TASK-020/` (hub HEAD, env, pip-freeze);
+`RESTORE-ENV.md` lives there (the earlier dangling reference is resolved).

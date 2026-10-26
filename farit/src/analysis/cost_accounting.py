@@ -53,6 +53,7 @@ def s4_rows() -> list[dict]:
                     "backend": meta["backend"],
                     "model": meta["model"],
                     "n_calls": cost["n_calls"],
+                    "n_cached": cost.get("n_cached", 0),
                     "prompt_tokens": cost["prompt_tokens"],
                     "completion_tokens": cost["completion_tokens"],
                     "wall_clock_s": cost["latency_s"],
@@ -159,9 +160,8 @@ def md(rows: list[dict], run_wc: float | None) -> str:
     lines = [
         "# S6 — total cost accounting",
         "",
-        "Every model call counted (retrieval judges included). Gold v1.3, dev split. "
-        "Tokens are reported where the backend recorded them; the legacy 7B judge runner "
-        "did not record tokens, and its call count is taken from the cache.",
+        "Every model call of the **final canonical runs** is counted (retrieval judges included); the earlier prompt-broken hub run and the smoke runs are noted but not summed. Gold v1.3, dev split. "
+        "Tokens are reported where the backend recorded them; the legacy 7B judge runner did not record tokens, and its call count is taken from the cache.",
         "",
         "## Model-touching methods (per method × layer)",
         "",
@@ -197,7 +197,15 @@ def md(rows: list[dict], run_wc: float | None) -> str:
     lines.append(f"| **ALL** | {allc} | {allpt} | {allct} | {round(allwc,1)} |")
 
     if run_wc is not None:
-        lines += ["", f"S4 full battery run wall-clock (sum of per-set latencies in the runner log): **{run_wc:.1f}s ≈ {run_wc/60:.0f} min**."]
+        lines += ["", f"**SUPERSEDED (local MLX dev run):** S4 full-battery wall-clock from the old runner log = {run_wc:.1f}s ≈ {run_wc/60:.0f} min. The canonical run is the hub bf16 battery above; its wall-clock is the sum of the per-cell latencies (cached cells show 0.0)."]
+
+    s4_rows_all = [r for r in rows if r["family"] == "S4 extraction battery"]
+    n_inv = sum(r["n_calls"] for r in s4_rows_all)
+    n_cached = sum(r.get("n_cached", 0) for r in s4_rows_all)
+    lines += [
+        "",
+        f"S4 battery: **{n_inv} final-run invocations, of which {n_cached} were cache hits ({round(100*n_cached/max(n_inv,1))}%)** — i.e. {n_inv - n_cached} fresh GPU calls. The prompt-broken first hub run and the smoke runs are excluded from this ledger.",
+    ]
     lines += [
         "",
         "## Non-LLM methods (0 model calls)",

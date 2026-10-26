@@ -1,6 +1,6 @@
 # S6 — total cost accounting
 
-Every model call counted (retrieval judges included). Gold v1.3, dev split. Tokens are reported where the backend recorded them; the legacy 7B judge runner did not record tokens, and its call count is taken from the cache.
+Every model call of the **final canonical runs** is counted (retrieval judges included); the earlier prompt-broken hub run and the smoke runs are noted but not summed. Gold v1.3, dev split. Tokens are reported where the backend recorded them; the legacy 7B judge runner did not record tokens, and its call count is taken from the cache.
 
 ## Model-touching methods (per method × layer)
 
@@ -33,7 +33,9 @@ Every model call counted (retrieval judges included). Gold v1.3, dev split. Toke
 | judge smoke/probe (not a full run) | 420 | 0 | 0 | 0.0 |
 | **ALL** | 6640 | 2910829 | 67879 | 16817.7 |
 
-S4 full battery run wall-clock (sum of per-set latencies in the runner log): **10850.7s ≈ 181 min**.
+**SUPERSEDED (local MLX dev run):** S4 full-battery wall-clock from the old runner log = 10850.7s ≈ 181 min. The canonical run is the hub bf16 battery above; its wall-clock is the sum of the per-cell latencies (cached cells show 0.0).
+
+S4 battery: **916 final-run invocations, of which 347 were cache hits (38%)** — i.e. 569 fresh GPU calls. The prompt-broken first hub run and the smoke runs are excluded from this ledger.
 
 ## Non-LLM methods (0 model calls)
 

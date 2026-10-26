@@ -63,6 +63,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--split", choices=["dev"], default="dev")
     parser.add_argument("--smoke", action="store_true", help="append _smoke to artifact names")
     parser.add_argument("--no-cache", action="store_true")
+    parser.add_argument(
+        "--allow-empty-contract",
+        action="store_true",
+        help="write a method's output even if it carries zero citations (default: refuse)",
+    )
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--cache-dir", type=Path, default=DEFAULT_CACHE_DIR)
     return parser.parse_args()
@@ -78,6 +83,22 @@ def cost_summary(calls: list[CallRecord]) -> dict:
         "n_cached": sum(1 for call in calls if call.cached),
         "n_errors": sum(1 for call in calls if call.error),
     }
+
+
+def evidence_bearing_count(predictions: dict[str, object]) -> int:
+    """How many predicted fields carry evidence or premises.
+
+    The 2026-10-26 hub incident: M1 returned values with `evidence: null` for
+    every field (a prompt/schema mismatch that only bites when the server
+    enforces the JSON schema, i.e. vLLM). The runner refuses to write a
+    citation-based method whose output carries no citations at all.
+    """
+    total = 0
+    for document in predictions.values():
+        for field in (getattr(document, "fields", None) or {}).values():
+            if getattr(field, "evidence", None) is not None or getattr(field, "premises", None):
+                total += 1
+    return total
 
 
 def select_documents(args: argparse.Namespace) -> list[str]:
@@ -247,6 +268,16 @@ def main() -> int:
                     predictions[document] = prediction
                     calls.extend(records)
                     info.update(document_info)
+
+            n_evidence = evidence_bearing_count(predictions)
+            if method != "M4" and n_evidence == 0 and not args.allow_empty_contract:
+                raise SystemExit(
+                    f"{method}/{layer}: 0 evidence-bearing fields — the model returned no "
+                    "citations for any field (the 2026-10-26 hub failure mode: prompt/schema "
+                    "mismatch under server-enforced JSON schema). Refusing to write a "
+                    "citation-based method. Pass --allow-empty-contract to override."
+                )
+            print(f"    contract: {n_evidence} evidence-bearing field(s)")
 
             path = write_artifacts(args, method, layer, documents, predictions, calls, info)
             cost = cost_summary(calls)

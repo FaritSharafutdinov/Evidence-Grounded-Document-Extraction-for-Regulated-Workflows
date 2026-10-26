@@ -352,23 +352,24 @@ def _parse_bool_verdict(text: str, key: str) -> bool | None:
 
 _M1_FORMAT = '''Return ONLY one JSON object, filling this exact shape (replace the sample values, keep the keys):
 {
-  "product_name": {"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "page": 1, "quote": "<verbatim text>", "premise_pages": [], "premise_quotes": []},
-  "supplier_name": {"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "page": 1, "quote": "<verbatim text>", "premise_pages": [], "premise_quotes": []},
-  "substance_or_mixture": {"state": "PRESENT", "value": "MIXTURE", "derivation": "DIRECT", "rule": null, "page": 1, "quote": "<verbatim text>", "premise_pages": [], "premise_quotes": []},
-  "product_cas_number": {"state": "NOT_APPLICABLE", "value": null, "derivation": "DERIVED", "rule": "identifier_undefined_for_form", "page": null, "quote": "", "premise_pages": [1], "premise_quotes": ["<verbatim form declaration>"]},
-  "chemical_formula": {"state": "NOT_APPLICABLE", "value": null, "derivation": "DERIVED", "rule": "identifier_undefined_for_form", "page": null, "quote": "", "premise_pages": [1], "premise_quotes": ["<verbatim form declaration>"]},
-  "molecular_weight": {"state": "NOT_APPLICABLE", "value": null, "derivation": "DERIVED", "rule": "identifier_undefined_for_form", "page": null, "quote": "", "premise_pages": [1], "premise_quotes": ["<verbatim form declaration>"]},
-  "flash_point": {"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "page": 1, "quote": "<verbatim text>", "premise_pages": [], "premise_quotes": []},
-  "ingredients": [{"name": "<text>", "cas_number": "<text or null>", "cas_state": "PRESENT", "concentration": "<text>", "page": 1, "quote": "<verbatim text>"}]
+  "product_name": {"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "evidence": {"page": 1, "quote": "<verbatim text>"}, "premises": []},
+  "supplier_name": {"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "evidence": {"page": 1, "quote": "<verbatim text>"}, "premises": []},
+  "substance_or_mixture": {"state": "PRESENT", "value": "MIXTURE", "derivation": "DIRECT", "rule": null, "evidence": {"page": 1, "quote": "<verbatim text>"}, "premises": []},
+  "product_cas_number": {"state": "NOT_APPLICABLE", "value": null, "derivation": "DERIVED", "rule": "identifier_undefined_for_form", "evidence": null, "premises": [{"page": 1, "quote": "<verbatim form declaration>"}]},
+  "chemical_formula": {"state": "NOT_APPLICABLE", "value": null, "derivation": "DERIVED", "rule": "identifier_undefined_for_form", "evidence": null, "premises": [{"page": 1, "quote": "<verbatim form declaration>"}]},
+  "molecular_weight": {"state": "NOT_APPLICABLE", "value": null, "derivation": "DERIVED", "rule": "identifier_undefined_for_form", "evidence": null, "premises": [{"page": 1, "quote": "<verbatim form declaration>"}]},
+  "flash_point": {"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "evidence": {"page": 1, "quote": "<verbatim text>"}, "premises": []},
+  "ingredients_state": "PRESENT",
+  "ingredients": [{"name": "<text>", "cas_number": "<text or null>", "cas_state": "PRESENT", "concentration": "<text>", "citation": {"page": 1, "quote": "<verbatim text>"}}]
 }
-state is one of PRESENT, NOT_APPLICABLE, NO_DATA, NOT_STATED. A DIRECT claim fills page and quote with the cited page and the exact verbatim text. A DERIVED claim sets derivation "DERIVED", names rule ("identifier_undefined_for_form" or "composition_implies_form"), fills premise_pages and premise_quotes with the premises, and leaves page null and quote "". NOT_STATED leaves page null, quote "" and empty premise lists. Quote verbatim from the sheet. No markdown, no prose, no code fences.'''
+state is one of PRESENT, NOT_APPLICABLE, NO_DATA, NOT_STATED. A DIRECT claim fills "evidence" with the cited page and the exact verbatim text. A DERIVED claim sets derivation "DERIVED", names rule ("identifier_undefined_for_form" or "composition_implies_form") and fills "premises" with the premise citation(s), leaving "evidence" null. NOT_STATED leaves "evidence" null and "premises" empty. Every ingredient row carries a "citation". Quote verbatim from the sheet. No markdown, no prose, no code fences.'''
 
 _M2_FORMAT = '''Return ONLY one JSON object with exactly these keys:
-{"state": "PRESENT|NOT_APPLICABLE|NO_DATA|NOT_STATED", "value": <string or null>, "derivation": "DIRECT|DERIVED", "rule": <"identifier_undefined_for_form"|"composition_implies_form"|null>, "page": <int or null>, "quote": "<exact verbatim text>", "premise_pages": [<int>], "premise_quotes": ["<exact verbatim text>"]}
-A DIRECT claim fills page and quote. A DERIVED claim names rule and fills premise_pages/premise_quotes, with page null and quote "". NOT_STATED leaves page null, quote "" and empty lists. No markdown, no prose, no code fences.'''
+{"state": "PRESENT", "value": "<text>", "derivation": "DIRECT", "rule": null, "evidence": {"page": 1, "quote": "<exact verbatim text>"}, "premises": []}
+state is one of PRESENT, NOT_APPLICABLE, NO_DATA, NOT_STATED. A DIRECT claim fills "evidence". A DERIVED claim sets derivation "DERIVED", names rule ("identifier_undefined_for_form" or "composition_implies_form") and fills "premises" with the premise citation(s), leaving "evidence" null. NOT_STATED leaves "evidence" null and "premises" empty. No markdown, no prose, no code fences.'''
 
 _M2_INGREDIENTS_FORMAT = '''Return ONLY one JSON object:
-{"ingredients_state": "PRESENT|NOT_APPLICABLE|NOT_STATED", "ingredients": [{"name": "<text>", "cas_number": "<text or null>", "cas_state": "PRESENT|NOT_APPLICABLE|NOT_STATED", "concentration": "<text>", "page": <int>, "quote": "<exact verbatim row text>"}]}
+{"ingredients_state": "PRESENT", "ingredients": [{"name": "<text>", "cas_number": "<text or null>", "cas_state": "PRESENT", "concentration": "<text>", "citation": {"page": 1, "quote": "<exact verbatim row text>"}}]}
 No markdown, no prose, no code fences.'''
 
 

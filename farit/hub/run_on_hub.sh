@@ -178,19 +178,39 @@ run_battery() {  # $1 = extra args
 log "5/7 smoke (1 doc, both layers, all methods)"
 run_battery "--docs sds_05.pdf --smoke"
 
-# Sanity: the smoke must produce non-empty predictions (catches a silent
-# thinking-channel / template mismatch on the served model).
+# Sanity: the smoke must produce citations, not just fields. A wrong
+# chat_template_kwargs (thinking channel) or a prompt/schema mismatch (the
+# 2026-10-26 incident: M1 returned `evidence: null`) shows up here first.
 python - "$REPO_DIR" <<'PY'
-import json, sys, pathlib
+import json, pathlib, sys
 root = pathlib.Path(sys.argv[1])
-hit = 0
-for p in (root/"farit"/"data"/"predictions").glob("s4_M*_*_smoke.json"):
+files = sorted((root / "farit" / "data" / "predictions").glob("s4_M*_*_smoke.json"))
+if not files:
+    sys.exit("smoke produced no prediction files")
+fields = cites = 0
+per_method = {}
+for p in files:
+    method = p.name.split("_")[1]
     d = json.loads(p.read_text())
-    if any(doc.get("fields") for doc in d.get("documents", [])):
-        hit += 1
-if hit == 0:
+    m_fields = m_cites = 0
+    for doc in d.get("documents", []):
+        for f in (doc.get("fields") or {}).values():
+            m_fields += 1
+            if f.get("evidence") or f.get("premises"):
+                m_cites += 1
+    fields += m_fields
+    cites += m_cites
+    per_method[method] = per_method.get(method, 0) + m_cites
+if fields == 0:
     sys.exit("smoke produced no fields — check chat_template_kwargs / model id")
-print(f"    smoke ok: {hit} prediction files carry fields")
+# M1 and M2 must each cite; if they don't, the full run is pointless.
+for required in ("M1", "M2"):
+    if per_method.get(required, 0) == 0:
+        sys.exit(
+            f"smoke: {required} produced ZERO citations — prompt/schema mismatch "
+            "(evidence:null). Do NOT run the full battery; fix methods.py templates first."
+        )
+print(f"    smoke ok: {fields} fields, {cites} with citations  ({per_method})")
 PY
 
 # ----------------------------------------------------------------------------
@@ -222,6 +242,20 @@ esac
 # ----------------------------------------------------------------------------
 log "7/7 collecting artifacts -> $OUT_DIR"
 mkdir -p "$OUT_DIR"
+# Verify the battery table we ship was computed from THIS run's predictions, not a
+# stale copy (2026-10-26: out/ shipped an mlx table from the local run).
+if [ -f farit/results/s4_battery_goldv13.json ]; then
+  python - <<'PY'
+import json, sys
+d = json.load(open("farit/results/s4_battery_goldv13.json"))
+backends = {v.get("backend") for v in d.get("cost", {}).values() if v}
+want = "openai" if any(b == "openai" for b in backends) else "mlx"
+llm = [k for k in d.get("methods", {}) if not k.startswith("M4")]
+print(f"    battery table backends: {sorted(b for b in backends if b)}")
+if want != "openai" and llm:
+    print("    WARNING: battery table looks like a LOCAL mlx run, not the hub run — verify before sharing")
+PY
+fi
 cp -f farit/results/s4_battery_goldv13.json "$OUT_DIR"/ 2>/dev/null || true
 cp -f farit/results/s4_battery_goldv13.md   "$OUT_DIR"/ 2>/dev/null || true
 # merge prediction JSONs + metas written by this run

@@ -13,7 +13,7 @@ Source: `steering/2026-10-22-note.md` (latest; sharpens `steering/2026-10-19-not
 - [x] **5. ~24 real extraction cases** — ✅ TASK-018: 24 кейса (18 hard + 6 control), таксономия evidence 12 / reasoning 9 / values 2 / entity 1 / annotations 0 (3 флагованных кандидата — кейсы 9/18/19 — вычитаны вручную 2026-10-26, дефектов gold не подтверждено), gap 12 (`farit/results/s5_cases.{json,md}`). **Уточнение после критик-прохода:** gap неоднороден — 7 из 12 = один артефакт порога OCR **bbox-coverage** (coverage 0.55–0.69 против порога 0.8, при этом IoU 0.5 проходит и M4 проходит все 7 на native), «настоящий» premise/reasoning-остаток ≈ 5.
 - [x] **6. Total cost accounting** — ✅ TASK-019: S4 688 вызовов/2.71M prompt/181 мин; inherited 7B judge 2606/4.5 ч; M4 = 0 (`farit/results/cost_accounting.{json,md}`).
 - [x] **7. Week report** — ✅ черновик `farit/docs/report-2026-10-23.md` (на вычитку Farit'а перед отправкой).
-- [ ] **8. Repo package to supervisor** — repo link + dev docs + annotations + prompts + raw results + configs. (S8)
+- [x] **8. Repo package to supervisor** — ✅ `farit/PACKAGE.md` (manifest mapping the 10-19 request → paths) + repo link; dev docs/tasks/data attach separately. (S8)
 
 ## Explicit non-goals this week
 
@@ -38,6 +38,7 @@ Source: `steering/2026-10-22-note.md` (latest; sharpens `steering/2026-10-19-not
 - **First hub run found a real bug** (M1/M3/M5 ≈ 0% joint): M1/M2 prompt templates used a flat `page`/`quote` shape while the request enforced the nested `LlmOutput` schema — fine on MLX, broken on vLLM (`evidence: null`). **Fixed** (commit `a51ad2b`) + regression gates (`farit/tests/`, runner citation-contract gate).
 - **Canonical run DONE** (hub bf16, `farit/logs/TASK-020/`): M1 18.6/11.4, M2 21.4/9.3, M3 18.6/12.1, **M4 55.0/30.7**, M5 20.7/15.7. S5/S6 recomputed on these predictions (S5 taxonomy evidence 14 / reasoning 9 / values 1 / entity 0; S6 916 calls / 2.91M tokens).
 - **Judge** (hub, 2B, full run): 1349 pages/layer, ~0.11 s/page; native `complete@3 = 0.694` — *below* naive order (0.696). ⚠ The "~26× vs the Mac" speed figure is **withdrawn** (no artifact pins a Mac-2B-bf16 baseline; critic N14).
+- **M6 (TASK-021) implemented** — section-routed individual-field = the supervisor's missing 6th baseline. Local MLX smoke OK; **hub bf16 run still owed** (adds the 6th column to the battery + S5/S6).
 
 ## Backlog after the 2026-10-26 critic pass (minor findings)
 

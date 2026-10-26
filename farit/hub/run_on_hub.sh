@@ -29,6 +29,7 @@ set -euo pipefail
 REPO_URL="${REPO_URL:-https://github.com/FaritSharafutdinov/Evidence-Grounded-Document-Extraction-for-Regulated-Workflows.git}"
 BRANCH="${BRANCH:-farit_dev}"
 COMMIT="${COMMIT:-}"                      # optional: pin to an exact commit
+REPO_DIR="${REPO_DIR:-}"                      # override; auto-detected below
 WORKDIR="${WORKDIR:-$HOME/sds-hub}"
 MODEL="${MODEL:-Qwen/Qwen3.5-2B}"         # HF id served by vLLM (bf16)
 SERVED_NAME="${SERVED_NAME:-$MODEL}"      # name our client sends in "model"
@@ -43,7 +44,17 @@ VLLM_EXTRA_ARGS="${VLLM_EXTRA_ARGS:-}"
 PIP_EXTRA="${PIP_EXTRA:-}"
 SKIP_TESTS="${SKIP_TESTS:-0}"
 
-REPO_DIR="$WORKDIR/$(basename "$REPO_URL" .git)"
+REPO_NAME="$(basename "$REPO_URL" .git)"
+# If we are already inside the checkout (this script lives at farit/hub/), use it;
+# otherwise clone into $WORKDIR. REPO_DIR overrides the detection entirely.
+if [ -z "$REPO_DIR" ]; then
+  HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
+  if [ -d "$HERE/.git" ] && [ -f "$HERE/farit/hub/run_on_hub.sh" ]; then
+    REPO_DIR="$HERE"
+  else
+    REPO_DIR="$WORKDIR/$REPO_NAME"
+  fi
+fi
 LOG_DIR="$WORKDIR/logs"
 OUT_DIR="$WORKDIR/out"
 mkdir -p "$WORKDIR" "$LOG_DIR" "$OUT_DIR"

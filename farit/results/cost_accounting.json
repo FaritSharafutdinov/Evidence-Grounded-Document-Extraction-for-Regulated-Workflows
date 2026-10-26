@@ -235,5 +235,6 @@
       "note": "smoke only; full Qwen3.5-2B judge run not performed"
     }
   ],
-  "s4_run_wall_clock_s": 10850.7
+  "s4_run_wall_clock_s": 10850.7,
+  "s4_run_wall_clock_note": "SUPERSEDED: local MLX dev run; the canonical run is the hub bf16 battery"
 }

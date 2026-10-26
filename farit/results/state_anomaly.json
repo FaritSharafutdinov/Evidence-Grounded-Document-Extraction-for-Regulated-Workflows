@@ -2,7 +2,8 @@
   "methods": [
     "M1",
     "M2",
-    "M5"
+    "M5",
+    "M6"
   ],
   "result": {
     "layers": {
@@ -18,6 +19,10 @@
           },
           "M5": {
             "state_correct": 69,
+            "n": 140
+          },
+          "M6": {
+            "state_correct": 59,
             "n": 140
           }
         },
@@ -35,6 +40,13 @@
             "changed": 60,
             "changed_to_not_stated": 60,
             "changed_to_other": 0
+          },
+          "M6": {
+            "m1_correct": 124,
+            "kept": 50,
+            "changed": 74,
+            "changed_to_not_stated": 46,
+            "changed_to_other": 28
           }
         }
       },
@@ -50,6 +62,10 @@
           },
           "M5": {
             "state_correct": 70,
+            "n": 140
+          },
+          "M6": {
+            "state_correct": 50,
             "n": 140
           }
         },
@@ -67,6 +83,13 @@
             "changed": 59,
             "changed_to_not_stated": 59,
             "changed_to_other": 0
+          },
+          "M6": {
+            "m1_correct": 123,
+            "kept": 42,
+            "changed": 81,
+            "changed_to_not_stated": 60,
+            "changed_to_other": 21
           }
         }
       }

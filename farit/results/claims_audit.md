@@ -1,6 +1,6 @@
 # Claims audit (pre-send gate)
 
-- artifact-backed claims: **26**
+- artifact-backed claims: **29**
 - non-PASS: **0**
 - split semantics ok: **True**
 - derived artifacts fresh: **True**
@@ -26,7 +26,7 @@
 | S5.values | PASS | 1 | state=1, report=1 | s5_cases.json | 24 cases (18 hard + 6 control), gold v1.3 |
 | S5.entity attribution | PASS | 0 | state=0, report=0 | s5_cases.json | 24 cases (18 hard + 6 control), gold v1.3 |
 | S5.unresolved | PASS | 12 | state=12, report=12 | s5_cases.json | solved_by requires joint on both layers |
-| cost.s4_calls | PASS | 1236 | state=1236, report=1236 | cost_accounting.json | S4 battery, 10 cells |
+| cost.s4_calls | PASS | 1236 | state=1236, report=1236 | cost_accounting.json | S4 battery, 12 cells |
 | corpus.field_instances | PASS | 203 | state=203 | corpus_stats.json | all 29 documents |
 | corpus.fragments | PASS | 274 | state=274 | corpus_stats.json | all 29 documents (evidence + premise) |
 | corpus.ge2_fragments | PASS | 71 | state=71 | corpus_stats.json (evidence_set_sizes) | all 29 documents, instances needing >=2 fragments |
@@ -34,6 +34,9 @@
 | corpus.composition_implied | PASS | 4 | state=4 | corpus_stats.json | all 29 documents, derived fields |
 | corpus.dev_instances | PASS | 140 | report=140 | gold_evidence.jsonl | dev, non-ingredient (evaluator n) |
 | corpus.dev_included | PASS | 134 | state=134 | gold_evidence.jsonl (judge inclusion rule) | dev, non-ingredient, evidence_set present, state != NOT_STATED |
+| contract.m1_docs | PASS | 17 | state=17 | s4_battery_goldv13.json | M1 pass (both layers), canonical hub bf16 |
+| contract.m1_native | PASS | 87 | state=87 | s4_battery_goldv13.json | M1 native violations |
+| contract.m1_ocr | PASS | 86 | state=86 | s4_battery_goldv13.json | M1 ocr violations |
 | cost.hub_judge_calls | PASS | 2698 | cost=2698 | cost_accounting.json | hub 2B judge, both layers |
 
 ## Overclaim language (advisory — each line needs evidence or reword)
@@ -76,4 +79,7 @@ _all derived artifacts match the canonical battery_
 - **corpus.composition_implied** — a gold edit changes the derivation mix
 - **corpus.dev_instances** — a gold edit changes the instance count
 - **corpus.dev_included** — a gold or inclusion-rule edit changes the count
+- **contract.m1_docs** — a prompt/schema change alters it
+- **contract.m1_native** — same
+- **contract.m1_ocr** — same
 - **cost.hub_judge_calls** — a judge rerun changes the call count

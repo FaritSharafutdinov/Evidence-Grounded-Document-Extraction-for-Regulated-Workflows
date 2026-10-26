@@ -14,7 +14,7 @@ flowchart LR
   B --> C[build_corpus from PDFs+annotations]
   C --> D[vllm serve Qwen/Qwen3.5-2B bf16]
   D --> E[smoke: 1 doc, fail-fast if no citations]
-  E --> F[battery M1..M5 x native/ocr]
+  E --> F[battery M1..M6 x native/ocr]
   F --> G[evaluate_battery --tag goldv13]
   E --> H[llm_reranker --backend openai (2B judge)]
   G --> I[collect -> persistent_volume/out]
@@ -38,9 +38,10 @@ Driver: `farit/hub/run_on_hub.sh` (agent `hub-runner`), on the Innopolis IDH A10
 | M3 contextual citation verify | 18.6% | 12.1% |
 | **M4 rules-v4 (non-LLM)** | **55.0%** | **30.7%** |
 | M5 basic LLM verifier | 20.7% | 15.7% |
+| M6 section-routed (rules) | 17.9% | 8.6% |
 
-Judge (2B, hub): native `complete@3 = 0.694` (< naive 0.696). Cost: S4 = 916 calls
-(347 cached) / 2.91M tokens; 2B judge = 2698 calls.
+Judge (2B, hub): native `complete@3 = 0.694` (< naive 0.696). Cost: S4 = **1236 calls
+(386 cached / 850 fresh) / 3.95M tokens**; 2B judge = 2698 calls.
 
 ## Nuances
 
@@ -59,5 +60,5 @@ Judge (2B, hub): native `complete@3 = 0.694` (< naive 0.696). Cost: S4 = 916 cal
 ## Decisions for Farit
 
 - ✅ hub bf16 = canonical (DEC-007); local MLX-4bit = dev only.
-- ⬜ M6 (section-routed) still to be run on the hub.
+- ✅ M6 (section-routed) implemented and run on the hub (TASK-021); does not shrink the S5 residue.
 - ⬜ re-score the 7B judge on v2 + gold v1.3 before any 2B-vs-7B claim.

@@ -1,0 +1,418 @@
+{
+  "layers": {
+    "native": {
+      "n_instances": 134,
+      "any_gold_page_routed": 129,
+      "all_gold_pages_routed": 124,
+      "misses": [
+        {
+          "document": "sds_03.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            1,
+            2,
+            5
+          ],
+          "routed_pages": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            10,
+            11
+          ]
+        },
+        {
+          "document": "sds_03.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            1,
+            2,
+            5
+          ],
+          "routed_pages": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            10
+          ]
+        },
+        {
+          "document": "sds_08.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            3,
+            4
+          ],
+          "routed_pages": [
+            3,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "document": "sds_08.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            3,
+            4
+          ],
+          "routed_pages": [
+            3,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "document": "sds_09.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            3,
+            6
+          ],
+          "routed_pages": [
+            1,
+            2,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "document": "sds_17.pdf",
+          "field": "flash_point",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            2
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "substance_or_mixture",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            15,
+            16,
+            17,
+            18,
+            20,
+            23
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "product_cas_number",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            23,
+            24
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24
+          ]
+        }
+      ]
+    },
+    "ocr": {
+      "n_instances": 134,
+      "any_gold_page_routed": 126,
+      "all_gold_pages_routed": 121,
+      "misses": [
+        {
+          "document": "sds_03.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            1,
+            2,
+            5
+          ],
+          "routed_pages": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            10,
+            11
+          ]
+        },
+        {
+          "document": "sds_03.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            1,
+            2,
+            5
+          ],
+          "routed_pages": [
+            1,
+            2,
+            3,
+            6,
+            7,
+            8,
+            10
+          ]
+        },
+        {
+          "document": "sds_08.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            3,
+            4
+          ],
+          "routed_pages": [
+            3,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "document": "sds_08.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            3,
+            4
+          ],
+          "routed_pages": [
+            3,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "document": "sds_09.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            3,
+            6
+          ],
+          "routed_pages": [
+            1,
+            2,
+            5,
+            6,
+            8
+          ]
+        },
+        {
+          "document": "sds_17.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            2
+          ]
+        },
+        {
+          "document": "sds_17.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            2
+          ]
+        },
+        {
+          "document": "sds_17.pdf",
+          "field": "flash_point",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            2
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "substance_or_mixture",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            3,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            15,
+            16,
+            17,
+            18,
+            20,
+            23
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "product_cas_number",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "chemical_formula",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            12,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            23,
+            24
+          ]
+        },
+        {
+          "document": "sds_18.pdf",
+          "field": "molecular_weight",
+          "gold_pages": [
+            1
+          ],
+          "routed_pages": [
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            24
+          ]
+        },
+        {
+          "document": "sds_19.pdf",
+          "field": "flash_point",
+          "gold_pages": [
+            4
+          ],
+          "routed_pages": [
+            3
+          ]
+        }
+      ]
+    }
+  }
+}

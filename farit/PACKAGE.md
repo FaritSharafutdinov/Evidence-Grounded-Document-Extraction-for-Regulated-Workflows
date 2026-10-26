@@ -24,7 +24,7 @@ under **attach separately** is gitignored by policy and Farit sends it alongside
 
 ### Raw results (`farit/results/`)
 
-- `s4_battery_goldv13.{json,md}` — the canonical baseline battery (M1–M5 × native/ocr, gold v1.3, hub bf16).
+- `s4_battery_goldv13.{json,md}` — the canonical baseline battery (M1–M6 × native/ocr, gold v1.3, hub bf16).
 - `llm_reranker_hub_Qwen_Qwen3.5-2B_v2.{json,md}` — full 2B pointwise judge (hub).
 - `s5_cases.{json,md}` — 24 real error cases + 5-category taxonomy (frozen input = S4).
 - `cost_accounting.{json,md}` — total cost (calls, tokens, wall-clock).

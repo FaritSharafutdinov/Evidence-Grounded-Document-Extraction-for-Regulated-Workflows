@@ -25,7 +25,7 @@ from sdsbench.schema import PredictionSet
 ROOT = Path.cwd()
 PRED = ROOT / "farit" / "data" / "predictions"
 RESULTS = ROOT / "farit" / "results"
-METHODS = ("M1", "M2", "M5")
+METHODS = ("M1", "M2", "M5", "M6")
 
 
 def load(method: str, layer: str) -> PredictionSet:
@@ -60,7 +60,7 @@ def main() -> int:
             per[m] = {"state_correct": right, "n": len(gold_state)}
         # M1 -> M5 / M2 transitions on instances M1 got right
         trans = {}
-        for m in ("M2", "M5"):
+        for m in ("M2", "M5", "M6"):
             changed = kept = 0
             to_not_stated = to_other = 0
             for (doc, name), gs in gold_state.items():
@@ -101,7 +101,7 @@ def main() -> int:
         lines.append("")
         lines.append("| transition | M1-correct | kept | changed | → NOT_STATED | → other |")
         lines.append("| --- | ---: | ---: | ---: | ---: | ---: |")
-        for m in ("M2", "M5"):
+        for m in ("M2", "M5", "M6"):
             t = L["m1_to"][m]
             lines.append(f"| M1 → {m} | {t['m1_correct']} | {t['kept']} | {t['changed']} | {t['changed_to_not_stated']} | {t['changed_to_other']} |")
         lines.append("")

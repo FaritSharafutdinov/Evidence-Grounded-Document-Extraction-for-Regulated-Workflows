@@ -43,6 +43,8 @@ DOCS = {
     "state": REPO_ROOT / "farit" / "docs" / "RESEARCH-STATE.md",
     "report": REPO_ROOT / "farit" / "docs" / "report-2026-10-23.md",
     "cost": REPO_ROOT / "farit" / "results" / "cost_accounting.md",
+    "sprint": REPO_ROOT / "farit" / "SPRINT.md",
+    "package": REPO_ROOT / "farit" / "PACKAGE.md",
 }
 
 # Absolute-language traps. Kept narrow to avoid false positives; each hit is a
@@ -199,7 +201,7 @@ def build_claims(a: dict) -> list[dict]:
             {"state": r"(\d+)\s*calls", "report": r"(\d+) model calls"},
             s4_calls,
             "cost_accounting.json",
-            "S4 battery, 10 cells",
+            "S4 battery, 12 cells",
             "a rerun with a different method set changes the call count",
             unit="n",
         )
@@ -284,6 +286,19 @@ def build_claims(a: dict) -> list[dict]:
             unit="n",
         )
     )
+
+    m1n = (a["s4"]["cost"].get("M1/native", {}).get("info") or {})
+    m1o = (a["s4"]["cost"].get("M1/ocr", {}).get("info") or {})
+    if m1n:
+        claims.append(claim("contract.m1_docs", {"state": r"on \*\*(\d+)/20 docs\*\*"},
+                            m1n.get("documents_with_contract_violations", 0), "s4_battery_goldv13.json",
+                            "M1 pass (both layers), canonical hub bf16", "a prompt/schema change alters it", unit="n"))
+        claims.append(claim("contract.m1_native", {"state": r"\((\d+) native /"},
+                            sum(m1n.get("contract_violations", {}).values()), "s4_battery_goldv13.json",
+                            "M1 native violations", "same", unit="n"))
+        claims.append(claim("contract.m1_ocr", {"state": r"native / (\d+) ocr"},
+                            sum(m1o.get("contract_violations", {}).values()), "s4_battery_goldv13.json",
+                            "M1 ocr violations", "same", unit="n"))
 
     hub_judge = [r for r in a["cost"]["rows"] if r["family"].startswith("retrieval LLM judge (Qwen3.5-2B")]
     if hub_judge:
@@ -418,11 +433,7 @@ def main() -> int:
     doc_text = {key: path.read_text(encoding="utf-8") for key, path in DOCS.items()}
 
     claims = evaluate_claims(a, doc_text)
-    overclaim = {
-        "RESEARCH-STATE": lint_overclaim(doc_text["state"]),
-        "report-2026-10-23": lint_overclaim(doc_text["report"]),
-        "cost_accounting": lint_overclaim(doc_text["cost"]),
-    }
+    overclaim = {key: lint_overclaim(text) for key, text in doc_text.items()}
     split = check_split_semantics(doc_text["state"], doc_text["report"])
     derived = check_derived_freshness(a)
 

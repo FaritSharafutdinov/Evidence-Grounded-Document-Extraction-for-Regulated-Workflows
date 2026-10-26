@@ -316,7 +316,7 @@
       "expect_str": "1236",
       "unit": "n",
       "source": "cost_accounting.json",
-      "scope": "S4 battery, 10 cells",
+      "scope": "S4 battery, 12 cells",
       "falsifier": "a rerun with a different method set changes the call count",
       "status": "PASS",
       "found": {
@@ -437,6 +437,54 @@
       }
     },
     {
+      "id": "contract.m1_docs",
+      "docs": {
+        "state": "on \\*\\*(\\d+)/20 docs\\*\\*"
+      },
+      "expect": 17,
+      "expect_str": "17",
+      "unit": "n",
+      "source": "s4_battery_goldv13.json",
+      "scope": "M1 pass (both layers), canonical hub bf16",
+      "falsifier": "a prompt/schema change alters it",
+      "status": "PASS",
+      "found": {
+        "state": "17"
+      }
+    },
+    {
+      "id": "contract.m1_native",
+      "docs": {
+        "state": "\\((\\d+) native /"
+      },
+      "expect": 87,
+      "expect_str": "87",
+      "unit": "n",
+      "source": "s4_battery_goldv13.json",
+      "scope": "M1 native violations",
+      "falsifier": "same",
+      "status": "PASS",
+      "found": {
+        "state": "87"
+      }
+    },
+    {
+      "id": "contract.m1_ocr",
+      "docs": {
+        "state": "native / (\\d+) ocr"
+      },
+      "expect": 86,
+      "expect_str": "86",
+      "unit": "n",
+      "source": "s4_battery_goldv13.json",
+      "scope": "M1 ocr violations",
+      "falsifier": "same",
+      "status": "PASS",
+      "found": {
+        "state": "86"
+      }
+    },
+    {
       "id": "cost.hub_judge_calls",
       "docs": {
         "cost": "hub bf16\\) \\| (\\d+)"
@@ -454,9 +502,11 @@
     }
   ],
   "overclaim": {
-    "RESEARCH-STATE": [],
-    "report-2026-10-23": [],
-    "cost_accounting": []
+    "state": [],
+    "report": [],
+    "cost": [],
+    "sprint": [],
+    "package": []
   },
   "split": {
     "forbidden_hits": [],

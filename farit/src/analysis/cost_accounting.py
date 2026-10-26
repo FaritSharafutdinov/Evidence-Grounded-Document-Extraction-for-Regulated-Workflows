@@ -229,7 +229,8 @@ def main() -> int:
     rows = s4_rows() + hub_judge_rows() + judge_rows() + judge_smoke_rows()
     run_wc = run_wall_clock()
     RESULTS.mkdir(parents=True, exist_ok=True)
-    payload = {"rows": rows, "s4_run_wall_clock_s": run_wc}
+    payload = {"rows": rows, "s4_run_wall_clock_s": run_wc,
+               "s4_run_wall_clock_note": "SUPERSEDED: local MLX dev run; the canonical run is the hub bf16 battery"}
     (RESULTS / "cost_accounting.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     (RESULTS / "cost_accounting.md").write_text(md(rows, run_wc), encoding="utf-8")
     print(md(rows, run_wc))

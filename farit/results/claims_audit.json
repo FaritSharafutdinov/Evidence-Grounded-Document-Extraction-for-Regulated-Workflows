@@ -181,6 +181,42 @@
       }
     },
     {
+      "id": "S4.M6.native",
+      "docs": {
+        "state": "section-routed individual-field[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "section-routed individual-field[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 17.857142857142858,
+      "expect_str": "17.9",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "17.9",
+        "report": "17.9"
+      }
+    },
+    {
+      "id": "S4.M6.ocr",
+      "docs": {
+        "state": "section-routed individual-field[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "section-routed individual-field[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 8.571428571428571,
+      "expect_str": "8.6",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "8.6",
+        "report": "8.6"
+      }
+    },
+    {
       "id": "S5.evidence",
       "docs": {
         "state": "evidence (\\d+) /",
@@ -276,16 +312,16 @@
         "state": "(\\d+)\\s*calls",
         "report": "(\\d+) model calls"
       },
-      "expect": 916,
-      "expect_str": "916",
+      "expect": 1236,
+      "expect_str": "1236",
       "unit": "n",
       "source": "cost_accounting.json",
       "scope": "S4 battery, 10 cells",
       "falsifier": "a rerun with a different method set changes the call count",
       "status": "PASS",
       "found": {
-        "state": "916",
-        "report": "916"
+        "state": "1236",
+        "report": "1236"
       }
     },
     {

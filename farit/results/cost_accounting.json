@@ -131,6 +131,32 @@
       "wall_clock_s": 9.396
     },
     {
+      "family": "S4 extraction battery",
+      "method": "M6",
+      "description": "section-routed individual-field (simple rules + Qwen3.5-2B)",
+      "layer": "native",
+      "backend": "openai",
+      "model": "Qwen/Qwen3.5-2B",
+      "n_calls": 160,
+      "n_cached": 18,
+      "prompt_tokens": 524870,
+      "completion_tokens": 13647,
+      "wall_clock_s": 308.736
+    },
+    {
+      "family": "S4 extraction battery",
+      "method": "M6",
+      "description": "section-routed individual-field (simple rules + Qwen3.5-2B)",
+      "layer": "ocr",
+      "backend": "openai",
+      "model": "Qwen/Qwen3.5-2B",
+      "n_calls": 160,
+      "n_cached": 21,
+      "prompt_tokens": 515801,
+      "completion_tokens": 12640,
+      "wall_clock_s": 284.044
+    },
+    {
       "family": "retrieval LLM judge (Qwen3.5-2B, hub bf16)",
       "method": "judge",
       "description": "pointwise page judge (Qwen/Qwen3.5-2B, vLLM)",

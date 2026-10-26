@@ -218,9 +218,9 @@ def render_markdown(result: dict, smoke: bool) -> str:
     lines.append("# S4 baseline battery — " + ("smoke" if smoke else "full") + " run")
     lines.append("")
     lines.append(
-        "Five simple extraction methods on one model, scored against gold v1.3 (dev split). "
+        "Six simple extraction methods on one model, scored against gold v1.3 (dev split). "
         "M3 and M5 depend on the M1 pass; M4 is the inherited rules-v4 re-scored against v1.3 "
-        "with zero LLM calls."
+        "with zero LLM calls; M6 routes each field to its SDS section by a hand-written rule."
     )
     lines.append("")
     entries = result["methods"]

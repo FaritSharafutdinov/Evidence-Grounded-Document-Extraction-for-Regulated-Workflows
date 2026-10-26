@@ -1,6 +1,6 @@
 # Claims audit (pre-send gate)
 
-- artifact-backed claims: **24**
+- artifact-backed claims: **26**
 - non-PASS: **0**
 - split semantics ok: **True**
 - derived artifacts fresh: **True**
@@ -19,12 +19,14 @@
 | S4.M4.ocr | PASS | 30.7 | state=30.7, report=30.7 | s4_battery_goldv13.json | dev, n=140, gold v1.3 |
 | S4.M5.native | PASS | 20.7 | state=20.7, report=20.7 | s4_battery_goldv13.json | dev, n=140, gold v1.3 |
 | S4.M5.ocr | PASS | 15.7 | state=15.7, report=15.7 | s4_battery_goldv13.json | dev, n=140, gold v1.3 |
+| S4.M6.native | PASS | 17.9 | state=17.9, report=17.9 | s4_battery_goldv13.json | dev, n=140, gold v1.3 |
+| S4.M6.ocr | PASS | 8.6 | state=8.6, report=8.6 | s4_battery_goldv13.json | dev, n=140, gold v1.3 |
 | S5.evidence | PASS | 14 | state=14, report=14 | s5_cases.json | 24 cases (18 hard + 6 control), gold v1.3 |
 | S5.reasoning | PASS | 9 | state=9, report=9 | s5_cases.json | 24 cases (18 hard + 6 control), gold v1.3 |
 | S5.values | PASS | 1 | state=1, report=1 | s5_cases.json | 24 cases (18 hard + 6 control), gold v1.3 |
 | S5.entity attribution | PASS | 0 | state=0, report=0 | s5_cases.json | 24 cases (18 hard + 6 control), gold v1.3 |
 | S5.unresolved | PASS | 12 | state=12, report=12 | s5_cases.json | solved_by requires joint on both layers |
-| cost.s4_calls | PASS | 916 | state=916, report=916 | cost_accounting.json | S4 battery, 10 cells |
+| cost.s4_calls | PASS | 1236 | state=1236, report=1236 | cost_accounting.json | S4 battery, 10 cells |
 | corpus.field_instances | PASS | 203 | state=203 | corpus_stats.json | all 29 documents |
 | corpus.fragments | PASS | 274 | state=274 | corpus_stats.json | all 29 documents (evidence + premise) |
 | corpus.ge2_fragments | PASS | 71 | state=71 | corpus_stats.json (evidence_set_sizes) | all 29 documents, instances needing >=2 fragments |
@@ -59,6 +61,8 @@ _all derived artifacts match the canonical battery_
 - **S4.M4.ocr** — rerun evaluate_battery.py changes the joint rate
 - **S4.M5.native** — rerun evaluate_battery.py changes the joint rate
 - **S4.M5.ocr** — rerun evaluate_battery.py changes the joint rate
+- **S4.M6.native** — rerun evaluate_battery.py changes the joint rate
+- **S4.M6.ocr** — rerun evaluate_battery.py changes the joint rate
 - **S5.evidence** — resampling or reclassification changes the count
 - **S5.reasoning** — resampling or reclassification changes the count
 - **S5.values** — resampling or reclassification changes the count

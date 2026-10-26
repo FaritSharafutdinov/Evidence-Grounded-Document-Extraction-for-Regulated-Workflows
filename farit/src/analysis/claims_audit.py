@@ -127,6 +127,7 @@ def build_claims(a: dict) -> list[dict]:
         "contextual citation verification": "M3",
         "rules-v4": "M4",
         "basic LLM verifier": "M5",
+        "section-routed individual-field": "M6",
     }
     for label, method in s4_rows.items():
         native = s4_joint(a, method, "native")

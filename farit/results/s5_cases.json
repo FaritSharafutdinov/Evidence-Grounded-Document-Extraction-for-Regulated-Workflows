@@ -9,7 +9,8 @@
       "M2",
       "M3",
       "M4",
-      "M5"
+      "M5",
+      "M6"
     ],
     "layers": [
       "native",
@@ -98,6 +99,20 @@
         "scope": "full",
         "documents": 20,
         "missing_documents": []
+      },
+      "M6/native": {
+        "present": true,
+        "file": "s4_M6_native.json",
+        "scope": "full",
+        "documents": 20,
+        "missing_documents": []
+      },
+      "M6/ocr": {
+        "present": true,
+        "file": "s4_M6_ocr.json",
+        "scope": "full",
+        "documents": 20,
+        "missing_documents": []
       }
     }
   },
@@ -176,7 +191,8 @@
       },
       "evidence": {
         "M4": 7,
-        "(none)": 7
+        "(none)": 7,
+        "M6": 2
       },
       "none": {}
     },
@@ -385,6 +401,32 @@
           "n_cached": 43,
           "n_errors": 0
         }
+      },
+      "M6/native": {
+        "backend": "openai",
+        "model": "Qwen/Qwen3.5-2B",
+        "cost": {
+          "n_calls": 160,
+          "n_records": 160,
+          "prompt_tokens": 524870,
+          "completion_tokens": 13647,
+          "latency_s": 308.736,
+          "n_cached": 18,
+          "n_errors": 0
+        }
+      },
+      "M6/ocr": {
+        "backend": "openai",
+        "model": "Qwen/Qwen3.5-2B",
+        "cost": {
+          "n_calls": 160,
+          "n_records": 160,
+          "prompt_tokens": 515801,
+          "completion_tokens": 12640,
+          "latency_s": 284.044,
+          "n_cached": 21,
+          "n_errors": 0
+        }
       }
     }
   },
@@ -405,7 +447,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -645,6 +688,51 @@
             ],
             "gold_evidence": "Chemical description: Mixture of substances | Substance:\nNon-applicable",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Chemical description: Mixture of substances | Substance:\nNon-applicable",
+            "note": ""
           }
         },
         "ocr": {
@@ -864,6 +952,51 @@
             ],
             "gold_evidence": "Chemical description: Mixture of substances | Substance:\nNon-applicable",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Chemical description: Mixture of substances | Substance:\nNon-applicable",
+            "note": ""
           }
         }
       },
@@ -904,7 +1037,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -1143,6 +1277,50 @@
             ],
             "gold_evidence": "Substance or preparation: Preparation",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              4
+            ],
+            "gold_evidence": "Substance or preparation: Preparation",
+            "note": ""
           }
         },
         "ocr": {
@@ -1358,6 +1536,50 @@
             ],
             "gold_evidence": "Substance or preparation: Preparation",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              4
+            ],
+            "gold_evidence": "Substance or preparation: Preparation",
+            "note": ""
           }
         }
       },
@@ -1397,7 +1619,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -1636,6 +1859,50 @@
             ],
             "gold_evidence": "Substance or preparation: Preparation",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              4
+            ],
+            "gold_evidence": "Substance or preparation: Preparation",
+            "note": ""
           }
         },
         "ocr": {
@@ -1851,6 +2118,50 @@
             ],
             "gold_evidence": "Substance or preparation: Preparation",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              4
+            ],
+            "gold_evidence": "Substance or preparation: Preparation",
+            "note": ""
           }
         }
       },
@@ -1891,7 +2202,8 @@
         "M2": 1,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -2143,6 +2455,53 @@
             ],
             "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "state",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "1.3\nDetails of the supplier of the safety data sheet:\nF. Ball and Co. Ltd.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span carries no state cue",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1,
+              2,
+              5
+            ],
+            "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+            "note": "gold is derived, prediction is direct"
           }
         },
         "ocr": {
@@ -2369,6 +2728,53 @@
             ],
             "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "state",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "1.1 Product identifier: STYCCOBOND F49 BASE",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span carries no state cue",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1,
+              2,
+              5
+            ],
+            "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+            "note": "gold is derived, prediction is direct"
           }
         }
       },
@@ -2410,7 +2816,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -2666,6 +3073,52 @@
             ],
             "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "STYCCOBOND F49 BASE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "STYCCOBOND F49 BASE",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1,
+              2,
+              5
+            ],
+            "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+            "note": ""
           }
         },
         "ocr": {
@@ -2893,6 +3346,53 @@
             ],
             "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1,
+              2,
+              5
+            ],
+            "gold_evidence": "Chemical description: Mixture of polymers, dispersants and organic compounds | Substance:\nNon-applicable | As the product is a mixture of several substances, the resistance of the glove material can not be calculated in advance with\ntotal reliability and has therefore to be checked prior to the application.",
+            "note": ""
           }
         }
       },
@@ -2934,7 +3434,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -3184,6 +3685,51 @@
             ],
             "gold_evidence": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100 | There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "1,1,1,2-Tetrafluoroethane",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 2,
+            "predicted_evidence": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 2,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "COMPOSITION_IMPLIED",
+            "gold_rule": "composition_implies_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100 | There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2",
+            "note": "located 1 of 2 required premise roles (sole_constituent, completeness_statement); gold is derived, prediction is direct"
           }
         },
         "ocr": {
@@ -3406,6 +3952,51 @@
             ],
             "gold_evidence": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100 | There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "1,1,1,2-Tetrafluoroethane",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 2,
+            "predicted_evidence": "1,1,1,2-Tetrafluoroethane 811-97-2 100",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8793,
+            "bbox_coverage": 0.9546,
+            "target_groups": 2,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "COMPOSITION_IMPLIED",
+            "gold_rule": "composition_implies_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "1,1,1,2-Tetrafluoroethane\n811-97-2\n100 | There are no impurities or stabilizers that contribute to the classification of the material identified in Section 2",
+            "note": "located 1 of 2 required premise roles (sole_constituent, completeness_statement); gold is derived, prediction is direct"
           }
         }
       },
@@ -3446,7 +4037,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -3692,6 +4284,51 @@
             ],
             "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Synthetic Base Stocks and Additives",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Product Description:\nSynthetic Base Stocks and Additives",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
           }
         },
         "ocr": {
@@ -3910,6 +4547,51 @@
             ],
             "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.1. SUBSTANCES Not Applicable. This material is regulated as a mixture. | This material is defined as a mixture.",
+            "note": ""
           }
         }
       },
@@ -3952,7 +4634,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 1,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -4191,6 +4874,50 @@
             ],
             "gold_evidence": "Mixture identification: | Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "state",
+              "span",
+              "bbox",
+              "derivation"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "No data available",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0145,
+            "bbox_coverage": 0.0157,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Mixture identification: | Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:",
+            "note": "gold is derived, prediction is direct"
           }
         },
         "ocr": {
@@ -4404,6 +5131,50 @@
             ],
             "gold_evidence": "Mixture identification: | Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "state",
+              "span",
+              "bbox",
+              "derivation"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "No data available",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Mixture identification: | Mixtures\nHazardous components within the meaning of GHS regulation and related classifications:",
+            "note": "gold is derived, prediction is direct"
           }
         }
       },
@@ -4435,7 +5206,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 0,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -4696,6 +5468,52 @@
             ],
             "gold_evidence": "Substance name:\nsodium chloride\nCAS No.:\n7647-14-5 | No data is available for the other parameters for the mixtures",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": false,
+            "gold_requires_evidence": true,
+            "gold_derivation": "COMPOSITION_IMPLIED",
+            "gold_rule": "composition_implies_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              3,
+              6
+            ],
+            "gold_evidence": "Substance name:\nsodium chloride\nCAS No.:\n7647-14-5 | No data is available for the other parameters for the mixtures",
+            "note": ""
           }
         },
         "ocr": {
@@ -4928,6 +5746,52 @@
             ],
             "gold_evidence": "Substance name:\nsodium chloride\nCAS No.:\n7647-14-5 | No data is available for the other parameters for the mixtures",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": false,
+            "gold_requires_evidence": true,
+            "gold_derivation": "COMPOSITION_IMPLIED",
+            "gold_rule": "composition_implies_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              3,
+              6
+            ],
+            "gold_evidence": "Substance name:\nsodium chloride\nCAS No.:\n7647-14-5 | No data is available for the other parameters for the mixtures",
+            "note": ""
           }
         }
       },
@@ -4959,7 +5823,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 0,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -5161,6 +6026,50 @@
             "note": ""
           },
           "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users. | Designation of ‘ARTICLES’",
+            "note": ""
+          },
+          "M6": {
             "joint": false,
             "axes": {
               "state": "violated",
@@ -5424,6 +6333,50 @@
             ],
             "gold_evidence": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users. | Designation of ‘ARTICLES’",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "In accordance with 29 CFR 1910.1200(b)(6)(v), CIP Composites are exempted as an “Article”,\nand therefore, do not require an SDS be created or provided to end users. | Designation of ‘ARTICLES’",
+            "note": ""
           }
         }
       },
@@ -5454,7 +6407,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 2
       },
       "gold": {
         "state": "NO_DATA",
@@ -5697,6 +6651,45 @@
             ],
             "gold_evidence": "flashpoint:\nnot specified, solid | flashpoint:\nnot specified, aqueous solution without flammable ingredients",
             "note": ""
+          },
+          "M6": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 5,
+            "predicted_evidence": "flashpoint:\nnot specified, solid",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              5
+            ],
+            "gold_evidence": "flashpoint:\nnot specified, solid | flashpoint:\nnot specified, aqueous solution without flammable ingredients",
+            "note": ""
           }
         },
         "ocr": {
@@ -5914,11 +6907,51 @@
             ],
             "gold_evidence": "flashpoint:\nnot specified, solid | flashpoint:\nnot specified, aqueous solution without flammable ingredients",
             "note": ""
+          },
+          "M6": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 5,
+            "predicted_evidence": "flashpoint: not specified, solid",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.825,
+            "bbox_coverage": 0.997,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              5
+            ],
+            "gold_evidence": "flashpoint:\nnot specified, solid | flashpoint:\nnot specified, aqueous solution without flammable ingredients",
+            "note": ""
           }
         }
       },
       "solved_by": [
-        "M4"
+        "M4",
+        "M6"
       ],
       "min_cost_solved": {
         "method": "M4",
@@ -5928,7 +6961,14 @@
         "n_calls": 0,
         "cost_basis": "latency_s (sum over native+ocr)"
       },
-      "min_cost_llm_solved": null,
+      "min_cost_llm_solved": {
+        "method": "M6",
+        "latency_s": 33.34,
+        "prompt_tokens": 58420,
+        "completion_tokens": 1645,
+        "n_calls": 16,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
       "actual_error": "evidence localization",
       "cause": "cited page 9 vs gold page(s) [5]; span IoU 0.0 / coverage 0.0 below threshold; bbox IoU 0.0 / coverage 0.0 below threshold; cited quote is not verbatim on its page; support: citation is not verbatim",
       "taxonomy": "evidence",
@@ -5957,7 +6997,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 0,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -6203,6 +7244,51 @@
             ],
             "gold_evidence": "3.2. Mixtures\nComposition of the substances in the mixtures: | 3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins.",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "state",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 2,
+            "predicted_evidence": "Mixtures from substances listed below contain non-hazardous components like water or proteins.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span carries no state cue",
+            "span_iou": 0.75,
+            "span_coverage": 0.75,
+            "bbox_iou": 0.3424,
+            "bbox_coverage": 0.3424,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.2. Mixtures\nComposition of the substances in the mixtures: | 3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins.",
+            "note": "gold is derived, prediction is direct"
           }
         },
         "ocr": {
@@ -6423,6 +7509,52 @@
             ],
             "gold_evidence": "3.2. Mixtures\nComposition of the substances in the mixtures: | 3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins.",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "5-Bromo-5-Nitro-1,3-Dioxane 30007-47-7 250-001-7 < 0.01%",
+            "verbatim": false,
+            "verbatim_fuzzy_score": 35.714,
+            "support": "violated",
+            "support_note": "citation is not verbatim",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              2
+            ],
+            "gold_evidence": "3.2. Mixtures\nComposition of the substances in the mixtures: | 3.1. Substances\nNot applicable. Mixtures from substances listed below contain non-hazardous components like water or proteins.",
+            "note": "cited quote does not occur verbatim on the cited page; gold is derived, prediction is direct"
           }
         }
       },
@@ -6453,7 +7585,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 1,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -6695,6 +7828,52 @@
             ],
             "gold_evidence": "3.2 Description\nGarden fertiliser NPK 3 – 9 - 0 | 3.1 N/A",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "no citation",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "3.2 Description\nGarden fertiliser NPK 3 – 9 - 0 | 3.1 N/A",
+            "note": "gold is derived, prediction is direct"
           }
         },
         "ocr": {
@@ -6913,6 +8092,51 @@
             ],
             "gold_evidence": "3.2 Description\nGarden fertiliser NPK 3 – 9 - 0 | 3.1 N/A",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "state",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "1. IDENTIFICATION OF THE SUBSTANCE/PREPARATION AND OF THE COMPANY\n1.1 Product identifier Bone Meal",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span carries no state cue",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "3.2 Description\nGarden fertiliser NPK 3 – 9 - 0 | 3.1 N/A",
+            "note": "gold is derived, prediction is direct"
           }
         }
       },
@@ -6942,7 +8166,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 1,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -7186,6 +8411,48 @@
             ],
             "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "value",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Mixture of substances as listed below.",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Mixture of substances as listed below.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "cited span declares MIXTURE",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
+            "note": ""
           }
         },
         "ocr": {
@@ -7405,6 +8672,51 @@
             ],
             "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Mixture of substances as listed below.",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Mixture of substances as listed below.",
+            "verbatim": false,
+            "verbatim_fuzzy_score": 47.368,
+            "support": "violated",
+            "support_note": "citation is not verbatim",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
+            "note": "cited quote does not occur verbatim on the cited page"
           }
         }
       },
@@ -7435,7 +8747,8 @@
         "M2": 1,
         "M3": 1,
         "M4": 1,
-        "M5": 1
+        "M5": 1,
+        "M6": 1
       },
       "gold": {
         "state": "PRESENT",
@@ -7646,6 +8959,46 @@
             "predicted_derivation": "DIRECT",
             "predicted_rule": null,
             "predicted_page": 1,
+            "predicted_evidence": "Molecular Formula\nO2 Si",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1,
+              5
+            ],
+            "gold_evidence": "Molecular Formula\nO2 Si | Molecular Formula\nO2 Si",
+            "note": ""
+          },
+          "M6": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "O2 Si",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 5,
             "predicted_evidence": "Molecular Formula\nO2 Si",
             "verbatim": true,
             "verbatim_fuzzy_score": 0.0,
@@ -7882,6 +9235,50 @@
             ],
             "gold_evidence": "Molecular Formula\nO2 Si | Molecular Formula\nO2 Si",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "span",
+              "bbox",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "O2 Si",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 5,
+            "predicted_evidence": "Molecular Formula 02 Si",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "value does not occur in the cited span",
+            "span_iou": 0.3333,
+            "span_coverage": 0.5,
+            "bbox_iou": 0.7281,
+            "bbox_coverage": 0.7281,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1,
+              5
+            ],
+            "gold_evidence": "Molecular Formula\nO2 Si | Molecular Formula\nO2 Si",
+            "note": ""
           }
         }
       },
@@ -7912,7 +9309,8 @@
         "M2": 0,
         "M3": 1,
         "M4": 2,
-        "M5": 1
+        "M5": 1,
+        "M6": 2
       },
       "gold": {
         "state": "PRESENT",
@@ -8112,6 +9510,46 @@
             "note": ""
           },
           "M5": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">=290 ºF",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 19,
+            "predicted_evidence": "Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              8,
+              19
+            ],
+            "gold_evidence": "Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup] | Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup]",
+            "note": ""
+          },
+          "M6": {
             "joint": true,
             "axes": {
               "state": "satisfied",
@@ -8373,11 +9811,52 @@
             ],
             "gold_evidence": "Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup] | Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup]",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": ">=290 °F",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 19,
+            "predicted_evidence": "Flash Point >=290 °F [Test Method:Tagliabue Closed Cup]",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8062,
+            "bbox_coverage": 0.8084,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              8,
+              19
+            ],
+            "gold_evidence": "Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup] | Flash Point\n>=290 ºF [Test Method:Tagliabue Closed Cup]",
+            "note": ""
           }
         }
       },
       "solved_by": [
-        "M4"
+        "M4",
+        "M6"
       ],
       "min_cost_solved": {
         "method": "M4",
@@ -8387,7 +9866,14 @@
         "n_calls": 0,
         "cost_basis": "latency_s (sum over native+ocr)"
       },
-      "min_cost_llm_solved": null,
+      "min_cost_llm_solved": {
+        "method": "M6",
+        "latency_s": 37.296,
+        "prompt_tokens": 111073,
+        "completion_tokens": 1073,
+        "n_calls": 16,
+        "cost_basis": "latency_s (sum over native+ocr)"
+      },
       "actual_error": "evidence localization",
       "cause": "cited page 1 vs gold page(s) [8, 19]; span IoU 0.0 / coverage 0.0 below threshold; bbox IoU 0.0 / coverage 0.0 below threshold; cited quote is not verbatim on its page; support: citation is not verbatim",
       "taxonomy": "evidence",
@@ -8416,7 +9902,8 @@
         "M2": 1,
         "M3": 1,
         "M4": 2,
-        "M5": 1
+        "M5": 1,
+        "M6": 1
       },
       "gold": {
         "state": "PRESENT",
@@ -8659,6 +10146,48 @@
             ],
             "gold_evidence": "MANUFACTURER:\n3M | MANUFACTURER:\n3M",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "value"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "MANUFACTURER: 3M",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "MANUFACTURER:\n3M",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1,
+              3
+            ],
+            "gold_evidence": "MANUFACTURER:\n3M | MANUFACTURER:\n3M",
+            "note": ""
           }
         },
         "ocr": {
@@ -8867,6 +10396,46 @@
             ],
             "gold_evidence": "MANUFACTURER:\n3M | MANUFACTURER:\n3M",
             "note": ""
+          },
+          "M6": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "3M",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "MANUFACTURER: 3M",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.8025,
+            "bbox_coverage": 0.9345,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1,
+              3
+            ],
+            "gold_evidence": "MANUFACTURER:\n3M | MANUFACTURER:\n3M",
+            "note": ""
           }
         }
       },
@@ -8908,7 +10477,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 0,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -9157,6 +10727,51 @@
             ],
             "gold_evidence": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l].",
             "note": "cited quote does not occur verbatim on the cited page; gold is derived, prediction is direct"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": false,
+            "gold_requires_evidence": true,
+            "gold_derivation": "COMPOSITION_IMPLIED",
+            "gold_rule": "composition_implies_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              3
+            ],
+            "gold_evidence": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l].",
+            "note": ""
           }
         },
         "ocr": {
@@ -9383,6 +10998,52 @@
             ],
             "gold_evidence": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l].",
             "note": "cited quote does not occur verbatim on the cited page; gold is derived, prediction is direct"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "value",
+              "page",
+              "span",
+              "bbox",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "Petrochemical Stillage Residue KON-92 (heavy petroleum resin)",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Petrochemical Stillage Residue KON-92 (heavy petroleum resin).",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span declares no product form",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": false,
+            "gold_requires_evidence": true,
+            "gold_derivation": "COMPOSITION_IMPLIED",
+            "gold_rule": "composition_implies_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              3
+            ],
+            "gold_evidence": "Petrochemical Stillage Residue KON-92 produced from residuals of\nbutyl alcohols, butyl aldehydes, 2-ethylhexanol, 2-ethylhexanoic acid,\nethylene-propylene copolymer and ethyl benzene [l].",
+            "note": "gold is derived, prediction is direct"
           }
         }
       },
@@ -9413,7 +11074,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 0,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -9654,6 +11316,50 @@
             ],
             "gold_evidence": "Substance:\nNon-applicable",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Substance:\nNon-applicable",
+            "note": ""
           }
         },
         "ocr": {
@@ -9873,6 +11579,50 @@
             ],
             "gold_evidence": "Substance:\nNon-applicable",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Substance:\nNon-applicable",
+            "note": ""
           }
         }
       },
@@ -9902,7 +11652,8 @@
         "M2": 1,
         "M3": 0,
         "M4": 1,
-        "M5": 0
+        "M5": 0,
+        "M6": 1
       },
       "gold": {
         "state": "PRESENT",
@@ -10132,6 +11883,45 @@
             ],
             "gold_evidence": "Product identifier:\nSTYCCOBOND F49 BASE",
             "note": ""
+          },
+          "M6": {
+            "joint": true,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [],
+            "predicted_state": "PRESENT",
+            "predicted_value": "STYCCOBOND F49 BASE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "1.1\nProduct identifier:\nSTYCCOBOND F49 BASE",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 0.8333,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.9024,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product identifier:\nSTYCCOBOND F49 BASE",
+            "note": ""
           }
         },
         "ocr": {
@@ -10339,6 +12129,47 @@
             ],
             "gold_evidence": "Product identifier:\nSTYCCOBOND F49 BASE",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "satisfied",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "violated",
+              "derivation": "satisfied",
+              "support": "satisfied"
+            },
+            "failed_axes": [
+              "bbox"
+            ],
+            "predicted_state": "PRESENT",
+            "predicted_value": "STYCCOBOND F49 BASE",
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "1.1 Product identifier: STYCCOBOND F49 BASE",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "satisfied",
+            "support_note": "",
+            "span_iou": 0.8333,
+            "span_coverage": 1.0,
+            "bbox_iou": 0.6078,
+            "bbox_coverage": 0.6495,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product identifier:\nSTYCCOBOND F49 BASE",
+            "note": ""
           }
         }
       },
@@ -10366,7 +12197,8 @@
         "M2": 2,
         "M3": 0,
         "M4": 2,
-        "M5": 2
+        "M5": 2,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_STATED",
@@ -10574,6 +12406,46 @@
             "gold_pages": [],
             "gold_evidence": "",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "n/a",
+              "span": "n/a",
+              "bbox": "n/a",
+              "derivation": "n/a",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Ingredients of Unknown Acute Toxicity (>1%): NAP",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "cited span reads NOT_APPLICABLE",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 0,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": false,
+            "gold_derivation": "ABSENT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [],
+            "gold_evidence": "",
+            "note": ""
           }
         },
         "ocr": {
@@ -10767,6 +12639,46 @@
             "gold_pages": [],
             "gold_evidence": "",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "n/a",
+              "span": "n/a",
+              "bbox": "n/a",
+              "derivation": "n/a",
+              "support": "violated"
+            },
+            "failed_axes": [
+              "state",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 3,
+            "predicted_evidence": "Ingredients of Unknown Acute Toxicity (>1%): NAP",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "violated",
+            "support_note": "cited span reads NOT_APPLICABLE",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 0,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": false,
+            "gold_derivation": "ABSENT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [],
+            "gold_evidence": "",
+            "note": ""
           }
         }
       },
@@ -10814,7 +12726,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 1,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -11012,6 +12925,50 @@
             "note": ""
           },
           "M5": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              4
+            ],
+            "gold_evidence": "Flash point:\nNot Relevant",
+            "note": ""
+          },
+          "M6": {
             "joint": false,
             "axes": {
               "state": "violated",
@@ -11274,6 +13231,50 @@
             ],
             "gold_evidence": "Flash point:\nNot Relevant",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              4
+            ],
+            "gold_evidence": "Flash point:\nNot Relevant",
+            "note": ""
           }
         }
       },
@@ -11304,7 +13305,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 1,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "NOT_APPLICABLE",
@@ -11546,6 +13548,49 @@
             ],
             "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "satisfied",
+              "span": "satisfied",
+              "bbox": "satisfied",
+              "derivation": "violated",
+              "support": "undecidable"
+            },
+            "failed_axes": [
+              "state",
+              "derivation",
+              "support"
+            ],
+            "predicted_state": "NO_DATA",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": 1,
+            "predicted_evidence": "Mixture of substances as listed below.",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "undecidable",
+            "support_note": "cited span carries no state cue",
+            "span_iou": 1.0,
+            "span_coverage": 1.0,
+            "bbox_iou": 1.0,
+            "bbox_coverage": 1.0,
+            "target_groups": 1,
+            "groups_located": 1,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
+            "note": "gold is derived, prediction is direct"
           }
         },
         "ocr": {
@@ -11765,6 +13810,50 @@
             ],
             "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
             "note": ""
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "satisfied",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "ONTOLOGY",
+            "gold_rule": "identifier_undefined_for_form",
+            "evidence_role": "premise",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Mixture of substances as listed below. | Description of the mixture\nMixture of substances listed below with ingredients not classified as hazardous.",
+            "note": ""
           }
         }
       },
@@ -11794,7 +13883,8 @@
         "M2": 0,
         "M3": 0,
         "M4": 2,
-        "M5": 0
+        "M5": 0,
+        "M6": 0
       },
       "gold": {
         "state": "PRESENT",
@@ -12031,6 +14121,51 @@
             ],
             "gold_evidence": "Product Description:\nSand, Ottawa",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Description:\nSand, Ottawa",
+            "note": ""
           }
         },
         "ocr": {
@@ -12244,6 +14379,51 @@
             ],
             "gold_evidence": "Product Description:\nSand, Ottawa",
             "note": "cited quote does not occur verbatim on the cited page"
+          },
+          "M6": {
+            "joint": false,
+            "axes": {
+              "state": "violated",
+              "value": "violated",
+              "page": "violated",
+              "span": "violated",
+              "bbox": "violated",
+              "derivation": "n/a",
+              "support": "n/a"
+            },
+            "failed_axes": [
+              "state",
+              "value",
+              "page",
+              "span",
+              "bbox"
+            ],
+            "predicted_state": "NOT_STATED",
+            "predicted_value": null,
+            "predicted_derivation": "DIRECT",
+            "predicted_rule": null,
+            "predicted_page": null,
+            "predicted_evidence": "",
+            "verbatim": true,
+            "verbatim_fuzzy_score": 0.0,
+            "support": "n/a",
+            "support_note": "",
+            "span_iou": 0.0,
+            "span_coverage": 0.0,
+            "bbox_iou": 0.0,
+            "bbox_coverage": 0.0,
+            "target_groups": 1,
+            "groups_located": 0,
+            "premise_roles_described": true,
+            "gold_requires_evidence": true,
+            "gold_derivation": "EXPLICIT",
+            "gold_rule": null,
+            "evidence_role": "direct",
+            "gold_pages": [
+              1
+            ],
+            "gold_evidence": "Product Description:\nSand, Ottawa",
+            "note": ""
           }
         }
       },

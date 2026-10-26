@@ -16,6 +16,8 @@ Every model call of the **final canonical runs** is counted (retrieval judges in
 | S4 extraction battery | M4 | ocr | rules | rules-none | 0 | 0 | 0 | 0.0 |
 | S4 extraction battery | M5 | native | openai | Qwen/Qwen3.5-2B | 139 | 22713 | 278 | 13.228 |
 | S4 extraction battery | M5 | ocr | openai | Qwen/Qwen3.5-2B | 139 | 22617 | 278 | 9.396 |
+| S4 extraction battery | M6 | native | openai | Qwen/Qwen3.5-2B | 160 | 524870 | 13647 | 308.736 |
+| S4 extraction battery | M6 | ocr | openai | Qwen/Qwen3.5-2B | 160 | 515801 | 12640 | 284.044 |
 | retrieval LLM judge (Qwen3.5-2B, hub bf16) | judge | native | openai | Qwen/Qwen3.5-2B | 1349 | n/a | n/a | 0.0 |
 | retrieval LLM judge (Qwen3.5-2B, hub bf16) | judge | ocr | openai | Qwen/Qwen3.5-2B | 1349 | n/a | n/a | 0.0 |
 | retrieval LLM judge (inherited, old gold) | judge | native | mlx | mlx-community/Qwen2.5-7B-Instruct-4bit | 1303 | n/a | n/a | 8295.7 |
@@ -27,15 +29,15 @@ Every model call of the **final canonical runs** is counted (retrieval judges in
 
 | Family | n calls | prompt tok | completion tok | wall-clock s |
 | --- | ---: | ---: | ---: | ---: |
-| S4 extraction battery | 916 | 2910829 | 67879 | 452.2 |
+| S4 extraction battery | 1236 | 3951500 | 94166 | 1045.0 |
 | retrieval LLM judge (Qwen3.5-2B, hub bf16) | 2698 | 0 | 0 | 0.0 |
 | retrieval LLM judge (inherited, old gold) | 2606 | 0 | 0 | 16365.5 |
 | judge smoke/probe (not a full run) | 420 | 0 | 0 | 0.0 |
-| **ALL** | 6640 | 2910829 | 67879 | 16817.7 |
+| **ALL** | 6960 | 3951500 | 94166 | 17410.5 |
 
 **SUPERSEDED (local MLX dev run):** S4 full-battery wall-clock from the old runner log = 10850.7s ≈ 181 min. The canonical run is the hub bf16 battery above; its wall-clock is the sum of the per-cell latencies (cached cells show 0.0).
 
-S4 battery: **916 final-run invocations, of which 347 were cache hits (38%)** — i.e. 569 fresh GPU calls. The prompt-broken first hub run and the smoke runs are excluded from this ledger.
+S4 battery: **1236 final-run invocations, of which 386 were cache hits (31%)** — i.e. 850 fresh GPU calls. The prompt-broken first hub run and the smoke runs are excluded from this ledger.
 
 ## Non-LLM methods (0 model calls)
 

@@ -32,6 +32,13 @@ Source: `steering/2026-10-22-note.md` (latest; sharpens `steering/2026-10-19-not
 - ~~sds_19 premise-evidence warnings~~ → **утверждено** (рекомендация K3): `product_form` UNDETERMINED→MIXTURE, `substance_or_mixture` NOT_STATED→PRESENT/MIXTURE → **gold v1.2** (TASK-014, done ✅): `build_annotations` 3 варнинга→0; n_included 133→134; пересчёт BM25/dense `*_goldv12` (|Δ| ≤ 0.0069). Frozen v1.0 и `*_goldv11` сохранены.
 - Sequencing: **gold v1.2** (✅ TASK-014) → **gold v1.3** (✅ TASK-017, ownership-фикс sds_18, DEC-006) → батарея бейзлайнов S4 на **финальном gold v1.3**.
 
+## Hub runs (2026-10-26) — canonical bf16 config (DEC-007)
+
+- **`farit/hub/run_on_hub.sh`** (agent: `.opencode/agents/hub-runner.md`) drives the full run on the IDH A100 (vLLM). Canonical config = `Qwen/Qwen3.5-2B` **bf16**; local MLX-4bit is dev-only.
+- **First hub run found a real bug** (M1/M3/M5 ≈ 0% joint): M1/M2 prompt templates used a flat `page`/`quote` shape while the request enforced the nested `LlmOutput` schema — fine on MLX, broken on vLLM (`evidence: null`). **Fixed** (commit `a51ad2b`) + regression gates (`farit/tests/`, runner citation-contract gate).
+- **Judge already ran on the hub**: 2B pointwise judge, 1349 pages/layer, **0.11 s/page** (~26× the Mac). Headline native `complete@3 = 0.694` — *below* naive order (0.696).
+- **TODO: re-run the S4 battery on the hub** with the fixed prompts (≈24 min), then rebuild the week report from the hub table.
+
 ## Backlog after the 2026-10-26 critic pass (minor findings)
 
 Adversarial critic pass on the week's artifacts: `farit/steering/reviews/2026-10-26-critic-week-m1.md` (18 findings; point-by-point response in the same file). Mandatory ones (F1–F4, F9, F13) are **fixed**; the following minors are queued, not yet done:

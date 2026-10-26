@@ -399,11 +399,28 @@
       "found": {
         "state": "134"
       }
+    },
+    {
+      "id": "cost.hub_judge_calls",
+      "docs": {
+        "cost": "hub bf16\\) \\| (\\d+)"
+      },
+      "expect": 2698,
+      "expect_str": "2698",
+      "unit": "n",
+      "source": "cost_accounting.json",
+      "scope": "hub 2B judge, both layers",
+      "falsifier": "a judge rerun changes the call count",
+      "status": "PASS",
+      "found": {
+        "cost": "2698"
+      }
     }
   ],
   "overclaim": {
     "RESEARCH-STATE": [],
-    "report-2026-10-23": []
+    "report-2026-10-23": [],
+    "cost_accounting": []
   },
   "split": {
     "forbidden_hits": [],

@@ -1,6 +1,6 @@
 # Claims audit (pre-send gate)
 
-- artifact-backed claims: **23**
+- artifact-backed claims: **24**
 - non-PASS: **0**
 - split semantics ok: **True**
 - derived artifacts fresh: **True**
@@ -32,6 +32,7 @@
 | corpus.composition_implied | PASS | 4 | state=4 | corpus_stats.json | all 29 documents, derived fields |
 | corpus.dev_instances | PASS | 140 | report=140 | gold_evidence.jsonl | dev, non-ingredient (evaluator n) |
 | corpus.dev_included | PASS | 134 | state=134 | gold_evidence.jsonl (judge inclusion rule) | dev, non-ingredient, evidence_set present, state != NOT_STATED |
+| cost.hub_judge_calls | PASS | 2698 | cost=2698 | cost_accounting.json | hub 2B judge, both layers |
 
 ## Overclaim language (advisory — each line needs evidence or reword)
 
@@ -71,3 +72,4 @@ _all derived artifacts match the canonical battery_
 - **corpus.composition_implied** — a gold edit changes the derivation mix
 - **corpus.dev_instances** — a gold edit changes the instance count
 - **corpus.dev_included** — a gold or inclusion-rule edit changes the count
+- **cost.hub_judge_calls** — a judge rerun changes the call count

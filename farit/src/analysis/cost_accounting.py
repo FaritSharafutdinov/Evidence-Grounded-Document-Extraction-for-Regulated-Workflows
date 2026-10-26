@@ -52,7 +52,7 @@ def s4_rows() -> list[dict]:
                     "description": METHODS[m],
                     "layer": layer,
                     "backend": meta["backend"],
-                    "model": meta["model"],
+                    "model": "rules-none" if m == "M4" else meta["model"],
                     "n_calls": cost["n_calls"],
                     "n_cached": cost.get("n_cached", 0),
                     "prompt_tokens": cost["prompt_tokens"],

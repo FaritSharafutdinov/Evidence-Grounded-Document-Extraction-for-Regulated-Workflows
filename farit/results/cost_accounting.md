@@ -12,8 +12,8 @@ Every model call of the **final canonical runs** is counted (retrieval judges in
 | S4 extraction battery | M2 | ocr | openai | Qwen/Qwen3.5-2B | 160 | 1063832 | 12448 | 195.71 |
 | S4 extraction battery | M3 | native | openai | Qwen/Qwen3.5-2B | 139 | 215974 | 4951 | 121.7 |
 | S4 extraction battery | M3 | ocr | openai | Qwen/Qwen3.5-2B | 139 | 206390 | 4523 | 112.206 |
-| S4 extraction battery | M4 | native | rules | Qwen/Qwen3.5-2B | 0 | 0 | 0 | 0.0 |
-| S4 extraction battery | M4 | ocr | rules | Qwen/Qwen3.5-2B | 0 | 0 | 0 | 0.0 |
+| S4 extraction battery | M4 | native | rules | rules-none | 0 | 0 | 0 | 0.0 |
+| S4 extraction battery | M4 | ocr | rules | rules-none | 0 | 0 | 0 | 0.0 |
 | S4 extraction battery | M5 | native | openai | Qwen/Qwen3.5-2B | 139 | 22713 | 278 | 13.228 |
 | S4 extraction battery | M5 | ocr | openai | Qwen/Qwen3.5-2B | 139 | 22617 | 278 | 9.396 |
 | retrieval LLM judge (Qwen3.5-2B, hub bf16) | judge | native | openai | Qwen/Qwen3.5-2B | 1349 | n/a | n/a | 0.0 |

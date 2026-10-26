@@ -42,6 +42,7 @@ GOLD_EVIDENCE = REPO_ROOT / "farit" / "data" / "corpus" / "gold_evidence.jsonl"
 DOCS = {
     "state": REPO_ROOT / "farit" / "docs" / "RESEARCH-STATE.md",
     "report": REPO_ROOT / "farit" / "docs" / "report-2026-10-23.md",
+    "cost": REPO_ROOT / "farit" / "results" / "cost_accounting.md",
 }
 
 # Absolute-language traps. Kept narrow to avoid false positives; each hit is a
@@ -97,7 +98,7 @@ def s4_joint(a: dict, method: str, layer: str) -> float:
     return a["s4"]["methods"][f"{method}/{layer}"]["joint_all"] * 100
 
 
-def build_claims(a: dict, state_text: str, report_text: str) -> list[dict]:
+def build_claims(a: dict) -> list[dict]:
     """Return the ledger: each claim recomputed from raw artifacts.
 
     ``docs`` maps doc key -> regex with one capture group for the value the doc
@@ -282,13 +283,26 @@ def build_claims(a: dict, state_text: str, report_text: str) -> list[dict]:
             unit="n",
         )
     )
+
+    hub_judge = [r for r in a["cost"]["rows"] if r["family"].startswith("retrieval LLM judge (Qwen3.5-2B")]
+    if hub_judge:
+        claims.append(
+            claim(
+                "cost.hub_judge_calls",
+                {"cost": r"hub bf16\) \| (\d+)"},
+                sum(r["n_calls"] for r in hub_judge),
+                "cost_accounting.json",
+                "hub 2B judge, both layers",
+                "a judge rerun changes the call count",
+                unit="n",
+            )
+        )
     return claims
 
 
-def evaluate_claims(a: dict, state_text: str, report_text: str) -> list[dict]:
-    claims = build_claims(a, state_text, report_text)
+def evaluate_claims(a: dict, doc_text: dict) -> list[dict]:
+    claims = build_claims(a)
     results = []
-    doc_text = {"state": state_text, "report": report_text}
     for c in claims:
         row = dict(c)
         row["status"] = "PASS"
@@ -400,15 +414,15 @@ def main() -> int:
     args = parser.parse_args()
 
     a = load_artifacts()
-    state_text = DOCS["state"].read_text(encoding="utf-8")
-    report_text = DOCS["report"].read_text(encoding="utf-8")
+    doc_text = {key: path.read_text(encoding="utf-8") for key, path in DOCS.items()}
 
-    claims = evaluate_claims(a, state_text, report_text)
+    claims = evaluate_claims(a, doc_text)
     overclaim = {
-        "RESEARCH-STATE": lint_overclaim(state_text),
-        "report-2026-10-23": lint_overclaim(report_text),
+        "RESEARCH-STATE": lint_overclaim(doc_text["state"]),
+        "report-2026-10-23": lint_overclaim(doc_text["report"]),
+        "cost_accounting": lint_overclaim(doc_text["cost"]),
     }
-    split = check_split_semantics(state_text, report_text)
+    split = check_split_semantics(doc_text["state"], doc_text["report"])
     derived = check_derived_freshness(a)
 
     payload = {

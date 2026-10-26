@@ -175,6 +175,11 @@ run_battery() {  # $1 = extra args
     --layer "$LAYER" --methods M1,M2,M3,M4,M5 $1
 }
 
+evaluate_battery() {
+  log "    scoring battery -> farit/results/s4_battery_goldv13.{json,md}"
+  python farit/src/extraction/evaluate_battery.py --tag goldv13
+}
+
 log "5/7 smoke (1 doc, both layers, all methods)"
 run_battery "--docs sds_05.pdf --smoke"
 
@@ -220,7 +225,8 @@ case "$JOB" in
   smoke)   log "6/7 job=smoke (nothing more to run)" ;;
   battery)
     log "6/7 job=battery (full dev, 20 docs x 2 layers x 5 methods)"
-    run_battery "" ;;
+    run_battery ""
+    evaluate_battery ;;
   judge)
     log "6/7 job=judge (pointwise judge via vLLM logprobs)"
     python farit/src/retrieval/llm_reranker.py \
@@ -230,6 +236,7 @@ case "$JOB" in
   all)
     log "6/7 job=all: battery + judge"
     run_battery ""
+    evaluate_battery
     python farit/src/retrieval/llm_reranker.py \
       --backend openai --model "$SERVED_NAME" --base-url "$BASE_URL" \
       --layer "$LAYER" --score-mode v2 --out-tag "hub_${SERVED_NAME//\//_}_v2" \

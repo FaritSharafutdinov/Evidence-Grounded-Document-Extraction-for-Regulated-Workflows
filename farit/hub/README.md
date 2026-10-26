@@ -1,5 +1,26 @@
 # Hub runs (NVIDIA / vLLM) — Innopolis IDH Online-IDE
 
+## Fully autonomous: run the OpenCode agent on the hub
+
+If you don't want to relay errors by hand, install the **hub-runner** agent on
+the hub and let it drive everything (read errors, fix, retry, collect):
+
+```bash
+# 1. upload your local ~/.config/opencode/opencode.jsonc to the hub (it has API keys)
+# 2. from the repo root:
+OPENCODE_CONFIG_SRC=~/opencode.jsonc bash farit/hub/run_hub_agent.sh
+```
+
+That installs the OpenCode CLI, drops the config + the `hub-runner` agent
+(`.opencode/agents/hub-runner.md`) into `~/.config/opencode/`, and launches
+`opencode run --agent hub-runner --auto` with the mission in
+`farit/hub/HUB_RUNNER_PROMPT.md`. Pick a reachable provider with
+`HUB_AGENT_MODEL=alibaba-cloud/deepseek-v4.1-flash` (default) or e.g.
+`mws-gpt/<model>` / `mercury/Kimi-K2.6`. The agent writes `~/sds-hub/STATUS.md`
+and copies results into `persistent_volume/`.
+
+## Deterministic driver (no LLM)
+
 Two entry points, same engine (`farit/hub/run_on_hub.sh`):
 
 - **`farit/hub/run_on_hub.ipynb`** — open in the IDH Online-IDE and **Run All**.

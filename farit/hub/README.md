@@ -1,10 +1,25 @@
-# Hub runs (NVIDIA / vLLM)
+# Hub runs (NVIDIA / vLLM) — Innopolis IDH Online-IDE
 
-One script does the whole heavy-compute dance on the GPU hub:
-`farit/hub/run_on_hub.sh`. It clones/updates the repo, builds a venv, installs
-deps, **regenerates the retrieval corpus** from the tracked PDFs + annotations,
-launches (or connects to) a vLLM OpenAI-compatible server, runs a smoke test,
-then the requested jobs, and copies every artifact into `$WORKDIR/out`.
+Two entry points, same engine (`farit/hub/run_on_hub.sh`):
+
+- **`farit/hub/run_on_hub.ipynb`** — open in the IDH Online-IDE and **Run All**.
+  It probes the GPU, clones the repo into `persistent_volume/`, runs the driver,
+  and zips the results for download from the file browser.
+- **`bash farit/hub/run_on_hub.sh`** — the same driver from any shell.
+
+The driver clones/updates the repo, builds a venv, installs deps, **regenerates
+the retrieval corpus** from the tracked PDFs + annotations, launches (or
+connects to) a vLLM OpenAI-compatible server, runs a smoke test, then the
+requested jobs, and copies every artifact into `$WORKDIR/out`.
+
+### IDH specifics that matter
+
+- Only **`persistent_volume/`** survives the session (default **20 GB**). The
+  driver auto-detects it and puts the repo, venv, **HF model cache** (`HF_HOME`)
+  and results there; anything outside is wiped when the booking ends.
+- There is **no SSH/scp** — download results from the IDE file browser (the last
+  notebook cell zips `out/`).
+- Disk budget: Qwen3.5-2B bf16 + tokenizer ≈ 5 GB, corpus ≪ 1 GB, venv ≈ 1 GB.
 
 Everything the run needs is in the git clone: `documents/*.pdf`, `data/annotations/`,
 `data/ocr/*.json`, `data/manifest.csv`, `sdsbench/`, `scripts/`, `farit/src/`,
@@ -74,9 +89,11 @@ cache hits (they are excluded from wall-clock summaries, by design).
 
 ## Retrieving results
 
-The script prints the `$OUT_DIR` path and a ready `scp` line. It bundles the S4
+Everything lands in `$WORKDIR/out` (under `persistent_volume/` on IDH): the S4
 JSON/MD, a tarball of all prediction JSONs+metas, the judge JSON/MD, and
-`HEAD.txt` (the exact commit).
+`HEAD.txt` (the exact commit). On IDH, download it from the **file browser**
+(the notebook's last cell also creates `hub-results.zip`); from a shell box,
+`scp -r <hub>:$WORKDIR/out ./hub-out`.
 
 ## Known risks / notes
 

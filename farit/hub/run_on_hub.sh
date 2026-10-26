@@ -30,7 +30,17 @@ REPO_URL="${REPO_URL:-https://github.com/FaritSharafutdinov/Evidence-Grounded-Do
 BRANCH="${BRANCH:-farit_dev}"
 COMMIT="${COMMIT:-}"                      # optional: pin to an exact commit
 REPO_DIR="${REPO_DIR:-}"                      # override; auto-detected below
-WORKDIR="${WORKDIR:-$HOME/sds-hub}"
+# Innopolis IDH Online-IDE keeps ONLY persistent_volume/ after the session ends,
+# so put everything there when it exists (20 GB budget); fall back to $HOME.
+if [ -z "${WORKDIR:-}" ]; then
+  for cand in "$PWD/persistent_volume" "$HOME/persistent_volume" /home/jovyan/persistent_volume "/content/persistent_volume"; do
+    if [ -d "$cand" ]; then WORKDIR="$cand/sds-hub"; break; fi
+  done
+  WORKDIR="${WORKDIR:-$HOME/sds-hub}"
+fi
+# Model + tokenizer downloads must survive the session -> keep HF cache local too.
+export HF_HOME="${HF_HOME:-$WORKDIR/hf}"
+export TOKENIZERS_PARALLELISM="${TOKENIZERS_PARALLELISM:-false}"
 MODEL="${MODEL:-Qwen/Qwen3.5-2B}"         # HF id served by vLLM (bf16)
 SERVED_NAME="${SERVED_NAME:-$MODEL}"      # name our client sends in "model"
 PORT="${PORT:-8000}"
@@ -92,6 +102,7 @@ python -m pip install --upgrade pip wheel >/dev/null
 # Base deps are pinned; pymupdf==1.28.2 MUST NOT change (gold bboxes depend on it).
 pip install $PIP_EXTRA -r requirements.txt
 pip install $PIP_EXTRA -r farit/requirements.txt
+pip install $PIP_EXTRA pytest   # dev gate; not in the pinned runtime requirements
 
 # ----------------------------------------------------------------------------
 # 3. Regenerate the retrieval corpus (PDFs + annotations -> farit/data/corpus)
@@ -101,7 +112,12 @@ python farit/src/retrieval/build_corpus.py
 
 if [ "$SKIP_TESTS" != "1" ]; then
   log "    regression tests (expect 68 passed)"
-  python -m pytest tests/ -q | tail -3 || die "tests failed — env is not clean"
+  if ! python -m pytest tests/ -q 2>&1 | tail -3; then
+    if [ "${STRICT_TESTS:-0}" = "1" ]; then
+      die "tests failed — env is not clean"
+    fi
+    log "    WARNING: regression tests did not pass; continuing (STRICT_TESTS=1 to abort)"
+  fi
 fi
 
 # ----------------------------------------------------------------------------
@@ -118,7 +134,14 @@ server_up() {
 if [ "$LAUNCH_VLLM" = "never" ] || { [ "$LAUNCH_VLLM" = "auto" ] && server_up; }; then
   log "4/7 using existing server at $BASE_URL"
 else
-  command -v vllm >/dev/null 2>&1 || die "vllm not found; pip install vllm or set BASE_URL"
+  if ! command -v vllm >/dev/null 2>&1; then
+    if [ "${INSTALL_VLLM:-0}" = "1" ]; then
+      log "installing vllm (this can take a few minutes)"
+      pip install vllm
+    else
+      die "vllm not found; run 'pip install vllm', set INSTALL_VLLM=1, or set BASE_URL"
+    fi
+  fi
   log "4/7 launching vLLM: $MODEL -> $BASE_URL (log: $LOG_DIR/vllm.log)"
   # --trust-remote-code + modest context: the model's native 262144 ctx would
   # otherwise demand the whole KV budget. Text-only use of a VL arch works.

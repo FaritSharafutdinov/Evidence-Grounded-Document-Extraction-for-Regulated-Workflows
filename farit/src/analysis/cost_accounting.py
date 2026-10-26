@@ -180,7 +180,7 @@ def md(rows: list[dict], run_wc: float | None) -> str:
     lines = [
         "# S6 — total cost accounting",
         "",
-        "Every model call of the **final canonical runs** is counted (retrieval judges included); the earlier prompt-broken hub run and the smoke runs are noted but not summed. Gold v1.3, dev split. "
+        "Every model call of the **final canonical runs** is counted (retrieval judges included); the earlier prompt-broken hub run is shown as a separate *estimate* row and the smoke runs are the small probe rows. Gold v1.3, dev split. "
         "Tokens are reported where the backend recorded them; the legacy 7B judge runner did not record tokens, and its call count is taken from the cache.",
         "",
         "## Model-touching methods (per method × layer)",
@@ -224,7 +224,7 @@ def md(rows: list[dict], run_wc: float | None) -> str:
     n_cached = sum(r.get("n_cached", 0) for r in s4_rows_all)
     lines += [
         "",
-        f"S4 battery: **{n_inv} final-run invocations, of which {n_cached} were cache hits ({round(100*n_cached/max(n_inv,1))}%)** — i.e. {n_inv - n_cached} fresh GPU calls. The prompt-broken first hub run and the smoke runs are excluded from this ledger.",
+        f"S4 battery: **{n_inv} final-run invocations, of which {n_cached} were cache hits ({round(100*n_cached/max(n_inv,1))}%)** — i.e. {n_inv - n_cached} fresh GPU calls (canonical battery only; the prompt-broken estimate row and smoke rows are separate).",
     ]
     lines += [
         "",
@@ -238,8 +238,9 @@ def md(rows: list[dict], run_wc: float | None) -> str:
         "- M4 (rules-v4) is non-LLM: `n_calls = 0` by construction.",
         "- **S4 battery is the canonical hub bf16 config (`Qwen/Qwen3.5-2B`, vLLM, A100 MIG — DEC-007).** Wall-clock cells that reuse cache show `0.0` (cached calls are content-identical).",
         "- The inherited Qwen2.5-7B judge is the old-gold baseline — its 2606 calls (1303 native + 1303 ocr) were ~4.5 h on the M2 (local MLX; tokens not recorded by the legacy runner).",
-        "- The Qwen3.5-2B judge is now a **full run** (hub, vLLM): 1349 pages/layer at ~0.11 s/page; its page rankings do not beat naive order on strict completeness (see `llm_reranker_hub_*.md`).",
+        "- The Qwen3.5-2B judge is now a **full run** (hub, vLLM): 1349 pages/layer; its page rankings do not beat naive order on strict completeness (see `llm_reranker_hub_*.md`). Page timing is not retained in the committed artifact (the re-run was cache-warm).",
         "- `wall_clock_s` for S4 is the sum of per-call latencies (model time); the runner-log total includes model load overhead.",
+        "- M5 `info.yes/no` in the **committed** battery artifact is a per-document snapshot (the aggregation bug is fixed in `run_battery.py`, but regenerating the stored counts needs a hub re-run).",
     ]
     return "\n".join(lines) + "\n"
 

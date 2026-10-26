@@ -1,6 +1,6 @@
 # S5 — real extraction cases and the error taxonomy
 
-Case = `(document, field)` (both text layers and all five S4 methods live inside one case). Gold v1.3, dev split. Scored with `sdsbench.evaluator` (7 axes + joint). S4 predictions are a frozen input.
+Case = `(document, field)` (both text layers and all six S4 methods live inside one case). Gold v1.3, dev split. Scored with `sdsbench.evaluator` (7 axes + joint). S4 predictions are a frozen input.
 
 ## Selection (deterministic)
 

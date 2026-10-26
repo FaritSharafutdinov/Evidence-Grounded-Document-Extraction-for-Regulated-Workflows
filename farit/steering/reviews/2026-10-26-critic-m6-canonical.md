@@ -150,3 +150,101 @@ Suggested fix: добавить row «prompt-broken first hub run ≈916 calls (
 
 ### Outcome
 C1/C2 + M1–M4/M6-partial закрыты; M5/M6/M9 и отдельные minor — в backlog. Отправка профу разблокирована (после вычитки Farit'ом §4).
+
+---
+
+## Re-review (round 2, 2026-10-26)
+
+Метод тот же: арифметика по committed JSON/MD, без Bash. Проверены: все 21 находка round 1 + правки, которые их закрыли. Числа новых артефактов пересчитаны (см. статусы).
+
+### Статусы прежних находок
+
+| # | Статус | Доказательство | Остаток / suggested fix |
+|---|---|---|---|
+| C1 | **закрыт ✅** | RS:55 переписан: «17/20 docs (87 native / 86 ocr…)» = суммы committed json (40+47=87, 46+40=86, docs 17+17) ✓; гейт: claims `contract.m1_{docs,native,ocr}` (json:440-487, PASS, ожидания из json, не литералы) ✓ | нет |
+| C2 | **закрыт ✅** | BOARD:42 строка TASK-021 «done (K3-verified 2026-10-26)»; спек:3 «done (K3-verified)»; `logs/TASK-021/README.md` (команда, HEAD 79e9c23, независимый re-score 17.9/8.6); report:3 переформулирован ✓ | TASK-020 строки в BOARD по-прежнему нет → N5 |
+| M1 | **частично ⚠️** | `m6_routing_coverage.{json,md}` заведен, арифметика внутренне сходится: native 134−124=10 misses=строки ✓, 134−129=5 any-miss ⊂ 10 ✓; ocr 134−121=13 ✓, 8 any-miss ✓; M6 в state_anomaly (59/140=42.1% ✓, flips 50+74=124, 46+28=74 ✓; ocr 42+81=123, 60+21=81 ✓); тезис RS:50/report:25 переписан честно («1 instance», «only LLM solving evidence cases», «one execution of one hand-written map») | в переписанном тексте — две НОВЫЕ ошибки: **N1** (ложный «best on derived») и **N4** (слои «90–94%» без атрибуции) |
+| M2 | **закрыт ✅** | «entirely» из доков убран (grep по docs чист; паттерн теперь и в гейте); формулировка «sits on derivation/support axes» — множественная, hedged | для M6 эта фраза пуста/вводит (см. N7) |
+| M3 | **закрыт ✅** | SPRINT:10 (канон+mlx-метка), :14 (1236/3.95M+mlx-метка), :39 (6 методов+M6 17.9/8.6+S6 1236), :41 (M6 DONE); EXP-06:17/41/43-44/63 (M6-строка, 1236/386/850/3.95M, «✅ run on hub»); PACKAGE:27 (M1–M6); hub/README вычитан (grep «5 methods» — пусто); BOARD TASK-019 аннотирован; DOCS гейта += sprint+package, lint на 5 доков ✓ | в BOARD — самопротиворечия строк TASK-015/018 (N5); PACKAGE-манифест не перечисляет m6_routing_coverage (N9) |
+| M4 | **закрыт ✅** | SPRINT:13: канон 14/9/1/0 + annotation «pre-DEC-007 локальный mlx давал 12/9/2/1/0» ✓ | нет |
+| M5 | **частично ⚠️** | Код: run_battery.py:280-285 — числовые счётчики суммируются по докам ✓; methods.py:883-901 — `{yes,no,unparsed}`, unparsed отдельным полем, downgrade-поведение сохранено ✓ | **committed артефакт не перегенерирован**: s4_battery_goldv13.json:1755-1756/1783-1784 всё ещё 5/2 и 4/3 (per-doc), ключа `unparsed` нет → «verifier over-rejects» по-прежнему не подкреплён из repo; `no` в новом коде всё ещё включает unparsed. См. N3 |
+| M6 | **частично ⚠️** | prompt-broken строка заведена (md:27, family 37, json:237-249; ALL 1236+2698+2606+420+916=**7876** ✓); «0.11» убран из RS:52/report:36/SPRINT:40 ✓ | но **cost_accounting.md:53 всё ещё печатает «~0.11 s/page»** (литерал в cost_accounting.py:222 не убран), а md:3 «not summed», md:42 «excluded from this ledger» и json:248 «not summed into the canonical ledger» противоречат включению в ALL; см. N2 |
+| m1 | **частично ⚠️** | RS:51/report:32/SPRINT — «six methods» ✓; hub/README исправлен ✓ | **s5_cases.md:3 всё ещё «all five S4 methods»** в самом committed-артефакте (json:7-14 перечисляет 6) → N6 |
+| m2 | **закрыт ✅** | паттерны `entirely/does not improve/still owed/remains owed` (py:62-65); scope «12 cells» (:208); judge-claim сверяется state+report+cost (:312); lint по 5 докам (:440); гейт зелёный, 29/29, non-PASS 0, derived_issues [] ✓ | structural gap — свежесть state_anomaly/routing_coverage гейтом не проверяется (N10) |
+| m3 | **частично ⚠️** | RS:74 переписано («canonical battery also ran on the hub config») ✓ | report:57(c) «vLLM re-run … optional» и RS:78 «Decisions awaited: hub access» — живы → N8 |
+| m4 | **частично ⚠️** | RS:53/78 — «manifest ready / sending is Farit's call» ✓ | RS:5 шапка всё ещё «S8 pending» → N8 |
+| m5 | **закрыт ✅** | RS:50/report:25: точные границы 35.7–88.6 / 64.3–90.7 / 37.3–65.7 / 17.2–31.3 / 7.5–23.9 — воспроизводимы из батареи ✓ | нет |
+| m6 | **открыт** (не заявлен) | report:41 «evidence axes are ≤28%» без scope; M1 ocr span 30.6, M3 ocr 31.3 | backlog или «on native» в текст |
+| m7 | **открыт** (не заявлен) | RS:22 «68 regression tests pass»; farit/tests +11 `def test_` (запуском не проверено — не верифицировано критиком) | переписать «68 inherited + N ours» |
+| m8 | **закрыт ✅** | cost json:252 `s4_run_wall_clock_note` SUPERSEDED ✓ | нет |
+| m9 | **закрыт ✅** | s5_cases.json:355/368 `model: "rules-none"` ✓ | нет |
+| m10 | **закрыт ✅** | report:36 «on the Mac» ✓ | та же описка осталась в cost md:52 («~4.5 h on the M2») → N9 |
+| m11 | **закрыт ✅** | report:3 — цепочка из трёх critic-файлов + «gate is the verifier» ✓ | нет |
+| m12 | **закрыт ✅** | RS:51/report:31 — «no *additional* gold defect… cases 9/18 remain gold.ambiguous» ✓ | нет |
+| m13 | **закрыт ✅** | RS:50/report:25 «halves the prompt **vs M2**» ✓ | нет |
+
+**Итог по round 1: 13 закрыто, 6 частично (M1, M5, M6, m1, m3, m4), 2 не заявлены и открыты (m6, m7). Из блокирующих (critical/major): C1, C2, M3, M4 и M2 закрыты полностью; M1, M5, M6 — частично.**
+
+### НОВЫЕ находки (внесены правками round 2 или обнаружены при перепроверке)
+
+**N1 (major) — RS:50: «M6 … is best among LLM methods on the `cross_page`/`derived` slices» — ложно для `derived`.**
+Батарея (md:60-71): derived native M2 **10.2%** > M6 6.1%; derived ocr M5 **12.2%** > M6 6.1%. «Best» верно только для cross_page (M6 30.0/20.0 — лучшие среди LLM). Report:25 эту клаузу не содержит — т.е. RS (главный артефакт Argon-разбора) и report разошлись, и именно RS содержит overclaim. Это точный рецидив паттерна N10 прошлой недели ( headline-число против собственного артефакта). Fix: «best among LLM methods on `cross_page`; second-tier on `derived`».
+
+**N2 (major) — cost-доки противоречат собственной новой строке и друг другу.**
+`cost_accounting.md:3` («prompt-broken … **not summed**») и `:42` («**excluded** from this ledger») и `cost json:248` («not summed into the canonical ledger») — при том что строка 27 в таблице, 37 в family totals и 916 **входит в ALL 7876** (строка 38). Одновременно `SPRINT:40` объявляет speed-числа **снятыми** («no committed artifact pins…»), а committed `cost_accounting.md:53` (прям в PACKAGE-списке для профa) по-прежнему печатает «1349 pages/layer at **~0.11 s/page**»; литерал не удалён и из генератора (`cost_accounting.py:222`). Проф, открывший cost-артефакт, получает три взаимоисключающих описания одного и того же учётного решения + отозванное число в authoritative doc. Fix: одна строка в md/json-прозе («added as a separate estimated family; excluded from canonical totals — ALL includes it as a separate line»), удалить литерал 0.11 из генератора.
+
+**N3 (minor) — M5-фикс живёт в коде, но не в committed-артефакте.**
+`run_battery.py:280-285` суммирует счётчики; `methods.py:897` — отдельный `unparsed`; но `s4_battery_goldv13.json:1755-1756/1783-1784` всё ещё `yes 5/no 2`, `4/3`, без `unparsed`. Любая проверка «over-rejects» из репо по-прежнему упирается в «no=2 при 60 флипах». Плюс в новом коде `no` по-прежнему включает unparsed (:898) — различимы только rationale-строками. Fix: перегенерировать battery info через cache-replay (или аннотировать поле «per-doc snapshot, pre-fix»), затем пересчитать No vs Unparsed разложение и решить, снимается ли скоуп с «over-rejects».
+
+**N4 (minor) — «routing keeps the gold page in 90–94%» без атрибуции слоёв.**
+Артефакт: native 129/134 (96%) any и 124/134 (93%) all; ocr 126/134 (94%) / 121/134 (90%). Цитаты RS:50, report:25, SPRINT:41, TASK-021 README:18 дают только ocr-диапазон как общий; README вообще берёт 126/134 без слова «ocr». Направление — консервативное (native лучше, т.е. вывод «не mis-route» только крепнет), но число в доках не полное. Fix: «90–96% (any-gold-page), by layer 96/94 native, 94/90 ocr» или ссылка на md с обоими слоями.
+
+**N5 (minor) — BOARD: дыры и самопротиворечия строк.**
+Строки **TASK-020 нет** (канон-реран = flagship недели оформлен только логом), при этом TASK-021 заведена; TASK-018 в одном ячейке: «таксономия канон: entity **0**» и ниже «entity-кейс (sds_16 … 'Sand') подтверждён end-to-end» без пометки «локальный прогон»; TASK-015 — заголовок «(5 методов…)» и «хаб-версия — опционально позже». Fix: строка TASK-020 (done, постфактум-спек=лог), аннотации в 018/015.
+
+**N6 (minor) — `s5_cases.md:3` остаётся «all five S4 methods» внутри committed-артефакта**, который проф откроет по PACKAGE-манифесту, в то время как `s5_cases.json:7-14` перечисляет шесть. Это единственное место в results/, где заголовок артефакта противоречит его же конфигу. Fix: regenerate из s5_cases.py (строка заголовка — в коде).
+
+**N7 (minor) — «their small joint change sits on the derivation/support axes» (RS:50/report:25) пуста/вводит для M6.**
+M6 cumulative-conjunction плоская после bbox (17.9→17.9→17.9, md:53-54): у M6 нет поздних потерь вообще; его дефициты — state/value/page. Фраза корректна как про M3/M5 и как про M1-потерю на derivation, но «second passes / routings … sit on derivation/support» приписывает M6 несуществующий паттерн. Fix: сузить до M3/M5.
+
+**N8 (minor) — остатки m3/m4:** report:57(c) всё ещё просит «GPU-hub access for a vLLM re-run — optional»; RS:78 в списке «Decisions awaited» держит «hub access»; RS:5 шапка «S8 pending» против RS:53 «manifest ready». Всё уже решено/исполнено — три строки, чистая гигиена.
+
+**N9 (minor) — мелкие хвосты committed-доков:** cost md:52 «~4.5 h **on the M2**» (та же описка, что исправлена в report — «on the Mac»); smoke-строки cost json:222/235 несут stale note «full Qwen3.5-2B judge run **not performed**», противоречащую hub-judge-строкам того же файла и RS:74; PACKAGE «Raw results» не перечисляет `m6_routing_coverage.{json,md}`; PACKAGE:31 описывает state_anomaly как «second-pass methods», хотя там теперь M6 (routing-метод).
+
+**N10 (minor) — гейт всё ещё не покрывает класс ошибок, который породил N2/N3/N6:** freshness проверяет только s5-n_calls (state_anomaly/m6_routing_coverage — нет); prose-vs-table противоречия (md:3/42) линтом не видны; «≤28%», диапазоны осей, «over-rejects» вне ledger. Предложение: чек «каждый метод батареи ∈ methods state_anomaly.json» + запрет литеральных чисел в генерируемых строках (0.11-паттерн).
+
+**N11 (minor) — таблица «Ответ K3» сама рассинхронизирована с репо в обе стороны** (а это часть pre-send-доказательной базы): строка M5 — «backlog: починить агрегацию yes/no», а код уже исправлен (run_battery.py:280-285, methods.py:883-901); строка M6 — «backlog: строка prompt-broken ≈916», а строка уже в ledger (md:27/37, ALL 7876) — при этом именно невыполненная половина («снять excluded-формулировку») и есть N2; строка m6 — «fixed, из отчёта убрано», а report:41 по-прежнему содержит «evidence axes are ≤28%» (проверено в текущей редакции файла); строка m9 — «backlog», а `rules-none` уже стоит (s5_cases.json:355/368); backlog-пометка «judge-RS-число в claim» — уже сделано (claims_audit.py:312, state в PASS); для m7 строки нет вовсе, хотя «79 тестов» в разделе «закрыто K3» — прямое подтверждение, что RS:22 «68 regression tests» stale. Fix: одна перечистка таблицы статусов перед отправкой; иначе Farit вычитывает §4 по карте, которая не соответствует ни репо, ни этому ревью.
+
+### Не верифицировано критиком (round 2)
+
+- Routing coverage 96/93/94/90% — пересчёт из corpus+`_SECTION_CUES` невозможен без raw corpus (gitignored); проверена только внутренняя арифметика (miss-таблицы ↔ счётчики) ✓.
+- Hub-HEAD `79e9c23` и окружение TASK-021 — existence проверено, подлинность/identical-config — нет.
+- Запуски тестов, «gate green» (29/29) — taken from regenerated `claims_audit.{json,md}`; сам запуск скрипта критик не выполнял (json↔md между собой согласованы ✓).
+- M5 «over-rejects» разложение No vs Unparsed — артефакта нет (N3).
+
+### Что выдержало round 2
+
+1. **C1-патч образцовый**: числа RS теперь дословно равны committed json (87/86/17 пересчитаны из value-блоков), а гейт-claims берут ожидание из артефакта, не литералом — этот класс расхождения больше не может протечь незамеченным.
+2. **M6-валидация закрыта по существу**: routing-coverage артефакт внутренне непротиворечив и показывает 93–96% покрытия на native — т.е. гипотеза «карта срезала доказательства» измерена и не подтверждается, «section restriction» как объяснение стало корректным; flips 74 (50+74=124, 46+28=74 ✓) стыкуются с батареей (42.1%×140=59).
+3. **Стоимость пересчитана верно**: ALL 7876 = 1236+2698+2606+420+916 ✓, 386 cached/850 fresh ✓, S4-1236 ✓ — арифметика новая строка не сломала.
+
+### Вердикт (round 2)
+
+Отправлять **сразу после двух хирургических правок** — N1 (снять/переписать «best on derived» в RS:50) и N2 (согласовать прозу cost-доков с добавленной оценочной строкой и удалить литерал «~0.11 s/page» из `cost_accounting.py:222`/md:53): оба — committed self-/cross-contradictions в артефактах, которые проф откроет первыми (cost_accounting.md в PACKAGE, RS в Argon-пакете), и именно те классы, из-за которых прошлые отправки блокировались. Всё остальное (N3–N11, включая частичные закрытия M5/M6/m1/m3/m4 и незакрытые m6/m7) — minors, совместимые с отправкой при явном disposition в ответе K3 (по правилу pre-send gate), но N3 (перегенерить battery info) стоит сделать до Argon, т.к. этот же артефакт будет перечитывать внешний критик. Критических round 2 не нашёл: C1/C2 закрыты качественно, новых блокеров правки не внесли.
+
+---
+
+## Round-2 outcome (K3, 2026-10-26)
+
+Fixed after the re-review:
+- **N1** — RS clause corrected: M6 is best among LLM methods on `cross_page` only (30.0% native); on `derived` it is *below* M2/M5 (6.1% vs 10.2/12.2%).
+- **N2** — `cost_accounting` prose made consistent (prompt-broken row is a separate *estimate*, not "excluded"); the literal "~0.11 s/page" removed from the generator and the docs (page timing not retained in the committed artifact).
+- **m1** — `s5_cases.py` "all five" → "all six" and artifact regenerated.
+- **m6** — report "evidence axes ≤28%" → "span 17–31%, bbox 8–24%".
+- **m3/m4 remnants** — report decision (c) no longer "optional re-run"; RS header/§6 no longer say "hub access awaited"/"S8 pending".
+
+Explicitly dispositioned (not fixed, no hub access):
+- **M5 partial** — aggregation fixed in `run_battery.py`; the **committed** battery artifact's `info.yes/no` remains a per-document snapshot (regenerating it needs a hub re-run). Annotated in `cost_accounting.md`.
+- Remaining minors are noted in SPRINT backlog.
+
+Gate: `claims_audit` 29/29 PASS, split ok, derived fresh.

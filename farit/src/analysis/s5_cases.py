@@ -22,7 +22,7 @@ CLI (from the repository root)::
 Unit and rule
 -------------
 A case is a ``(document, field)`` pair, not a layer or a method: the two text
-layers and all five methods are analysed *inside* one case, so 24 pairs stay 24
+layers and all six methods are analysed *inside* one case, so 24 pairs stay 24
 cases. Hard pool = pairs in the slices ``derived``/``cross_page``/
 ``multi_evidence`` (primary-slice priority derived > cross_page > multi_evidence
 > single_evidence) where at least one method fails the 7-axis joint on at least
@@ -746,7 +746,7 @@ def render_markdown(result: dict, smoke: bool) -> str:
     lines.append("# S5 — real extraction cases and the error taxonomy" + (" (smoke)" if smoke else ""))
     lines.append("")
     lines.append(
-        "Case = `(document, field)` (both text layers and all five S4 methods live inside one "
+        "Case = `(document, field)` (both text layers and all six S4 methods live inside one "
         "case). Gold v1.3, dev split. Scored with `sdsbench.evaluator` (7 axes + joint). "
         "S4 predictions are a frozen input."
     )

@@ -22,8 +22,11 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import math
 import sys
 import time
+import urllib.error
+import urllib.request
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -301,6 +304,70 @@ def score_page_by_mode(model, tokenizer, prompt: str, score_mode: str) -> float:
 
 
 # ---------------------------------------------------------------------------
+# vLLM / OpenAI-compatible scoring (GPU hub)
+# ---------------------------------------------------------------------------
+
+_YES_VARIANTS = ["Yes", " Yes", "yes", " yes", "Y", " Y"]
+_NO_VARIANTS = ["No", " No", "no", " no", "N", " N"]
+
+
+def score_page_openai(
+    base_url: str,
+    model: str,
+    prompt: str,
+    score_mode: str = "v2",
+    api_key: str = "sk-noauth",
+    top_logprobs: int = 20,
+) -> float:
+    """P(Yes)/(P(Yes)+P(No)) via the first-token logprobs of a vLLM server.
+
+    Like v2, the chat template runs in non-thinking mode (``enable_thinking=False``)
+    so the first generated token is the answer, not a thinking token (TASK-010).
+    The Yes/No ratio is invariant to the softmax normaliser, so the top-k logprobs
+    suffice as long as both tokens appear; a missing side is treated as -inf.
+    """
+    messages = [{"role": "user", "content": prompt}]
+    body: dict = {
+        "model": model,
+        "messages": messages,
+        "max_tokens": 1,
+        "temperature": 0,
+        "logprobs": True,
+        "top_logprobs": top_logprobs,
+    }
+    if score_mode == "v2":
+        body["chat_template_kwargs"] = {"enable_thinking": False}
+    request = urllib.request.Request(
+        f"{base_url.rstrip('/')}/v1/chat/completions",
+        data=json.dumps(body).encode("utf-8"),
+        headers={"Content-Type": "application/json", "Authorization": f"Bearer {api_key}"},
+        method="POST",
+    )
+    with urllib.request.urlopen(request, timeout=900.0) as response:
+        payload = json.loads(response.read().decode("utf-8"))
+
+    choice = (payload.get("choices") or [{}])[0]
+    content = ((choice.get("logprobs") or {}).get("content")) or []
+    token_lp: dict[str, float] = {}
+    if content:
+        for item in content[0].get("top_logprobs") or []:
+            token_lp[item.get("token", "")] = float(item.get("logprob", -1e9))
+
+    def best(variants: list[str]) -> float:
+        vals = [token_lp[t] for t in variants if t in token_lp]
+        return max(vals) if vals else -1e9
+
+    yes_lp = best(_YES_VARIANTS)
+    no_lp = best(_NO_VARIANTS)
+    if yes_lp <= -1e8 and no_lp <= -1e8:
+        return 0.5
+    yes_p = math.exp(yes_lp) if yes_lp > -1e8 else 0.0
+    no_p = math.exp(no_lp) if no_lp > -1e8 else 0.0
+    denom = yes_p + no_p
+    return yes_p / denom if denom > 0 else 0.5
+
+
+# ---------------------------------------------------------------------------
 # Main pipeline
 # ---------------------------------------------------------------------------
 
@@ -311,6 +378,8 @@ def run_layer(
     limit_docs: int | None,
     cache_path: Path,
     score_mode: str = "v1",
+    backend: str = "mlx",
+    base_url: str | None = None,
 ) -> dict:
     pages = load_pages(units_path)
     pages = [p for p in pages if p["split"] == "dev"]
@@ -362,10 +431,16 @@ def run_layer(
     cache_hits = 0
     cache_misses = 0
 
-    # Load model
-    print(f"Loading model {model_name} ...")
-    model, tokenizer = load_mlx_model(model_name)
-    print("Model loaded.")
+    # Load model (local mlx) or point at the hub server (openai)
+    if backend == "openai":
+        if not base_url:
+            raise SystemExit("--backend openai requires --base-url")
+        print(f"Using vLLM server {base_url} model {model_name} (score_mode={score_mode})")
+        model = tokenizer = None
+    else:
+        print(f"Loading model {model_name} ...")
+        model, tokenizer = load_mlx_model(model_name)
+        print("Model loaded.")
 
     per_instance = []
     total_inference_time = 0.0
@@ -397,7 +472,10 @@ def run_layer(
                     cache_hits += 1
                 else:
                     t0 = time.perf_counter()
-                    score = score_page_by_mode(model, tokenizer, prompt, score_mode)
+                    if backend == "openai":
+                        score = score_page_openai(base_url, model_name, prompt, score_mode)
+                    else:
+                        score = score_page_by_mode(model, tokenizer, prompt, score_mode)
                     t1 = time.perf_counter()
                     total_inference_time += (t1 - t0)
                     n_inference_calls += 1
@@ -659,6 +737,14 @@ def parse_args() -> argparse.Namespace:
             "cache file reranker_{model_tag}__v2.jsonl."
         ),
     )
+    parser.add_argument(
+        "--backend",
+        choices=["mlx", "openai"],
+        default="mlx",
+        help="mlx (local Apple Silicon) or openai (vLLM hub /v1/chat/completions).",
+    )
+    parser.add_argument("--base-url", default=None, help="base URL for --backend openai")
+    parser.add_argument("--api-key", default="sk-noauth", help="API key for --backend openai")
     return parser.parse_args()
 
 
@@ -705,6 +791,8 @@ def main() -> int:
             limit_docs=args.limit_docs,
             cache_path=cache_path,
             score_mode=args.score_mode,
+            backend=args.backend,
+            base_url=args.base_url,
         )
         results[layer_name] = layer_result
         print(f"Cache hits: {layer_result['cache_hits']}, misses: {layer_result['cache_misses']}")
@@ -714,6 +802,8 @@ def main() -> int:
     output = {
         "configuration": {
             "model": args.model,
+            "backend": args.backend,
+            "base_url": args.base_url,
             "layer": args.layer,
             "limit_docs": args.limit_docs,
             "score_mode": args.score_mode,

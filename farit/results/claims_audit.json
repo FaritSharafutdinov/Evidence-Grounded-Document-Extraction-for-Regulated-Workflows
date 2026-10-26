@@ -1,0 +1,405 @@
+{
+  "claims": [
+    {
+      "id": "S4.M1.native",
+      "docs": {
+        "state": "all-fields one-pass[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "all-fields one-pass[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 15.714285714285714,
+      "expect_str": "15.7",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "15.7",
+        "report": "15.7"
+      }
+    },
+    {
+      "id": "S4.M1.ocr",
+      "docs": {
+        "state": "all-fields one-pass[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "all-fields one-pass[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 8.571428571428571,
+      "expect_str": "8.6",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "8.6",
+        "report": "8.6"
+      }
+    },
+    {
+      "id": "S4.M2.native",
+      "docs": {
+        "state": "individual-field[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "individual-field[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 19.28571428571429,
+      "expect_str": "19.3",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "19.3",
+        "report": "19.3"
+      }
+    },
+    {
+      "id": "S4.M2.ocr",
+      "docs": {
+        "state": "individual-field[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "individual-field[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 11.428571428571429,
+      "expect_str": "11.4",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "11.4",
+        "report": "11.4"
+      }
+    },
+    {
+      "id": "S4.M3.native",
+      "docs": {
+        "state": "contextual citation verification[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "contextual citation verification[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 15.714285714285714,
+      "expect_str": "15.7",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "15.7",
+        "report": "15.7"
+      }
+    },
+    {
+      "id": "S4.M3.ocr",
+      "docs": {
+        "state": "contextual citation verification[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "contextual citation verification[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 7.857142857142857,
+      "expect_str": "7.9",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "7.9",
+        "report": "7.9"
+      }
+    },
+    {
+      "id": "S4.M4.native",
+      "docs": {
+        "state": "rules-v4[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "rules-v4[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 55.00000000000001,
+      "expect_str": "55.0",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "55.0",
+        "report": "55.0"
+      }
+    },
+    {
+      "id": "S4.M4.ocr",
+      "docs": {
+        "state": "rules-v4[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "rules-v4[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 30.714285714285715,
+      "expect_str": "30.7",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "30.7",
+        "report": "30.7"
+      }
+    },
+    {
+      "id": "S4.M5.native",
+      "docs": {
+        "state": "basic LLM verifier[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "basic LLM verifier[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 16.428571428571427,
+      "expect_str": "16.4",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "16.4",
+        "report": "16.4"
+      }
+    },
+    {
+      "id": "S4.M5.ocr",
+      "docs": {
+        "state": "basic LLM verifier[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%",
+        "report": "basic LLM verifier[^\\n|]*\\|[^\\n|]*\\|\\s*\\**\\s*([\\d.]+)%"
+      },
+      "expect": 9.285714285714286,
+      "expect_str": "9.3",
+      "unit": "%",
+      "source": "s4_battery_goldv13.json",
+      "scope": "dev, n=140, gold v1.3",
+      "falsifier": "rerun evaluate_battery.py changes the joint rate",
+      "status": "PASS",
+      "found": {
+        "state": "9.3",
+        "report": "9.3"
+      }
+    },
+    {
+      "id": "S5.evidence",
+      "docs": {
+        "state": "evidence (\\d+)",
+        "report": "evidence \\*\\*(\\d+)\\*\\*"
+      },
+      "expect": 12,
+      "expect_str": "12",
+      "unit": "n",
+      "source": "s5_cases.json",
+      "scope": "24 cases (18 hard + 6 control), gold v1.3",
+      "falsifier": "resampling or reclassification changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "12",
+        "report": "12"
+      }
+    },
+    {
+      "id": "S5.reasoning",
+      "docs": {
+        "state": "reasoning (\\d+)",
+        "report": "reasoning(?:/derived)? \\*\\*(\\d+)\\*\\*"
+      },
+      "expect": 9,
+      "expect_str": "9",
+      "unit": "n",
+      "source": "s5_cases.json",
+      "scope": "24 cases (18 hard + 6 control), gold v1.3",
+      "falsifier": "resampling or reclassification changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "9",
+        "report": "9"
+      }
+    },
+    {
+      "id": "S5.values",
+      "docs": {
+        "state": "values (\\d+)",
+        "report": "wrong value \\*\\*(\\d+)\\*\\*"
+      },
+      "expect": 2,
+      "expect_str": "2",
+      "unit": "n",
+      "source": "s5_cases.json",
+      "scope": "24 cases (18 hard + 6 control), gold v1.3",
+      "falsifier": "resampling or reclassification changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "2",
+        "report": "2"
+      }
+    },
+    {
+      "id": "S5.entity attribution",
+      "docs": {
+        "state": "entity attribution (\\d+)",
+        "report": "entity attribution \\*\\*(\\d+)\\*\\*"
+      },
+      "expect": 1,
+      "expect_str": "1",
+      "unit": "n",
+      "source": "s5_cases.json",
+      "scope": "24 cases (18 hard + 6 control), gold v1.3",
+      "falsifier": "resampling or reclassification changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "1",
+        "report": "1"
+      }
+    },
+    {
+      "id": "S5.unresolved",
+      "docs": {
+        "state": "(\\d+) of 24 cases",
+        "report": "(\\d+) of 24 cases"
+      },
+      "expect": 12,
+      "expect_str": "12",
+      "unit": "n",
+      "source": "s5_cases.json",
+      "scope": "solved_by requires joint on both layers",
+      "falsifier": "a simple method passing on both layers changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "12",
+        "report": "12"
+      }
+    },
+    {
+      "id": "cost.s4_calls",
+      "docs": {
+        "state": "(\\d+)\\s*calls",
+        "report": "(\\d+) model calls"
+      },
+      "expect": 688,
+      "expect_str": "688",
+      "unit": "n",
+      "source": "cost_accounting.json",
+      "scope": "S4 battery, 10 cells",
+      "falsifier": "a rerun with a different method set changes the call count",
+      "status": "PASS",
+      "found": {
+        "state": "688",
+        "report": "688"
+      }
+    },
+    {
+      "id": "corpus.field_instances",
+      "docs": {
+        "state": "(\\d+) field instances"
+      },
+      "expect": 203,
+      "expect_str": "203",
+      "unit": "n",
+      "source": "corpus_stats.json",
+      "scope": "all 29 documents",
+      "falsifier": "a corpus rebuild changes the instance count",
+      "status": "PASS",
+      "found": {
+        "state": "203"
+      }
+    },
+    {
+      "id": "corpus.fragments",
+      "docs": {
+        "state": "(\\d+) gold fragments"
+      },
+      "expect": 274,
+      "expect_str": "274",
+      "unit": "n",
+      "source": "corpus_stats.json",
+      "scope": "all 29 documents (evidence + premise)",
+      "falsifier": "a gold edit changes the fragment count",
+      "status": "MISMATCH",
+      "found": {
+        "state": "278"
+      }
+    },
+    {
+      "id": "corpus.ontology",
+      "docs": {
+        "state": "(\\d+) ONTOLOGY"
+      },
+      "expect": 51,
+      "expect_str": "51",
+      "unit": "n",
+      "source": "corpus_stats.json",
+      "scope": "all 29 documents, derived fields",
+      "falsifier": "a gold edit changes the derivation mix",
+      "status": "PASS",
+      "found": {
+        "state": "51"
+      }
+    },
+    {
+      "id": "corpus.composition_implied",
+      "docs": {
+        "state": "(\\d+) COMPOSITION_IMPLIED"
+      },
+      "expect": 4,
+      "expect_str": "4",
+      "unit": "n",
+      "source": "corpus_stats.json",
+      "scope": "all 29 documents, derived fields",
+      "falsifier": "a gold edit changes the derivation mix",
+      "status": "PASS",
+      "found": {
+        "state": "4"
+      }
+    },
+    {
+      "id": "corpus.dev_instances",
+      "docs": {
+        "report": "n=(\\d+) instances"
+      },
+      "expect": 140,
+      "expect_str": "140",
+      "unit": "n",
+      "source": "gold_evidence.jsonl",
+      "scope": "dev, non-ingredient (evaluator n)",
+      "falsifier": "a gold edit changes the instance count",
+      "status": "PASS",
+      "found": {
+        "report": "140"
+      }
+    },
+    {
+      "id": "corpus.dev_included",
+      "docs": {
+        "state": "(\\d+) evidence-bearing dev instances"
+      },
+      "expect": 134,
+      "expect_str": "134",
+      "unit": "n",
+      "source": "gold_evidence.jsonl (judge inclusion rule)",
+      "scope": "dev, non-ingredient, evidence_set present, state != NOT_STATED",
+      "falsifier": "a gold or inclusion-rule edit changes the count",
+      "status": "PASS",
+      "found": {
+        "state": "134"
+      }
+    }
+  ],
+  "overclaim": {
+    "RESEARCH-STATE": [
+      "4. **M2 fork is now answered by the data**: simple baselines do **not** solve the problem — 12/24 S5 cases survive all simple methods. Candidate contribution: premise-aware, layout-robust grounding + calibrated abstention."
+    ],
+    "report-2026-10-23": [
+      "- **Scoring issue fixed and rankings recomputed.** The low/zero judge scores were an arithmetic artifact: float16 device softmax flushed anything below ~6e-8 to exactly 0. The model itself is honest (27/27 greedy agreement on zero pages), and recomputing the same logits in fp32 confirms confident \"No\". Rankings and previously reported numbers are unaffected. Scoring v2 = non-thinking mode + fp32 host softmax + cache isolation (`TASK-012`, `DEC-004`).",
+      "3. No full Qwen3.5-2B *judge* run was made (the extraction battery replaced it); the sds_24 bbox float-noise on regeneration persists (metrics unaffected)."
+    ]
+  },
+  "split": {
+    "forbidden_hits": [
+      "reserved for final audit only"
+    ],
+    "required_present": [],
+    "ok": false
+  },
+  "n_non_pass": 1
+}

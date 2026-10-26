@@ -206,10 +206,19 @@ class OpenAiBackend:
 
     name = "openai"
 
-    def __init__(self, model: str, base_url: str, api_key: str = "sk-noauth") -> None:
+    def __init__(
+        self,
+        model: str,
+        base_url: str,
+        api_key: str = "sk-noauth",
+        non_thinking: bool = True,
+        seed: int = 0,
+    ) -> None:
         self.model = model
         self.base_url = base_url.rstrip("/")
         self.api_key = api_key
+        self.non_thinking = non_thinking
+        self.seed = seed
 
     def _post(self, body: dict, timeout: float = 900.0) -> dict:
         request = urllib.request.Request(
@@ -235,7 +244,14 @@ class OpenAiBackend:
             "messages": messages,
             "max_tokens": max_tokens,
             "temperature": 0,
+            "seed": self.seed,
         }
+        if self.non_thinking:
+            # vLLM forwards ``chat_template_kwargs`` to the HF chat template; this
+            # closes Qwen3.5's thinking channel, matching the MLX path (DEC-004).
+            # Without it the first generated token is a thinking token and any
+            # score read off it is noise (TASK-010 blocker).
+            body["chat_template_kwargs"] = {"enable_thinking": False}
         if json_schema is not None:
             body["response_format"] = {
                 "type": "json_schema",
@@ -245,10 +261,16 @@ class OpenAiBackend:
         try:
             payload = self._post(body)
         except urllib.error.HTTPError as error:
-            if json_schema is None or error.code not in (400, 404, 422):
+            if error.code not in (400, 404, 422):
                 raise
-            body.pop("response_format", None)
-            payload = self._post(body)
+            # Some servers reject response_format and/or chat_template_kwargs;
+            # retry without the optional fields before giving up.
+            if "response_format" in body or "chat_template_kwargs" in body:
+                body.pop("response_format", None)
+                body.pop("chat_template_kwargs", None)
+                payload = self._post(body)
+            else:
+                raise
         latency = time.perf_counter() - started
         choice = (payload.get("choices") or [{}])[0]
         text = (choice.get("message") or {}).get("content") or ""

@@ -2,9 +2,10 @@
 description: Autonomous driver for the GPU-hub (IDH) heavy run — runs the pipeline, self-heals failures, collects artifacts. Full shell access; writes only inside farit/.
 mode: primary
 model: alibaba-cloud/deepseek-v4.1-flash
-permission:
-  edit: allow
-  shell: allow
+permissions:
+  - action: "*"
+    resource: "*"
+    effect: allow
 ---
 
 Ты — **hub-runner**: автономный исполнитель тяжёлого GPU-прогона этого

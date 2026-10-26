@@ -26,18 +26,23 @@ PROMPT_FILE="$REPO_DIR/farit/hub/HUB_RUNNER_PROMPT.md"
 log() { printf '\n\033[1;34m[agent]\033[0m %s\n' "$*" >&2; }
 die() { printf '\n\033[1;31m[agent:error]\033[0m %s\n' "$*" >&2; exit 1; }
 
-# --- 1. OpenCode CLI ---------------------------------------------------------
-if ! command -v opencode >/dev/null 2>&1; then
-  log "installing OpenCode CLI"
-  if command -v npm >/dev/null 2>&1; then
-    npm install -g opencode-ai || die "npm install failed"
-  else
-    curl -fsSL https://opencode.ai/install | bash || die "opencode install failed"
-  fi
-  export PATH="$HOME/.local/bin:$HOME/.opencode/bin:$PATH"
+# --- 1. OpenCode CLI (V2 required) ------------------------------------------
+export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+need_install=1
+if command -v opencode >/dev/null 2>&1; then
+  major="$(opencode --version 2>/dev/null | sed -n 's/.*v\{0,1\}\([0-9]\+\)\..*/\1/p' | head -1)"
+  if [ -n "$major" ] && [ "$major" -ge 2 ] 2>/dev/null; then need_install=0; fi
+fi
+if [ "$need_install" = 1 ]; then
+  log "installing/upgrading OpenCode CLI to V2 (hub had a V1 build)"
+  command -v npm >/dev/null 2>&1 && npm install -g opencode-ai@latest || true
+  # user-local installer, no sudo; newest release wins
+  curl -fsSL https://opencode.ai/install | bash || die "opencode install failed"
+  export PATH="$HOME/.opencode/bin:$HOME/.local/bin:$PATH"
+  hash -r 2>/dev/null || true
 fi
 command -v opencode >/dev/null 2>&1 || die "opencode still not on PATH"
-log "opencode: $(opencode --version 2>&1 | head -1)"
+log "opencode: $(opencode --version 2>&1 | head -1)  [$(command -v opencode)]"
 
 # --- 2. Provider config (keys live here; do not commit) ----------------------
 mkdir -p "$CONF_DIR/agents"

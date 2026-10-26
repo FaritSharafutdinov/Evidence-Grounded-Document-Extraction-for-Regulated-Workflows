@@ -190,11 +190,12 @@ def score_inherited(path: Path, gold_all: list, gold_by_key: dict) -> dict | Non
     if not path.exists():
         return None
     metrics = score_prediction_set(path, gold_all, gold_by_key)
-    metrics["gold"] = "old gold (frozen artifact, shown for orientation; not re-scored against v1.3)"
+    metrics["gold"] = "gold v1.3 (dev); frozen predictions re-scored against the current gold"
     metrics["note"] = (
-        "Qwen2.5-7B native rows, inherited. It was produced on an earlier gold; the "
-        "numbers below score the frozen predictions against the current gold v1.3 and "
-        "are shown only as a historical reference, never combined with the battery."
+        "Qwen2.5-7B native rows, inherited. The predictions were produced on an earlier "
+        "gold (v1.0; its own report quotes 6.4% joint there); the numbers below re-score "
+        "those frozen predictions against the current gold v1.3 and are shown only as a "
+        "historical reference, never combined with the battery."
     )
     return metrics
 
@@ -313,10 +314,12 @@ def render_markdown(result: dict, smoke: bool) -> str:
 
     inherited = result.get("inherited")
     if inherited:
-        lines.append("## Inherited (old gold)")
+        lines.append("## Inherited (re-scored on gold v1.3)")
         lines.append("")
-        lines.append("Frozen Qwen2.5-7B native-rows artifact. Not re-scored on v1.3; shown only "
-                     "as a historical reference and never mixed with the battery table.")
+        lines.append("Frozen Qwen2.5-7B native-rows artifact, produced on gold v1.0 (its own "
+                     "report quotes 6.4% joint there). The numbers below re-score those frozen "
+                     "predictions against the current gold v1.3; shown only as a historical "
+                     "reference and never mixed with the battery table.")
         lines.append("")
         lines.append("| System | n inst | 7-axis joint | joint (evidence-bearing) |")
         lines.append("| --- | ---: | ---: | ---: |")

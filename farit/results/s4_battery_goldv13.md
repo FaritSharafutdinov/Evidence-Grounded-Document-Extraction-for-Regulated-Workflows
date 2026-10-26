@@ -92,9 +92,9 @@ Five simple extraction methods on one model, scored against gold v1.3 (dev split
 | M5 | native | 63 | 55 | 66.7% | 49.1% | 42.9% |
 | M5 | ocr | 63 | 60 | 46.0% | 8.3% | 7.9% |
 
-## Inherited (old gold)
+## Inherited (re-scored on gold v1.3)
 
-Frozen Qwen2.5-7B native-rows artifact. Not re-scored on v1.3; shown only as a historical reference and never mixed with the battery table.
+Frozen Qwen2.5-7B native-rows artifact, produced on gold v1.0 (its own report quotes 6.4% joint there). The numbers below re-score those frozen predictions against the current gold v1.3; shown only as a historical reference and never mixed with the battery table.
 
 | System | n inst | 7-axis joint | joint (evidence-bearing) |
 | --- | ---: | ---: | ---: |

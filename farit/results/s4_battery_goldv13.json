@@ -1659,8 +1659,8 @@
           "joint_all": 0.041666666666666664
         }
       },
-      "gold": "old gold (frozen artifact, shown for orientation; not re-scored against v1.3)",
-      "note": "Qwen2.5-7B native rows, inherited. It was produced on an earlier gold; the numbers below score the frozen predictions against the current gold v1.3 and are shown only as a historical reference, never combined with the battery."
+      "gold": "gold v1.3 (dev); frozen predictions re-scored against the current gold",
+      "note": "Qwen2.5-7B native rows, inherited. The predictions were produced on an earlier gold (v1.0; its own report quotes 6.4% joint there); the numbers below re-score those frozen predictions against the current gold v1.3 and are shown only as a historical reference, never combined with the battery."
     }
   },
   "errors": {}

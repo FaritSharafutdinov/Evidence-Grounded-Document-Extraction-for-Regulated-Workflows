@@ -47,6 +47,8 @@ PORT="${PORT:-8000}"
 BASE_URL="${BASE_URL:-}"                  # set -> do NOT launch vLLM, use this
 JOB="${JOB:-smoke}"                       # smoke | battery | judge | all
 LAYER="${LAYER:-both}"                    # native | ocr | both
+ALL_METHODS="M1,M2,M3,M4,M5,M6"
+METHODS="${METHODS:-$ALL_METHODS}"        # subset to (re)run, e.g. METHODS=M6
 PYTHON="${PYTHON:-python3}"
 VENV="${VENV:-$WORKDIR/venv}"
 LAUNCH_VLLM="${LAUNCH_VLLM:-auto}"        # auto | always | never
@@ -168,11 +170,11 @@ fi
 # ----------------------------------------------------------------------------
 # 5. Smoke test — fail fast before the full run
 # ----------------------------------------------------------------------------
-run_battery() {  # $1 = extra args
+run_battery() {  # $1 = methods, $2 = extra args
   # shellcheck disable=SC2086
   python farit/src/extraction/run_battery.py \
     --backend openai --model "$SERVED_NAME" --base-url "$BASE_URL" \
-    --layer "$LAYER" --methods M1,M2,M3,M4,M5,M6 $1
+    --layer "$LAYER" --methods "$1" $2
 }
 
 evaluate_battery() {
@@ -181,7 +183,7 @@ evaluate_battery() {
 }
 
 log "5/7 smoke (1 doc, both layers, all methods)"
-run_battery "--docs sds_05.pdf --smoke"
+run_battery "$ALL_METHODS" "--docs sds_05.pdf --smoke"
 
 # Sanity: the smoke must produce citations, not just fields. A wrong
 # chat_template_kwargs (thinking channel) or a prompt/schema mismatch (the
@@ -224,8 +226,8 @@ PY
 case "$JOB" in
   smoke)   log "6/7 job=smoke (nothing more to run)" ;;
   battery)
-    log "6/7 job=battery (full dev, 20 docs x 2 layers x 5 methods)"
-    run_battery ""
+    log "6/7 job=battery (methods=$METHODS, $LAYER)"
+    run_battery "$METHODS" ""
     evaluate_battery ;;
   judge)
     log "6/7 job=judge (pointwise judge via vLLM logprobs)"
@@ -234,8 +236,8 @@ case "$JOB" in
       --layer "$LAYER" --score-mode v2 --out-tag "hub_${SERVED_NAME//\//_}_v2" \
       || die "judge run failed (needs the --backend openai path; see README)" ;;
   all)
-    log "6/7 job=all: battery + judge"
-    run_battery ""
+    log "6/7 job=all: battery(methods=$METHODS) + judge"
+    run_battery "$METHODS" ""
     evaluate_battery
     python farit/src/retrieval/llm_reranker.py \
       --backend openai --model "$SERVED_NAME" --base-url "$BASE_URL" \

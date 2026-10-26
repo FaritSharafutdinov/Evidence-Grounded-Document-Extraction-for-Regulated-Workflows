@@ -81,7 +81,13 @@ log "1/7 repo -> $REPO_DIR (branch $BRANCH @ ${COMMIT:-HEAD})"
 if [ -d "$REPO_DIR/.git" ]; then
   git -C "$REPO_DIR" fetch origin "$BRANCH"
   git -C "$REPO_DIR" checkout "$BRANCH"
-  git -C "$REPO_DIR" pull --ff-only origin "$BRANCH" || true
+  if ! git -C "$REPO_DIR" pull --ff-only origin "$BRANCH"; then
+    log "    ⚠⚠ WARNING: could NOT fast-forward '$BRANCH' (local edits / untracked conflicts)."
+    log "    ⚠⚠ Running the CURRENT checkout, which may be STALE. To fix:"
+    log "      git -C $REPO_DIR checkout -- farit/results"
+    log "      git -C $REPO_DIR clean -fd farit/results"
+    log "      git -C $REPO_DIR pull --ff-only origin $BRANCH"
+  fi
 else
   git clone --branch "$BRANCH" "$REPO_URL" "$REPO_DIR"
 fi

@@ -160,7 +160,7 @@ def build_claims(a: dict, state_text: str, report_text: str) -> list[dict]:
     # --- S5 taxonomy (per-document wording differs) ---------------------------
     tax = a["s5"]["summary"]["taxonomy_counts"]
     s5_patterns = {
-        "evidence": {"state": r"evidence (\d+)", "report": r"evidence \*\*(\d+)\*\*"},
+        "evidence": {"state": r"evidence (\d+) /", "report": r"evidence \*\*(\d+)\*\*"},
         "reasoning": {"state": r"reasoning (\d+)", "report": r"reasoning(?:/derived)? \*\*(\d+)\*\*"},
         "values": {"state": r"values (\d+)", "report": r"wrong value \*\*(\d+)\*\*"},
         "entity attribution": {"state": r"entity attribution (\d+)", "report": r"entity attribution \*\*(\d+)\*\*"},
@@ -274,7 +274,7 @@ def build_claims(a: dict, state_text: str, report_text: str) -> list[dict]:
     claims.append(
         claim(
             "corpus.dev_included",
-            {"state": r"(\d+) evidence-bearing dev instances"},
+            {"state": r"(\d+) evidence-bearing"},
             a["gold_dev_included"],
             "gold_evidence.jsonl (judge inclusion rule)",
             "dev, non-ingredient, evidence_set present, state != NOT_STATED",
